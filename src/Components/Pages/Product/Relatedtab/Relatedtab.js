@@ -2,18 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 import { Box, Button, Grid, Card, Typography, Tab, Tabs } from "@mui/material";
-import Narrationimage from "../images/redwatch.png";
-import Watchimage from "../images/watch-1.png";
-import Watchimage1 from "../images/watch-2.png";
+import Narrationimage from "../../../images/redwatch.png";
+import Watchimage from "../../../images/watch-1.png";
+import Watchimage1 from "../../../images/watch-2.png";
 
-import theme from "../Theme/Theme";
-import Tabestyle from "./Tabcomp.style";
 import { useState } from "react";
 import { IconButton } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Divider } from "@mui/material";
-import { Data } from "./Constant";
 
 
 function TabPanel(props) {
@@ -84,12 +81,12 @@ export default function App() {
   };
 
   const StyledTab = styled(Tab)({
-    color: "#7F7F7F",
+    color: "black",
     fontWeight: "600",
-    lineHeight: "43.5px", // Remove media queries
-    fontFamily: ["Poppins", "sans-serif"],
     "&.Mui-selected": {
-      color: "#F7941D",
+      backgroundColor: "#F7941D",
+      color:'white',
+      borderRadius: '50px'
     },
   });
 
@@ -121,17 +118,37 @@ export default function App() {
                 aria-label="basic tabs example"
               >
                 <StyledTab
-                  label="New Arrivals"
+                  label="Hp"
                   {...a11yProps(0)}
                   sx={{ fontSize: "12px" }} // Remove media queries
                 />
                 <StyledTab
-                  label="Featured"
+                  label="Dell"
                   {...a11yProps(1)}
                   sx={{ fontSize: "12px" }} // Remove media queries
                 />
                 <StyledTab
-                  label="Top Selling"
+                  label="Lenovo"
+                  {...a11yProps(2)}
+                  sx={{ fontSize: "12px" }} // Remove media queries
+                />
+                       <StyledTab
+                  label="Apple"
+                  {...a11yProps(0)}
+                  sx={{ fontSize: "12px" }} // Remove media queries
+                />
+                <StyledTab
+                  label="Dell"
+                  {...a11yProps(1)}
+                  sx={{ fontSize: "12px" }} // Remove media queries
+                />
+                <StyledTab
+                  label="Lenovo"
+                  {...a11yProps(2)}
+                  sx={{ fontSize: "12px" }} // Remove media queries
+                />
+                      <StyledTab
+                  label="Lenovo"
                   {...a11yProps(2)}
                   sx={{ fontSize: "12px" }} // Remove media queries
                 />
@@ -139,14 +156,33 @@ export default function App() {
             </Grid>
           </Grid>
         </Grid>
-      
+        <Grid
+          item
+          lg={6}
+          md={6}
+          xs={12}
+          sm={6}
+          sx={{ display: "flex", alignItems: "center", justifyContent: "end" }}
+        >
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#F7941D",
+              marginTop: "20px",
+              display: "flex",
+            }}
+          >
+            See All
+         
+          </Typography>
+        </Grid>
       </Grid>
       <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
       <TabPanel value={value} index={0}>
         <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
-        {Data.map((item, index) => (
+ 
           <Grid item lg={3} md={6} xs={12} sm={6}>
-            <Card sx={Tabestyle.Tabcard}>
+            <Card >
               <Grid container alignItems="center" justifyContent="center">
                 <Grid item xs={12}>
                   <Grid container alignItems="center" justifyContent="center">
@@ -159,7 +195,7 @@ export default function App() {
                       </IconButton>
                     </Grid>
                     <Grid item xs={8}>
-                      <Card sx={Tabestyle.Tabcard}>
+                      <Card >
                         <img
                           src={slides[currentSlide].src}
                           alt={slides[currentSlide].alt}
@@ -183,7 +219,7 @@ export default function App() {
                   flexItem
                   sx={{ marginRight: "16px", flexGrow: 1 }}
                 />
-                <Typography sx={Tabestyle.Tabsheading}>Watch</Typography>
+                <Typography>Watch</Typography>
                 <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
               </Box>
               <Grid container spacing={2} >
@@ -211,7 +247,7 @@ export default function App() {
    
             </Card>
           </Grid>
-             ))}
+       
           {/* Add more content for the first tab panel here */}
         </Grid>
       </TabPanel>

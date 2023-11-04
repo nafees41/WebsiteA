@@ -29,7 +29,19 @@ const style={
       color: 'white',
       marginTop: '30px',
       padding: '20px',
+    },
+    'FilterSaction':{
+      border: "2px solid white", 
+      backgroundColor: "white",
+      border:'2px solid #9B9B9B'
+    },
+    'CategoryHeading':{
+      fontWeight: "500", 
+      fontSize: "17px", 
+      color: "#3C3737"
     }
+
+
   
 
 
