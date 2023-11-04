@@ -11,6 +11,7 @@ import TextField from "@mui/material/TextField";
 import Checkbox from "@mui/material/Checkbox";
 import { Stack } from "@mui/material";
 import Relatedtab from '../Relatedtab/Relatedtab'
+import Paginationcomp from '../Paginationcomp/Paginationcomp'
 
 const ITEM_HEIGHT = "100%";
 const ITEM_PADDING_TOP = 8;
@@ -140,9 +141,8 @@ const About = () => {
                 </Grid>
                 <Grid item md={4} sm={12} xs={12}>
                   <Typography sx={Mainstyle.Mainheading}>
-                    Online <br />{" "}
+                    Online <br />
                     <span style={{ color: "#F7941D", fontSize: "3rem" }}>
-                      {" "}
                       Shopping
                     </span>
                   </Typography>
@@ -157,6 +157,8 @@ const About = () => {
             </Grid>
           </Grid>
           <Relatedtab/>
+          
+          <Paginationcomp/>
         </Grid>
       </Grid>
     </Box>

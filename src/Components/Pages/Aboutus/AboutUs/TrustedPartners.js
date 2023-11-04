@@ -2,10 +2,10 @@ import React from 'react';
 import { Grid, Typography, CardMedia, Box } from "@mui/material";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { Stack } from "@mui/material";
-import Daraz from '../images/Daraz.png';
-import Shopify from '../images/shopify.png';
-import Fresh from '../images/dfresh.jpg';
-import Amazon from '../images/dfresh.jpg';
+import Daraz from '../../../images/Daraz.png';
+import Shopify from '../../../images/shopify.png';
+import Fresh from '../../../images/dfresh.jpg';
+import Amazon from '../../../images/dfresh.jpg';
 
 const TrustedPartners = () => {
   const theme = useTheme();
