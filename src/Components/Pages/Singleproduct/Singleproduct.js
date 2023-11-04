@@ -16,11 +16,9 @@ import Paginationcomp from '../Paginationcomp/Paginationcomp'
 const About = () => {
   return (
     <Box>
-      <Grid container spacing={2} sx={{ marginTop: "20px", paddingX: {md:"70px",sm:'40px',xs:'30px'} }}>
-        <Grid md={2}  sm={12} xs={12} sx={Mainstyle.FilterSaction}>
-          <Card>
-    
-          </Card>
+      <Grid container spacing={2} >
+        <Grid md={2}  sm={12} xs={12}>
+      
         </Grid>
         <Grid item md={10}  sm={12} xs={12} >
           <Grid container spacing={2} sx={{ marginTop: "0px" }}>
@@ -41,7 +39,7 @@ const About = () => {
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse <br /> cillum dolore eu fugiat nulla pariatu
                   </p>
-                  <Button sx={Mainstyle.Mainbutton}>Shop Now</Button>
+                  <Button >Shop Now</Button>
                 </Grid>
               </Grid>
             </Grid>
