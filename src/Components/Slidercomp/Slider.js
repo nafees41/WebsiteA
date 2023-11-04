@@ -17,7 +17,6 @@ const Slider = ({ data }) => {
     {
       src: Sliderimage1,
       alt: "Image 2 for carousel",
-      
     },
     {
       src: Sliderimage,
@@ -26,49 +25,67 @@ const Slider = ({ data }) => {
 
   return (
     <div>
-      <Box  sx={{
-       backgroundColor:'#F7F7F7',
-          borderRadius:5,
-        marginX: {md:"76px",sm:'0px',xs:'0px'}, // Adjust horizontal margin here
-        marginTop:{md:'20px',sm:'0px',xs:'0px'},
-        position: 'relative', // Set position to relative
-}} >
-        <Grid container   >
-        <Grid item lg={6} md={12} sm={12} xs={12} sx={{ paddingX: {md:"70px" ,sm:'0px',xs:'20px'}, paddingY: {md:"90px",sm:'40px',xs:'30px'} }}>
-        <div className="about-content">
+      <Box
+        sx={{
+          backgroundColor: "#F7F7F7",
+          borderRadius: 5,
+          marginX: { md: "76px", sm: "0px", xs: "0px" }, // Adjust horizontal margin here
+          marginTop: { md: "20px", sm: "0px", xs: "0px" },
+          position: "relative", // Set position to relative
+        }}
+      >
+        <Grid container>
+          <Grid
+            item
+            lg={6}
+            md={12}
+            sm={12}
+            xs={12}
+            sx={{
+              paddingX: { md: "70px", sm: "0px", xs: "20px" },
+              paddingY: { md: "90px", sm: "40px", xs: "30px" },
+            }}
+          >
+            <div className="about-content">
               <Typography variant="h4">
-              We Picked Every Item <br /> With Care,
-        <span style={{ color: '#F7941D' ,fontSize:'35px'}}>You Must Try </span>
-        <br />  At least Once.  </Typography>
-              <Button>Go To Collection  < ArrowRightAltIcon/> </Button>
-                </div>
- </Grid>
+                We Picked Every Item <br /> With Care,
+                <span style={{ color: "#F7941D", fontSize: "35px" }}>
+                  You Must Try{" "}
+                </span>
+                <br /> At least Once.{" "}
+              </Typography>
+              <Button>
+                Go To Collection <ArrowRightAltIcon />{" "}
+              </Button>
+            </div>
+          </Grid>
 
-            <Grid
-              item
-              lg={6}
-              md={12}
-              sm={12}
-              xs={12}
-              sx={{
-                marginLeft: { lg: "auto", md: "auto", sm: "0", xs: "0" },
-              }}
-            >
-              <img
-                src={slides[slide].src}
-                alt={slides[slide].alt}
-                style={{ width: "100%" }}
-              />
-            </Grid>
-  
-   
+          <Grid
+            item
+            lg={6}
+            md={12}
+            sm={12}
+            xs={12}
+            sx={{
+              marginLeft: { lg: "auto", md: "auto", sm: "0", xs: "0" },
+            }}
+          >
+            <img
+              src={slides[slide].src}
+              alt={slides[slide].alt}
+              style={{ width: "100%" }}
+            />
+          </Grid>
         </Grid>
-            <Grid
-          container
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Grid item xs={12} className="indicators"
-          sx={{position:'absolute',bottom:{md:'20px',sm:'0',xs:'-23px'}}}
+        <Grid container sx={{ display: "flex", justifyContent: "center" }}>
+          <Grid
+            item
+            xs={12}
+            className="indicators"
+            sx={{
+              position: "absolute",
+              bottom: { md: "20px", sm: "0", xs: "-23px" },
+            }}
           >
             {slides.map((_, index) => (
               <button
@@ -80,9 +97,7 @@ const Slider = ({ data }) => {
               ></button>
             ))}
           </Grid>
-    
         </Grid>
-    
       </Box>
     </div>
   );

@@ -122,32 +122,7 @@ font-weight: 600;
   margin-top: 30px;
   padding: 20px;
 }
-.how-we-work-main{
-  background-color:#0F75BC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.how-we-work-main h1{
-  font-family: Inter;
-  font-size: 66px;
-  font-weight: 600;
-  line-height: 80px;
-  letter-spacing: 0em;
-  color: white;
 
-}
-.how-we-work-main p{
-  font-family: Inter;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: center;
-  width: 618px;
-  color:white;
-}
 /* whyus */
 .left-div h1{
 font-family: Inter;
@@ -215,7 +190,7 @@ text-align: center;
 
 
 
-/* get info */
+
 /* AboutUs.css */
 
 .red-asterisk {
@@ -310,13 +285,6 @@ transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
   }
 }
-.global-button-style {
-  background:#0F75BC;
-  color: #FFFFFFE5;
-}
 
-.global-button-style:hover {
-  background: #0F75BC; /* Adjust the hover style as needed */
-}
 
 

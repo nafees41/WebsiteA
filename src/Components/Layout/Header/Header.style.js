@@ -1,53 +1,50 @@
-import theme from "../../../Theme/Theme";
 const style={
     // Main Top Box
 
-    'nav': {
-      display: 'flex'
     
-    },
-    
-    'all-categories-button': {
-      display: 'flex',
-      alignItems: 'center',
-      border: 'none',
-      height: '60px',
+    'allCategoriesButton': {
+
     borderRadius: '20px 20px 0px 0px',
       marginTop: '-10px',
-      cursor: 'pointer',
-      width: '150px'
+      padding: '20px',
+      display: { xs: "none", sm: "block" },
+      display:'flex'
     },
     
     'icon': {
-      marginRight:' 5px';
-      marginLeft: '15px';
+      marginRight:' 5px',
+      marginLeft: '15px',
     },
     
-    'nav-list': {
-      color: 'white'
-    },
-    'nav-list ul':{
-      display: 'flex'
-    },
-    'nav-list ul li':{
-      listStyleType: 'none',
-      marginLeft: '20px',
-      paddingRight: '13px',
+  
+    'nav':{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '0 20px',
+      },
+    'navItem':{
+     fontWeight: "500",
+      fontSize: { md: "1rem", sm: "12px", xs: "10px" },
+      color: "white",
+      paddingRight: '30px',
       borderRight: '1px solid white',
-      fontSize: '18px',
-      fontStyle: 'normal',
-      cursor: 'pointer'
+      marginRight: '13px',
+
+ 
     },
-    'quote-button ':{
+
+ 
+    'QuoteButton':{
       border: 'none',
-      padding: '13px',
+      padding: '10px',
       borderRadius: '40px',
-      width: '150px',
       position: 'absolute',
       top: '4px',
       right: '0px',
       borderRadius: '40px',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      paddingX: { md: "30px", sm: "15px", xs: "10px" },
     
     }
 

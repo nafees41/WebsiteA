@@ -1,23 +1,14 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Saleimage1 from "../images/Saleimage1.png";
 import Saleimage2 from "../images/Saleimage2.png";
 import Saleimage3 from "../images/discount.png";
 import Saleimage4 from "../images/TwoWatches.png";
-
-import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
 import { useTheme } from "@mui/material/styles";
-import { Button } from "@mui/material";
-import Laptopimage from "../images/Laptop.png";
 
 const Sale = () => {
   const theme = useTheme();

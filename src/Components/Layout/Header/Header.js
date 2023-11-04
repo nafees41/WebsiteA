@@ -12,7 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Drawer from "@mui/material/Drawer";
 import Headertwo from "../Headertwo";
-import {Popover,} from "@mui/material";
+import {Popover,Button} from "@mui/material";
 import Grid from "@mui/material/Grid";
 import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
 import Saleimage1 from "../../images/Saleimage1.png";
@@ -28,6 +28,7 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Headerstyle from '../Header/Header.style'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -560,17 +561,15 @@ function Header() {
               <MenuIcon />
             </IconButton>
             <div>
-              <button
+              <Button
                 variant="contained"
+                color="secondary"
                 onClick={handleOpen}
-                className="all-categories-button global-button-style"
-                sx={{
-                  display: { xs: "none", sm: "block" },
-                }}
-              >
-                <MenuIcon className="icon" />
+                className="global-button-style"
+                sx={Headerstyle.allCategoriesButton }  >
+                <MenuIcon sx={Headerstyle.icon} />
                 All Categories
-              </button>
+              </Button>
               <Popover
                 open={Boolean(anchorEl)}
                 anchorEl={anchorEl}
@@ -1006,10 +1005,8 @@ function Header() {
                 display: { lg: "flex", md: "none", sm: "none", xs: "none" },
               }}
             >
-              <div className="nav">
-                <nav className="nav-list">
-                  <ul>
-                    <Link
+              <Box  sx={Headerstyle.nav}>
+                   <Link
                       to="/home"
                       style={{
                         textDecoration: "none", // Remove underline
@@ -1017,7 +1014,7 @@ function Header() {
                         display: "block", // Make the link a block element
                       }}
                     >
-                      <li>Home</li>
+                      <Typography  sx={Headerstyle.navItem}>Home</Typography>
                     </Link>
                     <Link  to="/about"
                      style={{
@@ -1026,7 +1023,7 @@ function Header() {
                       display: "block", // Make the link a block element
                     }}
                     >
-                    <li>About</li>
+                    <Typography  sx={Headerstyle.navItem} >About</Typography>
                     </Link>
                     <Link  to="/product"
                      style={{
@@ -1035,11 +1032,10 @@ function Header() {
                       display: "block", // Make the link a block element
                     }}
                     >
-                    <li>Shop Now</li>
+                    <Typography  sx={Headerstyle.navItem}>Shop Now</Typography>
                     </Link>
-                    <li>Flash Deals</li>
-                    <li>Contact</li>
-                    <li>Daily Deals</li>
+                    <Typography  sx={Headerstyle.navItem}>Flash Deals</Typography>
+                    <Typography  sx={Headerstyle.navItem} >Daily Deals</Typography>
                     <Link  to="/contact"
                      style={{
                       textDecoration: "none", // Remove underline
@@ -1047,11 +1043,11 @@ function Header() {
                       display: "block", // Make the link a block element
                     }}
                     >
-                    <li>Contact</li>
+                    <Typography  sx={Headerstyle.navItem}>Contact</Typography>
                     </Link>
                   
-                  </ul>
-                </nav>
+           
+         
 
                 <Stack direction="row" >
                   <Typography
@@ -1067,18 +1063,16 @@ function Header() {
                       color: "inherit", // Inherit color from parent (card)
                       display: "block", // Make the link a block element
                     }}>
-                    <button
+                    <Button
                       variant="contained"
+                      color="secondary"
                       className="quote-button global-button-style"
-                      sx={{
-                        paddingX: { md: "30px", sm: "15px", xs: "10px" },
-                        paddingY: { md: "15px", sm: "15px", xs: "10px" },
-                      }} >
+                      sx={Headerstyle.QuoteButton} >
                       Login Account
-                    </button>
+                    </Button>
                   </Link>
                 </Stack>
-              </div>
+              </Box>
             </Box>
           </Toolbar>
 
