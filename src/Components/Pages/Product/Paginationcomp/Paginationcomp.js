@@ -29,6 +29,7 @@ const Paginationcomp = () => {
                 sx={{
                   border: "2px solid #F7941D", 
                   color:'#182733',
+                  justifyContent:'center',
                   "&.Mui-selected": {
                     backgroundColor: "#F7941D", // Selected tab color
                     color: "#FFFFFF", // Text color for selected tab
