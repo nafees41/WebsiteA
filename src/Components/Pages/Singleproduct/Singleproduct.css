@@ -1,41 +1,22 @@
-.single-product-detail-main-div{
-    width: 90%;
-    height: 550px;
-    display: flex;
-    margin:3rem auto;
-}
-.single-product-image{
-    width: 50%;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: #F3F3F3;
-    
-}
 .detail-div {
-    width: 50%;
-    height: 550px;
-    padding: 0px 10px;
-}
-
-td{
+   padding: 10px;
+  }
+  
+  td{
     width: 150px;
     height: 50px;
-}
-
-td:first-child {
+  }
+  
+  td:first-child {
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-td:nth-child(2){
+  }
+  
+  td:nth-child(2){
     width: 500px;
     font-family: Inter;
     font-size: 18px;
@@ -43,8 +24,9 @@ td:nth-child(2){
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-}
-table button{
+    display: flex;
+  }
+  table button{
     margin: 0px 7px;
     font-family: Inter;
     font-size: 15px;
@@ -53,16 +35,16 @@ table button{
     border: none;
     border-radius: 5px;
         
-}
-table input{
+  }
+  table input{
     width: 40px;
     height: 40px;
     outline: none;
     margin: 0px .5rem;
     border: none;
-}
-
-.order-btn{
+  }
+  
+  .order-btn{
     background-color: #F7941D;
     padding: 12px 5px 12px 5px;
     border-radius: 5px;
@@ -70,13 +52,13 @@ table input{
     border: none;
     color: white;
     margin-top: 15px;
-}
-
-.order-btn:hover{
+  }
+  
+  .order-btn:hover{
     background-color: #0F75BC;
-}
-
-@media (max-width: 700px) {
+  }
+  
+  @media (max-width: 700px) {
     .single-product-detail-main-div{
         flex-direction: column;
         height: 850px;
@@ -95,20 +77,20 @@ table input{
         height: 600px;
     }
     }
-
+  
     .singlefooterimage{
         height: 60px;
         padding: 15px;
         border-radius: 50%;
         background-color: #F3F3F3;
     }
-
+  
     /* Define your CSS styles for larger screens */
-.footer-container {
+  .footer-container {
     display: flex;
     justify-content: space-around;
   }
-
+  
     @media (max-width: 768px) {
         .footer-container {
             margin: 20px 0px 20px 0px;
@@ -119,51 +101,52 @@ table input{
             margin-bottom: 20px;
         }
       }
-
-.description-text{
+  
+  .description-text{
     text-align: left;
-}
-
-
-.single-product-container{
+  }
+  
+  
+  .single-product-container{
     width: 90%;
     margin: auto;
     justify-content: space-between;
     border: 1px solid white;
     height: 660px;
     margin-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .single-product-container{
       height: 1350px !important;
     }
-}
-@media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 767px) {
     .single-product-container{
       height: auto;
     }
-}
-@media screen and (max-width: 1120px) {
+  }
+  @media screen and (max-width: 1120px) {
     .single-product-container{
       margin-top: 40px !important;
       height: auto;
-
+  
     }
   
   }
-
+  
   .size-button:hover{
     color:white;
     background-color: #F7941D;
-
+  
   }
   .size-button-medium:hover{
     color:black;
     background-color: #F3F3F3;
-
+  
   }
   .size-button-medium{
     color:white;
     background-color: #F7941D;
   }
+  

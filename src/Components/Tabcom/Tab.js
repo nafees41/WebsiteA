@@ -6,7 +6,6 @@ import Narrationimage from "../images/redwatch.png";
 import Watchimage from "../images/watch-1.png";
 import Watchimage1 from "../images/watch-2.png";
 
-import theme from "../Theme/Theme";
 import Tabestyle from "./Tabcomp.style";
 import { useState } from "react";
 import { IconButton } from "@mui/material";

@@ -11,8 +11,8 @@ import AboutPage from './Components/Pages/Aboutus/About';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from '../src/Components/Theme/Theme'
 import Contactpage from '../src/Components/Pages/ContactUs/Contact'
+import Singleproduct from '../src/Components/Pages/Singleproduct/Singleproduct'
 import Productpage from '../src/Components/Pages/Product/Product'
-import SingleProduct from './Components/Pages/Singleproduct/Singleproduct';
 
 function App() {
   return (
@@ -21,17 +21,17 @@ function App() {
      <BrowserRouter>
    <Header/>
       <Routes>
-      <Route path="/"  element={<Home/>}> </Route>
+      <Route path="/"  element={<Singleproduct/>}> </Route>
       <Route path="/home"  element={<Home/>}> </Route>
       <Route path="/securitypage"  element={ <Securitypage/>}></Route>
       <Route path="/Login"  element={ <Login/>}></Route>
      <Route path="/forgotpassword"  element={ <Forgotpassword/>}></Route>
      <Route path="/about"  element={ <AboutPage/>}></Route>
      <Route path="/contact"  element={ <Contactpage/>}></Route>
+     <Route path="/singleproduct"  element={ <Singleproduct/>}></Route>
      <Route path="/product"  element={ <Productpage/>}></Route>
-     <Route path="/singleproduct"  element={<SingleProduct/>}> </Route>
 
-      </Routes>
+ </Routes>
       <Footer/>
     </BrowserRouter>
     </div>
