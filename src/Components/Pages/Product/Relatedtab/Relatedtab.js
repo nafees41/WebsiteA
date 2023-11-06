@@ -11,6 +11,7 @@ import { IconButton } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Divider } from "@mui/material";
+import { Data } from "../../../Tabcom/Constant";
 
 
 function TabPanel(props) {
@@ -179,7 +180,8 @@ export default function App() {
       </Grid>
       <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
       <TabPanel value={value} index={0}>
-        <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
+        <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>\
+        {Data.map((item, index) => (
  
           <Grid item lg={3} md={6} xs={12} sm={6}>
             <Card >
@@ -247,6 +249,7 @@ export default function App() {
    
             </Card>
           </Grid>
+                ))}
        
           {/* Add more content for the first tab panel here */}
         </Grid>

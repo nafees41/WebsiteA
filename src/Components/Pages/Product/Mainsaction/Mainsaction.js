@@ -12,6 +12,8 @@ import Checkbox from "@mui/material/Checkbox";
 import { Stack } from "@mui/material";
 import Relatedtab from '../Relatedtab/Relatedtab'
 import Paginationcomp from '../Paginationcomp/Paginationcomp'
+import  Featuredcategories2 from '../../../Featuredcategory/Featuredcategory' 
+
 
 const ITEM_HEIGHT = "100%";
 const ITEM_PADDING_TOP = 8;
@@ -159,8 +161,10 @@ const About = () => {
           <Relatedtab/>
           
           <Paginationcomp/>
+    
         </Grid>
       </Grid>
+      <Featuredcategories2/>
     </Box>
   );
 };

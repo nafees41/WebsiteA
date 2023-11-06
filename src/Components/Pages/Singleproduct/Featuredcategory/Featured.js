@@ -60,6 +60,7 @@ const Featured = () => {
 
       <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
 
+
 <Grid item lg={3} md={6} xs={12} sm={6}>
   <Card >
     <Grid container alignItems="center" justifyContent="center">
@@ -127,8 +128,11 @@ const Featured = () => {
   </Card>
 </Grid>
 
+
 {/* Add more content for the first tab panel here */}
-</Grid>  </Box>
+</Grid> 
+
+ </Box>
     </div>
   );
 };
