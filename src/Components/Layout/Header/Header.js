@@ -1034,7 +1034,14 @@ function Header() {
                     >
                     <Typography  sx={Headerstyle.navItem}>Shop Now</Typography>
                     </Link>
+                    <Link to="singleproduct"
+                     style={{
+                      textDecoration: "none", // Remove underline
+                      color: "inherit", // Inherit color from parent (card)
+                      display: "block", // Make the link a block element
+                    }}>
                     <Typography  sx={Headerstyle.navItem}>Flash Deals</Typography>
+                    </Link>
                     <Typography  sx={Headerstyle.navItem} >Daily Deals</Typography>
                     <Link  to="/contact"
                      style={{

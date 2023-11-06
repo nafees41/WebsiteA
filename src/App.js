@@ -12,6 +12,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Theme from '../src/Components/Theme/Theme'
 import Contactpage from '../src/Components/Pages/ContactUs/Contact'
 import Productpage from '../src/Components/Pages/Product/Product'
+import SingleProduct from './Components/Pages/Singleproduct/Singleproduct';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
      <Route path="/about"  element={ <AboutPage/>}></Route>
      <Route path="/contact"  element={ <Contactpage/>}></Route>
      <Route path="/product"  element={ <Productpage/>}></Route>
+     <Route path="/singleproduct"  element={<SingleProduct/>}> </Route>
 
       </Routes>
       <Footer/>

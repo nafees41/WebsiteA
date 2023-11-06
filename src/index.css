@@ -5,10 +5,7 @@
 }
 body {
   margin: 0;
-  
-  
-
-}
+  }
 .carousel {
   position: relative;
 
@@ -16,8 +13,7 @@ body {
 
 .slide {
   border-radius: 0.5rem;
-
-  display: flex;
+   display: flex;
 }
 
 .slide-hidden {

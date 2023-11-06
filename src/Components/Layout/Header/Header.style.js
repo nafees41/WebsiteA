@@ -1,10 +1,8 @@
 const style={
     // Main Top Box
 
-    
-    'allCategoriesButton': {
-
-    borderRadius: '20px 20px 0px 0px',
+     'allCategoriesButton': {
+     borderRadius: '20px 20px 0px 0px',
       marginTop: '-10px',
       padding: '20px',
       display: { xs: "none", sm: "block" },
