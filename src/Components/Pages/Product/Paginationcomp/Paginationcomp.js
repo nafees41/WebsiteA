@@ -6,7 +6,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 const Paginationcomp = () => {
   return (
-    <Box sx={{margin:'auto'}}>
+    <Box sx={{display:'flex',justifyContent:'center'}}>
             <Pagination
             count={10} // Total number of pages
             variant="outlined"
@@ -19,7 +19,7 @@ const Paginationcomp = () => {
                 {...item}
                 icon={
                   item.type === "previous" ? (
-                    <ArrowBackIosIcon sx={{color:'#182733'}}  />
+                    <ArrowBackIosIcon sx={{color:'#182733'}}/>
                   ) : item.type === "next" ? (
                     <ArrowForwardIosIcon sx={{color:'#182733'}} />
                   ) : (
