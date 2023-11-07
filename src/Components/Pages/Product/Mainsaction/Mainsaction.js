@@ -119,8 +119,7 @@ return (
         <Accordion
           key={index}
           expanded={expanded[index] || false}
-          onChange={handleAccordionChange(index)}
-        >
+          onChange={handleAccordionChange(index)}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography>{section.label}</Typography>
           </AccordionSummary>
