@@ -36,7 +36,7 @@ const About = () => {
         spacing={4}
         sx={{
           marginTop: "20px",
-          paddingX: { md: "40px", sm: "45px", xs: "20px" },
+          paddingX: { md: "70px", sm: "45px", xs: "20px" },
         }}
       >
         <Grid item md={3} sm={12} xs={12}>

@@ -11,6 +11,7 @@ import Pinkimage from '../../images/pinkimage.png'
 import Headphones  from '../../images/Headphone.png';
 import Chairimage  from '../../images/Chair.png';
 import greywatchimage  from '../../images/grey watch.jpeg';
+import Callsupport from '../../Callsupport/Callsupport';
 
 
 const SingleProduct = () => {
@@ -114,7 +115,8 @@ const SingleProduct = () => {
 </Grid>
 <DescriptionSection/>
 <Featuredcategories/>
-<Featuredcategories2/>
+<Callsupport/>
+
 
     
       </Box>

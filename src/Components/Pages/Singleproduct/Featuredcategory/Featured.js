@@ -61,6 +61,209 @@ const Featured = () => {
       <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
 
 
+
+
+<Grid item lg={3} md={6} xs={12} sm={6}>
+  <Card >
+    <Grid container alignItems="center" justifyContent="center">
+      <Grid item xs={12}>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handlePreviousSlide}
+              disabled={currentSlide === 0}
+            >
+              <KeyboardArrowLeftIcon />
+            </IconButton>
+          </Grid>
+          <Grid item xs={8}>
+            <Card >
+              <img
+                src={slides[currentSlide].src}
+                alt={slides[currentSlide].alt}
+                style={{ width: "100%" }}
+              />
+            </Card>
+          </Grid>
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handleNextSlide}
+              disabled={currentSlide === slides.length - 1}
+            >
+              <ChevronRightIcon />
+            </IconButton>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+    <Box display="flex">
+      <Divider
+        flexItem
+        sx={{ marginRight: "16px", flexGrow: 1 }}
+      />
+      <Typography >Watch</Typography>
+      <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
+    </Box>
+    <Grid container spacing={2} >
+      <Grid item xs={6} sx={{ display: "flex" }}>
+        <Typography variant="subtitle1" sx={{color:'#1D1E1E',fontWeight:'bold'}}> Apple Series  </Typography>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          type="submit"
+          sx={{
+            color: "#F7941D",
+            fontSize: "15px",
+           
+          }}
+        >
+          $2,435
+        </Button>
+      </Grid>
+    </Grid>
+
+      <Typography  sx={{textAlign:'center',fontSize:'12px',color:'#7F7F7F'}}>
+      Apple Watch Series 8 features  temperature sensing for insights into women's health, Car  Crash Detection, and sleep stages to understand your sleep.
+      </Typography>
+
+
+  </Card>
+</Grid>
+
+<Grid item lg={3} md={6} xs={12} sm={6}>
+  <Card >
+    <Grid container alignItems="center" justifyContent="center">
+      <Grid item xs={12}>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handlePreviousSlide}
+              disabled={currentSlide === 0}
+            >
+              <KeyboardArrowLeftIcon />
+            </IconButton>
+          </Grid>
+          <Grid item xs={8}>
+            <Card >
+              <img
+                src={slides[currentSlide].src}
+                alt={slides[currentSlide].alt}
+                style={{ width: "100%" }}
+              />
+            </Card>
+          </Grid>
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handleNextSlide}
+              disabled={currentSlide === slides.length - 1}
+            >
+              <ChevronRightIcon />
+            </IconButton>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+    <Box display="flex">
+      <Divider
+        flexItem
+        sx={{ marginRight: "16px", flexGrow: 1 }}
+      />
+      <Typography >Watch</Typography>
+      <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
+    </Box>
+    <Grid container spacing={2} >
+      <Grid item xs={6} sx={{ display: "flex" }}>
+        <Typography variant="subtitle1" sx={{color:'#1D1E1E',fontWeight:'bold'}}> Apple Series  </Typography>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          type="submit"
+          sx={{
+            color: "#F7941D",
+            fontSize: "15px",
+           
+          }}
+        >
+          $2,435
+        </Button>
+      </Grid>
+    </Grid>
+
+      <Typography  sx={{textAlign:'center',fontSize:'12px',color:'#7F7F7F'}}>
+      Apple Watch Series 8 features  temperature sensing for insights into women's health, Car  Crash Detection, and sleep stages to understand your sleep.
+      </Typography>
+
+
+  </Card>
+</Grid>
+
+<Grid item lg={3} md={6} xs={12} sm={6}>
+  <Card >
+    <Grid container alignItems="center" justifyContent="center">
+      <Grid item xs={12}>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handlePreviousSlide}
+              disabled={currentSlide === 0}
+            >
+              <KeyboardArrowLeftIcon />
+            </IconButton>
+          </Grid>
+          <Grid item xs={8}>
+            <Card >
+              <img
+                src={slides[currentSlide].src}
+                alt={slides[currentSlide].alt}
+                style={{ width: "100%" }}
+              />
+            </Card>
+          </Grid>
+          <Grid item xs={2}>
+            <IconButton
+              onClick={handleNextSlide}
+              disabled={currentSlide === slides.length - 1}
+            >
+              <ChevronRightIcon />
+            </IconButton>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
+    <Box display="flex">
+      <Divider
+        flexItem
+        sx={{ marginRight: "16px", flexGrow: 1 }}
+      />
+      <Typography >Watch</Typography>
+      <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
+    </Box>
+    <Grid container spacing={2} >
+      <Grid item xs={6} sx={{ display: "flex" }}>
+        <Typography variant="subtitle1" sx={{color:'#1D1E1E',fontWeight:'bold'}}> Apple Series  </Typography>
+      </Grid>
+      <Grid item xs={6}>
+        <Button
+          type="submit"
+          sx={{
+            color: "#F7941D",
+            fontSize: "15px",
+           
+          }}
+        >
+          $2,435
+        </Button>
+      </Grid>
+    </Grid>
+
+      <Typography  sx={{textAlign:'center',fontSize:'12px',color:'#7F7F7F'}}>
+      Apple Watch Series 8 features  temperature sensing for insights into women's health, Car  Crash Detection, and sleep stages to understand your sleep.
+      </Typography>
+
+
+  </Card>
+</Grid>
+
 <Grid item lg={3} md={6} xs={12} sm={6}>
   <Card >
     <Grid container alignItems="center" justifyContent="center">
