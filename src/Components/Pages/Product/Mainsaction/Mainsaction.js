@@ -25,7 +25,6 @@ const MenuProps = {
     },
   },
 };
-
 const About = () => {
 
   const [expanded, setExpanded] = useState([true, true, true]); // Initialize to true for each Accordion
@@ -36,9 +35,7 @@ const About = () => {
       return newExpanded;
     });
   };
-
-
-  return (
+return (
     <Box>
       <Grid container spacing={2} sx={{ marginTop: "20px", paddingX: {md:"70px",sm:'40px',xs:'30px'} }}>
         <Grid md={2}  sm={12} xs={12} sx={Mainstyle.FilterSaction}>
@@ -46,8 +43,7 @@ const About = () => {
             {" "}
             Filters{" "}
           </Typography>
-
-          <Card>
+           <Card>
           <div>
       {[
         {
