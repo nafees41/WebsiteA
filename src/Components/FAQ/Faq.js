@@ -11,19 +11,14 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 const Faq = () => {
-    const [expanded, setExpanded] = useState(false);
-     const handleAccordionChange = () => {
-      setExpanded(!expanded);
-    };
-  const faqItems = [
-    {
-      question: "Why is the moon sometimes out during the day?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.",
-   },
-
-   
-    ];
+  const [expanded, setExpanded] = useState([true, false, false]); // Initialize to true for each Accordion
+  const handleAccordionChange = (panel) => (event, isExpanded) => {
+    setExpanded((prevExpanded) => {
+      const newExpanded = [...prevExpanded];
+      newExpanded[panel] = isExpanded;
+      return newExpanded;
+    });
+  };
   return (
     <div>
       <Grid
@@ -38,32 +33,82 @@ const Faq = () => {
           </Typography>
         </Grid>
       </Grid>
-      {faqItems.map((item, index) => (
+  
       <Grid
         container
         spacing={2}
         sx={{ marginTop: "20px", display: "flex", justifyContent: "center" }} >
          <Grid item lg={6} md={12} sm={12} xs={12}>
-          <Accordion expanded={expanded} onChange={handleAccordionChange} sx={{backgroundColor:'#FAFAFA'}}>
-        <AccordionSummary
-          expandIcon={expanded ? <RemoveCircleOutlineIcon sx={{backgroundColor:'#F7941D',color:'white'}} /> : <AddCircleOutlineIcon sx={{backgroundColor:'#F7941D',color:'white'}} />}
-            aria-controls="panel1a-content"
-          id="panel1a-header">
-            <Stack direction="row" spacing={2}>
-         <Typography>01</Typography>
-        <Typography>Accordion 1</Typography>
-          </Stack>
-      </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+         <div>
+              {[
+                {
+                  label: "How we work at our brand?",
+                  content: (
+                    <div>
+                      <Typography  variant="body2">
+                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      </Typography>
+                     
+                    </div>
+                  ),
+                },
+                {
+                  label: "How we work at our brand?",
+                  content: (
+                    <div>
+                
+                      <Typography variant="body2">
+                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+
+                      </Typography>
+                    </div>
+                  ),
+                },
+                {
+                  label: "How we work at our brand?",
+                  content: (
+                    <div>
+                      <Typography variant="body2">
+                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      </Typography>
+                     
+                    </div>
+                  ),
+                },
+                {
+                  label: "How we work at our brand?",
+                  content: (
+                    <div>
+                
+                      <Typography variant="body2">
+                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+
+                      </Typography>
+                    </div>
+                  ),
+                },
+
+        
+              ].map((section, index) => (
+                <Accordion
+                  key={index}
+                  expanded={expanded[index] || false}
+                  onChange={handleAccordionChange(index)}
+                >
+                  <AccordionSummary
+                    sx={{ backgroundColor: "#F1F1F1" }}
+                    expandIcon={<ExpandMoreIcon />}
+                  >
+                    <Typography>{section.label}</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>{section.content}</AccordionDetails>
+                </Accordion>
+              ))}
+            </div>
+ 
       </Grid>
         </Grid>
-         ))}
+     
     </div>
   );
 };
