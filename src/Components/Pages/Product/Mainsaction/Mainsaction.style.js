@@ -28,7 +28,8 @@ const style={
       backgroundColor:'#0F75BC',
       color: 'white',
       marginTop: '30px',
-      paddingX:'20px'
+      paddingX:'30px',
+      padding:'15px'
     },
     'FilterSaction':{
       border: "2px solid white", 
