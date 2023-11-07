@@ -2,6 +2,9 @@ import React from 'react'
 import { Box, Pagination, PaginationItem} from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import CardContent from '@mui/material/CardContent';
+
 
 
 const Paginationcomp = () => {
@@ -21,7 +24,7 @@ const Paginationcomp = () => {
                   item.type === "previous" ? (
                     <ArrowBackIosIcon sx={{color:'#182733'}}/>
                   ) : item.type === "next" ? (
-                    <ArrowForwardIosIcon sx={{color:'#182733'}} />
+                    <PlayArrowIcon sx={{color:'#182733'}} />
                   ) : (
                     undefined
                   )

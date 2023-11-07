@@ -31,11 +31,7 @@ const style={
       paddingX:'30px',
       padding:'15px'
     },
-    'FilterSaction':{
-      border: "2px solid white", 
-      backgroundColor: "white",
-      border:'2px solid #9B9B9B'
-    },
+   
     'CategoryHeading':{
       fontWeight: "500", 
       fontSize: "17px", 

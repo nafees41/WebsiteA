@@ -12,6 +12,10 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Divider } from "@mui/material";
 import { Data } from "../../../Tabcom/Constant";
+import Stack from '@mui/material/Stack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+
 
 
 function TabPanel(props) {
@@ -102,7 +106,7 @@ export default function App() {
           backgroundColor: "white",
         }}
       >
-        <Grid item lg={12} md={12} sm={12} xs={12}>
+        <Grid item lg={10} md={12} sm={12} xs={12}>
           <Grid container spacing={3}>
             <Grid item lg={12} md={12} sm={12} xs={12}>
               <Tabs
@@ -159,31 +163,31 @@ export default function App() {
         </Grid>
         <Grid
           item
-          lg={6}
+          lg={2}
           md={6}
           xs={12}
           sm={6}
-          sx={{ display: "flex", alignItems: "center", justifyContent: "end" }}
-        >
-          <Typography
-            variant="body1"
-            sx={{
-              color: "#F7941D",
-              marginTop: "20px",
-              display: "flex",
-            }}
-          >
-            See All
-         
-          </Typography>
+          sx={{ display: "flex",justifyContent: "end" }} >
+            <Stack  direction="row" spacing={2}>
+            <Typography
+             sx={{ color: "#484444" }}>  Show: </Typography>
+               <Typography
+             sx={{ color: "#484444" }}>  12 </Typography>
+             <Stack>
+             <KeyboardArrowUpIcon sx={{fontSize: "10px" }}/>
+            < KeyboardArrowDownIcon sx={{fontSize: "10px" }}/>
+             </Stack>
+             
+
+</Stack>
+        
         </Grid>
       </Grid>
       <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
       <TabPanel value={value} index={0}>
-        <Grid container spacing={3} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>\
+        <Grid container spacing={2} >
         {Data.map((item, index) => (
- 
-          <Grid item lg={3} md={6} xs={12} sm={6}>
+        <Grid item lg={3} md={6} xs={12} sm={6}>
             <Card >
               <Grid container alignItems="center" justifyContent="center">
                 <Grid item xs={12}>
@@ -191,8 +195,7 @@ export default function App() {
                     <Grid item xs={2}>
                       <IconButton
                         onClick={handlePreviousSlide}
-                        disabled={currentSlide === 0}
-                      >
+                        disabled={currentSlide === 0} >
                         <KeyboardArrowLeftIcon />
                       </IconButton>
                     </Grid>
@@ -231,18 +234,10 @@ export default function App() {
                 <Grid item xs={6}>
                   <Button
                     type="submit"
-                    sx={{
-                      color: "#F7941D",
-                      fontSize: "15px",
-                     
-                    }}
-                  >
-                    $2,435
-                  </Button>
+                    sx={{color: "#F7941D",  fontSize: "15px"}}> $2,435 </Button>
                 </Grid>
               </Grid>
-  
-                <Typography  sx={{textAlign:'center',fontSize:'12px',color:'#7F7F7F'}}>
+             <Typography  sx={{textAlign:'center',fontSize:'12px',color:'#7F7F7F'}}>
                 Apple Watch Series 8 features  temperature sensing for insights into women's health, Car  Crash Detection, and sleep stages to understand your sleep.
                 </Typography>
   

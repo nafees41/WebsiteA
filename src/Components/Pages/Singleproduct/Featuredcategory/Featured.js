@@ -52,7 +52,7 @@ const Featured = () => {
       <Box >
       <Grid container spacing={2} sx={{marginTop:'50px',paddingX:{md:'65px',sm:'0px',xs:'0px'}}}>
         <Grid item xs={12} >
-        <Typography variant="h5" sx={{color:'#F7941D'}}>Featured Categories</Typography>
+        <Typography variant="h5" sx={{color:'#F7941D'}}>Relevant Products</Typography>
         </Grid>
       </Grid>
       <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />

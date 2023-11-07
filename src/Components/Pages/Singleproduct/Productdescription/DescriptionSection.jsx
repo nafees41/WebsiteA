@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 import { Box,Grid, Tab, Tabs } from "@mui/material";
 import { Divider } from "@mui/material";
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+
+
 
 
 
@@ -64,13 +68,13 @@ export default function App() {
         item
         container
         sx={{
-          marginTop: "80px",
+          marginTop: "20px",
           paddingX: {md:"70px",sm:'0px',xs:'0px'},
           backgroundColor: "white",
         }}
       >
         <Grid item lg={12} md={12} sm={12} xs={12}>
-          <Grid container spacing={3}>
+          <Grid container spacing={2}>
             <Grid item lg={12} md={12} sm={12} xs={12}>
               <Tabs
                 value={value}
@@ -107,16 +111,19 @@ export default function App() {
         <Grid container spacing={2} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
       
           <Grid item lg={12} md={6} xs={12} sm={6}>
-          <div className="products" style={{border:'1px solid lightgrey',padding:'15px'}}>
+          <div className="products" >
         {/* {categoryData[selectedCategory].map((product, index) => (
           <div key={index}>
             <p>{product}</p>
           </div>
         ))} */}
-        <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p>
-        <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p>
-        <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p>
-        <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p>
+         <CardContent>
+    
+        <Typography variant="body2" color="text.secondary">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis
+        </Typography>
+      </CardContent>
+        {/* <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p> */}
       </div>
           </Grid>
       
