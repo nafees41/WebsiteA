@@ -5,7 +5,13 @@ import { Box, Grid, Typography,Table,Button, TableBody,TableCell,tableCellClasse
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import Theme from "../../Theme/Theme";
+import Card from "@mui/material/Card";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+import { useState } from "react";
+import Redwatch from '../../images/redwatch.png'
+import Stack from '@mui/material/Stack';
+
 
 const Dashboard = () => {
   const theme = createTheme({
@@ -29,8 +35,9 @@ const Dashboard = () => {
       fontWeight: "600"
         },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: {md:14,sm:'18px',xs:'10px'},
-          color: Theme.blue,
+      fontSize: {md:10,sm:'18px',xs:'10px'},
+          color: 'black',
+          textAlign:'center'
     },
   }));
 
@@ -45,37 +52,221 @@ const Dashboard = () => {
   function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
   }
+  
+  
+  const [number, setNumber] = useState(0);
+
+  // Function to update the display with the current number
+  const updateDisplay = () => {
+    return number;
+  };
+
+  // Event handler for decreasing the number
+  const handleDecrease = () => {
+    setNumber(number - 1);
+  };
+  // Event handler for increasing the number
+  const handleIncrease = () => {
+    setNumber(number + 1);
+  };
 
   const rows = [
     createData(
-      "April 9, 2023",
-      "Hype Mart",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
-    ),
-    createData(
-      "April 9, 2023",
-      "Hype Mart",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
-    ),
-    createData(
-      "April 9, 2023",
-      "Hype Mart",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
-    ),
+        <Stack direction="row" spacing={1}>
+        <img src={Redwatch} style={{width:'50%',height:'70px'}}/>
+        <Typography >
+   
+        Samsung - Galaxy  <br/> S6 4G
+  </Typography>
 
+  </Stack>,
+        "Hype Mart",
+        (
+          <Box sx={{display:'flex'}}>
+            <Card
+              sx={{
+                display: "flex",
+                color: "#0a202d",
+                backgroundColor: "#D5D5D5",
+                marginX: "5px",
+                textAlign: "center",
+                boxShadow: "0px 0px 0px 0px",
+              }}
+            >
+              <AddIcon onClick={handleIncrease} sx={{ color: "#0a202d" }} />
+            </Card>
+            <Card
+              sx={{
+                width: "20px !important",
+                color: "#0a202d",
+                height: "25px",
+                backgroundColor: "#D5D5D5",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                boxShadow: "0px 0px 0px 0px",
+              }}
+            >
+              <span
+                style={{
+                  color: "#0a202d",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                }}
+              >
+                {updateDisplay()}
+              </span>
+            </Card>
+            <Card
+              sx={{
+                width: "30px !important",
+                color: "#0a202d",
+                height: "25px",
+                backgroundColor: "#D5D5D5",
+                marginX: "5px",
+                textAlign: "center",
+                boxShadow: "0px 0px 0px 0px",
+              }}
+            >
+              <RemoveIcon onClick={handleDecrease} sx={{ color: "#0a202d" }} />
+            </Card>
+          </Box>
+        ),
+        "$356,68.97",
+     
+      ),      
+     createData(
+        <Stack direction="row" spacing={1}>
+        <img src={Redwatch} style={{width:'50%',height:'70px'}}/>
+        <Typography >
+   
+        Samsung - Galaxy  <br/> S6 4G
+  </Typography>
 
-  ];
+  </Stack>,
+        "Hype Mart",
+        (
+            <Box sx={{display:'flex'}}>
+              <Card
+                sx={{
+                  display: "flex",
+                  color: "#0a202d",
+                  backgroundColor: "#D5D5D5",
+                  marginX: "5px",
+                  textAlign: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <AddIcon onClick={handleIncrease} sx={{ color: "#0a202d" }} />
+              </Card>
+              <Card
+                sx={{
+                  width: "20px !important",
+                  color: "#0a202d",
+                  height: "25px",
+                  backgroundColor: "#D5D5D5",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "#0a202d",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {updateDisplay()}
+                </span>
+              </Card>
+              <Card
+                sx={{
+                  width: "30px !important",
+                  color: "#0a202d",
+                  height: "25px",
+                  backgroundColor: "#D5D5D5",
+                  marginX: "5px",
+                  textAlign: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <RemoveIcon onClick={handleDecrease} sx={{ color: "#0a202d" }} />
+              </Card>
+            </Box>
+          ),
+        "$356,68.97",
 
-  console.log(theme);
+      ),
+      
+      createData(
+        <Stack direction="row" spacing={1}>
+            <img src={Redwatch} style={{width:'50%',height:'70px'}}/>
+            <Typography >
+       
+            Samsung - Galaxy  <br/> S6 4G
+      </Typography>
+  
+      </Stack>,
+        "Hype Mart",
+        (
+            <Box sx={{display:'flex'}}>
+              <Card
+                sx={{
+                  display: "flex",
+                  color: "#0a202d",
+                  backgroundColor: "#D5D5D5",
+                  marginX: "5px",
+                  textAlign: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <AddIcon onClick={handleIncrease} sx={{ color: "#0a202d" }} />
+              </Card>
+              <Card
+                sx={{
+                  width: "20px !important",
+                  color: "#0a202d",
+                  height: "25px",
+                  backgroundColor: "#D5D5D5",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "#0a202d",
+                    fontSize: "14px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {updateDisplay()}
+                </span>
+              </Card>
+              <Card
+                sx={{
+                  width: "30px !important",
+                  color: "#0a202d",
+                  height: "25px",
+                  backgroundColor: "#D5D5D5",
+                  marginX: "5px",
+                  textAlign: "center",
+                  boxShadow: "0px 0px 0px 0px",
+                }}
+              >
+                <RemoveIcon onClick={handleDecrease} sx={{ color: "#0a202d" }} />
+              </Card>
+            </Box>
+          ),
+        "$356,68.97"
+      
+      ),
+  ]
   return (
-    <div className='overlay' >  
-    <div className='element' >
+
     <Box >
       <Grid container spacing={2} sx={{  marginTop: {md:"90px",sm:'40px',xs:'20px'}  }}>
         <Grid
@@ -90,7 +281,7 @@ const Dashboard = () => {
             variant="h5"
             sx={{
               marginTop: { md: 2, sm: 2, xs: 1 },
-              color: Theme.blue,
+              color: 'black',
               fontWeight: "600",
               fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
               paddingLeft: { lg: "45px", md: "80px", sm: "80px", xs: "40px" }  ,marginTop: "20px" }}> Shopping Cart  </Typography>
@@ -103,35 +294,30 @@ const Dashboard = () => {
             <Grid item md={11} sm={12} xs={12}   sx={{marginLeft:{lg:'auto',md:'auto',sm:'auto',xs:'0'},marginRight:{lg:'auto',md:'auto',sm:'auto',xs:'0'}}}>
             <TableContainer component={Paper}>
               <Table sx={{ minWidth: 100 }}  aria-label="a dense table">
-                  <TableHead sx={{ fontSize:{md:"25px",sm:'18px',xs:'12px'}}}>
+                  <TableHead sx={{ fontSize:{md:"18px",sm:'18px',xs:'12px'}}}>
                     <TableRow>
-                      <StyledTableCell align="center"> Product </StyledTableCell>
-                      <StyledTableCell align="center">Store</StyledTableCell>
-                      <StyledTableCell align="center">Quantity</StyledTableCell>
+                      <StyledTableCell align="center" > Product </StyledTableCell>
+                      <StyledTableCell align="center" >Store</StyledTableCell>
+                      <StyledTableCell>Quantity</StyledTableCell>
                       <StyledTableCell align="center"> Total</StyledTableCell>
-                      <StyledTableCell align="center">
-                        Amount Received
-                      </StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
                     {rows.map((row) => (
                       <StyledTableRow key={row.name}>
-                        <StyledTableCell align="center">
+                        <StyledTableCell >
                          {row.name}
                         </StyledTableCell>
-                        <StyledTableCell align="center">
+                        <StyledTableCell >
                           {row.calories}
                         </StyledTableCell>
-                        <StyledTableCell align="center">
+                        <StyledTableCell >
                           {row.fat}
                         </StyledTableCell>
-                        <StyledTableCell align="center">
+                        <StyledTableCell >
                           {row.carbs}
                         </StyledTableCell>
-                        <StyledTableCell align="center">
-                          {row.protein}
-                        </StyledTableCell>
+                      
                       </StyledTableRow>
                     ))}
                   </TableBody>
@@ -143,8 +329,7 @@ const Dashboard = () => {
       </Grid>
 
     </Box>
-    </div>
-    </div>
+
   );
 };
 
