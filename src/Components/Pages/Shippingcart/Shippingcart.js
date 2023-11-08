@@ -15,13 +15,13 @@ import {
   Paper,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Card from "@mui/material/Card";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import { useState } from "react";
 import Redwatch from "../../images/redwatch.png";
 import Stack from "@mui/material/Stack";
+import Shippingstyle from './Shoppingcart.style'
 
 const Dashboard = () => {
   const theme = createTheme({
@@ -90,29 +90,11 @@ const Dashboard = () => {
       "Hype Mart",
       <Box sx={{ display: "flex" }}>
         <Card
-          sx={{
-            display: "flex",
-            color: "#7F7F7F",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
+          sx={Shippingstyle.quantitystyle}
         >
           <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-        <Card
-          sx={{
-            width: "20px !important",
-            color: "#0a202d",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
+        <Card sx={Shippingstyle.quantitystyle} >
           <span
             style={{
               color: "#0a202d",
@@ -123,17 +105,7 @@ const Dashboard = () => {
             {updateDisplay()}
           </span>
         </Card>
-        <Card
-          sx={{
-            width: "30px !important",
-            color: "#7F7F7F",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
+        <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
       </Box>,
@@ -148,30 +120,10 @@ const Dashboard = () => {
       </Stack>,
       "Hype Mart",
       <Box sx={{ display: "flex" }}>
-        <Card
-          sx={{
-            display: "flex",
-            color: "#0a202d",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
-          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
+        <Card  sx={Shippingstyle.quantitystyle} >
+          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle} />
         </Card>
-        <Card
-          sx={{
-            width: "20px !important",
-            color: "#0a202d",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
+        <Card sx={Shippingstyle.quantitystyle} >
           <span
             style={{
               color: "#0a202d",
@@ -182,18 +134,8 @@ const Dashboard = () => {
             {updateDisplay()}
           </span>
         </Card>
-        <Card
-          sx={{
-            width: "30px !important",
-            color: "#7F7F7F",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
-          <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
+        <Card    sx={Shippingstyle.quantitystyle}  >
+          <RemoveIcon onClick={handleDecrease} sx={Shippingstyle.iconstyle} />
         </Card>
       </Box>,
       "$356,68.97"
@@ -208,30 +150,10 @@ const Dashboard = () => {
       </Stack>,
       "Hype Mart",
       <Box sx={{ display: "flex" }}>
-        <Card
-          sx={{
-            display: "flex",
-            color: "#7F7F7F",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
-          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
+        <Card sx={Shippingstyle.quantitystyle} >
+          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle} />
         </Card>
-        <Card
-          sx={{
-            width: "20px !important",
-            color: "#0a202d",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
+        <Card  sx={Shippingstyle.quantitystyle} >
           <span
             style={{
               color: "#7F7F7F",
@@ -242,18 +164,8 @@ const Dashboard = () => {
             {updateDisplay()}
           </span>
         </Card>
-        <Card
-          sx={{
-            width: "30px !important",
-            color: "#7F7F7F",
-            height: "25px",
-            backgroundColor: "#D5D5D5",
-            marginX: "5px",
-            textAlign: "center",
-            boxShadow: "0px 0px 0px 0px",
-          }}
-        >
-          <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
+        <Card  sx={Shippingstyle.quantitystyle} >
+          <RemoveIcon onClick={handleDecrease}  sx={Shippingstyle.iconstyle}  />
         </Card>
       </Box>,
       "$356,68.97"
@@ -264,8 +176,7 @@ const Dashboard = () => {
       <Grid
         container
         spacing={2}
-        sx={{ marginTop: { md: "90px", sm: "40px", xs: "20px" } }}
-      >
+        sx={{ marginTop: { md: "10px", sm: "40px", xs: "20px"}}}>
         <Grid
           item
           lg={12}
@@ -278,19 +189,16 @@ const Dashboard = () => {
             component="h1"
             variant="h5"
             sx={{
-              marginTop: { md: 2, sm: 2, xs: 1 },
+              marginTop: { md: 1, sm: 2, xs: 1 },
               color: "black",
               fontWeight: "600",
               fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
               paddingLeft: { lg: "45px", md: "80px", sm: "80px", xs: "40px" },
               marginTop: "20px",
-            }}
-          >
-            {" "}
-            Shopping Cart{" "}
+            }} > Shopping Cart
           </Typography>
 
-          <Grid item container sx={{ color: "#7F7F7F", marginTop: "40px" }}>
+          <Grid item container sx={{ color: "#7F7F7F", marginTop: "10px" }}>
             <Grid
               item
               md={11}
@@ -344,7 +252,7 @@ const Dashboard = () => {
                     <Typography sx={{color:'#F7941D'}}>$1,591.00</Typography>
                   </Stack>
                   ,
-                  <Button variant="contained" size="small">
+                  <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>
                     {" "}
                     Proceed to Check Out
                   </Button>
