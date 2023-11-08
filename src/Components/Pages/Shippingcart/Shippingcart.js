@@ -183,15 +183,13 @@ const Dashboard = () => {
           md={12}
           sm={12}
           xs={12}
-          sx={{ marginBottom: "17px", paddingX: "20px" }}
-        >
+          sx={{ marginBottom: "17px", paddingX: "20px" }}  >
           <Typography
             component="h1"
             variant="h5"
             sx={Shippingstyle.Shippingheading} > Shopping Cart
           </Typography>
-
-          <Grid item container sx={{ color: "#7F7F7F", marginTop: "10px" }}>
+        <Grid item container sx={{marginTop: "10px" }}>
             <Grid
               item
               md={11}

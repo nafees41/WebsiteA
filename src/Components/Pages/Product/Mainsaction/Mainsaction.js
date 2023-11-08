@@ -85,8 +85,6 @@ const About = () => {
                   label: "Brand",
                   content: (
                     <div>
-                      <TextField id="outlined-basic" label="From" />
-                      <TextField id="filled-basic" label="To" />
                       <Stack direction="row" spacing={1}>
                         <Checkbox tabIndex={-1} disableRipple />
                         <Typography variant="body2">Apple</Typography>
@@ -99,6 +97,18 @@ const About = () => {
                         <Checkbox tabIndex={-1} disableRipple />
                         <Typography variant="body2">Sony</Typography>
                       </Stack>
+                      <Stack direction="row" spacing={1}>
+                        <Checkbox tabIndex={-1} disableRipple />
+                        <Typography variant="body2">Adidas</Typography>
+                      </Stack>
+                      <Stack direction="row" spacing={1}>
+                        <Checkbox tabIndex={-1} disableRipple />
+                        <Typography variant="body2">Borjan</Typography>
+                      </Stack>
+                      <Stack direction="row" spacing={1}>
+                        <Checkbox tabIndex={-1} disableRipple />
+                        <Typography variant="body2">Oppo</Typography>
+                      </Stack>
                     </div>
                   ),
                 },
@@ -106,8 +116,6 @@ const About = () => {
                   label: "Discount",
                   content: (
                     <div>
-                      <TextField id="outlined-basic" label="From" />
-                      <TextField id="filled-basic" label="To" />
                       <Stack direction="row" spacing={1}>
                         <Checkbox tabIndex={-1} disableRipple />
                         <Typography variant="body2">Any</Typography>
