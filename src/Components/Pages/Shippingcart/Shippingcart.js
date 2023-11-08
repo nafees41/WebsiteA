@@ -188,14 +188,7 @@ const Dashboard = () => {
           <Typography
             component="h1"
             variant="h5"
-            sx={{
-              marginTop: { md: 1, sm: 2, xs: 1 },
-              color: "black",
-              fontWeight: "600",
-              fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
-              paddingLeft: { lg: "45px", md: "80px", sm: "80px", xs: "40px" },
-              marginTop: "20px",
-            }} > Shopping Cart
+            sx={Shippingstyle.Shippingheading} > Shopping Cart
           </Typography>
 
           <Grid item container sx={{ color: "#7F7F7F", marginTop: "10px" }}>
@@ -204,12 +197,7 @@ const Dashboard = () => {
               md={11}
               sm={12}
               xs={12}
-              sx={{
-                border: "2px solid black",
-                marginLeft: { lg: "", md: "auto", sm: "auto", xs: "0" },
-                marginRight: { lg: "auto", md: "auto", sm: "auto", xs: "0" },
-              }}
-            >
+              sx={ Shippingstyle.Tablecontainer}>
               <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 100 }} aria-label="a dense table">
                   <TableHead
@@ -241,12 +229,7 @@ const Dashboard = () => {
                 <Grid
                   item
                   xs={2}
-                  sx={{
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    flexDirection: "column",
-                    paddingBottom: "20px",
-                 }}>
+                  sx={Shippingstyle.Checkoutbuttonsaction}>
                   <Stack direction="row" spacing={1} justifyContent="end">
                     <Typography variant="body1" sx={{fontWeight:'600',color:'#000000'}}>Cart Totals</Typography>
                     <Typography sx={{color:'#F7941D'}}>$1,591.00</Typography>
