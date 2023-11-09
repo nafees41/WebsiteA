@@ -233,7 +233,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    border: 1px solid #BEB2B2;
+    border-radius: 15px;
+
+  }
   
   .carouselContainer{
      display: flex;
