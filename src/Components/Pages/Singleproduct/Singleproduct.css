@@ -237,8 +237,7 @@
     border-radius: 15px;
 
   }
-  
-  .carouselContainer{
+    .carouselContainer{
      display: flex;
     justify-content: center;
     align-items: center;
