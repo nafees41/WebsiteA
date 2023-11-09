@@ -229,4 +229,47 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+   .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .carouselContainer{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+  }
+  .carouselContainer > .carouselContent > .content {
+    height: 30rem;
+  }
+  .carouselContainer > .carouselContent > .content > img {
+    width: 350px;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #BEB2B2;
+    border-radius: 15px;
+  }
+  .carouselContainer > .carouselContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .carouselContainer > .carouselContent > .slideContainer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .carouselContainer > .carouselContent > .slideContainer > .slideTo > img {
+   width: 4rem;
+   height: 4rem;
+   object-fit: cover;
+   display: flex;
+  }
+  
+
+
+
