@@ -31,7 +31,6 @@ const data = [
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
 
-
   const slideTo = (index) => {
     setCurrent(index);
   };
@@ -45,7 +44,6 @@ const Carousel = () => {
           paddingX: { md: "75px", sm: "30px", xs: "20px" },
         }}>
         <Grid item md={6} sm={12} xs={12}>
-        <div className="carousel">
             <div className='carouselContainer'>
            <div className="carouselContent">
                     <div className='content'>
@@ -75,7 +73,7 @@ const Carousel = () => {
                 </div>
            
  </div>
-        </div>
+      
               </Grid>
           <Grid item md={6} sm={12} xs={12}>
             <div>
