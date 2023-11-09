@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import DescriptionSection from "./Productdescription/DescriptionSection";
 import Featuredcategories from "./Featuredcategory/Featured";
 import Featuredcategories2 from "../../Featuredcategory/Featuredcategory";
-import { TextField, Card, Button, Typography } from "@mui/material";
+import { TextField, Card, Button, Typography, Divider } from "@mui/material";
 import Headphones from "../../images/back3.jpg";
 import Chairimage from "../../images/back4.jpg";
 import Iphoneimage from "../../images/fr.jpg";
@@ -43,9 +43,8 @@ const Carousel = () => {
           marginTop: "50px",
           paddingX: { md: "75px", sm: "30px", xs: "20px" },
         }}>
-        <Grid item md={6} sm={12} xs={12}>
-            <div className='carouselContainer'>
-           <div className="carouselContent">
+        <Grid item md={5} sm={12} xs={12}>
+             <div className="carouselContent">
                     <div className='content'>
                         {
                             data.map((v, i) => {
@@ -72,10 +71,10 @@ const Carousel = () => {
                     </div>
                 </div>
            
- </div>
+ 
       
               </Grid>
-          <Grid item md={6} sm={12} xs={12}>
+          <Grid item md={7} sm={12} xs={12}>
             <div>
               <Typography
                 variant="h5"
@@ -83,14 +82,14 @@ const Carousel = () => {
               >
                 Apple Iphone 13 Pro Max
               </Typography>
-              <hr></hr>
+              <Divider/>
               <table>
                 <tr>
                   <td>Model:</td>
                   <td>13 Pro Max</td>
                 </tr>
                 <tr>
-                  <td>description:</td>
+                  <td>Description:</td>
                   <td>
                     Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa <br /> qui officia deserunt mollit anim id es
@@ -102,11 +101,11 @@ const Carousel = () => {
                 </tr>
                 <tr>
                   <td>Type:</td>
-                  <td>Hype Store</td>
+                  <td>Accessories/Phone</td>
                 </tr>
                 <tr>
                   <td>Availabilty:</td>
-                  <td>Accessories/Phone</td>
+                  <td>In Stock</td>
                 </tr>
                 <tr>
                   <td>Size:</td>
@@ -114,6 +113,7 @@ const Carousel = () => {
                     <button className="size-button ">Small</button>
                     <button className="size-button">Medium</button>
                     <button className="size-button">Large</button>
+                    
                   </td>
                 </tr>
                 <tr>
