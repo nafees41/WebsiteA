@@ -233,6 +233,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #BEB2B2;
+
   }
   
   .carouselContainer{
@@ -246,10 +248,9 @@
     height: 30rem;
   }
   .carouselContainer > .carouselContent > .content > img {
-    width: 350px;
+    width: 100%;
     height: 100%;
     object-fit: contain;
-    border: 1px solid #BEB2B2;
     border-radius: 15px;
   }
   .carouselContainer > .carouselContent{

@@ -52,8 +52,7 @@ const Carousel = () => {
         <Grid item md={6} sm={12} xs={12}>
         <div className="carousel">
             <div className='carouselContainer'>
-          
-                <div className="carouselContent">
+           <div className="carouselContent">
                     <div className='content'>
                         {
                             data.map((v, i) => {
@@ -79,7 +78,6 @@ const Carousel = () => {
                         }
                     </div>
                 </div>
-           
             </div>
         </div>
               </Grid>
