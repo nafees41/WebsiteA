@@ -32,6 +32,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Popper from '@mui/material/Popper';
 import Fade from '@mui/material/Fade';
 import {CardMedia,Chip} from "@mui/material";
+import imagewatch from '../../images/imagewatch.png'
+import CloseIcon from '@mui/icons-material/Close';
 
 
 function TabPanel(props) {
@@ -1098,7 +1100,6 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                           container
                           spacing={1}
                           sx={{ marginTop: "0px" }}
-                          key={index}
                         >
                           <Grid
                             item
@@ -1108,14 +1109,14 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                           >
                             <CardMedia
                               component="img"
-                              image={Serviceprofile}
+                              image={imagewatch}
                               alt="Paella dish"
                             />
                           </Grid>
                           <Grid item md={5} xs={8} sx={{ marginTop: "10px" }}>
                             <Typography
                               sx={{
-                                color: theme.blue,
+                                color: '#555151',
                                 fontWeight: "600",
                                 fontSize: {
                                   lg: "13px",
@@ -1124,11 +1125,11 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                   xs: "24px",
                                 },
                               }} >
-                              Anne Hathway
+                              Samsung - Galaxy S6 4G LTEwith 32GB Memory Cell Phone
                             </Typography>
                             <Typography
                               sx={{
-                                color: theme.blue,
+                                color: '#555151',
                                 fontSize: {
                                   lg: "10px",
                                   md: "30px",
@@ -1137,7 +1138,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                 },
                               }}
                             >
-                              I’m Good............
+                           1 x $250.00
                             </Typography>
                           </Grid>
                           <Grid
@@ -1146,19 +1147,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             xs={2}
                             sx={{ marginTop: "10px", textAlign: "end" }}
                           >
-                            <Typography
-                              sx={{
-                                color: "#CCCCCC",
-                                fontSize: {
-                                  lg: "13px",
-                                  md: "15px",
-                                  sm: "18px",
-                                  xs: "16px",
-                                },
-                              }}
-                            >
-                              32 Min
-                            </Typography>
+                          
                             <Chip
                               sx={{
                                 background: "#EA1179",
