@@ -37,6 +37,7 @@ const style={
       borderRadius: '40px',
       position: 'absolute',
       top: '4px',
+      right:'0',
       borderRadius: '40px',
       cursor: 'pointer',
       paddingX: { md: "30px", sm: "15px", xs: "10px" },
