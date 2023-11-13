@@ -67,8 +67,7 @@ const Carousel = () => {
           <div>
             <Typography
               variant="h5"
-              sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
-            >
+              sx={{ paddingBottom: "10px", fontWeight: "bolder" }} >
               Apple Iphone 13 Pro Max
             </Typography>
             <Divider />
