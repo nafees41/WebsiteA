@@ -71,9 +71,7 @@ const Carousel = () => {
               Apple Iphone 13 Pro Max
             </Typography>
             <Divider />
-       
-
-            <Box sx={{textAlign:'center'}}>
+           <Box sx={{textAlign:'center'}}>
             <button className="order-btn">Buy Now</button>
             <button className="order-btn-2">
               <img src={Pinkimage} style={{ width: "15%" }} />{" "}
