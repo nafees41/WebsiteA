@@ -8,12 +8,10 @@ import Grid from "@mui/material/Grid";
 import DescriptionSection from "./Productdescription/DescriptionSection";
 import Featuredcategories from "./Featuredcategory/Featured";
 import Featuredcategories2 from "../../Featuredcategory/Featuredcategory";
-import { TextField, Card, Button, Typography, Divider } from "@mui/material";
-import Headphones from "../../images/back3.jpg";
+import { Typography, Divider } from "@mui/material";
 import Chairimage from "../../images/back4.jpg";
 import Iphoneimage from "../../images/fr.jpg";
 import Pinkimage from '../../images/pinkimage.png'
-
 import Callsupport from "../../Callsupport/Callsupport";
 import Box from "@mui/material/Box";
 
@@ -24,10 +22,7 @@ const data = [
   {
     image: Chairimage ,
   },
-
-
 ];
-
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
 
@@ -63,23 +58,19 @@ const Carousel = () => {
                             data.map((v,i) => {
                                 return(
                                     <div className="slideTo" >
-                                       
-                                       <img src={v.image}   alt="" onClick={() => slideTo(i) }  />                                    </div>
+                                 <img src={v.image}   alt="" onClick={() => slideTo(i) }  />                                    
+                                 </div>
                                 )
                             })
                         }
                     </div>
                 </div>
-           
- 
-      
-              </Grid>
+               </Grid>
           <Grid item md={7} sm={12} xs={12}>
             <div>
               <Typography
                 variant="h5"
-                sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
-              >
+                sx={{paddingBottom: "10px",fontWeight: "bolder"}}>
                 Apple Iphone 13 Pro Max
               </Typography>
               <Divider/>
@@ -113,8 +104,7 @@ const Carousel = () => {
                     <button className="size-button ">Small</button>
                     <button className="size-button">Medium</button>
                     <button className="size-button">Large</button>
-                    
-                  </td>
+                 </td>
                 </tr>
                 <tr>
                   <td>Color</td>

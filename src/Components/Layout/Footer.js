@@ -69,8 +69,7 @@ const Footer = () => {
               fontWeight: "400",
               lineHeight: { md: "21.59px", sm: "18px", xs: "15px" },
               fontSize: { md: "17px", sm: "12px", xs: "10px" },
-            }}
-          >
+            }}>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex <br /> ea commodo con exercitation ullamco
             laboris nisi ut aliquip ex ea commodo con
