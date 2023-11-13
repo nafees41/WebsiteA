@@ -4,10 +4,7 @@ const style = {
     'Textstyle':{
     color:'#1D1D1D',
     marginTop:{md:'0px',sm:'40px',xs:'30px'},
-
-    
-    
-    fontWeight: '400', 
+     fontWeight: '400', 
     lineHeight: { md: '50.8px', sm: '40px', xs: '30px' },
      fontSize: {
         md: '40px',

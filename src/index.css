@@ -118,6 +118,10 @@ font-weight: 600;
   margin-top: 30px;
   padding: 20px;
 }
+.about-content button:hover{
+  background-color:#0F75BC;
+
+}
 
 /* whyus */
 .left-div h1{

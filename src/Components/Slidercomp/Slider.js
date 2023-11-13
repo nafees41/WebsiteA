@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Grid, Typography, Button, Box } from "@mui/material";
 import Sliderimage from "../images/Slider.png";
 import Sliderimage1 from "../images/Ring.png";
-
 import Sliderstyle from "./Sliderstyle";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 

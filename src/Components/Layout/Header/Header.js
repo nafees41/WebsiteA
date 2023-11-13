@@ -28,9 +28,11 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Headerstyle from "../Header/Header.style";
-import { InputAdornment } from "@mui/material";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Popper from '@mui/material/Popper';
+import Fade from '@mui/material/Fade';
+import {CardMedia,Chip} from "@mui/material";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -63,7 +65,6 @@ function Header() {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-  const [anchorEl, setAnchorEl] = useState(null);
   const [megaMenuAnchorEl, setMegaMenuAnchorEl] = useState(null);
 
   const handleOpen = (event) => {
@@ -78,6 +79,24 @@ function Header() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const [open, setOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((previousOpen) => !previousOpen);
+  };
+  const [popperAnchorEl, setPopperAnchorEl] = React.useState(null);
+
+const handlePopperClick = (event) => {
+  setPopperAnchorEl(popperAnchorEl ? null : event.currentTarget);
+};
+
+const isPopperOpen = Boolean(popperAnchorEl);
+const popperId = isPopperOpen ? 'simple-popper' : undefined;
+
+  const canBeOpen = open && Boolean(anchorEl);
+  const id = canBeOpen ? 'spring-popper' : undefined;
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -1053,21 +1072,110 @@ function Header() {
                </Link>
               </Stack>
               <IconButton
-            sx={{
-              backgroundColor: "#0F75BC", // Change this to your desired background color
-              color: "#182733", // Change this to the text color you want
-              borderRadius: "23px",
-              position: 'absolute',
-              top: '4px',
-              right:'20px',
-               "&:hover": {
-                backgroundColor: "#0F75BC", // Change this to your desired hover background color
-              },
-            }}
-          >
-            <ShoppingCartIcon sx={{ color: "white" }} />
-          </IconButton>
-            </Box>
+  aria-describedby={popperId}
+  type="button"
+  onClick={handlePopperClick}
+  sx={{
+    backgroundColor: "#0F75BC",
+    borderRadius: "22px",
+    padding: '12px',
+    position: 'absolute',
+    top: '4px',
+    right: '20px',
+    "&:hover": {
+      backgroundColor: "#0F75BC",
+    },
+  }}
+>
+  <ShoppingCartIcon sx={{ color: "white" }} />
+</IconButton>
+
+<Popper id={popperId} open={isPopperOpen} anchorEl={popperAnchorEl} transition>
+  {({ TransitionProps }) => (
+    <Fade {...TransitionProps} timeout={350}>
+      <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
+      <Grid
+                          container
+                          spacing={1}
+                          sx={{ marginTop: "0px" }}
+                          key={index}
+                        >
+                          <Grid
+                            item
+                            md={3}
+                            xs={2}
+                            sx={{ marginBottom: "12px" }}
+                          >
+                            <CardMedia
+                              component="img"
+                              image={Serviceprofile}
+                              alt="Paella dish"
+                            />
+                          </Grid>
+                          <Grid item md={5} xs={8} sx={{ marginTop: "10px" }}>
+                            <Typography
+                              sx={{
+                                color: theme.blue,
+                                fontWeight: "600",
+                                fontSize: {
+                                  lg: "13px",
+                                  md: "30px",
+                                  sm: "20px",
+                                  xs: "24px",
+                                },
+                              }} >
+                              Anne Hathway
+                            </Typography>
+                            <Typography
+                              sx={{
+                                color: theme.blue,
+                                fontSize: {
+                                  lg: "10px",
+                                  md: "30px",
+                                  sm: "16px",
+                                  xs: "22px",
+                                },
+                              }}
+                            >
+                              I’m Good............
+                            </Typography>
+                          </Grid>
+                          <Grid
+                            item
+                            md={3}
+                            xs={2}
+                            sx={{ marginTop: "10px", textAlign: "end" }}
+                          >
+                            <Typography
+                              sx={{
+                                color: "#CCCCCC",
+                                fontSize: {
+                                  lg: "13px",
+                                  md: "15px",
+                                  sm: "18px",
+                                  xs: "16px",
+                                },
+                              }}
+                            >
+                              32 Min
+                            </Typography>
+                            <Chip
+                              sx={{
+                                background: "#EA1179",
+                                color: "white",
+                                fontSize: "11px",
+                              }}
+                              size="small"
+                              label="2"
+                            />
+                          </Grid>
+                        </Grid>
+      </Box>
+    </Fade>
+  )}
+</Popper>
+     
+        </Box>
    </Box>
    </Toolbar>
       </AppBar>
