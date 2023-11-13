@@ -28,9 +28,9 @@ import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Headerstyle from "../Header/Header.style";
-import {  InputAdornment } from "@mui/material";
+import { InputAdornment } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -1029,12 +1029,10 @@ function Header() {
               >
                 <Typography sx={Headerstyle.navItem}>Contact</Typography>
               </Link>
-
               <Stack direction="row">
                 <Typography
                   variant="subtitle1"
-                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }}
-                >
+                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }}>
                   Creta an account?
                 </Typography>
                 <Link
@@ -1043,30 +1041,33 @@ function Header() {
                     textDecoration: "none", // Remove underline
                     color: "inherit", // Inherit color from parent (card)
                     display: "block", // Make the link a block element
-                  }}>
+                  }} >
                   <Button
                     variant="contained"
                     color="secondary"
                     className="quote-button global-button-style"
-                    sx={Headerstyle.QuoteButton}>Login Account </Button>
-               <div>
-    </div>
-                  </Link>
-       
+                    sx={Headerstyle.QuoteButton}
+                  >
+                    Login Account
+                  </Button>
+               </Link>
               </Stack>
+              <IconButton
+            sx={{
+              backgroundColor: "#0F75BC", // Change this to your desired background color
+              color: "#182733", // Change this to the text color you want
+              borderRadius: "23px",
+
+              "&:hover": {
+                backgroundColor: "#0F75BC", // Change this to your desired hover background color
+              },
+            }}
+          >
+            <ShoppingCartIcon sx={{ color: "white" }} />
+          </IconButton>
             </Box>
-            <IconButton 
-               sx={{
-               backgroundColor: "#0F75BC", // Change this to your desired background color
-               color: "#182733", // Change this to the text color you want
-               borderRadius: "23px",
-               '&:hover': {
-                backgroundColor: '#0F75BC', // Change this to your desired hover background color
-              }}}>
-         <ShoppingCartIcon sx={{ color:'white' }} />
-           </IconButton>
-          </Box>
-        </Toolbar>
+   </Box>
+   </Toolbar>
       </AppBar>
       <nav>
         <Drawer
@@ -1078,7 +1079,7 @@ function Header() {
           }}
           sx={{
             display: { xs: "block", lg: "none" },
-             "& .MuiDrawer-paper": {
+            "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
             },
