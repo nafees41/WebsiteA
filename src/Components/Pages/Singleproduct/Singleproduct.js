@@ -72,81 +72,9 @@ const Carousel = () => {
               Apple Iphone 13 Pro Max
             </Typography>
             <Divider />
-            <table>
-              <tr>
-                <td>Model:</td>
-                <td>13 Pro Max</td>
-              </tr>
-              <tr>
-                <td>Description:</td>
-                <td>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa{" "}
-                  <br /> qui officia deserunt mollit anim id es
-                </td>
-              </tr>
-              <tr>
-                <td>Brand:</td>
-                <td>Apple Original</td>
-              </tr>
-              <tr>
-                <td>Type:</td>
-                <td>Accessories/Phone</td>
-              </tr>
-              <tr>
-                <td>Availabilty:</td>
-                <td>In Stock</td>
-              </tr>
-              <tr>
-                <td>Size:</td>
-                <td>
-                  <button
-                    key={1}
-                    className={active === "1" ? "active" : undefined}
-                    id={"1"}
-                    onClick={handleClick}
-                  >
-                    Small
-                  </button>
+       
 
-                  <button
-                    key={2}
-                    className={active === "2" ? "active" : undefined}
-                    id={"2"}
-                    onClick={handleClick}
-                  >
-                    Medium
-                  </button>
-
-                  <button
-                    key={3}
-                    className={active === "3" ? "active" : undefined}
-                    id={"3"}
-                    onClick={handleClick}
-                  >
-                    Large
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Color</td>
-                <td>
-                  <div class="checkbox-container">
-                    <label class="container">
-                      <input type="checkbox" />
-                      <span class="checkmark" style={{background:'gray'}}></span>
-                    </label>
-                    <label class="container red">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="container pink">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                </td>
-              </tr>
-            </table>
+            <Box sx={{textAlign:'center'}}>
             <button className="order-btn">Buy Now</button>
             <button className="order-btn-2">
               <img src={Pinkimage} style={{ width: "15%" }} />{" "}
@@ -154,6 +82,7 @@ const Carousel = () => {
                 Add to Cart
               </span>
             </button>
+            </Box>
           </div>
         </Grid>
       </Grid>

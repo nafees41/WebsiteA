@@ -75,6 +75,8 @@ const About = () => {
                     <div>
                       <TextField id="outlined-basic" label="From" />
                       <TextField id="filled-basic" label="To" />
+                    <br/>
+                    <br/>
                       <Typography variant="body2">
                         Price: $0.00 – $3200.00
                       </Typography>
@@ -325,7 +327,7 @@ const About = () => {
                       Shopping
                     </span>
                   </Typography>
-                  <Typography variant="subtitle1">Up to 50% off</Typography>
+                  <Typography variant="subtitle1"  sx={{fontSize:'25px',fontWeight:'400'}}>Up to 50% off</Typography>
                   <p>
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse <br /> cillum dolore eu fugiat nulla pariatu
