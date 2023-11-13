@@ -317,7 +317,7 @@ const About = () => {
                   md={6}
                   sm={12}
                   xs={12}
-                  sx={{ backgroundColor: "#FCF7FE"}}
+                  sx={{ backgroundColor: "#FCF7FE",margin:{md:'auto',sm:'0',xs:'0'}}}
                 >
                   <Typography sx={Mainstyle.Mainheading}>
                     Online <br />

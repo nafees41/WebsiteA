@@ -28,8 +28,9 @@ const style={
       backgroundColor:'#0F75BC',
       color: 'white',
       marginTop: '30px',
-      paddingX:'30px',
-      padding:'15px'
+      paddingX:'40px',
+      paddingY:'15px',
+      
     },
    
     'CategoryHeading':{
