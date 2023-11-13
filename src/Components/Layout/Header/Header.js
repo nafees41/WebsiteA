@@ -1052,19 +1052,7 @@ function Header() {
                <div>
     </div>
                   </Link>
-                <IconButton 
-               sx={{
-               backgroundColor: "#0F75BC", // Change this to your desired background color
-               color: "#182733", // Change this to the text color you want
-               borderRadius: "23px",
-               position:'absolute',
-               top:'5px',
-               right:'10px',
-               '&:hover': {
-                backgroundColor: '#0F75BC', // Change this to your desired hover background color
-              }}} >
-         <ShoppingCartIcon sx={{ color:'white' }} />
-           </IconButton>
+       
               </Stack>
             </Box>
           </Box>
