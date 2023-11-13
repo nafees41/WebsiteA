@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import "./Singleproduct.css";
-import Redimage from "../../images/redwatch.png";
-import Redimage1 from "../../images/Bag-1.png";
-import Redimage2 from "../../images/Bag-2.png";
-import Redimage3 from "../../images/Bag-3.png";
 import Grid from "@mui/material/Grid";
 import DescriptionSection from "./Productdescription/DescriptionSection";
 import Featuredcategories from "./Featuredcategory/Featured";
-import Featuredcategories2 from "../../Featuredcategory/Featuredcategory";
 import { Typography, Divider } from "@mui/material";
 import Chairimage from "../../images/back4.jpg";
 import Iphoneimage from "../../images/fr.jpg";
 import Pinkimage from '../../images/pinkimage.png'
 import Callsupport from "../../Callsupport/Callsupport";
 import Box from "@mui/material/Box";
-
 const data = [
   {
     image: Iphoneimage,
