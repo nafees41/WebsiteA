@@ -80,8 +80,7 @@
         height: 600px;
     }
     }
-  
-    .singlefooterimage{
+  .singlefooterimage{
         height: 60px;
         padding: 15px;
         border-radius: 50%;
@@ -108,8 +107,6 @@
   .description-text{
     text-align: left;
   }
-  
-  
   .single-product-container{
     width: 90%;
     margin: auto;
@@ -148,6 +145,10 @@
     background-color: #F3F3F3;
   
   }
+  .active{
+    background-color:#F7941D;
+    color:white;
+    }
   .size-button-medium{
     color:white;
     background-color: #F7941D;

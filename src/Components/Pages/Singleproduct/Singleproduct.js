@@ -23,6 +23,12 @@ const Carousel = () => {
   const slideTo = (index) => {
     setCurrent(index);
   };
+  const [active, setActive] = useState("");
+ 
+  const handleClick = (event) => {
+    setActive(event.target.id);
+    
+  }
   return (
     <Box>
       <Grid
@@ -95,9 +101,32 @@ const Carousel = () => {
                 <tr>
                   <td>Size:</td>
                   <td>
-                    <button className="size-button ">Small</button>
-                    <button className="size-button">Medium</button>
-                    <button className="size-button">Large</button>
+                  <button
+        key={1}
+        className={active === "1" ? "active" : undefined}
+        id={"1"}
+        onClick={handleClick}
+      >
+        Small
+      </button>
+
+       <button
+       key={2}
+       className={active === "2" ? "active" : undefined}
+       id={"2"}
+       onClick={handleClick}
+     >
+    Medium
+     </button>
+
+      <button
+      key={3}
+      className={active === "3" ? "active" : undefined}
+      id={"3"}
+      onClick={handleClick}
+    >
+        Large
+    </button>
                  </td>
                 </tr>
                 <tr>
