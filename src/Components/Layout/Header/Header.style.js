@@ -23,7 +23,7 @@ const style={
       },
     'navItem':{
      fontWeight: "500",
-      fontSize: { md: "1rem", sm: "12px", xs: "10px" },
+      fontSize: { md: "12px", sm: "12px", xs: "10px" },
       color: "white",
       paddingRight: '30px',
       borderRight: '1px solid white',
@@ -31,15 +31,12 @@ const style={
 
  
     },
-
- 
-    'QuoteButton':{
+ 'QuoteButton':{
       border: 'none',
       padding: '10px',
       borderRadius: '40px',
       position: 'absolute',
       top: '4px',
-      right: '0px',
       borderRadius: '40px',
       cursor: 'pointer',
       paddingX: { md: "30px", sm: "15px", xs: "10px" },
