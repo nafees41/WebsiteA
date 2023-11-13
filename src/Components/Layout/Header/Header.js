@@ -1057,8 +1057,10 @@ function Header() {
               backgroundColor: "#0F75BC", // Change this to your desired background color
               color: "#182733", // Change this to the text color you want
               borderRadius: "23px",
-
-              "&:hover": {
+              position: 'absolute',
+              top: '4px',
+              right:'20px',
+               "&:hover": {
                 backgroundColor: "#0F75BC", // Change this to your desired hover background color
               },
             }}
