@@ -58,14 +58,14 @@ const About = () => {
                       <Typography style={{ color: "#F7941D" }}>
                         Laptop & Mac
                       </Typography>
-                      <Typography variant="body2">Mobile & Tablet</Typography>
-                      <Typography variant="body2">Home Devices</Typography>
-                      <Typography variant="body2">TV & Audio</Typography>
-                      <Typography variant="body2">Fitness</Typography>
-                      <Typography variant="body2">Games & Toys</Typography>
-                      <Typography variant="body2">TV & Audio</Typography>
-                      <Typography variant="body2">Accessories</Typography>
-                      <Typography variant="body2">Security</Typography>
+                      <Typography>Mobile & Tablet</Typography>
+                      <Typography>Home Devices</Typography>
+                      <Typography>TV & Audio</Typography>
+                      <Typography>Fitness</Typography>
+                      <Typography>Games & Toys</Typography>
+                      <Typography>TV & Audio</Typography>
+                      <Typography>Accessories</Typography>
+                      <Typography>Security</Typography>
                     </div>
                   ),
                 },
@@ -77,7 +77,7 @@ const About = () => {
                       <TextField id="filled-basic" label="To" />
                     <br/>
                     <br/>
-                      <Typography variant="body2">
+                      <Typography>
                         Price: $0.00 – $3200.00
                       </Typography>
                     </div>
@@ -88,28 +88,28 @@ const About = () => {
                   content: (
                     <div>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Apple</Typography>
+                        <Checkbox tabIndex={1} disableRipple />
+                        <Typography >Apple</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Samsung</Typography>
+                        <Checkbox tabIndex={2} disableRipple />
+                        <Typography >Samsung</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Sony</Typography>
+                        <Checkbox tabIndex={3} disableRipple />
+                        <Typography >Sony</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Adidas</Typography>
+                        <Checkbox tabIndex={4} disableRipple />
+                        <Typography >Adidas</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Borjan</Typography>
+                        <Checkbox tabIndex={5} disableRipple />
+                        <Typography >Borjan</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Oppo</Typography>
+                        <Checkbox tabIndex={6} disableRipple />
+                        <Typography>Oppo</Typography>
                       </Stack>
                     </div>
                   ),
@@ -120,15 +120,15 @@ const About = () => {
                     <div>
                       <Stack direction="row" spacing={1}>
                         <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Any</Typography>
+                        <Typography>Any</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
                         <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">No</Typography>
+                        <Typography>No</Typography>
                       </Stack>
                       <Stack direction="row" spacing={1}>
                         <Checkbox tabIndex={-1} disableRipple />
-                        <Typography variant="body2">Yes</Typography>
+                        <Typography>Yes</Typography>
                       </Stack>
                     </div>
                   ),
