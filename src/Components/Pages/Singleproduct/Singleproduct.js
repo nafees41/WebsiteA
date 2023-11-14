@@ -64,19 +64,21 @@ const Carousel = () => {
           </div>
         </Grid>
         <Grid item md={7} sm={12} xs={12}>
-          <div>
-            <Typography
+        <Typography
               variant="h5"
               sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
             >
               Apple Iphone 13 Pro Max
             </Typography>
+          <div>
+          
+
             <Divider />
-            <Grid container spacing={2} sx={{marginTop:'10px'}}>
+            <Grid container spacing={2} sx={{marginTop:'10px', marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Model:
                 </Typography>
@@ -87,11 +89,11 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Description:
                 </Typography>
@@ -103,11 +105,11 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Brand:
                 </Typography>
@@ -118,11 +120,11 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Store:
                 </Typography>
@@ -133,11 +135,11 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Type:
                 </Typography>
@@ -148,11 +150,11 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
+                  sx={{  fontWeight: "bolder" }}
                 >
                   Availability:
                 </Typography>
@@ -161,17 +163,17 @@ const Carousel = () => {
                 <Typography variant="body1">In Stock</Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Size:
                 </Typography>
               </Grid>
               <Grid item md={9} sm={12} xs={12}>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} sx={{paddingBottom: "5px",}}>
                   <Grid item md={3} sm={12} xs={12}>
                     <button
                        key={1}
@@ -207,11 +209,11 @@ const Carousel = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginTop: "10px" }}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
               <Grid item md={3} sm={12} xs={12}>
                 <Typography
                   variant="h6"
-                  sx={{ paddingBottom: "10px", fontWeight: "600" }}
+                  sx={{  fontWeight: "600" }}
                 >
                   Color:
                 </Typography>
@@ -236,15 +238,15 @@ const Carousel = () => {
                 </Stack>
                  </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginTop: "10px" }}>
-              <Grid item md={4} sm={12} xs={12}>
-              <Button   variant="contained" size="large" fullWidth  sx={{padding:'15px'}}>Buy Now</Button>
+            <Grid container spacing={2} sx={{ marginTop: "5px" }}>
+              <Grid item md={3} sm={12} xs={12}>
+              <Button   variant="contained"  fullWidth  sx={{color:'white',padding:'10px'}}>Buy Now</Button>
               </Grid>
-              <Grid item md={4} sm={12} xs={12}>
+              <Grid item md={3} sm={12} xs={12}>
               <Button
-              variant="outlined" size="large" fullWidth  sx={{padding:'15px'}}>
+              variant="outlined"   fullWidth  sx={{padding:'10px'}}  >
               <img src={pinkimage} style={{ width: "15%" }}/>
-              <span style={{ fontSize: "16px", color: "#F7941D" }}>
+              <span style={{ fontSize: "16px", color: "#F7941D" ,paddingLeft:'5px'}}>
                 Add to Cart
               </span>
             </Button>
