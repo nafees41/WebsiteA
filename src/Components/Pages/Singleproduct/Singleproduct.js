@@ -147,9 +147,7 @@ const Carousel = () => {
                 </td>
               </tr>
             </table>
-
-           
-            <button className="order-btn">Buy Now</button>
+              <button className="order-btn">Buy Now</button>
             <button className="order-btn-2">
               <img src={Pinkimage} style={{ width: "15%" }} />{" "}
               <span style={{ fontSize: "16px", color: "#F7941D" }}>
