@@ -67,8 +67,7 @@ const Carousel = () => {
           <div>
             <Typography
               variant="h5"
-              sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
-            >
+              sx={{ paddingBottom: "10px", fontWeight: "bolder" }} >
               Apple Iphone 13 Pro Max
             </Typography>
             <Divider />
@@ -80,7 +79,7 @@ const Carousel = () => {
               <tr>
                 <td>Description:</td>
                 <td>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa{" "}
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
                   <br /> qui officia deserunt mollit anim id es
                 </td>
               </tr>
@@ -149,7 +148,7 @@ const Carousel = () => {
             </table>
               <button className="order-btn">Buy Now</button>
             <button className="order-btn-2">
-              <img src={Pinkimage} style={{ width: "15%" }} />{" "}
+              <img src={Pinkimage} style={{ width: "15%" }}/>
               <span style={{ fontSize: "16px", color: "#F7941D" }}>
                 Add to Cart
               </span>
