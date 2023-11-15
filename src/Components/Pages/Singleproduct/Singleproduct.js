@@ -8,7 +8,7 @@ import Chairimage from "../../images/back4.jpg";
 import Iphoneimage from "../../images/fr.jpg";
 import Callsupport from "../../Callsupport/Callsupport";
 import Box from "@mui/material/Box";
-import pinkimage from '../../images/pinkimage.png'
+import pinkimage from "../../images/pinkimage.png";
 const data = [
   {
     image: Iphoneimage,
@@ -23,10 +23,17 @@ const Carousel = () => {
   const slideTo = (index) => {
     setCurrent(index);
   };
-  const [active, setActive] = useState("");
 
-  const handleClick = (event) => {
-    setActive(event.currentTarget.id);
+  const [active, setActive] = useState(null);
+
+  const handleClick = (id) => {
+    if (active === id) {
+      // Button is already active, so deactivate it
+      setActive(null);
+    } else {
+      // Button is not active, so activate it
+      setActive(id);
+    }
   };
   return (
     <Box>
@@ -64,22 +71,21 @@ const Carousel = () => {
           </div>
         </Grid>
         <Grid item md={7} sm={12} xs={12}>
-        <Typography
-              variant="h5"
-              sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
-            >
-              Apple Iphone 13 Pro Max
-            </Typography>
+          <Typography
+            variant="h5"
+            sx={{ paddingBottom: "10px", fontWeight: "bolder" }}
+          >
+            Apple Iphone 13 Pro Max
+          </Typography>
           <div>
-          
-
             <Divider />
-            <Grid container spacing={2} sx={{marginTop:'10px', marginBottom: "8px"}}>
+            <Grid
+              container
+              spacing={2}
+              sx={{ marginTop: "10px", marginBottom: "8px" }}
+            >
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Model:
                 </Typography>
               </Grid>
@@ -89,12 +95,9 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Description:
                 </Typography>
               </Grid>
@@ -105,12 +108,9 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Brand:
                 </Typography>
               </Grid>
@@ -120,12 +120,9 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Store:
                 </Typography>
               </Grid>
@@ -135,12 +132,9 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Type:
                 </Typography>
               </Grid>
@@ -150,12 +144,9 @@ const Carousel = () => {
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "bolder" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "bolder" }}>
                   Availability:
                 </Typography>
               </Grid>
@@ -163,58 +154,47 @@ const Carousel = () => {
                 <Typography variant="body1">In Stock</Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Size:
                 </Typography>
               </Grid>
-              <Grid item md={9} sm={12} xs={12}>
-                <Grid container spacing={2} sx={{paddingBottom: "5px",}}>
+              <Grid item md={9} sm={12} xs={12} >
+                <Grid container spacing={2} sx={{ paddingBottom: "5px" }}>
                   <Grid item md={3} sm={12} xs={12}>
                     <button
-                       key={1}
+                      key={1}
                       className={active === "1" ? "active" : undefined}
-                      id={"1"}
-                      onClick={handleClick}
-                    >
+                      id={"button-size"}
+                      onClick={() => handleClick("1")}  >
                       Small
                     </button>
                   </Grid>
                   <Grid item md={3} sm={12} xs={12}>
                     <button
-                      
                       key={2}
                       className={active === "2" ? "active" : undefined}
-                      id={"2"}
-                      onClick={handleClick}
-                    >
+                      id={"button-size"}
+                      onClick={() => handleClick("2")}  >
                       Medium
                     </button>
                   </Grid>
                   <Grid item md={3} sm={12} xs={12}>
                     <button
-                     
                       key={3}
                       className={active === "3" ? "active" : undefined}
-                      id={"3"}
-                      onClick={handleClick}
-                    >
+                      id={"button-size"}
+                      onClick={() => handleClick("3")} >
                       Large
                     </button>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginBottom: "8px"}}>
+            <Grid container spacing={2} sx={{ marginBottom: "8px" }}>
               <Grid item md={3} sm={12} xs={12}>
-                <Typography
-                  variant="h6"
-                  sx={{  fontWeight: "600" }}
-                >
+                <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Color:
                 </Typography>
               </Grid>
@@ -227,30 +207,41 @@ const Carousel = () => {
                       style={{ background: "gray" }}
                     ></span>
                   </label>
-                 <label class="container red">
+                  <label class="container red">
                     <input type="checkbox" />
                     <span class="checkmark"></span>
                   </label>
-                      <label class="container pink">
+                  <label class="container pink">
                     <input type="checkbox" />
                     <span class="checkmark"></span>
                   </label>
                 </Stack>
-                 </Grid>
+              </Grid>
             </Grid>
             <Grid container spacing={2} sx={{ marginTop: "5px" }}>
               <Grid item md={3} sm={12} xs={12}>
-              <Button   variant="contained"  fullWidth  sx={{color:'white',padding:'10px'}}>Buy Now</Button>
+                <Button
+                  variant="contained"
+                  fullWidth
+                  sx={{ color: "white", padding: "10px" }}
+                >
+                  Buy Now
+                </Button>
               </Grid>
               <Grid item md={3} sm={12} xs={12}>
-              <Button
-              variant="outlined"   fullWidth  sx={{padding:'10px'}}  >
-              <img src={pinkimage} style={{ width: "15%" }}/>
-              <span style={{ fontSize: "16px", color: "#F7941D" ,paddingLeft:'5px'}}>
-                Add to Cart
-              </span>
-            </Button>
-             </Grid>
+                <Button variant="outlined" fullWidth sx={{ padding: "10px" }}>
+                  <img src={pinkimage} style={{ width: "15%" }} />
+                  <span
+                    style={{
+                      fontSize: "16px",
+                      color: "#F7941D",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    Add to Cart
+                  </span>
+                </Button>
+              </Grid>
             </Grid>
           </div>
         </Grid>

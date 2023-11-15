@@ -12,7 +12,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Paper,
+  Paper,Divider
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
@@ -47,7 +47,6 @@ const Dashboard = () => {
     [`&.${tableCellClasses.body}`]: {
       fontSize: { md: 10, sm: "18px", xs: "10px" },
       color: "#7F7F7F",
-      textAlign: "center",
     },
   }));
 
@@ -78,99 +77,215 @@ const Dashboard = () => {
   const handleIncrease = () => {
     setNumber(number + 1);
   };
-
   const rows = [
     createData(
       <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "18%", height: "70px" }} />
+        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
         <Typography>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,
       "Hype Mart",
-      <Box sx={{ display: "flex" }}>
-        <Card
-          sx={Shippingstyle.quantitystyle}
-        >
-          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
-        </Card>
-        <Card sx={Shippingstyle.quantitystyle} >
-          <span
-            style={{
-              color: "#0a202d",
-              fontSize: "14px",
-              fontWeight: "bold",
-            }}
-          >
-            {updateDisplay()}
-          </span>
-        </Card>
-        <Card sx={Shippingstyle.quantitystyle}  >
+      <Box>
+      <Grid
+      container
+      spacing={2}>
+      <Grid
+        item
+        lg={6}
+        md={12}
+        sm={12}
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
+       <Grid
+      container
+      spacing={2} >
+      <Grid
+          item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+             <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-      </Box>,
-      "$356,68.97"
-    ),
-    createData(
-      <Stack direction="row" spacing={1}>
-        <img src={Redwatch}  style={{ width: "18%", height: "70px" }} />
-        <Typography>
-          Samsung - Galaxy <br /> S6 4G
-        </Typography>
-      </Stack>,
-      "Hype Mart",
-      <Box sx={{ display: "flex" }}>
-        <Card  sx={Shippingstyle.quantitystyle} >
-          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle} />
-        </Card>
-        <Card sx={Shippingstyle.quantitystyle} >
+         </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
+        <Grid
+           item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+          <Card sx={Shippingstyle.quantitystyle} >
           <span
             style={{
               color: "#0a202d",
               fontSize: "14px",
               fontWeight: "bold",
-            }}
-          >
+            }}>
             {updateDisplay()}
           </span>
         </Card>
-        <Card    sx={Shippingstyle.quantitystyle}  >
-          <RemoveIcon onClick={handleDecrease} sx={Shippingstyle.iconstyle} />
+        </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
+        <Grid
+            item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+        <Card
+          sx={Shippingstyle.quantitystyle} >
+          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-      </Box>,
-      "$356,68.97"
-    ),
+        </Grid>
+      </Grid>
+      </Grid>
+          </Grid>
 
+      </Box>,
+        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+      </Typography>
+    ),
     createData(
       <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "18%", height: "70px" }} />
+        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
         <Typography>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,
       "Hype Mart",
-      <Box sx={{ display: "flex" }}>
-        <Card sx={Shippingstyle.quantitystyle} >
-          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle} />
+      <Box>
+      <Grid
+      container
+      spacing={2}>
+      <Grid
+        item
+        lg={6}
+        md={12}
+        sm={12}
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
+       <Grid
+      container
+      spacing={2} >
+      <Grid
+          item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+             <Card sx={Shippingstyle.quantitystyle}  >
+          <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-        <Card  sx={Shippingstyle.quantitystyle} >
+         </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
+        <Grid
+           item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+          <Card sx={Shippingstyle.quantitystyle} >
           <span
             style={{
-              color: "#7F7F7F",
+              color: "#0a202d",
               fontSize: "14px",
               fontWeight: "bold",
-            }}
-          >
+            }}>
             {updateDisplay()}
           </span>
         </Card>
-        <Card  sx={Shippingstyle.quantitystyle} >
-          <RemoveIcon onClick={handleDecrease}  sx={Shippingstyle.iconstyle}  />
+        </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
+        <Grid
+            item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+        <Card
+          sx={Shippingstyle.quantitystyle} >
+          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
+        </Grid>
+      </Grid>
+      </Grid>
+          </Grid>
+
       </Box>,
-      "$356,68.97"
+        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+      </Typography>
     ),
-  ];
+    createData(
+      <Stack direction="row" spacing={1}>
+        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
+        <Typography>
+          Samsung - Galaxy <br /> S6 4G
+        </Typography>
+      </Stack>,
+      "Hype Mart",
+      <Box>
+      <Grid
+      container
+      spacing={2}>
+      <Grid
+        item
+        lg={6}
+        md={12}
+        sm={12}
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
+       <Grid
+      container
+      spacing={2} >
+      <Grid
+          item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+             <Card sx={Shippingstyle.quantitystyle}  >
+          <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
+        </Card>
+         </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
+        <Grid
+           item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+          <Card sx={Shippingstyle.quantitystyle} >
+          <span
+            style={{
+              color: "#0a202d",
+              fontSize: "14px",
+              fontWeight: "bold",
+            }}>
+            {updateDisplay()}
+          </span>
+        </Card>
+        </Grid>
+        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
+        <Grid
+            item
+        lg={3}
+        md={12}
+        sm={12}
+        xs={12} >
+        <Card
+          sx={Shippingstyle.quantitystyle} >
+          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
+        </Card>
+        </Grid>
+      </Grid>
+      </Grid>
+          </Grid>
+
+      </Box>,
+        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+      </Typography>
+    ),
+];
   return (
     <Box>
       <Grid
@@ -187,7 +302,8 @@ const Dashboard = () => {
           <Typography
             component="h1"
             variant="h5"
-            sx={Shippingstyle.Shippingheading} > Shopping Cart </Typography>
+            sx={Shippingstyle.Shippingheading} > Shopping Cart
+          </Typography>
         <Grid item container sx={{marginTop: "10px" }}>
             <Grid
               item
@@ -201,12 +317,13 @@ const Dashboard = () => {
                     sx={{ fontSize: { md: "18px", sm: "18px", xs: "12px" } }}
                   >
                     <TableRow>
-                      <StyledTableCell align="center">
-                        Product
+                      <StyledTableCell>
+                        {" "}
+                        Product{" "}
                       </StyledTableCell>
-                      <StyledTableCell align="center">Store</StyledTableCell>
+                      <StyledTableCell>Store</StyledTableCell>
                       <StyledTableCell>Quantity</StyledTableCell>
-                      <StyledTableCell align="center"> Total</StyledTableCell>
+                      <StyledTableCell > Total</StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -224,16 +341,16 @@ const Dashboard = () => {
               <Grid container spacing={2} sx={{ paddingX: "20px" }}>
                 <Grid
                   item
-                  xs={2}
+                  xs={12}
                   sx={Shippingstyle.Checkoutbuttonsaction}>
-                  <Stack direction="row" spacing={1} justifyContent="end">
+                  <Stack direction="row" justifyContent="end" spacing={1}>
                     <Typography variant="body1" sx={{fontWeight:'600',color:'#000000'}}>Cart Totals</Typography>
                     <Typography sx={{color:'#F7941D'}}>$1,591.00</Typography>
                   </Stack>
-                  
-                  <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>
+                  {/* <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>
+              
                     Proceed to Check Out
-                  </Button>
+                  </Button> */}
                 </Grid>
               </Grid>
             </Grid>
