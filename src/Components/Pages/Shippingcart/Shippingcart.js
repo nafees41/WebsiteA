@@ -82,7 +82,7 @@ const Dashboard = () => {
   const rows = [
     createData(
       <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "50%", height: "70px" }} />
+        <img src={Redwatch} style={{ width: "18%", height: "70px" }} />
         <Typography>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
@@ -113,7 +113,7 @@ const Dashboard = () => {
     ),
     createData(
       <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "50%", height: "70px" }} />
+        <img src={Redwatch}  style={{ width: "18%", height: "70px" }} />
         <Typography>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
@@ -143,7 +143,7 @@ const Dashboard = () => {
 
     createData(
       <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "50%", height: "70px" }} />
+        <img src={Redwatch} style={{ width: "18%", height: "70px" }} />
         <Typography>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
@@ -187,8 +187,7 @@ const Dashboard = () => {
           <Typography
             component="h1"
             variant="h5"
-            sx={Shippingstyle.Shippingheading} > Shopping Cart
-          </Typography>
+            sx={Shippingstyle.Shippingheading} > Shopping Cart </Typography>
         <Grid item container sx={{marginTop: "10px" }}>
             <Grid
               item
@@ -203,8 +202,7 @@ const Dashboard = () => {
                   >
                     <TableRow>
                       <StyledTableCell align="center">
-                        {" "}
-                        Product{" "}
+                        Product
                       </StyledTableCell>
                       <StyledTableCell align="center">Store</StyledTableCell>
                       <StyledTableCell>Quantity</StyledTableCell>
@@ -232,9 +230,8 @@ const Dashboard = () => {
                     <Typography variant="body1" sx={{fontWeight:'600',color:'#000000'}}>Cart Totals</Typography>
                     <Typography sx={{color:'#F7941D'}}>$1,591.00</Typography>
                   </Stack>
-                  ,
+                  
                   <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>
-                    {" "}
                     Proceed to Check Out
                   </Button>
                 </Grid>
