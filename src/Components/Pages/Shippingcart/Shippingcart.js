@@ -338,15 +338,18 @@ const Dashboard = () => {
                   </TableBody>
                 </Table>
               </TableContainer>
-              <Grid container spacing={2} sx={{ paddingX: "20px" }}>
+          
+                        <Grid container spacing={2} sx={{padding:'10px'}}>
                 <Grid
                   item
-                  xs={12}
-                  sx={Shippingstyle.Checkoutbuttonsaction}>
-                  <Stack direction="row" justifyContent="end" spacing={1}>
-                    <Typography variant="body1" sx={{fontWeight:'600',color:'#000000'}}>Cart Totals</Typography>
-                    <Typography sx={{color:'#F7941D'}}>$1,591.00</Typography>
-                  </Stack>
+                  xs={12} sx={{display:'flex',justifyContent:'end'}}>
+                 <Typography  sx={{fontWeight:'600',color:'#000000',fontSize:'22px',paddingRight:'40px'}}>Cart Totals:</Typography>
+                 <Typography sx={{color:'#F7941D',fontWeight:'600',fontSize:'16px'}}>$1,591.00</Typography>
+
+                    </Grid>
+                  
+                    </Grid>
+              
                   {/* <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>
               
                     Proceed to Check Out
@@ -355,8 +358,7 @@ const Dashboard = () => {
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Grid>
+     
     </Box>
   );
 };
