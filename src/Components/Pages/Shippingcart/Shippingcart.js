@@ -22,6 +22,8 @@ import { useState } from "react";
 import Redwatch from "../../images/redwatch.png";
 import Stack from "@mui/material/Stack";
 import Shippingstyle from './Shoppingcart.style'
+import CardMedia from '@mui/material/CardMedia';
+
 
 const Dashboard = () => {
   const theme = createTheme({
@@ -45,14 +47,13 @@ const Dashboard = () => {
       fontWeight: "600",
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: { md: 10, sm: "18px", xs: "10px" },
       color: "#7F7F7F",
     },
   }));
 
   const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    "&:nth-of-type(odd)": {
-      backgroundColor: "white",
+    "&:nth-of-type(even)": {
+      backgroundColor: 'white',
     },
     "&:last-child td, &:last-child th": {
       border: 0,
@@ -78,10 +79,16 @@ const Dashboard = () => {
     setNumber(number + 1);
   };
   const rows = [
+
     createData(
-      <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
-        <Typography>
+      <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
+         <Card>
+         <CardMedia
+        component="img"
+        image={Redwatch}
+        style={{ width: "100%", height: "80px"}} alt="Paella dish" />
+        </Card>
+        <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}} >
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,
@@ -91,66 +98,45 @@ const Dashboard = () => {
       container
       spacing={2}>
       <Grid
-        item
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
-       <Grid
-      container
-      spacing={2} >
-      <Grid
-          item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-             <Card sx={Shippingstyle.quantitystyle}  >
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+       <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-         </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
-        <Grid
-           item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-          <Card sx={Shippingstyle.quantitystyle} >
-          <span
-            style={{
+      
+        <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}  flexItem />
+        <Card sx={Shippingstyle.quantitystyle} >
+          <Typography
+            sx={{
               color: "#0a202d",
-              fontSize: "14px",
+              fontSize: {md:"14px",sm:'20px',xs:'15px'},
               fontWeight: "bold",
             }}>
             {updateDisplay()}
-          </span>
+          </Typography>
         </Card>
-        </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
-        <Grid
-            item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-        <Card
+   <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}   flexItem />
+       <Card
           sx={Shippingstyle.quantitystyle} >
           <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-        </Grid>
+            </Grid>
       </Grid>
-      </Grid>
-          </Grid>
-
-      </Box>,
+    </Box>,
         <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
       </Typography>
     ),
     createData(
-      <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
-        <Typography>
+      <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
+         <Card>
+         <CardMedia
+        component="img"
+        image={Redwatch}
+        style={{ width: "100%", height: "80px"}} alt="Paella dish" />
+        </Card>
+        <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}} >
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,
@@ -160,66 +146,45 @@ const Dashboard = () => {
       container
       spacing={2}>
       <Grid
-        item
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
-       <Grid
-      container
-      spacing={2} >
-      <Grid
-          item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-             <Card sx={Shippingstyle.quantitystyle}  >
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+       <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-         </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
-        <Grid
-           item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-          <Card sx={Shippingstyle.quantitystyle} >
-          <span
-            style={{
+      
+        <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}  flexItem />
+        <Card sx={Shippingstyle.quantitystyle} >
+          <Typography
+            sx={{
               color: "#0a202d",
-              fontSize: "14px",
+              fontSize: {md:"14px",sm:'20px',xs:'15px'},
               fontWeight: "bold",
             }}>
             {updateDisplay()}
-          </span>
+          </Typography>
         </Card>
-        </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
-        <Grid
-            item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-        <Card
+   <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}   flexItem />
+       <Card
           sx={Shippingstyle.quantitystyle} >
           <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-        </Grid>
+            </Grid>
       </Grid>
-      </Grid>
-          </Grid>
-
-      </Box>,
+    </Box>,
         <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
       </Typography>
     ),
-    createData(
-      <Stack direction="row" spacing={1}>
-        <img src={Redwatch} style={{ width: "20%", height: "50px" }} />
-        <Typography>
+     createData(
+      <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
+         <Card>
+         <CardMedia
+        component="img"
+        image={Redwatch}
+        style={{ width: "100%", height: "80px"}} alt="Paella dish" />
+        </Card>
+        <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}} >
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,
@@ -229,76 +194,51 @@ const Dashboard = () => {
       container
       spacing={2}>
       <Grid
-        item
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',textAlign:'center'}} >
-       <Grid
-      container
-      spacing={2} >
-      <Grid
-          item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-             <Card sx={Shippingstyle.quantitystyle}  >
+        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+       <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-         </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}}  flexItem />
-        <Grid
-           item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-          <Card sx={Shippingstyle.quantitystyle} >
-          <span
-            style={{
+      
+        <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}  flexItem />
+        <Card sx={Shippingstyle.quantitystyle} >
+          <Typography
+            sx={{
               color: "#0a202d",
-              fontSize: "14px",
+              fontSize: {md:"14px",sm:'20px',xs:'15px'},
               fontWeight: "bold",
             }}>
             {updateDisplay()}
-          </span>
+          </Typography>
         </Card>
-        </Grid>
-        <Divider orientation="vertical"   sx={{paddingRight:'10px'}} flexItem />
-        <Grid
-            item
-        lg={3}
-        md={12}
-        sm={12}
-        xs={12} >
-        <Card
+   <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}   flexItem />
+       <Card
           sx={Shippingstyle.quantitystyle} >
           <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
         </Card>
-        </Grid>
+            </Grid>
       </Grid>
-      </Grid>
-          </Grid>
-
-      </Box>,
+    </Box>,
         <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
       </Typography>
     ),
+    
 ];
   return (
     <Box>
       <Grid
         container
         spacing={2}
-        sx={{ marginTop: { md: "10px", sm: "40px", xs: "20px"}}}>
+        sx={{ marginTop: { md: "10px", sm: "40px", xs: "20px"},paddingX: "25px" }}>
         <Grid
           item
           lg={12}
           md={12}
           sm={12}
           xs={12}
-          sx={{ marginBottom: "17px", paddingX: "20px" }}  >
+          sx={{ marginBottom: "17px"}}  >
           <Typography
             component="h1"
             variant="h5"
@@ -311,19 +251,25 @@ const Dashboard = () => {
               sm={12}
               xs={12}
               sx={ Shippingstyle.Tablecontainer}>
-              <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 100 }} aria-label="a dense table">
+          
+                <Table 
+                sx={{
+                  '& .MuiTableCell-sizeMedium': {
+                    padding:{md: '20px ',sm:'16px',xs:'12px'},
+                  },
+                }}
+                
+                aria-label="a dense table">
                   <TableHead
                     sx={{ fontSize: { md: "18px", sm: "18px", xs: "12px" } }}
                   >
                     <TableRow>
                       <StyledTableCell>
-                        {" "}
                         Product{" "}
                       </StyledTableCell>
                       <StyledTableCell>Store</StyledTableCell>
                       <StyledTableCell>Quantity</StyledTableCell>
-                      <StyledTableCell > Total</StyledTableCell>
+                      <StyledTableCell align="center" > Total</StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -332,22 +278,25 @@ const Dashboard = () => {
                         <StyledTableCell>{row.name}</StyledTableCell>
                         <StyledTableCell>{row.calories}</StyledTableCell>
                         <StyledTableCell>{row.fat}</StyledTableCell>
-                        <StyledTableCell>{row.carbs}</StyledTableCell>
+                        <StyledTableCell align="center">{row.carbs}</StyledTableCell>
                       </StyledTableRow>
                     ))}
                   </TableBody>
                 </Table>
-              </TableContainer>
-          <Grid container spacing={2} sx={{padding:'10px'}}>
+                <Divider/>
+            
+          <Grid container spacing={2} sx={{paddingX:'40px',paddingBottom:"20px"}}>
                 <Grid
                   item
                   xs={12} sx={{display:'flex',justifyContent:'end'}}>
-                 <Typography  sx={{fontWeight:'600',color:'#000000',fontSize:'22px',paddingRight:'40px'}}>Cart Totals:</Typography>
+                 <Typography  sx={{fontWeight:'600',color:'#000000',fontSize:'18px',paddingRight:'40px'}}>Cart Totals</Typography>
                  <Typography sx={{color:'#F7941D',fontWeight:'600',fontSize:'16px'}}>$1,591.00</Typography>
                        </Grid>
+                       <Button variant="contained" size="large" sx={{marginTop:'10px',fontSize:'12px',color:'white',marginLeft:"auto", borderRadius: '40px',
+                      paddingX: { md: "30px", sm: "15px", xs: "10px" }}}>   Proceed to Check Out
+                       </Button>
                     </Grid>
-                {/* <Button variant="contained" size="small" sx={{fontSize:'12px',color:'white'}}>   Proceed to Check Out
-                  </Button> */}
+             
                 </Grid>
               </Grid>
             </Grid>

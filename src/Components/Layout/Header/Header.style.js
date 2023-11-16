@@ -13,8 +13,6 @@ const style={
       marginRight:' 5px',
       marginLeft: '15px',
     },
-    
-  
     'nav':{
       display: 'flex',
       justifyContent: 'space-between',

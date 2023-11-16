@@ -14,6 +14,7 @@ import Contactpage from '../src/Components/Pages/ContactUs/Contact'
 import Singleproduct from '../src/Components/Pages/Singleproduct/Singleproduct'
 import Productpage from '../src/Components/Pages/Product/Product'
 import Shoppingcartpage from '../src/Components/Pages/Shippingcart/Shippingcart'
+import Orderhistory from '../src/Components/Pages/Orderhistory/Orderhistory'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
      <BrowserRouter>
    <Header/>
       <Routes>
-      <Route path="/"  element={<Shoppingcartpage/>}> </Route>
+      <Route path="/"  element={<Orderhistory/>}> </Route>
       <Route path="/home"  element={<Home/>}> </Route>
       <Route path="/securitypage"  element={ <Securitypage/>}></Route>
       <Route path="/Login"  element={ <Login/>}></Route>

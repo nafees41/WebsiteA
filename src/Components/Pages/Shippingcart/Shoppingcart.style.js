@@ -2,7 +2,8 @@ const style={
     // Main Top Box
 
      'quantitystyle': {
-        color: "#7F7F7F",
+       padding:{md:'8px',sm:'8px',xs:'3px'},
+        backgroundColor:'transparent',
         boxShadow: "0px 0px 0px 0px",
     },
     'iconstyle': {
@@ -13,8 +14,7 @@ const style={
         color: "black",
         fontWeight: "600",
         fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
-        paddingLeft: { lg: "45px", md: "80px", sm: "80px", xs: "40px" },
-        marginTop: "20px",
+        paddingX:"60px"
     },
     'Checkoutbuttonsaction': {
         display: "flex",
