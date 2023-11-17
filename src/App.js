@@ -15,6 +15,7 @@ import Singleproduct from '../src/Components/Pages/Singleproduct/Singleproduct'
 import Productpage from '../src/Components/Pages/Product/Product'
 import Shoppingcartpage from '../src/Components/Pages/Shippingcart/Shippingcart'
 import Orderhistory from '../src/Components/Pages/Orderhistory/Orderhistory'
+import Editprofile from '../src/Components/Pages/Editprofile/Editprofile'
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
      <Route path="/singleproduct"  element={ <Singleproduct/>}></Route>
      <Route path="/product"  element={ <Productpage/>}></Route>
      <Route path="/product"  element={ <Productpage/>}></Route>
+     <Route path="/orderhistory"  element={<Orderhistory/>}> </Route>
+     <Route path="/Editprofile"  element={<Editprofile/>}> </Route>
+
 
  </Routes>
       <Footer/>

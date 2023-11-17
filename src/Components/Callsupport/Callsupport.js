@@ -30,7 +30,7 @@ const Callsupport = () => {
         container
         rowSpacing={1}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        sx={{ paddingX: "50px", marginTop: {md:"150px",sm:'40px',xs:'10px'} }}
+        sx={{ paddingX: "50px", marginTop: {md:"120px",sm:'40px',xs:'10px'} }}
       >
         <Divider />
         <Grid item  md={3} sm={6}  xs={12}>

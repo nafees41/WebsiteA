@@ -2,30 +2,19 @@ import React from "react";
 import {
   Typography,
   Box,
-  InputLabel,
   TextField,
   Checkbox,
   Button,
   Grid,
-  Stack,
-  Divider,
+ 
   Card
 } from "@mui/material";
-import Container from "@mui/material/Container";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { Link } from "react-router-dom";
 import Loginstyle from "./Login.style";
 import theme from "../../Theme/Theme";
 import { CssBaseline } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Avatar from "@mui/material/Avatar";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import { IconButton } from "@mui/material";
-import GppGoodIcon from '@mui/icons-material/GppGood';
-import Useimage from './../../images/user.png'
-import Giftimage from './../../images/Gift.png'
-import Carimage from './../../images/Car.png'
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from '@mui/material';
 
@@ -211,7 +200,7 @@ return (
             <br />
             <Grid container spacing={spacing} justifyContent="center">
               <Grid item md={10} sm={12} xs={12}>
-                <Link to="/profile">
+                <Link to="/Editprofile">
                   <Button
                     variant="contained"
                      type="submit"

@@ -1,13 +1,25 @@
 import React from "react";
-import Container from "@mui/material/Container";
 import { createTheme } from "@mui/material/styles";
 import Leftsidebar from "../../Dashboardsidebar/Sidebar";
-import { Button,Table,Box, Grid, Typography,TableBody ,TableCell, tableCellClasses,
-  TableContainer,TableHead,TableRow,Paper, Divider 
- } from "@mui/material";
+import {
+  Table,
+  Box,
+  Grid,
+  Typography,
+  TableBody,
+  TableCell,
+  tableCellClasses,
+  TableHead,
+  TableRow,
+  Divider,
+  Stack,IconButton
+} from "@mui/material";
+import Useimage from '../../images/piechart.png'
+import Carimage from '../../images/cancelorder.png'
 import { styled } from "@mui/material/styles";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Link } from "react-router-dom";
+import GppGoodIcon from '@mui/icons-material/GppGood';
+import Callsupport from "../../Callsupport/Callsupport";
+
 
 const Orderrecord = () => {
   const theme = createTheme({
@@ -24,15 +36,23 @@ const Orderrecord = () => {
       },
     },
   });
+  const buttonStyle1 = {
+    backgroundColor: "#F3F3F3", // Change this to your desired background color
+    color: "#182733", // Change this to the text color you want
+    borderRadius: "23px",
+    height: "45.42px",
+    width: "50px",
+  };
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-      backgroundColor: 'white',
+      backgroundColor: "white",
       color: "black",
-      fontWeight: "600"
-        },
+      fontWeight: "500",
+      fontSize: '20px',
+    },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: {md:14,sm:'18px',xs:'10px'},
-          color:'black',
+      fontSize: { md: 14, sm: "18px", xs: "10px" },
+      color: "black",
     },
   }));
 
@@ -44,144 +64,202 @@ const Orderrecord = () => {
       border: 0,
     },
   }));
-  function createData(name, calories, fat, carbs,protein) {
+  function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
   }
 
   const rows = [
     createData(
-      "April 9, 2023",
-      "Dubbing Artist",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
+      "#8132",
+      "02 April, 2019",
+      <Typography sx={{color:'#FF9900'}}>Pending</Typography>,
+
+      
+      "5 item(s)",
+      "$2,719.00"
     ),
     createData(
-      "April 9, 2023",
-      "Dubbing Artist",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
+      "#8132",
+      "02 April, 2019",
+      <Typography sx={{color:'#0EAE00'}}>Completed</Typography>,
+      "5 item(s)",
+      "$2,719.00"
     ),
     createData(
-      "April 9, 2023",
-      "Dubbing Artist",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
+      "#8132",
+      "02 April, 2019",
+      <Typography sx={{color:'#FF0000'}}>Cancel</Typography>,
+      "5 item(s)",
+      "$2,719.00"
     ),
     createData(
-      "April 9, 2023",
-      "Dubbing Artist",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
+      "#8132",
+      "02 April, 2019",
+      <Typography sx={{color:'#FF9900'}}>Pending</Typography>,
+      "5 item(s)",
+      "$2,719.00"
     ),
-    createData(
-      "April 9, 2023",
-      "Dubbing Artist",
-      "I will do Dubbing Artist",
-      "$829",
-      "$829"
-    ),
-    createData(
-        "April 9, 2023",
-        "Dubbing Artist",
-        "I will do Dubbing Artist",
-        "$829",
-        "$829"
-      ),
-      createData(
-        "April 9, 2023",
-        "Dubbing Artist",
-        "I will do Dubbing Artist",
-        "$829",
-        "$829"
-      ),
   ];
-
-  console.log(theme);
-  return (
-
+    return (
     <Box>
-      <Grid container spacing={2} sx={{marginTop: {md:"50px",sm:'40px',xs:'20px'}  }}>
-        <Grid item lg={3} md={12} sm={12} xs={11} sx={{border: (theme) => `1px solid ${theme.palette.divider}`}}>
-          <Grid
-            container
-            spacing={2}>
-            <Grid xs={12} sx={{ marginTop: "20px" ,}}>
-              <Leftsidebar />
-            </Grid>
-          </Grid>
-        </Grid>
+      <Grid
+        container
+        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'30px',sm:'20px',xs:'10px'}}}>
+        <Grid
+          item
+          lg={3}
+          md={12}
+          sm={12}
+          xs={11}  >
+           <Leftsidebar/>
+         </Grid>
         <Grid
           item
           lg={9}
           md={12}
           sm={12}
-          xs={12}
-          sx={{ marginBottom: "17px", paddingX: "20px"}} >
-
-
-          <Grid
+          xs={12} >
+        <Grid
             item
-            container
-            sx={{ color: "#110229", marginTop: "20px", marginBottom: "20px",border: (theme) => `1px solid ${theme.palette.divider}` }}
-          >
-            <Grid item md={11} sm={12} xs={12}   sx={{marginLeft:{lg:'auto',md:'auto',sm:'auto',xs:'0'},marginRight:{lg:'auto',md:'auto',sm:'auto',xs:'0'}}}>
-            <Typography
-            component="h1"
-            variant="h5"
-            sx={{
-              marginTop: { md: 1, sm: 2, xs: 1 },
-              color: 'black',
-              fontWeight: "600",
-              fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
-              paddingLeft: { lg: "45px", md: "80px", sm: "80px", xs: "40px" }  ,marginTop: "20px" }}> Order History  </Typography>
-              <Divider/>
-        
-              <Table sx={{ minWidth: 100 }}  aria-label="a dense table">
-                  <TableHead sx={{ fontSize:{md:"25px",sm:'18px',xs:'12px'}}}>
-                    <TableRow>
-                      <StyledTableCell align="center"> Orders </StyledTableCell>
-                      <StyledTableCell align="center">Date</StyledTableCell>
-                      <StyledTableCell align="center">Status</StyledTableCell>
-                      <StyledTableCell align="center"> Items</StyledTableCell>
-                      <StyledTableCell align="center"> Payment </StyledTableCell>
+            container>
+            <Grid
+              item
+              md={11}
+              sm={12}
+              xs={12}
+              sx={{border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px'}}>
+              <Typography
+                component="h1"
+                variant="h5"
+                sx={{
+                 padding:'10px',
+                  color: "black",
+                  fontWeight: "600",
+                  fontSize: { lg: "35px", md: "38px", sm: "30px", xs: "25px" }
+                }}
+              >
+                {" "}
+                Order History{" "}
+              </Typography>
+              <Divider />
 
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
-                    {rows.map((row) => (
-                      <StyledTableRow key={row.name}>
-                        <StyledTableCell align="center">
-                         {row.name}
-                        </StyledTableCell>
-                        <StyledTableCell align="center">
-                          {row.calories}
-                        </StyledTableCell>
-                        <StyledTableCell align="center">
-                          {row.fat}
-                        </StyledTableCell>
-                        <StyledTableCell align="center">
-                          {row.carbs}
-                        </StyledTableCell>
-                        <StyledTableCell align="center">
-                          {row.protein}
-                        </StyledTableCell>
-                    
-                      </StyledTableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-
+              <Table aria-label="a dense table">
+                <TableHead
+                  sx={{ fontSize: { md: "25px", sm: "18px", xs: "12px" } }}
+                >
+                  <TableRow>
+                    <StyledTableCell> Orders </StyledTableCell>
+                    <StyledTableCell>Date</StyledTableCell>
+                    <StyledTableCell>Status</StyledTableCell>
+                    <StyledTableCell> Items</StyledTableCell>
+                    <StyledTableCell> Payment </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {rows.map((row) => (
+                    <StyledTableRow key={row.name}>
+                      <StyledTableCell >
+                        {row.name}
+                      </StyledTableCell>
+                      <StyledTableCell >
+                        {row.calories}
+                      </StyledTableCell>
+                      <StyledTableCell>
+                        {row.fat}
+                      </StyledTableCell>
+                      <StyledTableCell >
+                        {row.carbs}
+                      </StyledTableCell>
+                      <StyledTableCell >
+                        {row.protein}
+                      </StyledTableCell>
+                    </StyledTableRow>
+                  ))}
+                </TableBody>
+              </Table>
             </Grid>
           </Grid>
+          <Grid
+            item
+            container>
+            <Grid
+              item
+              md={11}
+              sm={12}
+              xs={12}
+              sx={{border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px',marginTop: {md:"30px",sm:'40px',xs:'10px'},padding:'20px'}}>
+          <Grid
+        container>
+        <Divider/>
+        <Grid item  md={4} sm={6}  xs={12}>
+          <Stack spacing={2} direction="row" alignItems="center">
+            <Stack>
+              <IconButton type="button" style={buttonStyle1}>
+                <img src={Useimage} />
+              </IconButton>
+            </Stack>
+            <Stack sx={{ minWidth: 0 }}>
+              <Typography
+                 variant="h6"
+               sx={{ fontWeight: "700"}}>
+                23
+              </Typography>
+              <Typography noWrap>Pending Orders</Typography>
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item md={4} sm={6}  xs={12}>
+          <Stack spacing={2} direction="row" alignItems="center">
+            <Stack>
+              <IconButton type="button" style={buttonStyle1}>
+              <GppGoodIcon sx={{color:'green'}} />
+                  </IconButton>
+            </Stack>
+            <Stack sx={{ minWidth: 0 }}>
+              <Typography 
+                 variant="h6"
+              sx={{ fontWeight: "700"}}>
+                23
+              </Typography>
+              <Typography
+              variant="body2"
+              sx={{ fontWeight: "400"}}>
+               Completed Orders</Typography>
+            </Stack>
+          </Stack>
+        </Grid>
+        <Grid item md={4} sm={6}  xs={12}>
+          <Stack spacing={2} direction="row" alignItems="center">
+            <Stack>
+              <IconButton type="button" style={buttonStyle1}>
+              <img src={Carimage}/>
+              </IconButton>
+            </Stack>
+            <Stack sx={{ minWidth: 0 }}>
+              <Typography
+               variant="subtitle2"
+               
+
+               sx={{ fontWeight: "700" ,fontSize:'22px'}}>
+              23
+              </Typography>
+              <Typography 
+              variant="body2"
+              sx={{ fontWeight: "400"}}
+              noWrap>Cancel Orders</Typography>
+            </Stack>
+          </Stack>
+        </Grid>
+
+      </Grid>
+      </Grid>
+      </Grid>
+
         </Grid>
       </Grid>
+      <Callsupport />
     </Box>
-  
   );
 };
 
-export default Orderrecord ;
+export default Orderrecord;

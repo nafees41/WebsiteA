@@ -13,6 +13,7 @@ import { Stack } from "@mui/material";
 import Relatedtab from "../Relatedtab/Relatedtab";
 import Paginationcomp from "../Paginationcomp/Paginationcomp";
 import Featuredcategories2 from "../../../Featuredcategory/Featuredcategory";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 const ITEM_HEIGHT = "100%";
 const ITEM_PADDING_TOP = 8;
@@ -75,11 +76,9 @@ const About = () => {
                     <div>
                       <TextField id="outlined-basic" label="From" />
                       <TextField id="filled-basic" label="To" />
-                    <br/>
-                    <br/>
-                      <Typography>
-                        Price: $0.00 – $3200.00
-                      </Typography>
+                      <br />
+                      <br />
+                      <Typography>Price: $0.00 – $3200.00</Typography>
                     </div>
                   ),
                 },
@@ -87,30 +86,122 @@ const About = () => {
                   label: "Brand",
                   content: (
                     <div>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={1} disableRipple />
-                        <Typography >Apple</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={2} disableRipple />
-                        <Typography >Samsung</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={3} disableRipple />
-                        <Typography >Sony</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={4} disableRipple />
-                        <Typography >Adidas</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={5} disableRipple />
-                        <Typography >Borjan</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={6} disableRipple />
-                        <Typography>Oppo</Typography>
-                      </Stack>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Apple
+                          </Typography>
+                        }
+                      />
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Samsung
+                          </Typography>
+                        }
+                      />
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Sony
+                          </Typography>
+                        }
+                      />
+    
+            
+               <br/>
+
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Oppo
+                          </Typography>
+                        }
+                      />
                     </div>
                   ),
                 },
@@ -118,18 +209,94 @@ const About = () => {
                   label: "Discount",
                   content: (
                     <div>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography>Any</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography>No</Typography>
-                      </Stack>
-                      <Stack direction="row" spacing={1}>
-                        <Checkbox tabIndex={-1} disableRipple />
-                        <Typography>Yes</Typography>
-                      </Stack>
+                              <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Any
+                          </Typography>
+                        }
+                      />
+                      <br/>
+                       <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            No
+                          </Typography>
+                        }
+                      />
+                      <br/>
+                       <FormControlLabel
+                        control={
+                          <Checkbox
+                            value="allowExtraEmails"
+                            color="primary"
+                            sx={{
+                              "&.Mui-checked": {
+                                color: "#F7941D", // Change to your desired color
+                              },
+                            }}
+                          />
+                        }
+                        label={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              lineHeight: {
+                                md: "19.6px",
+                                sm: "12px",
+                                xs: "15px",
+                              },
+                              fontWeight: "400",
+                            }}
+                          >
+                            Yes
+                          </Typography>
+                        }
+                      />
+                   
+                 
                     </div>
                   ),
                 },
@@ -277,16 +444,24 @@ const About = () => {
                           ></Card>
                         </Grid>
                       </Grid>
-          
 
-      <Grid container spacing={2}>
-        <Grid item xs={12}>
-        <Button size="small" variant="contained" color="primary" sx={{marginTop:'10px',color:"white",padding:'7px'}}>
-                        Clear Filter
-                      </Button>
-        </Grid>
-   </Grid>
-     </div>
+                      <Grid container spacing={2}>
+                        <Grid item xs={12}>
+                          <Button
+                            size="small"
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                              marginTop: "10px",
+                              color: "white",
+                              padding: "7px",
+                            }}
+                          >
+                            Clear Filter
+                          </Button>
+                        </Grid>
+                      </Grid>
+                    </div>
                   ),
                 },
               ].map((section, index) => (
@@ -319,7 +494,10 @@ const About = () => {
                   md={6}
                   sm={12}
                   xs={12}
-                  sx={{ backgroundColor: "#FCF7FE",margin:{md:'auto',sm:'0',xs:'0'}}}
+                  sx={{
+                    backgroundColor: "#FCF7FE",
+                    margin: { md: "auto", sm: "0", xs: "0" },
+                  }}
                 >
                   <Typography sx={Mainstyle.Mainheading}>
                     Online <br />
@@ -327,7 +505,12 @@ const About = () => {
                       Shopping
                     </span>
                   </Typography>
-                  <Typography variant="subtitle1"  sx={{fontSize:'25px',fontWeight:'400'}}>Up to 50% off</Typography>
+                  <Typography
+                    variant="subtitle1"
+                    sx={{ fontSize: "25px", fontWeight: "400" }}
+                  >
+                    Up to 50% off
+                  </Typography>
                   <p>
                     Duis aute irure dolor in reprehenderit in voluptate velit
                     esse <br /> cillum dolore eu fugiat nulla pariatu
