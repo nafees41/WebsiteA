@@ -1030,7 +1030,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                 <Typography sx={Headerstyle.navItem}>Shop Now</Typography>
               </Link>
               <Link
-                to="singleproduct"
+                to="/Shoppingcartpage"
                 style={{
                   textDecoration: "none", // Remove underline
                   color: "inherit", // Inherit color from parent (card)

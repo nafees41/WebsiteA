@@ -13,6 +13,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Divider } from "@mui/material";
 import { Data } from "./Constant";
+import { Link } from "react-router-dom";
 
 
 function TabPanel(props) {
@@ -158,6 +159,7 @@ export default function App() {
                       </IconButton>
                     </Grid>
                     <Grid item xs={8}>
+                      <Link to='/singleproduct'>
                       <Card sx={Tabestyle.Tabcard}>
                         <img
                           src={slides[currentSlide].src}
@@ -165,6 +167,7 @@ export default function App() {
                           style={{ width: "100%" }}
                         />
                       </Card>
+                      </Link>
                     </Grid>
                     <Grid item xs={2}>
                       <IconButton
