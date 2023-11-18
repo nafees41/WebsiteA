@@ -321,7 +321,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             sm: "12px",
                             xs: "10px",
                           },
-                          color: "#F7941D",
+    
                         }}
                       >
                         Contact
@@ -361,7 +361,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             sm: "12px",
                             xs: "10px",
                           },
-                          color: "#F7941D",
+    
                         }}
                       >
                         Top Categories
@@ -453,8 +453,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                   fontFamily: ["Poppins", "sans-serif"],
                   fontWeight: "600",
                   lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                  color: "#F7941D",
+                  fontSize: { md: "18px", sm: "12px", xs: "10px" }
                 }}
               >
                 Contact
@@ -483,8 +482,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                   fontFamily: ["Poppins", "sans-serif"],
                   fontWeight: "600",
                   lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                  color: "#F7941D",
+                  fontSize: { md: "18px", sm: "12px", xs: "10px" }
                 }}
               >
                 Top Categories
@@ -769,10 +767,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                 md: "18px",
                                 sm: "12px",
                                 xs: "10px",
-                              },
-                              color: "#F7941D",
-                            }}
-                          >
+                              }}}>
                             Contact
                           </Typography>
                           <Typography
@@ -822,9 +817,8 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                 sm: "12px",
                                 xs: "10px",
                               },
-                              color: "#F7941D",
-                            }}
-                          >
+        
+                            }} >
                             Top Categories
                           </Typography>
                           <Typography
@@ -930,7 +924,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                       fontWeight: "600",
                       lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                       fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                      color: "#F7941D",
+
                     }}
                   >
                     Contact
@@ -958,13 +952,11 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                     variant="subtitle1"
                     sx={{
                       color: "black",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontWeight: "600",
                       lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                       fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                      color: "#F7941D",
-                    }}
-                  >
+
+                    }} >
                     Top Categories
                   </Typography>
                   <Typography variant="subtitle1" sx={{ color: "#484444" }}>
