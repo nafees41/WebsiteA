@@ -40,21 +40,19 @@ return (
         <Box>
        <Grid container spacing={4} sx={Loginstyle.Maincontainer} >
         <Grid item md={6} sm={12} xs={12} sx={{
-                      margin:'auto',
+                     
               marginX:{md:'0',sm:'40px',xs:'10px'}
 
         }} >
         <Card
-          sx={{
-            backgroundColor:'white',
-            padding:'30px'
-          }}
-          >
-          <Typography
+          sx={{backgroundColor:'white',padding:'20px'}}>
+    
+          <Box component="form" noValidate sx={{ mt: 3 }}>
+            <Grid container spacing={spacing}>
+             <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
+              <Typography
             variant="subtitle1"
-            
             sx={{
-             
               fontFamily: ["Poppins", "sans-serif"],
               fontWeight: "600",
               lineHeight: { md: "71.12px", sm: "18px", xs: "15px" },
@@ -62,9 +60,8 @@ return (
             }}>
             Login
           </Typography>
-          <Box component="form" noValidate sx={{ mt: 3 }}>
-            <Grid container spacing={spacing}>
-              <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
+          <br/>
+          <br/>
                 <TextField
                   required
                   fullWidth

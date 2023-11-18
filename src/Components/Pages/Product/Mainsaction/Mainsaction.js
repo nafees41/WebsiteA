@@ -41,7 +41,7 @@ const About = () => {
         spacing={2}
         sx={{
           marginTop: "20px",
-          paddingX: { md: "70px", sm: "40px", xs: "30px" },
+          paddingX: { md: "95px", sm: "40px", xs: "30px" },
         }}
       >
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>

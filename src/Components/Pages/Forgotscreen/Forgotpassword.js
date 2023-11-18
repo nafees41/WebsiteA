@@ -57,7 +57,7 @@ const Forgotpassword = () => {
         <Card
           sx={{
             backgroundColor:'white',
-            padding:{md:'45px',sm:'40px',xs:'0px'},
+            padding:{md:'20px',sm:'40px',xs:'0px'},
            }}>
    
           <Box component="form" noValidate sx={{ mt: 3 }}>

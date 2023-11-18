@@ -85,7 +85,7 @@ export default function PermanentDrawerLeft({ children }) {
         />
 
         <CustomListItem
-          to="/"
+          to="/orderhistory"
           primary={<Typography >Order History</Typography>}
         />
 

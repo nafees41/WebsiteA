@@ -87,7 +87,7 @@ const Securty = () => {
               sx={{
                 lineHeight: { md: "31.12px", sm: "22px", xs: "15px" },
                 fontSize: { md: "14px", sm: "18px", xs: "12px" },
-                paddingX:{md:'30px',sm:'10px',xs:'5px'}
+                paddingX:{md:'45px',sm:'10px',xs:'5px'}
 
               }}
             >
@@ -102,7 +102,6 @@ const Securty = () => {
         backgroundColor: '#FDDFBB',
         textAlign: 'center',
         boxShadow: '0px 0px 0px 0px',
-        paddingY: '5px',
       }}
     >
       <TextField
@@ -122,7 +121,6 @@ const Securty = () => {
         backgroundColor: '#FDDFBB',
         textAlign: 'center',
         boxShadow: '0px 0px 0px 0px',
-        paddingY: '5px',
       }}
     >
       <TextField
@@ -142,7 +140,6 @@ const Securty = () => {
         backgroundColor: '#FDDFBB',
         textAlign: 'center',
         boxShadow: '0px 0px 0px 0px',
-        paddingY: '5px',
       }}
     >
       <TextField
@@ -162,7 +159,6 @@ const Securty = () => {
         backgroundColor: '#FDDFBB',
         textAlign: 'center',
         boxShadow: '0px 0px 0px 0px',
-        paddingY: '5px',
       }}
     >
       <TextField

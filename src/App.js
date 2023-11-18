@@ -37,9 +37,7 @@ function App() {
      <Route path="/orderhistory"  element={<Orderhistory/>}> </Route>
      <Route path="/Editprofile"  element={<Editprofile/>}> </Route>
      <Route path="/Shoppingcartpage"  element={<Shoppingcartpage/>}> </Route>
-
-
- </Routes>
+</Routes>
       <Footer/>
     </BrowserRouter>
     </div>

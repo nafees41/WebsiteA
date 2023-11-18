@@ -15,7 +15,7 @@ const About = () => {
             container
             spacing={2}
             sx={{
-              paddingX: { md: "55px", sm: "0px", xs: "20px" },
+              paddingX: { md: "70px", sm: "0px", xs: "20px" },
               paddingY: { md: "70px", sm: "40px", xs: "30px" },
             }}
           >

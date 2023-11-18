@@ -29,7 +29,7 @@ const WhyUs = () => {
         container
         spacing={2}
         sx={{
-          paddingX: { md: "55px", sm: "0px", xs: "20px" },
+          paddingX: { md: "80px", sm: "0px", xs: "20px" },
           marginTop: "56px",
         }}
       >

@@ -28,7 +28,7 @@ const TrustedPartners = () => {
         </Grid>
         </Grid>
 
-        <Grid container spacing={2} sx={{ marginTop: "20px" ,paddingX:'40px'}}>
+        <Grid container spacing={2} sx={{ marginTop: "20px" ,paddingX:'80px'}}>
           <Grid item lg={3} md={12} sm={12} xs={12}>
            <img
                 src={Fresh}
