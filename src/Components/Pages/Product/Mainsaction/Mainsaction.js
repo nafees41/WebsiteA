@@ -47,14 +47,20 @@ const About = () => {
       >
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
-            <Typography sx={{ color: "#3C3737", padding: "15px" }}>
+            <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
               Filters
             </Typography>
 
             <div>
               {[
                 {
-                  label: "Categories",
+                  label: (
+                    <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
+                    Categories
+                  </Typography>
+
+                  ),
+                  
                   content: (
                     <div>
                       <Typography style={{ color: "#F7941D" }}>
@@ -72,7 +78,12 @@ const About = () => {
                   ),
                 },
                 {
-                  label: "Price Range",
+                  label: (
+                    <Typography sx={{ color: "#3C3737", fontWeight:'600'}}>
+                    Price Range
+                  </Typography>
+
+                  ),
                   content: (
                     <div>
                       <TextField id="outlined-basic" label="From" />
@@ -84,7 +95,12 @@ const About = () => {
                   ),
                 },
                 {
-                  label: "Brand",
+                  label: (
+                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
+                    Brand
+                  </Typography>
+
+                  ),
                   content: (
                     <div>
                       <FormControlLabel
@@ -207,7 +223,12 @@ const About = () => {
                   ),
                 },
                 {
-                  label: "Discount",
+                  label: (
+                    <Typography sx={{ color: "#3C3737", fontWeight:'600'}}>
+                  Discount
+                  </Typography>
+
+                  ),
                   content: (
                     <div>
                               <FormControlLabel
@@ -302,7 +323,13 @@ const About = () => {
                   ),
                 },
                 {
-                  label: "Color",
+                  label: (
+                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
+                  Color
+                  </Typography>
+
+                  ),
+                  
                   content: (
                     <div>
                       <Grid container spacing={2}>
@@ -455,7 +482,7 @@ const About = () => {
                             sx={{
                               marginTop: "10px",
                               color: "white",
-                              padding: "7px",
+                              padding: "10px",
                             }}
                           >
                             Clear Filter
