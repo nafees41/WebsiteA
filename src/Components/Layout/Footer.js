@@ -28,7 +28,6 @@ const Footer = () => {
 
   return (
     <Box sx={{ position: "relative" }}>
-      
       <Reviewscomp/>
       <Grid container sx={{ marginTop: "40px" }}>
         <Grid item xs={12} sx={{ textAlign: "center" }}>
