@@ -1315,7 +1315,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                           <Grid item md={6} xs={8} >
                         <Button 
                          fullWidth
-                        variant="contained" color="secondary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px'}}>
+                        variant="contained" color="primary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px',color:'white'}}>
                         View Cart
                         </Button>
                        
@@ -1324,12 +1324,11 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             item
                             md={6}
                             xs={2}
-                            sx={{  textAlign: "end" }}
-                          >
+                            sx={{  textAlign: "end" }} >
                           
                           <Button 
                           fullWidth
-                          variant="contained" color="primary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px'}}>
+                          variant="contained" color="secondary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px'}}>
                           Check Out
                         </Button>
                           </Grid>

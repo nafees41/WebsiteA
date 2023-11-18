@@ -4,6 +4,10 @@ import Slider from '../../Slidercomp/Slider'
 import Salecomp from '../../Salecomp/Sale'
 import Tabcomp from '../../Tabcom/Tab'
 import Featured from '../../Featuredcategory/Featuredcategory'
+import Footerimage from '../../Footerimage/Footerimage'
+import Reviewscomp from '../../Reviews/Saction'
+
+
 
 
 
@@ -15,6 +19,9 @@ const Home = () => {
         <Salecomp />
         <Tabcomp/>
         <Featured/>
+        <Reviewscomp/>
+        <Footerimage />
+
 
     </div>
   )

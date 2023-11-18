@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Divider,Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import {
   TextField,
@@ -18,6 +18,7 @@ import Chat from '../images/chat.png'
 
 
 const Footer = () => {
+  
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -28,7 +29,6 @@ const Footer = () => {
 
   return (
     <Box sx={{ position: "relative" }}>
-      <Reviewscomp/>
       <Grid container sx={{ marginTop: "40px" }}>
         <Grid item xs={12} sx={{ textAlign: "center" }}>
           <img src={Logo} style={{width:'20%'}} />
@@ -81,6 +81,9 @@ const Footer = () => {
                   display: "flex",
                   alignItems: "center",
                   borderRadius: 7,
+                  boxShadow:'0px 0px 0px 0px',
+                  border:'2px solid #D9D9D9',
+
                 }}
               >
                 <TextField
@@ -122,24 +125,24 @@ const Footer = () => {
                   variant="subtitle1"
                   sx={{
                     color: "black",
-                    fontFamily: ["Poppins", "sans-serif"],
                     fontWeight: "600",
                     lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                     fontSize: { md: "25px", sm: "12px", xs: "10px" },
                     color: "#F7941D",
+                    paddingBottom:'10px'
                   }}
                 >
                   Social
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  <Box sx={{ display: "flex", alignItems: "center" ,color:'#7F7F7F'}}>
+                  <Box sx={{ display: "flex", alignItems: "center" ,color:'#7F7F7F',paddingBottom:'10px'}}>
                     <InstagramIcon sx={{color:'#7F7F7F'}} />
                     <span>Instagram</span>
                   </Box>
                 </Typography>
 
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  <Box sx={{ display: "flex", alignItems: "center" }}>
+                  <Box sx={{ display: "flex", alignItems: "center" ,paddingBottom:'10px'}}>
                     <FacebookIcon sx={{color:'#7F7F7F'}} />
                     <span>Facebook</span>
                   </Box>
@@ -149,13 +152,13 @@ const Footer = () => {
            
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
                
-                <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Box sx={{ display: "flex", alignItems: "center",paddingBottom:'10px' }}>
                     < TwitterIcon sx={{color:'#7F7F7F'}} />
                     <span>Twitter</span>
                   </Box>
                 </Typography>
                 <Typography variant="subtitle1">
-                <Box sx={{ display: "flex", alignItems: "center" }}>
+                <Box sx={{ display: "flex", alignItems: "center",paddingBottom:'10px' }}>
                     <  YouTubeIcon sx={{color:'#7F7F7F'}} />
                     <span>YouTube</span>
                   </Box>
@@ -168,11 +171,11 @@ const Footer = () => {
                   variant="subtitle1"
                   sx={{
                     color: "black",
-                    fontFamily: ["Poppins", "sans-serif"],
                     fontWeight: "600",
                     lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                     fontSize: { md: "25px", sm: "12px", xs: "10px" },
                     color: "#F7941D",
+                    paddingBottom:'10px'
                   }}
                 >
                   Contact
@@ -197,11 +200,11 @@ const Footer = () => {
                   variant="subtitle1"
                   sx={{
                     color: "black",
-                    fontFamily: ["Poppins", "sans-serif"],
                     fontWeight: "600",
                     lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                     fontSize: { md: "25px", sm: "12px", xs: "10px" },
                     color: "#F7941D",
+                    paddingBottom:'10px'
                   }}
                 >
                   Contact
@@ -226,11 +229,11 @@ const Footer = () => {
                   variant="subtitle1"
                   sx={{
                     color: "black",
-                    fontFamily: ["Poppins", "sans-serif"],
                     fontWeight: "600",
                     lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                     fontSize: { md: "25px", sm: "12px", xs: "10px" },
                     color: "#F7941D",
+                    paddingBottom:'10px'
                   }}
                 >
                   Our Information
@@ -255,11 +258,11 @@ const Footer = () => {
                   variant="subtitle1"
                   sx={{
                     color: "black",
-                    fontFamily: ["Poppins", "sans-serif"],
                     fontWeight: "600",
                     lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                     fontSize: { md: "25px", sm: "12px", xs: "10px" },
                     color: "#F7941D",
+                    paddingBottom:'10px'
                   }}
                 >
                   Top Categories
@@ -283,19 +286,20 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
+          <Divider/>
             <Grid item xs={12}>
             <Typography
               variant="subtitle1"
               sx={{
                 color: "black",
-                fontFamily: ["Poppins", "sans-serif"],
                 fontWeight: "300",
                 lineHeight: { md: "22px", sm: "18px", xs: "15px" },
                 fontSize: { md: "15px", sm: "12px", xs: "10px" },
                 textAlign: "center",
+                padding:'10px'
               }}
             >
-              Copyright © 2020. LogoIpsum. All rights reserved.
+     Copyright © 2023 We Have and You HaveAll rights reserved
             </Typography>
           </Grid>
         </Grid>

@@ -111,6 +111,7 @@ function TopNavbar() {
                     backgroundColor: "#F7F7F7",
                     display: "flex",
                     borderRadius: 7,
+                    border:'2px solid #D9D9D9',
                   }}
                 >
                   <FormControl

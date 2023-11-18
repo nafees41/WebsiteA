@@ -3,19 +3,19 @@ const style = {
     'Tabcard':{
         background:'white' ,
         textAlign: "center",
-          padding: "30px",
+          boxShadow:'0px 0px 0px 0px',
+          border:'2px solid #D9D9D9',
+          borderRadius:'18px',
          
     },
     'Tabsheading':{
-        color: theme. blue,
-        fontFamily: ["Poppins", "sans-serif"],
-        fontWeight: "600",
+        color: '#000000',
+        fontWeight: "400",
         lineHeight: { md: "22px", sm: "18px", xs: "15px" },
         fontSize: { md: "15px", sm: "12px", xs: "10px" },
     },    
     'Subheading':{
-        color:  theme. blue,
-         fontFamily: ["Poppins", "sans-serif"],
+        color:  '#000000',
              fontWeight: "400",
              lineHeight: { md: "24px", sm: "10px", xs: "8px" },
              fontSize: { md: "16px", sm: "10px", xs: "8px" },
@@ -25,7 +25,6 @@ const style = {
          boxShadow: "0px 0px 0px 0px",
         paddingX: "25px",
             fontSize: "12px",
-            fontFamily: ["Poppins", "sans-serif"],
              textTransform: "lowercase",
              marginTop: "10px",
              background:'#F7941D',

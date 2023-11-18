@@ -28,8 +28,7 @@ const Faq = () => {
         <Grid item lg={6} md={12} sm={12} xs={12}>
           <Typography variant="h3" sx={{textAlign:'center',fontWeight:'bolder'}}>FAQ'S</Typography>
           <Typography variant="subtitle1" sx={{textAlign:'center'}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          You offer a good product, make advertising, analyze the market but  <br/>still have no improvement Our qulificated specialists 
           </Typography>
         </Grid>
       </Grid>
@@ -96,8 +95,8 @@ const Faq = () => {
                   onChange={handleAccordionChange(index)}
                 >
                   <AccordionSummary
-                    sx={{ backgroundColor: "#F1F1F1" }}
-                    expandIcon={<ExpandMoreIcon />}
+                   
+                    expandIcon={<AddIcon sx={{color:'white',backgroundColor: "#F7941D"}} />}
                   >
                     <Typography>{section.label}</Typography>
                   </AccordionSummary>

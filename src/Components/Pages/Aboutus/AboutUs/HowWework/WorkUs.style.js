@@ -22,7 +22,7 @@
         lineHeight: '23px',
         letterSpacing: '0em',
         textAlign: 'center',
-        color:'white',
+        color:'#E1E1E1',
       }
 
 }

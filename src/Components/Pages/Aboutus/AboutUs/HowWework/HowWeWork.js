@@ -20,7 +20,7 @@ const HowWeWork = () => {
         <Grid item lg={12} md={12} sm={12} xs={12} sx={Workstyle.workMain}>
      
            <Typography sx={Workstyle.workHeading}>How We Work</Typography>
-          <Typography sx={Workstyle.workParagraph}>You offer a good product, make advertising, analyze the market but still have no improvement? </Typography>
+          <Typography sx={Workstyle.workParagraph}>You offer a good product, make advertising, analyze the market but <br/> still have no improvement? </Typography>
 
    <VideoPlayer/>
         

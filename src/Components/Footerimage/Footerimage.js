@@ -1,5 +1,7 @@
 import React from 'react'
 import { Grid } from "@mui/material";
+import Narrationimage7 from "../../Components/images/off.png";
+
 
 const Footerimage = () => {
   return (

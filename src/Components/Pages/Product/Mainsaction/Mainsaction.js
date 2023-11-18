@@ -14,6 +14,7 @@ import Relatedtab from "../Relatedtab/Relatedtab";
 import Paginationcomp from "../Paginationcomp/Paginationcomp";
 import Featuredcategories2 from "../../../Featuredcategory/Featuredcategory";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import Callsupport from "../../../Callsupport/Callsupport";
 
 const ITEM_HEIGHT = "100%";
 const ITEM_PADDING_TOP = 8;
@@ -525,6 +526,7 @@ const About = () => {
         </Grid>
       </Grid>
       <Featuredcategories2 />
+      <Callsupport/>
     </Box>
   );
 };

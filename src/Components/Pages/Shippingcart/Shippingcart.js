@@ -22,6 +22,7 @@ import Redwatch from "../../images/redwatch.png";
 import Stack from "@mui/material/Stack";
 import Shippingstyle from './Shoppingcart.style'
 import CardMedia from '@mui/material/CardMedia';
+import Callsupport from "../../Callsupport/Callsupport";
 
 
 const Dashboard = () => {
@@ -300,6 +301,7 @@ const Dashboard = () => {
               </Grid>
             </Grid>
           </Grid>
+          <Callsupport/>
      
     </Box>
   );

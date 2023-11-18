@@ -101,7 +101,7 @@ const Featured = () => {
         </Grid>
         <Grid container spacing={2} sx={{paddingX:'50px',marginTop:'20px'}} >
           <Grid md={4}  sm={12}  xs={12}>
-     <Card sx={{ backgroundColor: "white",paddingY:'20px'}}>
+     <Card sx={{ backgroundColor: "white",paddingY:'25px'}}>
              <CardContent>
            <Typography variant="h6" sx={{color:'#1D1E1E',fontWeight:'600',paddingLeft:'22px'}}>Jewellers</Typography>
            </CardContent>
@@ -125,13 +125,13 @@ const Featured = () => {
            </CardContent>
            <Grid container spacing={2} sx={{paddingX:'30px'}} >
           <Grid item xs={4}>
-            <img src={Narrationimage5} style={{width:'100%',height:'100%'}}  />
+            <img src={Narrationimage5} style={{width:'100%'}}  />
             </Grid>
             <Grid item xs={4}>
-        <img src={Narrationimage5} style={{width:'100%',height:'100%'}} />
+        <img src={Narrationimage5} style={{width:'100%'}} />
         </Grid>
         <Grid item xs={4}>
-        <img src={Narrationimage5} style={{width:'100%',height:'100%'}} />
+        <img src={Narrationimage5} style={{width:'100%'}} />
         </Grid>
     </Grid>
          </Card>
@@ -142,7 +142,7 @@ const Featured = () => {
              <CardContent>
            <Typography variant="h6" sx={{color:'#1D1E1E',fontWeight:'600',paddingLeft:'22px'}}>Sun Glasses</Typography>
            </CardContent>
-           <Grid container spacing={2} sx={{paddingX:'30px'}} >
+           <Grid container spacing={2} sx={{paddingX:'20px'}} >
           <Grid item xs={4}>
             <img src={Narrationimage6} style={{width:'100%'}}  />
             </Grid>
