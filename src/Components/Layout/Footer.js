@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import {
   TextField,
@@ -8,12 +8,7 @@ import {
   Paper,
   Button,
 } from "@mui/material";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import Messageimage from "../images/message.png";
 import Logo from "../../Components/images/logo.png";
-import Narrationimage7 from "../images/off.png";
-import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import Reviewscomp from "../Reviews/Saction";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -21,28 +16,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Chat from '../images/chat.png'
 
-import theme from "../Theme/Theme";
 
 const Footer = () => {
-  const buttonStyle = {
-    backgroundColor: "#F7941D", // Change this to your desired background color
-    color: "#182733", // Change this to the text color you want
-    borderRadius: "13px",
-    height: "45.42px",
-    width: "50px",
-  };
-  const buttonStyle1 = {
-    backgroundColor: "#F7941D", // Change this to your desired background color
-    color: "#182733", // Change this to the text color you want
-    borderRadius: "32px",
-    height: "45.42px",
-    width: "50px",
-  };
-  const textFieldStyle = {
-    "& input::placeholder": {
-      color: "#FFFFFF", // Change this to your desired placeholder text color
-    },
-  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -52,12 +28,8 @@ const Footer = () => {
 
   return (
     <Box sx={{ position: "relative" }}>
-      <Grid container spacing={2} sx={{ paddingX: "40px", marginTop: "20px" }}>
-        <Grid item xs={12}>
-          <img src={Narrationimage7} style={{ width: "100%" }} />
-        </Grid>
-      </Grid>
-      <Reviewscomp />
+      
+      <Reviewscomp/>
       <Grid container sx={{ marginTop: "40px" }}>
         <Grid item xs={12} sx={{ textAlign: "center" }}>
           <img src={Logo} style={{width:'20%'}} />
@@ -312,8 +284,7 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-
-          <Grid item xs={12}>
+            <Grid item xs={12}>
             <Typography
               variant="subtitle1"
               sx={{

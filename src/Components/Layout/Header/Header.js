@@ -756,7 +756,6 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             variant="subtitle1"
                             sx={{
                               color: "black",
-                              fontFamily: ["Poppins", "sans-serif"],
                               fontWeight: "600",
                               lineHeight: {
                                 md: "25.5px",
