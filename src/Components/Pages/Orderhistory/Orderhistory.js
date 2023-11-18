@@ -19,6 +19,8 @@ import Carimage from '../../images/cancelorder.png'
 import { styled } from "@mui/material/styles";
 import GppGoodIcon from '@mui/icons-material/GppGood';
 import Callsupport from "../../Callsupport/Callsupport";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 
 const Orderrecord = () => {
@@ -124,7 +126,7 @@ const Orderrecord = () => {
             container>
             <Grid
               item
-              md={11}
+              md={10}
               sm={12}
               xs={12}
               sx={{border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px'}}>
@@ -141,6 +143,23 @@ const Orderrecord = () => {
                 {" "}
                 Order History{" "}
               </Typography>
+              <Grid
+          item
+          lg={2}
+          md={6}
+          xs={12}
+          sm={6}
+          sx={{ display: "flex", justifyContent: "end" }}
+        >
+          <Stack direction="row" spacing={2}>
+            <Typography sx={{ color: "#484444" }}> Show: </Typography>
+            <Typography sx={{ color: "#484444" }}> 12 </Typography>
+            <Stack>
+              <KeyboardArrowUpIcon sx={{ fontSize: "10px" }} />
+              <KeyboardArrowDownIcon sx={{ fontSize: "10px" }} />
+            </Stack>
+          </Stack>
+        </Grid>
               <Divider />
 
               <Table aria-label="a dense table">
