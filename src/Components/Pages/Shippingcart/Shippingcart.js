@@ -136,7 +136,7 @@ const Dashboard = () => {
         image={Redwatch}
         style={{ width: "100%", height: "80px"}} alt="Paella dish" />
         </Card>
-        <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}} >
+        <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}}>
           Samsung - Galaxy <br /> S6 4G
         </Typography>
       </Stack>,

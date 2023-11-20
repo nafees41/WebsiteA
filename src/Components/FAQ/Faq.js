@@ -93,9 +93,7 @@ const Faq = () => {
                   key={index}
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
-                  elevation={0} 
-                  sx={{ 
-                    '&:before':{height:'0px'}}}>
+                 >
                 <AccordionSummary
             sx={{ backgroundColor: '#FAFAFA' }}
             expandIcon={

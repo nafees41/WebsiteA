@@ -18,14 +18,7 @@ import Callsupport from "../../../Callsupport/Callsupport";
 
 const ITEM_HEIGHT = "100%";
 const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-    },
-  },
-};
+
 const About = () => {
   const [expanded, setExpanded] = useState([true, true, true]); // Initialize to true for each Accordion
   const handleAccordionChange = (panel) => (event, isExpanded) => {
@@ -35,6 +28,18 @@ const About = () => {
       return newExpanded;
     });
   };
+  const accordionStyle = {
+    backgroundColor: '#fff',
+    color: 'rgba(0, 0, 0, 0.87)',
+    borderRadius: '4px',
+    boxShadow: 'none', // Remove box shadow
+    border: 'none', // Remove border
+    position: 'relative',
+    overflowAnchor: 'none',
+  };
+
+ 
+
   return (
     <Box>
       <Grid
@@ -55,7 +60,7 @@ const About = () => {
               {[
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
+                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
                     Categories
                   </Typography>
 
@@ -497,6 +502,9 @@ const About = () => {
                   key={index}
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
+                  style={accordionStyle}
+
+                  
                 >
                   <AccordionSummary
                     sx={{ backgroundColor: "#F1F1F1" }}

@@ -14,8 +14,7 @@ import Reviewscomp from '../../Reviews/Saction'
 const Home = () => {
   return (
     <div>
-
-        <Slider/>
+         <Slider/>
         <Salecomp />
         <Tabcomp/>
         <Featured/>
