@@ -16,6 +16,7 @@ import Productpage from '../src/Components/Pages/Product/Product'
 import Shoppingcartpage from '../src/Components/Pages/Shippingcart/Shippingcart'
 import Orderhistory from '../src/Components/Pages/Orderhistory/Orderhistory'
 import Editprofile from '../src/Components/Pages/Editprofile/Editprofile'
+import Forgotemail from '../src/Components/Pages/Forgotpassword-2/Forgot-2'
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
      <Route path="/orderhistory"  element={<Orderhistory/>}> </Route>
      <Route path="/Editprofile"  element={<Editprofile/>}> </Route>
      <Route path="/Shoppingcartpage"  element={<Shoppingcartpage/>}> </Route>
+     <Route path="/Forgotemail"  element={<Forgotemail/>}> </Route>
+
 </Routes>
       <Footer/>
     </BrowserRouter>

@@ -26,6 +26,7 @@ const style={
         border: "1px solid #D5D5D5",
         marginLeft: { lg: "", md: "auto", sm: "auto", xs: "0" },
         marginRight: { lg: "auto", md: "auto", sm: "auto", xs: "0" },
+        borderRadius:'12px'
     },
     
     

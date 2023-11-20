@@ -15,6 +15,7 @@ import { Data } from "../../../Tabcom/Constant";
 import Stack from "@mui/material/Stack";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -100,7 +101,7 @@ export default function App() {
         container
         sx={{
           marginTop: "80px",
-          paddingX: { md: "70px", sm: "0px", xs: "0px" },
+          paddingX: { md: "35px", sm: "0px", xs: "0px" },
           backgroundColor: "white",
         }}
       >
@@ -177,10 +178,7 @@ export default function App() {
           </Stack>
         </Grid>
       </Grid>
-      <Divider
-        variant="inset"
-        sx={{ marginX: { md: "50px", sm: "0px", xs: "0px" } }}
-      />
+    
       <TabPanel value={value} index={0}>
         <Grid container spacing={2}>
           {Data.map((item, index) => (
@@ -198,13 +196,12 @@ export default function App() {
                         </IconButton>
                       </Grid>
                       <Grid item xs={8}>
-                        <Card>
+                        <Link to="/singleproduct">
                           <img
                             src={slides[currentSlide].src}
                             alt={slides[currentSlide].alt}
-                            style={{ width: "100%" }}
                           />
-                        </Card>
+                        </Link>
                       </Grid>
                       <Grid item xs={2}>
                         <IconButton
@@ -219,10 +216,11 @@ export default function App() {
                 </Grid>
                 <Box display="flex">
                   <Divider flexItem sx={{ marginRight: "16px", flexGrow: 1 }} />
+
                   <Typography>Watch</Typography>
                   <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
                 </Box>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} sx={{ padding: "10px" }}>
                   <Grid item xs={6} sx={{ display: "flex" }}>
                     <Typography
                       variant="subtitle1"
@@ -232,27 +230,30 @@ export default function App() {
                       Apple Series{" "}
                     </Typography>
                   </Grid>
-                  <Grid item xs={6}>
-                    <Button
-                      type="submit"
-                      sx={{ color: "#F7941D", fontSize: "15px" }}
-                    >
-                      {" "}
-                      $2,435{" "}
-                    </Button>
+                  <Grid
+                    item
+                    xs={6}
+                    sx={{ display: "flex", justifyContent: "flex-end" }}
+                  >
+                    <Typography variant="h6" sx={{ color: "#F7941D" }}>
+                      $2,435
+                    </Typography>
                   </Grid>
                 </Grid>
+
                 <Typography
                   sx={{
                     textAlign: "center",
                     fontSize: "12px",
                     color: "#7F7F7F",
+                    padding: "8px",
                   }}
                 >
                   Apple Watch Series 8 features temperature sensing for insights
                   into women's health, Car Crash Detection, and sleep stages to
                   understand your sleep.
                 </Typography>
+                <br />
               </Card>
             </Grid>
           ))}
@@ -276,13 +277,12 @@ export default function App() {
                       </IconButton>
                     </Grid>
                     <Grid item xs={8}>
-                      <Card>
+                      <Link to="/singleproduct">
                         <img
                           src={slides[currentSlide].src}
                           alt={slides[currentSlide].alt}
-                          style={{ width: "100%" }}
                         />
-                      </Card>
+                      </Link>
                     </Grid>
                     <Grid item xs={2}>
                       <IconButton
@@ -297,10 +297,11 @@ export default function App() {
               </Grid>
               <Box display="flex">
                 <Divider flexItem sx={{ marginRight: "16px", flexGrow: 1 }} />
+
                 <Typography>Watch</Typography>
                 <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
               </Box>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} sx={{ padding: "10px" }}>
                 <Grid item xs={6} sx={{ display: "flex" }}>
                   <Typography
                     variant="subtitle1"
@@ -310,23 +311,30 @@ export default function App() {
                     Apple Series{" "}
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
-                  <Button
-                    type="submit"
-                    sx={{ color: "#F7941D", fontSize: "15px" }}
-                  >
-                    {" "}
-                    $2,435{" "}
-                  </Button>
+                <Grid
+                  item
+                  xs={6}
+                  sx={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <Typography variant="h6" sx={{ color: "#F7941D" }}>
+                    $2,435
+                  </Typography>
                 </Grid>
               </Grid>
+
               <Typography
-                sx={{ textAlign: "center", fontSize: "12px", color: "#7F7F7F" }}
+                sx={{
+                  textAlign: "center",
+                  fontSize: "12px",
+                  color: "#7F7F7F",
+                  padding: "8px",
+                }}
               >
                 Apple Watch Series 8 features temperature sensing for insights
                 into women's health, Car Crash Detection, and sleep stages to
                 understand your sleep.
               </Typography>
+              <br />
             </Card>
           </Grid>
 
@@ -349,13 +357,12 @@ export default function App() {
                       </IconButton>
                     </Grid>
                     <Grid item xs={8}>
-                      <Card>
+                      <Link to="/singleproduct">
                         <img
                           src={slides[currentSlide].src}
                           alt={slides[currentSlide].alt}
-                          style={{ width: "100%" }}
                         />
-                      </Card>
+                      </Link>
                     </Grid>
                     <Grid item xs={2}>
                       <IconButton
@@ -370,10 +377,11 @@ export default function App() {
               </Grid>
               <Box display="flex">
                 <Divider flexItem sx={{ marginRight: "16px", flexGrow: 1 }} />
+
                 <Typography>Watch</Typography>
                 <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
               </Box>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} sx={{ padding: "10px" }}>
                 <Grid item xs={6} sx={{ display: "flex" }}>
                   <Typography
                     variant="subtitle1"
@@ -383,23 +391,30 @@ export default function App() {
                     Apple Series{" "}
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
-                  <Button
-                    type="submit"
-                    sx={{ color: "#F7941D", fontSize: "15px" }}
-                  >
-                    {" "}
-                    $2,435{" "}
-                  </Button>
+                <Grid
+                  item
+                  xs={6}
+                  sx={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <Typography variant="h6" sx={{ color: "#F7941D" }}>
+                    $2,435
+                  </Typography>
                 </Grid>
               </Grid>
+
               <Typography
-                sx={{ textAlign: "center", fontSize: "12px", color: "#7F7F7F" }}
+                sx={{
+                  textAlign: "center",
+                  fontSize: "12px",
+                  color: "#7F7F7F",
+                  padding: "8px",
+                }}
               >
                 Apple Watch Series 8 features temperature sensing for insights
                 into women's health, Car Crash Detection, and sleep stages to
                 understand your sleep.
               </Typography>
+              <br />
             </Card>
           </Grid>
 
@@ -422,13 +437,12 @@ export default function App() {
                       </IconButton>
                     </Grid>
                     <Grid item xs={8}>
-                      <Card>
+                      <Link to="/singleproduct">
                         <img
                           src={slides[currentSlide].src}
                           alt={slides[currentSlide].alt}
-                          style={{ width: "100%" }}
                         />
-                      </Card>
+                      </Link>
                     </Grid>
                     <Grid item xs={2}>
                       <IconButton
@@ -443,83 +457,11 @@ export default function App() {
               </Grid>
               <Box display="flex">
                 <Divider flexItem sx={{ marginRight: "16px", flexGrow: 1 }} />
-                <Typography>Watch</Typography>
-                <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
-              </Box>
-              <Grid container spacing={2}>
-                <Grid item xs={6} sx={{ display: "flex" }}>
-                  <Typography
-                    variant="subtitle1"
-                    sx={{ color: "#1D1E1E", fontWeight: "bold" }}
-                  >
-                    {" "}
-                    Apple Series{" "}
-                  </Typography>
-                </Grid>
-                <Grid item xs={6}>
-                  <Button
-                    type="submit"
-                    sx={{ color: "#F7941D", fontSize: "15px" }}
-                  >
-                    {" "}
-                    $2,435{" "}
-                  </Button>
-                </Grid>
-              </Grid>
-              <Typography
-                sx={{ textAlign: "center", fontSize: "12px", color: "#7F7F7F" }}
-              >
-                Apple Watch Series 8 features temperature sensing for insights
-                into women's health, Car Crash Detection, and sleep stages to
-                understand your sleep.
-              </Typography>
-            </Card>
-          </Grid>
 
-          {/* Add more content for the first tab panel here */}
-        </Grid>
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Grid container spacing={2}>
-          <Grid item lg={3} md={6} xs={12} sm={6}>
-            <Card>
-              <Grid container alignItems="center" justifyContent="center">
-                <Grid item xs={12}>
-                  <Grid container alignItems="center" justifyContent="center">
-                    <Grid item xs={2}>
-                      <IconButton
-                        onClick={handlePreviousSlide}
-                        disabled={currentSlide === 0}
-                      >
-                        <KeyboardArrowLeftIcon />
-                      </IconButton>
-                    </Grid>
-                    <Grid item xs={8}>
-                      <Card>
-                        <img
-                          src={slides[currentSlide].src}
-                          alt={slides[currentSlide].alt}
-                          style={{ width: "100%" }}
-                        />
-                      </Card>
-                    </Grid>
-                    <Grid item xs={2}>
-                      <IconButton
-                        onClick={handleNextSlide}
-                        disabled={currentSlide === slides.length - 1}
-                      >
-                        <ChevronRightIcon />
-                      </IconButton>
-                    </Grid>
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Box display="flex">
-                <Divider flexItem sx={{ marginRight: "16px", flexGrow: 1 }} />
                 <Typography>Watch</Typography>
                 <Divider flexItem sx={{ marginLeft: "16px", flexGrow: 1 }} />
               </Box>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} sx={{ padding: "10px" }}>
                 <Grid item xs={6} sx={{ display: "flex" }}>
                   <Typography
                     variant="subtitle1"
@@ -529,23 +471,30 @@ export default function App() {
                     Apple Series{" "}
                   </Typography>
                 </Grid>
-                <Grid item xs={6}>
-                  <Button
-                    type="submit"
-                    sx={{ color: "#F7941D", fontSize: "15px" }}
-                  >
-                    {" "}
-                    $2,435{" "}
-                  </Button>
+                <Grid
+                  item
+                  xs={6}
+                  sx={{ display: "flex", justifyContent: "flex-end" }}
+                >
+                  <Typography variant="h6" sx={{ color: "#F7941D" }}>
+                    $2,435
+                  </Typography>
                 </Grid>
               </Grid>
+
               <Typography
-                sx={{ textAlign: "center", fontSize: "12px", color: "#7F7F7F" }}
+                sx={{
+                  textAlign: "center",
+                  fontSize: "12px",
+                  color: "#7F7F7F",
+                  padding: "8px",
+                }}
               >
                 Apple Watch Series 8 features temperature sensing for insights
                 into women's health, Car Crash Detection, and sleep stages to
                 understand your sleep.
               </Typography>
+              <br />
             </Card>
           </Grid>
 

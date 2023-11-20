@@ -2,18 +2,18 @@ import React from "react";
 import {
   Box,
   Grid,
-  Stack,
   Typography,
   Button,
   Divider,
   TextField,
-  Container,
-  Checkbox,
+  Checkbox,CardMedia,
 } from "@mui/material";
 import Profilepicture from "../../images/dashboardprofile.png";
 import Leftsidebar from "../../Dashboardsidebar/Sidebar";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+
 
 const Sidebar = () => {
   return (
@@ -56,8 +56,31 @@ const Sidebar = () => {
             Profile
           </Typography>
           </Grid>
-          <Grid item lg={6} md={12} sm={12} xs={12} sx={{display:'flex',justifyContent:'flex-end'}}>
-          <img src={Profilepicture}  />
+          <Grid item lg={6} md={12} sm={12} xs={12} sx={{display:'flex',justifyContent:'flex-end'}}>       <CardMedia
+                component="div" // Use a div as the component
+                sx={{
+                  position: "relative", // Make the container relative for absolute positioning
+                }}
+              >
+                {/* Main image */}
+                <img
+                  src={Profilepicture}
+                  alt="Image Alt Text"
+                  style={{
+                
+                    objectFit: "cover",
+                  }}
+                />
+                 <Box
+                  sx={{
+                    position: "absolute",
+                    top: "0", // Adjust as needed
+                    right:'0'
+                  }}
+                >   <CameraAltIcon sx={{color:'#F7941D',fontSize:'18px'}} />
+                  </Box>
+
+              </CardMedia>
           </Grid>
           </Grid>
           <Divider />
@@ -67,24 +90,21 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="Name"
                   size="large"
                   label="First Name"
-                  defaultValue="NAFEES"
+                  placeholder="NAFEES"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -100,24 +120,21 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="Name"
                   size="large"
                   label="Last Name*"
-                  defaultValue="Nafees"
+                  placeholder="Nafees"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -144,21 +161,18 @@ const Sidebar = () => {
                   type="email"
                   size="large"
                   label="Email Address*"
-                  defaultValue="talhatahir@info.com"
+                  placeholder="nafeesurrehman5566@gmail.com"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -183,24 +197,21 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="Phone"
                   size="large"
                   label="Phone No*"
-                  defaultValue="+1 3493 3894 43"
+                  placeholder="+1 3493 3894 43"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -219,24 +230,21 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="Country"
                   size="large"
                   label="Country*"
-                  defaultValue="Romania"
+                  placeholder="Romania"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -252,24 +260,21 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="city"
                   size="large"
                   label="City*"
-                  defaultValue="Bucharest"
+                  placeholder="Bucharest"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -287,7 +292,7 @@ const Sidebar = () => {
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="number"
                   size="large"
                   label="Zip Code*"
                   defaultValue="46564*"
@@ -295,16 +300,13 @@ const Sidebar = () => {
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -323,21 +325,18 @@ const Sidebar = () => {
                   type="email"
                   size="large"
                   label="State*"
-                  defaultValue="Bucharest"
+                  placeholder="Bucharest"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -364,21 +363,18 @@ const Sidebar = () => {
                   type="email"
                   size="large"
                   label="Street  Address*"
-                  defaultValue="2715 Ash Dr. San Jose, South Dakota 83475"
+                  placeholder="2715 Ash Dr. San Jose, South Dakota 83475"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -400,7 +396,7 @@ const Sidebar = () => {
                       color="primary"
                       sx={{
                         "&.Mui-checked": {
-                          color: "#9F0D7F", // Change to your desired color
+                          color: "#F7941D", // Change to your desired color
                         },
                       }}
                     />
@@ -419,6 +415,37 @@ const Sidebar = () => {
                 />
               </Grid>
             </Grid>
+            <br/>
+            <Grid item lg={12} md={12} xs={12} sm={12} >
+                <TextField
+                  required
+                  fullWidth
+                  type="email"
+                  size="large"
+                  label="Shipping Address*"
+                  placeholder="2715 Ash Dr. San Jose, South Dakota 83475"
+                  InputProps={{
+                    startAdornment: (
+                      <MailOutlineIcon
+                        style={{
+                          fontSize: 14, // Adjust the icon size as needed
+                          marginRight: "8px", // Adjust the spacing as needed
+                        }}
+                      />
+                    ),
+                    style: {
+                      fontWeight: "500",
+                      fontSize: "14px",
+                    },
+                  }}
+                  InputLabelProps={{
+                    style: {
+                      fontSize: "14px",
+                      // Add other label text styles as needed
+                    },
+                  }}
+                />
+              </Grid>
 
             <Button
               type="submit"
@@ -435,6 +462,7 @@ const Sidebar = () => {
                 fontSize: "15px",
                 textTransform: "lowercase",
                 fontWeight: "700",
+                borderRadius:'10px',
                 marginLeft: { md: "5px", sm: "0px", xs: "0px" },
               }}
             >

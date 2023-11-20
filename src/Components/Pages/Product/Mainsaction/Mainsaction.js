@@ -37,18 +37,12 @@ const About = () => {
     position: 'relative',
     overflowAnchor: 'none',
   };
-
- 
-
-  return (
+   return (
     <Box>
       <Grid
         container
         spacing={2}
-        sx={{
-          marginTop: "30px",
-          paddingX: {md: "95px", sm: "40px", xs: "30px" },
-    }} >
+        sx={{marginTop: "30px",paddingX: {md: "95px", sm: "40px", xs: "30px" },borderRadius:'15px'}}>
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
             <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
@@ -422,8 +416,7 @@ const About = () => {
                             sx={{
                               color: "#0a202d",
                               backgroundColor: "#D9D9D9",
-
-                              textAlign: "center",
+                                textAlign: "center",
                               boxShadow: "0px 0px 0px 0px",
                               padding: "10px",
                             }}
@@ -476,16 +469,19 @@ const About = () => {
                         </Grid>
                       </Grid>
 
-                      <Grid container spacing={2}>
-                        <Grid item xs={12}>
+                      <Grid container spacing={2} sx={{marginTop:2}}>
+                        <Grid item xs={12} sx={{backgroundColor:'#F1F1F1',padding:'10px'}}>
                           <Button
-                            size="small"
+                            size="large"
                             variant="contained"
                             color="primary"
                             sx={{
                               marginTop: "10px",
                               color: "white",
                               padding: "10px",
+                              borderRadius:'8px',
+                              fontSize:'12px',
+                              boxShadow:'0px 0px 0px 0px'
                             }}
                           >
                             Clear Filter
@@ -517,9 +513,9 @@ const About = () => {
           </Card>
         </Grid>
         <Grid item  spacing={2} md={10} sm={12} xs={12} >
-              <Grid container spacing={2}sx={{ backgroundColor: "#FCF7FE" }} >
+              <Grid container spacing={2} sx={{marginX:'20px',backgroundColor: "#FCF7FE",borderRadius:'15px'}} >
                 <Grid item md={6} sm={12} xs={12}>
-                  <img src={productimage} style={{ width: "100%" }} />
+                  <img src={productimage}/>
                 </Grid>
                 <Grid
                   item
@@ -527,7 +523,6 @@ const About = () => {
                   sm={12}
                   xs={12}
                   sx={{
-                    backgroundColor: "#FCF7FE",
                     margin: { md: "auto", sm: "0", xs: "0" },
                   }}
                 >

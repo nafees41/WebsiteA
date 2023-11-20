@@ -9,8 +9,6 @@ import {
 import { IconButton } from "@mui/material";
 import GppGoodIcon from '@mui/icons-material/GppGood';
 import Useimage from '../images/user.png'
-import Giftimage from '../images/Gift.png'
-import Carimage from '../images/Car.png'
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 
@@ -28,11 +26,12 @@ const Callsupport = () => {
         
       <Grid
         container
-        rowSpacing={1}
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        sx={{ paddingX: "50px", marginTop: {md:"120px",sm:'40px',xs:'10px'} }}
-      >
-        <Divider />
+    
+        sx={{ paddingX: "50px", marginTop: {md:"120px",sm:'40px',xs:'10px'} ,
+       border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px',padding:'20px'}}>
+
+      
+    
         <Grid item  md={3} sm={6}  xs={12}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>

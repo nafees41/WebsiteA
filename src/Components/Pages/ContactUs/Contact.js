@@ -199,7 +199,7 @@ const About = () => {
                 id="email"
                 autoComplete="email"
                 size="large"
-                placeholder="Dubbing Artist"
+                placeholder="Your Subject"
                 sx={{
                   backgroundColor: "#F5F5F5",
                   "& .MuiOutlinedInput-notchedOutline": {
@@ -253,16 +253,17 @@ const About = () => {
           <Button
             type="submit"
             variant="contained"
+            size="large"
             sx={{
               mt: 1,
               color: "#FFFFFFE5",
               boxShadow: "0px 0px 0px 0px",
-              paddingX: "25px",
               fontSize: {md:"15px",sm:"20px",xs:'18px'},
               textTransform: "lowercase",
+              borderRadius:'8px',
               fontWeight: "700",
-              paddingX: { md: "20px", sm: "15px", xs: "10px" },
-              paddingY: { md: "10px", sm: "15px", xs: "10px" },
+              paddingX: { md: "45px", sm: "15px", xs: "10px" },
+              paddingY: { md: "15px", sm: "15px", xs: "10px" },
             }}
           >
             Send Message

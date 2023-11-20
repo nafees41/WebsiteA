@@ -123,13 +123,14 @@ const Orderrecord = () => {
           xs={12} >
         <Grid
             item
-            container>
+            container sx={{border: "1px solid #D5D5D5",borderRadius:'12px'}}>
             <Grid
               item
-              md={10}
+              md={11}
               sm={12}
               xs={12}
-              sx={{border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px'}}>
+             >
+              <Box  sx={{ display: "flex" }}>
               <Typography
                 component="h1"
                 variant="h5"
@@ -143,22 +144,17 @@ const Orderrecord = () => {
                 {" "}
                 Order History{" "}
               </Typography>
-              <Grid
-          item
-          lg={2}
-          md={6}
-          xs={12}
-          sm={6}
-          sx={{ display: "flex", justifyContent: "end" }}
-        >
-          <Stack direction="row" spacing={2}>
-            <Typography sx={{ color: "#484444" }}> Show: </Typography>
-            <Typography sx={{ color: "#484444" }}> 12 </Typography>
+              <Stack direction="row" spacing={2} sx={{marginLeft:'auto',marginTop:3}}>
+            <Typography sx={{ color: "#484444" }}> Sort By: </Typography>
+            <Typography sx={{ color: "#484444" }}> AUG </Typography>
             <Stack>
               <KeyboardArrowUpIcon sx={{ fontSize: "10px" }} />
               <KeyboardArrowDownIcon sx={{ fontSize: "10px" }} />
             </Stack>
           </Stack>
+
+          </Box>
+   
         </Grid>
               <Divider />
 
@@ -197,7 +193,7 @@ const Orderrecord = () => {
                 </TableBody>
               </Table>
             </Grid>
-          </Grid>
+         
           <Grid
             item
             container>

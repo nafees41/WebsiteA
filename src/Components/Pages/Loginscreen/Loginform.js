@@ -17,6 +17,8 @@ import { CssBaseline } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from '@mui/material';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import LockIcon from '@mui/icons-material/Lock';
 
 
 const Login = () => {
@@ -45,7 +47,8 @@ return (
 
         }} >
         <Card
-          sx={{backgroundColor:'white',padding:'20px'}}>
+          sx={{backgroundColor:'white',padding:'20px',boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5",
+        }}>
     
           <Box component="form" noValidate sx={{ mt: 3 }}>
             <Grid container spacing={spacing}>
@@ -53,7 +56,6 @@ return (
               <Typography
             variant="subtitle1"
             sx={{
-              fontFamily: ["Poppins", "sans-serif"],
               fontWeight: "600",
               lineHeight: { md: "71.12px", sm: "18px", xs: "15px" },
               fontSize: { md: "50px", sm: "30px", xs: "25px" },
@@ -68,7 +70,7 @@ return (
                   type="email"
                   size="large"
                   label="Email Address"
-                  defaultValue="Enter Email"
+                  placeholder="Enter Email"
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
@@ -80,9 +82,8 @@ return (
                       />
                     ),
                     style: {
-                      color: "#241468",
+                      borderRadius:'12px',
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -98,24 +99,24 @@ return (
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="Password"
                   size="large"
-                  label="Email Address"
-                  defaultValue="Enter Email"
+                  label="Password"
+                  placeholder="Password"
+
+                 
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
-                          fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
                     ),
                     style: {
-                      color: "#241468",
+                      borderRadius:'12px',
+
                       fontWeight: "500",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontSize: "14px",
                     },
                   }}
@@ -132,7 +133,7 @@ return (
               container
               spacing={2}
               sx={{
-                paddingX: { lg: "50px", md: "40px", sm: "20px", xs: "15px" },
+                paddingX: { lg: "60px", md: "40px", sm: "20px", xs: "15px" },
               }}
             >
               <Grid item xs={6}>
@@ -143,7 +144,7 @@ return (
                       color="primary"
                       sx={{
                         "&.Mui-checked": {
-                          color: "#9F0D7F", // Change to your desired color
+                          color: "#F7941D", // Change to your desired color
                         },
                       }}
                     />
@@ -153,7 +154,6 @@ return (
                     variant="body1"
 
                       sx={{
-                        fontFamily: ["Poppins", "sans-serif"],
                         lineHeight: { md: "19.6px", sm: "12px", xs: "15px" },
                         fontWeight: "400",
                       }}>
@@ -205,10 +205,10 @@ return (
                     fullWidth
                     sx={{
                       boxShadow: "0px 0px 0px 0px",
+                      borderRadius:'12px',
                       paddingX: "25px",
                       paddingY: { md: "10px", sm: "8px", xs: "5px" },
                       fontSize: { md: "18px", sm: "15px", xs: "15px" },
-                      fontFamily: ["Poppins", "sans-serif"],
                       textTransform: "lowercase",
                       color:'white'
                     }}
@@ -226,7 +226,8 @@ return (
           <Card
           sx={{
             backgroundColor:'white',
-            padding:'30px'
+            padding:'30px',
+            boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5"
           }}
           >
             <Typography
@@ -251,24 +252,24 @@ return (
                   <TextField
                     required
                     fullWidth
-                    type="email"
+                    type="Name"
                     size="large"
-                    label="First Name"
-                    defaultValue="First Name"
+                    label="Name"
+                    placeholder="Name"
                     InputProps={{
                       startAdornment: (
-                        <MailOutlineIcon
+                        <PermIdentityIcon 
                           style={{
-                            color: "#241468", // Adjust the color as needed
-                            fontSize: 14, // Adjust the icon size as needed
+                            color: "#6D6868", // Adjust the color as needed
+
                             marginRight: "8px", // Adjust the spacing as needed
                           }}
                         />
                       ),
                       style: {
-                        color: "#241468",
+                        borderRadius:'12px',
+
                         fontWeight: "500",
-                        fontFamily: ["Poppins", "sans-serif"],
                         fontSize: "14px",
                       },
                     }}
@@ -284,25 +285,24 @@ return (
                   <TextField
                     required
                     fullWidth
-                    type="email"
+                    type="Name"
                     size="large"
                     label="Last Name"
-                    defaultValue="Last Name"
+                    placeholder="Last Name"
                     InputProps={{
                       startAdornment: (
-                        <MailOutlineIcon
+                        <PermIdentityIcon 
                           style={{
-                            color: "#241468", // Adjust the color as needed
-                            fontSize: 14, // Adjust the icon size as needed
+                            color: "#6D6868", // Adjust the color as needed
+
                             marginRight: "8px", // Adjust the spacing as needed
                           }}
                         />
                       ),
                       style: {
-                        color: "#241468",
+                        borderRadius:'12px',
+
                         fontWeight: "500",
-                        fontFamily: ["Poppins", "sans-serif"],
-                        fontSize: "14px",
                       },
                     }}
                     InputLabelProps={{
@@ -327,22 +327,21 @@ return (
                     type="email"
                     size="large"
                     label="Email Address "
-                    defaultValue="Enter Email"
+                    placeholder="Email Address"
                     InputProps={{
                       startAdornment: (
                         <MailOutlineIcon
                           style={{
-                            color: "#241468", // Adjust the color as needed
-                            fontSize: 14, // Adjust the icon size as needed
+                            color: "#6D6868", // Adjust the color as needed
+
                             marginRight: "8px", // Adjust the spacing as needed
                           }}
                         />
                       ),
                       style: {
-                        color: "#241468",
-                        fontWeight: "500",
-                        fontFamily: ["Poppins", "sans-serif"],
                         fontSize: "14px",
+                        borderRadius:'12px',
+
                       },
                     }}
                     InputLabelProps={{
@@ -363,25 +362,24 @@ return (
                   <TextField
                     required
                     fullWidth
-                    type="email"
+                    type="Password"
                     size="large"
                     label=" Password"
-                    defaultValue="Confirm Password"
+                    placeholder="Password"
                     InputProps={{
                       startAdornment: (
-                        <MailOutlineIcon
+                        <LockIcon
                           style={{
-                            color: "#241468", // Adjust the color as needed
-                            fontSize: 14, // Adjust the icon size as needed
-                            marginRight: "8px", // Adjust the spacing as needed
+                            color: "#6D6868", // Adjust the color as needed
+  marginRight: "8px", // Adjust the spacing as needed
                           }}
                         />
                       ),
                       style: {
-                        color: "#241468",
-                        fontWeight: "500",
-                        fontFamily: ["Poppins", "sans-serif"],
+                  
                         fontSize: "14px",
+                        borderRadius:'12px',
+
                       },
                     }}
                     InputLabelProps={{
@@ -396,25 +394,25 @@ return (
                   <TextField
                     required
                     fullWidth
-                    type="email"
+                    type="Password"
                     size="large"
                     label="Confirm Password"
-                    defaultValue="Confirm Password"
+                    placeholder="Confirm Password"
                     InputProps={{
                       startAdornment: (
-                        <MailOutlineIcon
+                        <LockIcon
                           style={{
-                            color: "#241468", // Adjust the color as needed
-                            fontSize: 14, // Adjust the icon size as needed
+                            color: "#6D6868", // Adjust the color as needed
+
                             marginRight: "8px", // Adjust the spacing as needed
                           }}
                         />
                       ),
                       style: {
-                        color: "#241468",
-                        fontWeight: "500",
-                        fontFamily: ["Poppins", "sans-serif"],
+                       
                         fontSize: "14px",
+                        borderRadius:'12px',
+
                       },
                     }}
                     InputLabelProps={{
@@ -435,7 +433,7 @@ return (
                       color="primary"
                       sx={{
                         "&.Mui-checked": {
-                          color: "#9F0D7F", // Change to your desired color
+                          color: "#F7941D", // Change to your desired color
                         },
                       }}
                     />
@@ -464,6 +462,7 @@ return (
                   color: theme.white,
                   boxShadow: "0px 0px 0px 0px",
                   paddingX: "25px",
+                  borderRadius:'13px',
                   fontSize: { md: "18px", sm: "15px", xs: "10px" },
                   textTransform: "lowercase",
                 }}

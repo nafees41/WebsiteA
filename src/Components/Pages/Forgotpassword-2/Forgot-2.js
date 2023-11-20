@@ -5,18 +5,20 @@ import {
   TextField,
   Button,
   Grid,
+  Checkbox,
+
 
 } from "@mui/material";
 
 import { Link } from "react-router-dom";
 import Loginstyle from "../Loginscreen/Login.style";
 import theme from "../../Theme/Theme";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-
-import Forgotimage from '../../images/forgotscreen.png'
+import Forgotimage from '../../../Components/images/forgotscreen.png'
 import Card from "@mui/material/Card";
 import Callsupport from "../../Callsupport/Callsupport";
+import LockIcon from '@mui/icons-material/Lock';
 import { ThemeProvider } from '@mui/material';
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 
 
@@ -72,19 +74,54 @@ const Forgotpassword = () => {
             sx={{
               lineHeight: { md: "71.12px", sm: "30px", xs: "30px" },
             }}>
-            Enter email address that associated with your account.
+          Please add new password for more shopping.
           </Typography>
                 <TextField
                   required
                   fullWidth
-                  type="email"
+                  type="password"
                   size="large"
-                  label="Email Address"
+                
+                  placeholder="Password"
+                  label="Password"
                   defaultValue="Enter Email"
                   sx={{marginTop:{md:'0',sm:'30px',xs:'20px'}}}
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
+                      <LockIcon
+                        style={{
+                          fontSize: 14, // Adjust the icon size as needed
+                          marginRight: "8px", // Adjust the spacing as needed
+                        }}
+                      />
+                    ),
+                    style: {
+                      borderRadius:'12px',
+
+                      fontWeight: "500",
+                      fontSize: "14px",
+                    },
+                  }}
+                  InputLabelProps={{
+                    style: {
+                      fontSize: "14px",
+                      // Add other label text styles as needed
+                    },
+                  }}
+                />
+                <br/>
+                <br/>
+                    <TextField
+                  required
+                  fullWidth
+                  type="password"
+                  size="large"
+                  label="Again Password"
+                  placeholder="Again Password"
+                  sx={{marginTop:{md:'0',sm:'30px',xs:'20px'}}}
+                  InputProps={{
+                    startAdornment: (
+                      <LockIcon
                         style={{
                           fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
@@ -108,9 +145,36 @@ const Forgotpassword = () => {
               </Grid>
                </Grid>
         <br />
+        <Grid item xs={12} sx={{paddingX:'65px'}}>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      value="allowExtraEmails"
+                      color="primary"
+                      sx={{
+                        "&.Mui-checked": {
+                          color: "#F7941D", // Change to your desired color
+                        },
+                      }}
+                    />
+                  }
+                  label={
+                    <Typography
+                     variant="body1"
+                      sx={{
+                        lineHeight: { md: "19.6px", sm: "12px", xs: "15px" },
+                        fontWeight: "400",
+                      }}
+                    >
+                      Remember me
+                    </Typography>
+                  }
+                />
+              </Grid>
+              <br />
             <Grid container spacing={spacing} justifyContent="center">
               <Grid item md={10} sm={12} xs={12}>
-                <Link to="/Forgotemail">
+                <Link to="/securitypage ">
                   <Button
                     type="submit"
                     variant="contained"
@@ -126,7 +190,7 @@ const Forgotpassword = () => {
                       color:'white'
                     }}
                   >
-                    Send Email
+                    Recover Password
                   </Button>
                 </Link>
               </Grid>

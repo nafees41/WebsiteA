@@ -82,7 +82,7 @@ const Dashboard = () => {
 
     createData(
       <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
-         <Card>
+         <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px '}}>
          <CardMedia
         component="img"
         image={Redwatch}
@@ -130,7 +130,7 @@ const Dashboard = () => {
     ),
     createData(
       <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
-         <Card>
+         <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px '}}>
          <CardMedia
         component="img"
         image={Redwatch}
@@ -178,7 +178,7 @@ const Dashboard = () => {
     ),
      createData(
       <Stack direction={{ xs: 'column', sm: 'row' ,md: 'row' }} spacing={1}>
-         <Card>
+        <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px '}}>
          <CardMedia
         component="img"
         image={Redwatch}
@@ -187,6 +187,7 @@ const Dashboard = () => {
         <Typography sx={{ fontSize:{ md:'15px',sm:'13px',xs:'10px'}}} >
           Samsung - Galaxy <br /> S6 4G
         </Typography>
+
       </Stack>,
       "Hype Mart",
       <Box>
@@ -292,7 +293,7 @@ const Dashboard = () => {
                  <Typography sx={{color:'#F7941D',fontWeight:'600',fontSize:'16px'}}>$1,591.00</Typography>
                        </Grid>
                        <Button variant="contained" size="large" sx={{marginTop:'10px',fontSize:'12px',color:'white',marginLeft:"auto", borderRadius: '40px',
-                      paddingX: { md: "30px", sm: "15px", xs: "10px" }}}>   Proceed to Check Out
+                      paddingX: { md: "30px", sm: "15px", xs: "10px" },  paddingY: { md: "15px", sm: "15px", xs: "10px" }}}>   Proceed to Check Out
                        </Button>
                     </Grid>
              

@@ -61,7 +61,7 @@ const Securty = () => {
   return (
     <ThemeProvider theme={theme}>
     <Box>
-      <Grid container spacing={2} sx={{marginTop:'50px'}} >
+      <Grid container spacing={2}  >
         <Grid item md={5} sm={12} xs={12} sx={{
             margin:'auto',
           }} >
@@ -69,7 +69,9 @@ const Securty = () => {
           sx={{
             backgroundColor:'white',
             padding:'15px',
-            marginX:'20px'
+            marginX:'20px',
+            boxShadow:'0px 0px 0px 0px',
+            border: "1px solid #D5D5D5",
              }} >
               <Typography
               variant="subtitle1"
@@ -202,7 +204,6 @@ const Securty = () => {
                         paddingX: "15px",
                         paddingY: { md: "10px", sm: "8px", xs: "5px" },
                         fontSize: { md: "18px", sm: "15px", xs: "15px" },
-                        fontFamily: ["Poppins", "sans-serif"],
                         textTransform: "lowercase",
                         color:'white'
                       }}

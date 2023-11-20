@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 
 const Paginationcomp = () => {
   return (
-    <Box sx={{display:'flex',justifyContent:'center'}}>
+    <Box sx={{marginTop:'20px',display:'flex',justifyContent:'center'}}>
             <Pagination
             count={10} // Total number of pages
             variant="outlined"
@@ -22,17 +22,19 @@ const Paginationcomp = () => {
                 {...item}
                 icon={
                   item.type === "previous" ? (
-                    <ArrowBackIosIcon sx={{color:'#182733'}}/>
+                    <ArrowBackIosIcon style={{color:'#F7941D'}}/>
                   ) : item.type === "next" ? (
-                    <PlayArrowIcon sx={{color:'#182733'}} />
+                    <PlayArrowIcon style={{color:'#F7941D'}} />
                   ) : (
                     undefined
                   )
                 }
                 sx={{
                   border: "2px solid #F7941D", 
-                  color:'#182733',
+                  color:'#B4B4B4',
                   justifyContent:'center',
+                  borderRadius:'15px',
+                  padding:'15px',
                   "&.Mui-selected": {
                     backgroundColor: "#F7941D", // Selected tab color
                     color: "#FFFFFF", // Text color for selected tab
