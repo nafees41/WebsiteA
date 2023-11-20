@@ -17,10 +17,15 @@ export default function PermanentDrawerLeft({ children }) {
   && .Mui-selected:hover {
     background-color: transparent;
        color:#F7941D;
+       border-left: 8px solid #F7941D;
+
 
     & .MuiListItemIcon-root,
     & .MuiTypography-root {
       color: #F7941D; // Set the text color to white when selected
+      font-weight: 700;
+
+
     }
 
     @media (max-width: 600px) {
