@@ -224,8 +224,7 @@ const Dashboard = () => {
         <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
       </Typography>
     ),
-    
-];
+  ];
   return (
     <Box>
       <Grid
@@ -242,7 +241,7 @@ const Dashboard = () => {
           <Typography
             component="h1"
             variant="h5"
-            sx={Shippingstyle.Shippingheading} > Shopping Cart
+            sx={Shippingstyle.Shippingheading}> Shopping Cart
           </Typography>
         <Grid item container sx={{marginTop: "10px" }}>
             <Grid

@@ -46,10 +46,9 @@ const About = () => {
         container
         spacing={2}
         sx={{
-          marginTop: "20px",
-          paddingX: { md: "95px", sm: "40px", xs: "30px" },
-        }}
-      >
+          marginTop: "30px",
+          paddingX: {md: "95px", sm: "40px", xs: "30px" },
+    }} >
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
             <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
@@ -354,8 +353,7 @@ const About = () => {
                             sx={{
                               color: "#0a202d",
                               backgroundColor: "#D9D9D9",
-
-                              textAlign: "center",
+                               textAlign: "center",
                               boxShadow: "0px 0px 0px 0px",
                               padding: "10px",
                             }}
@@ -518,10 +516,8 @@ const About = () => {
             </div>
           </Card>
         </Grid>
-        <Grid item md={10} sm={12} xs={12}>
-          <Grid container spacing={2} sx={{ marginTop: "0px" }}>
-            <Grid item md={12} sm={12} xs={12}>
-              <Grid container spacing={2} sx={{ backgroundColor: "#FCF7FE" }}>
+        <Grid item  spacing={2} md={10} sm={12} xs={12} >
+              <Grid container spacing={2}sx={{ backgroundColor: "#FCF7FE" }} >
                 <Grid item md={6} sm={12} xs={12}>
                   <img src={productimage} style={{ width: "100%" }} />
                 </Grid>
@@ -554,8 +550,8 @@ const About = () => {
                   <Button sx={Mainstyle.Mainbutton}>Shop Now</Button>
                 </Grid>
               </Grid>
-            </Grid>
-          </Grid>
+          
+      
           <Relatedtab />
           <Paginationcomp />
         </Grid>
