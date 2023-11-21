@@ -30,7 +30,7 @@ export default function MultiActionAreaCard() {
     
   return (
     <Box>
-    <Grid container spacing={2} sx={{ marginTop: '50px', paddingX: { md: '50px', sm: '0px', xs: '0px' }} }>
+    <Grid container spacing={2} sx={{ marginTop: '50px', paddingX: { md: '50px', sm: '50px', xs: '30px' }} }>
       <Grid item xs={12} sx={{ textAlign: 'center' }}>
         <Typography variant="h4" sx={{ color: '#1D1D1D', fontWeight: '600' }}>Our Latest Reviews</Typography>
       </Grid>

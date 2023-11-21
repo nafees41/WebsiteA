@@ -16,7 +16,7 @@ const Sale = () => {
   return (
     <div>
       <Box >
-        <Grid container spacing={2} sx={{paddingX:{md:'70px',sm:'0px',xs:'0px'},marginTop:"50px"}} >
+        <Grid container spacing={2} sx={{paddingX:{md:'70px',sm:'40px',xs:'20px'},marginTop:"50px"}} >
           <Grid item md={8} sm={12} xs={12}>
             <Grid container spacing={2} >
             <Grid item md={6} sm={6} xs={12}>
