@@ -1,25 +1,14 @@
 import React, { useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import Drawer from "@mui/material/Drawer";
 import Headertwo from "../Headertwo";
-import { Popover, Button } from "@mui/material";
-import Grid from "@mui/material/Grid";
+import { Popover, Button,Stack,Tabs,Tab,Popper,CardMedia,AppBar,Box,Typography,Divider,
+  List,ListItem ,ListItemButton,Drawer,ListItemText ,Toolbar,
+  Grid,Fade
+} from "@mui/material";
 import LaptopChromebookIcon from "@mui/icons-material/LaptopChromebook";
 import Saleimage1 from "../../images/Saleimage1.png";
 import Saleimage2 from "../../images/Saleimage2.png";
-import { Stack } from "@mui/material";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import StayCurrentPortraitIcon from "@mui/icons-material/StayCurrentPortrait";
 import HouseIcon from "@mui/icons-material/House";
@@ -29,12 +18,8 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Headerstyle from "../Header/Header.style";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Popper from '@mui/material/Popper';
-import Fade from '@mui/material/Fade';
-import {CardMedia,Chip} from "@mui/material";
-import imagewatch from '../../images/imagewatch.png'
-import CloseIcon from '@mui/icons-material/Close';
-
+import imagewatch from "../../images/imagewatch.png";
+import CloseIcon from "@mui/icons-material/Close";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -90,15 +75,15 @@ function Header() {
   };
   const [popperAnchorEl, setPopperAnchorEl] = React.useState(null);
 
-const handlePopperClick = (event) => {
-  setPopperAnchorEl(popperAnchorEl ? null : event.currentTarget);
-};
+  const handlePopperClick = (event) => {
+    setPopperAnchorEl(popperAnchorEl ? null : event.currentTarget);
+  };
 
-const isPopperOpen = Boolean(popperAnchorEl);
-const popperId = isPopperOpen ? 'simple-popper' : undefined;
+  const isPopperOpen = Boolean(popperAnchorEl);
+  const popperId = isPopperOpen ? "simple-popper" : undefined;
 
   const canBeOpen = open && Boolean(anchorEl);
-  const id = canBeOpen ? 'spring-popper' : undefined;
+  const id = canBeOpen ? "spring-popper" : undefined;
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -321,7 +306,6 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             sm: "12px",
                             xs: "10px",
                           },
-    
                         }}
                       >
                         Contact
@@ -361,7 +345,6 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                             sm: "12px",
                             xs: "10px",
                           },
-    
                         }}
                       >
                         Top Categories
@@ -453,7 +436,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                   fontFamily: ["Poppins", "sans-serif"],
                   fontWeight: "600",
                   lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" }
+                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
                 }}
               >
                 Contact
@@ -482,7 +465,7 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                   fontFamily: ["Poppins", "sans-serif"],
                   fontWeight: "600",
                   lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" }
+                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
                 }}
               >
                 Top Categories
@@ -766,7 +749,9 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                 md: "18px",
                                 sm: "12px",
                                 xs: "10px",
-                              }}}>
+                              },
+                            }}
+                          >
                             Contact
                           </Typography>
                           <Typography
@@ -816,8 +801,8 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                                 sm: "12px",
                                 xs: "10px",
                               },
-        
-                            }} >
+                            }}
+                          >
                             Top Categories
                           </Typography>
                           <Typography
@@ -923,7 +908,6 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                       fontWeight: "600",
                       lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                       fontSize: { md: "18px", sm: "12px", xs: "10px" },
-
                     }}
                   >
                     Contact
@@ -954,8 +938,8 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                       fontWeight: "600",
                       lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                       fontSize: { md: "18px", sm: "12px", xs: "10px" },
-
-                    }} >
+                    }}
+                  >
                     Top Categories
                   </Typography>
                   <Typography variant="subtitle1" sx={{ color: "#484444" }}>
@@ -1044,7 +1028,8 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
               <Stack direction="row">
                 <Typography
                   variant="subtitle1"
-                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }}>
+                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }}
+                >
                   Creta an account?
                 </Typography>
                 <Link
@@ -1053,7 +1038,8 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                     textDecoration: "none", // Remove underline
                     color: "inherit", // Inherit color from parent (card)
                     display: "block", // Make the link a block element
-                  }} >
+                  }}
+                >
                   <Button
                     variant="contained"
                     color="secondary"
@@ -1062,285 +1048,270 @@ const popperId = isPopperOpen ? 'simple-popper' : undefined;
                   >
                     Login Account
                   </Button>
-               </Link>
+                </Link>
               </Stack>
               <IconButton
-  aria-describedby={popperId}
-  type="button"
-  onClick={handlePopperClick}
-  sx={{
-    backgroundColor: "#0F75BC",
-    borderRadius: "22px",
-    padding: '12px',
-    position: 'absolute',
-    top: '4px',
-    right: '20px',
-    "&:hover": {
-      backgroundColor: "#0F75BC",
-    },
-  }}
->
-  <ShoppingCartIcon sx={{ color: "white" }} />
-</IconButton>
+                aria-describedby={popperId}
+                type="button"
+                onClick={handlePopperClick}
+                sx={{
+                  backgroundColor: "#0F75BC",
+                  borderRadius: "22px",
+                  padding: "12px",
+                  position: "absolute",
+                  top: "4px",
+                  right: "20px",
+                  "&:hover": {
+                    backgroundColor: "#0F75BC",
+                  },
+                }}
+              >
+                <ShoppingCartIcon sx={{ color: "white" }} />
+              </IconButton>
 
-<Popper id={popperId} open={isPopperOpen} anchorEl={popperAnchorEl} transition>
-  {({ TransitionProps }) => (
-    <Fade {...TransitionProps} timeout={350}>
-      <Box sx={{ border: 1, p: 3, backgroundColor:'#F7F7F7',borderColor:'#F7F7F7' }}>
-      <Grid
-                          container
-                          spacing={1}
-                          sx={{ marginTop: "0px" }}
-                        >
-                          <Grid
-                            item
-                            md={2}
-                            xs={2}
-                            
-                          >
-                            <CardMedia
-                              component="img"
-                              image={imagewatch}
-                              sx={{height:'100%'}}
-                              alt="Paella dish"
-                            />
-                          </Grid>
-                          <Grid item md={9} xs={8} >
-                            <Typography
-                              sx={{
-                                color: '#555151',
-                                fontWeight: "400",
-                                fontSize: {
-                                  lg: "18px",
-                                  md: "30px",
-                                  sm: "20px",
-                                  xs: "24px",
-                                },
-                              }} >
-                              Samsung - Galaxy S6 4G LTE with <br/> 32GB Memory Cell Phone
-                            </Typography>
-                            <Typography
-                              sx={{
-                                color: '#F7941D',
-                                fontWeight: "600",
-                                fontSize: {
-                                  lg: "20px",
-                                  md: "30px",
-                                  sm: "16px",
-                                  xs: "22px",
-                                },
-                              }}
-                            >
-                           1 x $250.00
-                            </Typography>
-                          </Grid>
-                          <Grid
-                            item
-                            md={1}
-                            xs={2}
-                            sx={{ marginTop: "10px", textAlign: "end" }}
-                          >
-                          
-                          <CloseIcon />
-                          </Grid>
+              <Popper
+                id={popperId}
+                open={isPopperOpen}
+                anchorEl={popperAnchorEl}
+                transition
+              >
+                {({ TransitionProps }) => (
+                  <Fade {...TransitionProps} timeout={350}>
+                    <Box
+                      sx={{
+                        border: 1,
+                        p: 3,
+                        backgroundColor: "#F7F7F7",
+                        borderColor: "#F7F7F7",
+                      }}
+                    >
+                      <Grid container spacing={1} sx={{ marginTop: "0px" }}>
+                        <Grid item md={2} xs={2}>
+                          <CardMedia
+                            component="img"
+                            image={imagewatch}
+                            sx={{ height: "100%" }}
+                            alt="Paella dish"
+                          />
                         </Grid>
-                        <Grid
-                          container
-                          spacing={1}
-                          sx={{ marginTop: "10px" }}
-                        >
-                          <Grid
-                            item
-                            md={2}
-                            xs={2}
-                            
-                          >
-                            <CardMedia
-                              component="img"
-                              image={imagewatch}
-                              sx={{height:'100%'}}
-                              alt="Paella dish"
-                            />
-                          </Grid>
-                          <Grid item md={9} xs={8} >
-                            <Typography
-                              sx={{
-                                color: '#555151',
-                                fontWeight: "400",
-                                fontSize: {
-                                  lg: "18px",
-                                  md: "30px",
-                                  sm: "20px",
-                                  xs: "24px",
-                                },
-                              }} >
-                              Samsung - Galaxy S6 4G LTE with <br/> 32GB Memory Cell Phone
-                            </Typography>
-                            <Typography
-                              sx={{
-                                color: '#F7941D',
-                                fontWeight: "600",
-                                fontSize: {
-                                  lg: "20px",
-                                  md: "30px",
-                                  sm: "16px",
-                                  xs: "22px",
-                                },
-                              }}
-                            >
-                           1 x $250.00
-                            </Typography>
-                          </Grid>
-                          <Grid
-                            item
-                            md={1}
-                            xs={2}
-                            sx={{ marginTop: "10px", textAlign: "end" }}
-                          >
-                          
-                          <CloseIcon />
-                          </Grid>
-                        </Grid>
-                        <Grid
-                          container
-                          spacing={1}
-                          sx={{ marginTop: "10px" }}
-                        >
-                          <Grid
-                            item
-                            md={2}
-                            xs={2}
-                            
-                          >
-                            <CardMedia
-                              component="img"
-                              image={imagewatch}
-                              sx={{height:'100%'}}
-                              alt="Paella dish"
-                            />
-                          </Grid>
-                          <Grid item md={9} xs={8} >
-                            <Typography
-                              sx={{
-                                color: '#555151',
-                                fontWeight: "400",
-                                fontSize: {
-                                  lg: "18px",
-                                  md: "30px",
-                                  sm: "20px",
-                                  xs: "24px",
-                                },
-                              }} >
-                              Samsung - Galaxy S6 4G LTE with <br/> 32GB Memory Cell Phone
-                            </Typography>
-                            <Typography
-                              sx={{
-                                color: '#F7941D',
-                                fontWeight: "600",
-                                fontSize: {
-                                  lg: "20px",
-                                  md: "30px",
-                                  sm: "16px",
-                                  xs: "22px",
-                                },
-                              }}
-                            >
-                           1 x $250.00
-                            </Typography>
-                          </Grid>
-                          <Grid
-                            item
-                            md={1}
-                            xs={2}
-                            sx={{ marginTop: "10px", textAlign: "end" }}
-                          >
-                          
-                          <CloseIcon />
-                          </Grid>
-                        </Grid>
-                        <br/>
-                        <br/>
-                        <Divider/>
-                        <Grid
-                          container
-                          spacing={1}
-                          sx={{ marginTop: "10px" }}
-                        >
-                     
-                          <Grid item md={6} xs={8} >
-                            <Typography
-                              sx={{
-                                color: '#362F2F',
-                                fontWeight: "600",
-                                fontSize: {
-                                  lg: "18px",
-                                  md: "30px",
-                                  sm: "20px",
-                                  xs: "24px",
-                                },
-                              }} >
-                              SubTotal:
-                            </Typography>
-                       
-                          </Grid>
-                          <Grid
-                            item
-                            md={6}
-                            xs={2}
-                            sx={{ marginTop: "10px", textAlign: "end" }}
-                          >
-                          
-                    
+                        <Grid item md={9} xs={8}>
                           <Typography
-                              sx={{
-                                color: '#F7941D',
-                                fontWeight: "400",
-                                fontSize: {
-                                  lg: "18px",
-                                  md: "30px",
-                                  sm: "20px",
-                                  xs: "24px",
-                                },
-                              }} >
-                                    $4,243.00
-                            </Typography>
-                          </Grid>
+                            sx={{
+                              color: "#555151",
+                              fontWeight: "400",
+                              fontSize: {
+                                lg: "18px",
+                                md: "30px",
+                                sm: "20px",
+                                xs: "24px",
+                              },
+                            }}
+                          >
+                            Samsung - Galaxy S6 4G LTE with <br /> 32GB Memory
+                            Cell Phone
+                          </Typography>
+                          <Typography
+                            sx={{
+                              color: "#F7941D",
+                              fontWeight: "600",
+                              fontSize: {
+                                lg: "20px",
+                                md: "30px",
+                                sm: "16px",
+                                xs: "22px",
+                              },
+                            }}
+                          >
+                            1 x $250.00
+                          </Typography>
                         </Grid>
                         <Grid
-                          container
-                          spacing={1}
-                          sx={{ marginTop: "10px" }}
+                          item
+                          md={1}
+                          xs={2}
+                          sx={{ marginTop: "10px", textAlign: "end" }}
                         >
-                     
-                          <Grid item md={6} xs={8} >
-                        <Button 
-                         fullWidth
-                        variant="contained" color="primary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px',color:'white'}}>
-                        View Cart
-                        </Button>
-                       
-                          </Grid>
-                          <Grid
-                            item
-                            md={6}
-                            xs={2}
-                            sx={{  textAlign: "end" }} >
-                          
-                          <Button 
-                          fullWidth
-                          variant="contained" color="secondary" sx={{paddingX:'20px',borderRadius:'20px',paddingY:'10px'}}>
-                          Check Out
-                        </Button>
-                          </Grid>
+                          <CloseIcon />
                         </Grid>
-      </Box>
-    </Fade>
-  )}
-</Popper>
-     
-        </Box>
-   </Box>
-   </Toolbar>
+                      </Grid>
+                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
+                        <Grid item md={2} xs={2}>
+                          <CardMedia
+                            component="img"
+                            image={imagewatch}
+                            sx={{ height: "100%" }}
+                            alt="Paella dish"
+                          />
+                        </Grid>
+                        <Grid item md={9} xs={8}>
+                          <Typography
+                            sx={{
+                              color: "#555151",
+                              fontWeight: "400",
+                              fontSize: {
+                                lg: "18px",
+                                md: "30px",
+                                sm: "20px",
+                                xs: "24px",
+                              },
+                            }}
+                          >
+                            Samsung - Galaxy S6 4G LTE with <br /> 32GB Memory
+                            Cell Phone
+                          </Typography>
+                          <Typography
+                            sx={{
+                              color: "#F7941D",
+                              fontWeight: "600",
+                              fontSize: {
+                                lg: "20px",
+                                md: "30px",
+                                sm: "16px",
+                                xs: "22px",
+                              },
+                            }}
+                          >
+                            1 x $250.00
+                          </Typography>
+                        </Grid>
+                        <Grid
+                          item
+                          md={1}
+                          xs={2}
+                          sx={{ marginTop: "10px", textAlign: "end" }}
+                        >
+                          <CloseIcon />
+                        </Grid>
+                      </Grid>
+                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
+                        <Grid item md={2} xs={2}>
+                          <CardMedia
+                            component="img"
+                            image={imagewatch}
+                            sx={{ height: "100%" }}
+                            alt="Paella dish"
+                          />
+                        </Grid>
+                        <Grid item md={9} xs={8}>
+                          <Typography
+                            sx={{
+                              color: "#555151",
+                              fontWeight: "400",
+                              fontSize: {
+                                lg: "18px",
+                                md: "30px",
+                                sm: "20px",
+                                xs: "24px",
+                              },
+                            }}
+                          >
+                            Samsung - Galaxy S6 4G LTE with <br /> 32GB Memory
+                            Cell Phone
+                          </Typography>
+                          <Typography
+                            sx={{
+                              color: "#F7941D",
+                              fontWeight: "600",
+                              fontSize: {
+                                lg: "20px",
+                                md: "30px",
+                                sm: "16px",
+                                xs: "22px",
+                              },
+                            }}
+                          >
+                            1 x $250.00
+                          </Typography>
+                        </Grid>
+                        <Grid
+                          item
+                          md={1}
+                          xs={2}
+                          sx={{ marginTop: "10px", textAlign: "end" }}
+                        >
+                          <CloseIcon />
+                        </Grid>
+                      </Grid>
+                      <br />
+                      <br />
+                      <Divider />
+                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
+                        <Grid item md={6} xs={8}>
+                          <Typography
+                            sx={{
+                              color: "#362F2F",
+                              fontWeight: "600",
+                              fontSize: {
+                                lg: "18px",
+                                md: "30px",
+                                sm: "20px",
+                                xs: "24px",
+                              },
+                            }}
+                          >
+                            SubTotal:
+                          </Typography>
+                        </Grid>
+                        <Grid
+                          item
+                          md={6}
+                          xs={2}
+                          sx={{ marginTop: "10px", textAlign: "end" }}
+                        >
+                          <Typography
+                            sx={{
+                              color: "#F7941D",
+                              fontWeight: "400",
+                              fontSize: {
+                                lg: "18px",
+                                md: "30px",
+                                sm: "20px",
+                                xs: "24px",
+                              },
+                            }}
+                          >
+                            $4,243.00
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
+                        <Grid item md={6} xs={8}>
+                          <Button
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                              paddingX: "20px",
+                              borderRadius: "20px",
+                              paddingY: "10px",
+                              color: "white",
+                            }}
+                          >
+                            View Cart
+                          </Button>
+                        </Grid>
+                        <Grid item md={6} xs={2} sx={{ textAlign: "end" }}>
+                          <Button
+                            fullWidth
+                            variant="contained"
+                            color="secondary"
+                            sx={{
+                              paddingX: "20px",
+                              borderRadius: "20px",
+                              paddingY: "10px",
+                            }}
+                          >
+                            Check Out
+                          </Button>
+                        </Grid>
+                      </Grid>
+                    </Box>
+                  </Fade>
+                )}
+              </Popper>
+            </Box>
+          </Box>
+        </Toolbar>
       </AppBar>
       <nav>
         <Drawer

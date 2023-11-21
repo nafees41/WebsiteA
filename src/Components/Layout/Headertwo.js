@@ -1,59 +1,22 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
-import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
 import Logo from "../images/logo.png";
 import {
-  Box,
-  TextField,
-  InputAdornment,
-  FormControl,
-  Select,
+  Box,Container,Typography,Popper,List, ListItem, ListItemText,
+  TextField,Toolbar,Grid,Paper,Divider,Grow,FormControl
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import DirectionsIcon from "@mui/icons-material/Directions";
-import Paper from "@mui/material/Paper";
-import InputBase from "@mui/material/InputBase";
-import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import { Typography } from "@mui/material";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Stack } from "@mui/material";
-import InputLabel from "@mui/material/InputLabel";
-import Popper from "@mui/material/Popper";
-import Grow from "@mui/material/Grow";
-import { List, ListItem, ListItemText } from "@mui/material";
+
 
 function TopNavbar() {
-  const textFieldStyle = {
-    backgroundColor: "#C8C2C2",
 
-    "& input::placeholder": {
-      color: "black", // Change this to your desired placeholder text color
-    },
-  };
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   const [age, setAge] = useState("");
   const [open, setOpen] = useState(false);
   const anchorRef = React.useRef(null);
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+
 
   const options = [
     "All Category",
@@ -74,14 +37,11 @@ function TopNavbar() {
 
   const handleMenuItemClick = (value) => {
     setAge(value);
-    setOpen(false);
   };
 
   return (
     <Box sx={{ backgroundColor: "#F7F7F7" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1 }}>
             <Grid
               container
               spacing={2}
@@ -115,7 +75,7 @@ function TopNavbar() {
                   }}
                 >
                   <FormControl
-                    sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 110 } }}
+                    sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 110 }}}
                     size="small"
                   >
                     <div>
@@ -226,8 +186,8 @@ function TopNavbar() {
                 </Paper>
               </Grid>
             </Grid>
-          </Box>
-        </Toolbar>
+       
+    
       </Container>
     </Box>
   );
