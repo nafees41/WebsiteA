@@ -455,7 +455,7 @@ function Header() {
         sx={{
           backgroundColor: "#F7941D",
           boxShadow: "0px 0px 0px 0px",
-          paddingX: {md:"75px",sm:'70px',xs:'38px'},
+          paddingX: {md:"75px",sm:'70px',xs:'35px'},
         }}
       >
         <Toolbar disableGutters variant="dense">
