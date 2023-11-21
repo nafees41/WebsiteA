@@ -803,11 +803,8 @@ function Header() {
               </Link>
               <Link
                 to="/about"
-                style={{
-                  textDecoration: "none", // Remove underline
-                  color: "inherit", // Inherit color from parent (card)
-                  display: "block", // Make the link a block element
-                }}
+                style={Headerstyle.linkstyle}
+
               >
                 <Typography sx={Headerstyle.navItem}>About</Typography>
               </Link>
