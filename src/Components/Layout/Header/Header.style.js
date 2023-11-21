@@ -87,6 +87,11 @@ const style={
       borderRadius: "5px",
       backgroundColor: "white",
     },
+    'linkstyle':{
+      textDecoration: "none", // Remove underline
+      color: "inherit", // Inherit color from parent (card)
+      display: "block", // Make the link a block element
+    }
 
 
 }

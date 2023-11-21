@@ -665,119 +665,9 @@ function Header() {
                     }}
                   >
                     <TabPanel value={value} index={0}>
-                      <Grid
-                        spacing={2}
-                        container
-                        sx={{ marginTop: "30px", paddingX: "20px" }}
-                      >
-                        <Grid md={3} sm={4} xs={6}>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{
-                              color: "black",
-                              fontWeight: "600",
-                              lineHeight: {
-                                md: "25.5px",
-                                sm: "18px",
-                                xs: "15px",
-                              },
-                              fontSize: {
-                                md: "18px",
-                                sm: "12px",
-                                xs: "10px",
-                              },
-                            }}
-                          >
-                            Contact
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            About Us
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Leadership
-                          </Typography>
-                          <Typography variant="subtitle1">
-                            Investor Relations
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Careers
-                          </Typography>
+                    Content for Profile tab
 
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Contact Us
-                          </Typography>
-                        </Grid>
-
-                        <Grid md={3} sm={4} xs={6}>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{
-                              color: "black",
-                              fontFamily: ["Poppins", "sans-serif"],
-                              fontWeight: "600",
-                              lineHeight: {
-                                md: "25.5px",
-                                sm: "18px",
-                                xs: "15px",
-                              },
-                              fontSize: {
-                                md: "18px",
-                                sm: "12px",
-                                xs: "10px",
-                              },
-                            }}
-                          >
-                            Top Categories
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            About Us
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Leadership
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Investor Relations
-                          </Typography>
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Careers
-                          </Typography>
-
-                          <Typography
-                            variant="subtitle1"
-                            sx={{ color: "#484444" }}
-                          >
-                            Contact Us
-                          </Typography>
-                        </Grid>
-                        <Grid item md={3} sm={6} xs={12}>
-                          <img src={Saleimage1} />
-                        </Grid>
-                      </Grid>
-                    </TabPanel>
+                      </TabPanel>
                     <TabPanel value={value} index={1}>
                       Content for Profile tab
                     </TabPanel>
@@ -850,7 +740,7 @@ function Header() {
                   <Typography variant="subtitle1" sx={{ color: "#484444" }}>
                     About Us
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={{ color:"#484444"}}>
                     Leadership
                   </Typography>
                   <Typography variant="subtitle1">
@@ -911,11 +801,7 @@ function Header() {
             <Box sx={Headerstyle.nav}>
               <Link
                 to="/home"
-                style={{
-                  textDecoration: "none", // Remove underline
-                  color: "inherit", // Inherit color from parent (card)
-                  display: "block", // Make the link a block element
-                }}
+                style={Headerstyle.linkstyle}
               >
                 <Typography sx={Headerstyle.navItem}>Home</Typography>
               </Link>
@@ -931,32 +817,20 @@ function Header() {
               </Link>
               <Link
                 to="/product"
-                style={{
-                  textDecoration: "none", // Remove underline
-                  color: "inherit", // Inherit color from parent (card)
-                  display: "block", // Make the link a block element
-                }}
+                style={Headerstyle.linkstyle}
               >
                 <Typography sx={Headerstyle.navItem}>Shop Now</Typography>
               </Link>
               <Link
                 to="/Shoppingcartpage"
-                style={{
-                  textDecoration: "none", // Remove underline
-                  color: "inherit", // Inherit color from parent (card)
-                  display: "block", // Make the link a block element
-                }}
+                style={Headerstyle.linkstyle}
               >
                 <Typography sx={Headerstyle.navItem}>Flash Deals</Typography>
               </Link>
               <Typography sx={Headerstyle.navItem}>Daily Deals</Typography>
               <Link
                 to="/contact"
-                style={{
-                  textDecoration: "none", // Remove underline
-                  color: "inherit", // Inherit color from parent (card)
-                  display: "block", // Make the link a block element
-                }}
+                style={Headerstyle.linkstyle}
               >
                 <Typography sx={Headerstyle.navItem}>Contact</Typography>
               </Link>
@@ -969,11 +843,7 @@ function Header() {
                 </Typography>
                 <Link
                   to="/login"
-                  style={{
-                    textDecoration: "none", // Remove underline
-                    color: "inherit", // Inherit color from parent (card)
-                    display: "block", // Make the link a block element
-                  }}
+                  style={Headerstyle.linkstyle}
                 >
                   <Button
                     variant="contained"
