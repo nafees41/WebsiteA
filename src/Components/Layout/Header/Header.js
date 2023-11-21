@@ -119,8 +119,7 @@ function Header() {
             <div style={{ display: "flex" }}>
               {/* Left Card (Tab List) */}
               <Box
-                sx={Headerstyle.Tabmain}
-              >
+                sx={Headerstyle.Tabmain}>
                 <Tabs
                   orientation="vertical"
                   value={value}
@@ -264,9 +263,7 @@ function Header() {
               </Box>
 
               {/* Right Card (Tab Content) */}
-              <Box
-                sx={Headerstyle.Rightcard}
-              >
+              <Box sx={Headerstyle.Rightcard}>
                 <TabPanel value={value} index={0}>
                   <Grid
                     spacing={2}
@@ -387,8 +384,7 @@ function Header() {
             <Grid md={3} sm={4} xs={6}>
               <Typography
                 variant="subtitle1"
-                sx={ Headerstyle.Tabheading}
-              >
+                sx={ Headerstyle.Tabheading}   >
                 Contact
               </Typography>
               <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
@@ -459,7 +455,7 @@ function Header() {
         sx={{
           backgroundColor: "#F7941D",
           boxShadow: "0px 0px 0px 0px",
-          paddingX: "75px",
+          paddingX: {md:"75px",sm:'70px',xs:'38px'},
         }}
       >
         <Toolbar disableGutters variant="dense">
