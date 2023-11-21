@@ -39,7 +39,55 @@ const style={
       cursor: 'pointer',
       paddingX: { md: "30px", sm: "15px", xs: "10px" },
     
+    },
+    'Tabmain':{
+      flex: 1,
+      marginRight: "20px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      backgroundColor: "white",
+    
+    },
+    'Rightcard':{
+      flex: 4,
+      borderRadius: "5px",
+      backgroundColor: "white",
+      padding: "20px",
+
+    
     }
+    ,
+    'Tabicon':{
+      color: "#7F7F7F"
+    
+    },
+    'Tabheading':{
+      color: "black",
+      fontWeight: "600",
+      lineHeight: {
+        md: "25.5px",
+        sm: "18px",
+        xs: "15px",
+      },
+      fontSize: {
+        md: "18px",
+        sm: "12px",
+        xs: "10px",
+      },
+    
+    },
+      'Tabsublistitem':{
+      color: "#484444"
+    }
+    ,
+    'Leftcard':{
+      flex: 1,
+      marginRight: "20px",
+      border: "1px solid #ccc",
+      borderRadius: "5px",
+      backgroundColor: "white",
+    },
+
 
 }
 export default style;

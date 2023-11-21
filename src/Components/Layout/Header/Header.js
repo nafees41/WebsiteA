@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Headertwo from "../Headertwo";
+import Headertwo from "../Headertwo/Headertwo";
 import { Popover, Button,Stack,Tabs,Tab,Popper,CardMedia,AppBar,Box,Typography,Divider,
   List,ListItem ,ListItemButton,Drawer,ListItemText ,Toolbar,
   Grid,Fade
@@ -69,10 +69,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-    setOpen((previousOpen) => !previousOpen);
-  };
+
   const [popperAnchorEl, setPopperAnchorEl] = React.useState(null);
 
   const handlePopperClick = (event) => {
@@ -121,27 +118,20 @@ function Header() {
           <Box>
             <div style={{ display: "flex" }}>
               {/* Left Card (Tab List) */}
-              <div
-                style={{
-                  flex: 1,
-                  marginRight: "20px",
-                  border: "1px solid #ccc",
-                  borderRadius: "5px",
-                  backgroundColor: "white",
-                }}
+              <Box
+                sx={Headerstyle.Tabmain}
               >
                 <Tabs
                   orientation="vertical"
                   value={value}
                   onChange={handleChange}
                   aria-label="Vertical tabs example"
-                  id="v-pills-tab"
-                >
+                  id="v-pills-tab" >
                   <Tab
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                          <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Laptop and Mac
                           </Typography>
@@ -156,7 +146,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <StayCurrentPortraitIcon sx={{ color: "#7F7F7F" }} />
+                          <StayCurrentPortraitIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Mobile & Tablet
                           </Typography>
@@ -172,7 +162,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <HouseIcon sx={{ color: "#7F7F7F" }} />
+                          <HouseIcon  sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Home Devices
                           </Typography>
@@ -190,7 +180,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <FitnessCenterIcon sx={{ color: "#7F7F7F" }} />
+                          <FitnessCenterIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Fitness and Fitness
                           </Typography>
@@ -207,7 +197,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                          <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "15px" }}>
                             TV & Audio
                           </Typography>
@@ -224,7 +214,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <AirplayIcon sx={{ color: "#7F7F7F" }} />
+                          <AirplayIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Game & Toys
                           </Typography>
@@ -241,7 +231,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                          <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                           <Typography sx={{ fontSize: "12px" }}>
                             Accessories
                           </Typography>
@@ -258,7 +248,7 @@ function Header() {
                     label={
                       <div>
                         <Stack direction="row" spacing={2}>
-                          <SettingsIcon sx={{ color: "#7F7F7F" }} />
+                          <SettingsIcon sx={Headerstyle.Tabicon}/>
                           <Typography sx={{ fontSize: "16px" }}>
                             Settings
                           </Typography>
@@ -271,17 +261,11 @@ function Header() {
                   />
                   <Divider />
                 </Tabs>
-              </div>
+              </Box>
 
               {/* Right Card (Tab Content) */}
-              <div
-                style={{
-                  flex: 4,
-                  border: "1px solid white",
-                  borderRadius: "5px",
-                  padding: "20px",
-                  backgroundColor: "white",
-                }}
+              <Box
+                sx={Headerstyle.Rightcard}
               >
                 <TabPanel value={value} index={0}>
                   <Grid
@@ -292,38 +276,24 @@ function Header() {
                     <Grid md={3} sm={4} xs={6}>
                       <Typography
                         variant="subtitle1"
-                        sx={{
-                          color: "black",
-                          fontFamily: ["Poppins", "sans-serif"],
-                          fontWeight: "600",
-                          lineHeight: {
-                            md: "25.5px",
-                            sm: "18px",
-                            xs: "15px",
-                          },
-                          fontSize: {
-                            md: "18px",
-                            sm: "12px",
-                            xs: "10px",
-                          },
-                        }}
+                        sx={ Headerstyle.Tabheading}
                       >
                         Contact
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         About Us
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Leadership
                       </Typography>
                       <Typography variant="subtitle1">
                         Investor Relations
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Careers
                       </Typography>
 
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Contact Us
                       </Typography>
                     </Grid>
@@ -331,38 +301,24 @@ function Header() {
                     <Grid md={3} sm={4} xs={6}>
                       <Typography
                         variant="subtitle1"
-                        sx={{
-                          color: "black",
-                          fontFamily: ["Poppins", "sans-serif"],
-                          fontWeight: "600",
-                          lineHeight: {
-                            md: "25.5px",
-                            sm: "18px",
-                            xs: "15px",
-                          },
-                          fontSize: {
-                            md: "18px",
-                            sm: "12px",
-                            xs: "10px",
-                          },
-                        }}
+                        sx={ Headerstyle.Tabheading}
                       >
                         Top Categories
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                         About Us
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Leadership
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Investor Relations
                       </Typography>
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Careers
                       </Typography>
 
-                      <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                      <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                         Contact Us
                       </Typography>
                     </Grid>
@@ -398,7 +354,7 @@ function Header() {
                 <TabPanel value={value} index={9}>
                   Content for Settings tab
                 </TabPanel>
-              </div>
+              </Box>
             </div>
           </Box>
         </Popover>
@@ -431,28 +387,22 @@ function Header() {
             <Grid md={3} sm={4} xs={6}>
               <Typography
                 variant="subtitle1"
-                sx={{
-                  color: "black",
-                  fontFamily: ["Poppins", "sans-serif"],
-                  fontWeight: "600",
-                  lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                }}
+                sx={ Headerstyle.Tabheading}
               >
                 Contact
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                 About Us
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                 Leadership
               </Typography>
               <Typography variant="subtitle1">Investor Relations</Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                 Careers
               </Typography>
 
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                 Contact Us
               </Typography>
             </Grid>
@@ -460,30 +410,24 @@ function Header() {
             <Grid md={3} sm={4} xs={6}>
               <Typography
                 variant="subtitle1"
-                sx={{
-                  color: "black",
-                  fontFamily: ["Poppins", "sans-serif"],
-                  fontWeight: "600",
-                  lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                  fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                }}
+                sx={ Headerstyle.Tabheading}
               >
                 Top Categories
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                 About Us
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                 Leadership
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                 Investor Relations
               </Typography>
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                 Careers
               </Typography>
 
-              <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+              <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                 Contact Us
               </Typography>
             </Grid>
@@ -559,19 +503,12 @@ function Header() {
                   backgroundColor: "transparent",
                   boxShadow: "0px 0px 0px 0px",
                 },
-              }}
-            >
+              }} >
               <Box>
                 <div style={{ display: "flex" }}>
-                  {/* Left Card (Tab List) */}
-                  <div
-                    style={{
-                      flex: 1,
-                      marginRight: "20px",
-                      border: "1px solid #ccc",
-                      borderRadius: "5px",
-                      backgroundColor: "white",
-                    }}
+                  {/* Leftcard (Tab List) */}
+                  <Box
+                    sx={Headerstyle.Leftcard}
                   >
                     <Tabs
                       orientation="vertical"
@@ -716,7 +653,7 @@ function Header() {
                       />
                       <Divider />
                     </Tabs>
-                  </div>
+                  </Box>
 
                   {/* Right Card (Tab Content) */}
                   <div

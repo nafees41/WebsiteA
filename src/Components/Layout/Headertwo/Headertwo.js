@@ -1,22 +1,19 @@
 import React from "react";
-import Logo from "../images/logo.png";
+import Logo from "../../images/logo.png";
 import {
   Box,Container,Typography,Popper,List, ListItem, ListItemText,
-  TextField,Toolbar,Grid,Paper,Divider,Grow,FormControl
+  TextField,Grid,Paper,Divider,Grow,FormControl
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import IconButton from "@mui/material/IconButton";
 import { useState } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-
+import Headertwostyle from '../Headertwo/Headertwo.style'
 
 function TopNavbar() {
-
-  const [age, setAge] = useState("");
+ const [age, setAge] = useState("");
   const [open, setOpen] = useState(false);
   const anchorRef = React.useRef(null);
-
-
 
   const options = [
     "All Category",
@@ -40,17 +37,12 @@ function TopNavbar() {
   };
 
   return (
-    <Box sx={{ backgroundColor: "#F7F7F7" }}>
+    <Box sx={Headertwostyle.Headertwomain}>
       <Container maxWidth="xl">
             <Grid
               container
               spacing={2}
-              sx={{
-                paddingX: { md: "60px", sm: "0px", xs: "0px" },
-                paddingBottom: "25px",
-                marginTop: "10px",
-              }}
-            >
+              sx={Headertwostyle.Headertwocontainer}  >
               <Grid item md={7} sm={12} xs={12}>
                 <img src={Logo} style={{ width: "20%" }} />
               </Grid>
@@ -66,13 +58,7 @@ function TopNavbar() {
               >
                 <Paper
                   component="form"
-                  sx={{
-                    p: 0,
-                    backgroundColor: "#F7F7F7",
-                    display: "flex",
-                    borderRadius: 7,
-                    border:'2px solid #D9D9D9',
-                  }}
+                  sx={Headertwostyle.Headertwopaper}
                 >
                   <FormControl
                     sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 110 }}}
@@ -82,16 +68,7 @@ function TopNavbar() {
                       <div ref={anchorRef}>
                         <Typography
                           variant="body2"
-                          sx={{
-                            display: "inline-block",
-                            cursor: "pointer",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            color: "#7F7F7F",
-                            margin: "7px",
-                            fontSize:'12px'
-                          }}
+                          sx={Headertwostyle.Categoryheading}
                           onClick={handleToggle}
                         >
                           {age || "Select Category"}
@@ -104,17 +81,7 @@ function TopNavbar() {
                         placement="bottom-start"
                       >
                         <Paper
-                          sx={{
-                            maxHeight: "200px",
-                            overflowY: "scroll",
-                            "&::-webkit-scrollbar": {
-                              width: "6px",
-                            },
-                            "&::-webkit-scrollbar-thumb": {
-                              background: "#F7941D",
-                              borderRadius: "10px",
-                            },
-                          }}
+                          sx={Headertwostyle.scrollbarstyle}
                         >
                           <List>
                             {options.map((option, index) => (
@@ -166,20 +133,7 @@ function TopNavbar() {
 
                   <IconButton
                     type="submit"
-                    sx={{
-                      color: "#fff",
-                      background: "#F7941D",
-                      paddingX: { md: "34px", sm: "25px", xs: "20px" },
-                      paddingY: { md: "16px", sm: "0px", xs: "0px" },
-                      borderRadius: { md: 7, sm: 10, xs: 20 },
-                      "&:hover": {
-                        background: "#F7941D",
-                      },
-                      "&:focus": {
-                        outline: 0,
-                        boxShadow: "none",
-                      },
-                    }}
+                    sx={Headertwostyle.IconButtonstyle}
                   >
                     <SearchIcon />
                   </IconButton>
