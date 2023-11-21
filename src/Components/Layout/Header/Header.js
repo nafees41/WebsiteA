@@ -508,8 +508,7 @@ function Header() {
                 <div style={{ display: "flex" }}>
                   {/* Leftcard (Tab List) */}
                   <Box
-                    sx={Headerstyle.Leftcard}
-                  >
+                    sx={Headerstyle.Leftcard} >
                     <Tabs
                       orientation="vertical"
                       value={value}
@@ -656,8 +655,8 @@ function Header() {
                   </Box>
 
                   {/* Right Card (Tab Content) */}
-                  <div
-                    style={{
+                  <Box
+                    sx={{
                       flex: 4,
                       border: "1px solid white",
                       borderRadius: "5px",
@@ -806,7 +805,7 @@ function Header() {
                     <TabPanel value={value} index={9}>
                       Content for Settings tab
                     </TabPanel>
-                  </div>
+                  </Box>
                 </div>
               </Box>
             </Popover>
@@ -841,7 +840,6 @@ function Header() {
                     variant="subtitle1"
                     sx={{
                       color: "black",
-                      fontFamily: ["Poppins", "sans-serif"],
                       fontWeight: "600",
                       lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
                       fontSize: { md: "18px", sm: "12px", xs: "10px" },
