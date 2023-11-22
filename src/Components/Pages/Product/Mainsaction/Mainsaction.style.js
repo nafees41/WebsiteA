@@ -42,12 +42,7 @@ const style={
       "&.Mui-checked": {
         color: "#F7941D", // Change to your desired color
       },
-    
-
-    
- 
-
-    },
+     },
     'checkboxsubheading':{
       
       lineHeight: {
@@ -58,18 +53,80 @@ const style={
       fontWeight: "400",
    
   },
-    'cardstyle':{
-      color: "#0a202d",
-      backgroundColor: "#D9D9D9",
-       textAlign: "center",
+    'card-1':{
+      backgroundColor: "#FFFFFF",
       boxShadow: "0px 0px 0px 0px",
       padding: "10px",
-   }
+     
+   },
+   'card-2':{
+    backgroundColor: "#D9D9D9",
+    boxShadow: "0px 0px 0px 0px",
+    padding: "10px",
+   
+ },
+ 'card-3':{
+  backgroundColor: "#B3B3B3",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ 
+},
+'card-4':{
+  backgroundColor: "#666666",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ 
+},
+'card-5':{
+  backgroundColor: "red",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-6':{
+  backgroundColor: "red",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-7':{
+  backgroundColor: "red",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
 
-
-  
-
-
+ 'card-8':{
+  backgroundColor: "red",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-9':{
+  backgroundColor: "#EEFF26",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-10':{
+  backgroundColor: "#26FF63",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-11':{
+  backgroundColor: "#26FFD8",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'card-12':{
+  backgroundColor: "#5126FF",
+  boxShadow: "0px 0px 0px 0px",
+  padding: "10px",
+ },
+ 'fliterbutton':{
+  marginTop: "10px",
+                              color: "white",
+                              padding: "10px",
+                              borderRadius: "8px",
+                              fontSize: "12px",
+                              boxShadow: "0px 0px 0px 0px",
+ }
+ 
 
 }
 export default style;

@@ -36,7 +36,7 @@ const Faq = () => {
       <Grid
         container
         spacing={2}
-        sx={{ marginTop: "20px", display: "flex", justifyContent: "center" }} >
+        sx={{ marginTop: "20px", display: "flex", justifyContent: "center" ,paddingX:{md:'0',sm:'40px',xs:'20px'}}} >
          <Grid item lg={6} md={12} sm={12} xs={12}>
          <div>
               {[

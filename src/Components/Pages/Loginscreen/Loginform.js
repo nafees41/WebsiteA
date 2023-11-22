@@ -39,11 +39,10 @@ const Login = () => {
 
 return (
   <ThemeProvider theme={theme}>
-        <Box>
+      
        <Grid container spacing={4} sx={Loginstyle.Maincontainer} >
         <Grid item md={6} sm={12} xs={12} sx={{
-                     
-              marginX:{md:'0',sm:'40px',xs:'10px'}
+          marginX:{md:'0',sm:'40px',xs:'10px'}
 
         }} >
         <Card
@@ -75,8 +74,6 @@ return (
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
-                          color: "#241468", // Adjust the color as needed
-                          fontSize: 14, // Adjust the icon size as needed
                           marginRight: "8px", // Adjust the spacing as needed
                         }}
                       />
@@ -475,7 +472,7 @@ return (
       </Grid>
  
    <Callsupport/>
-    </Box>
+  
     </ThemeProvider>
 
   );

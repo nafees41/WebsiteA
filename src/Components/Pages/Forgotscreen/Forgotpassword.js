@@ -143,8 +143,8 @@ const Forgotpassword = () => {
             </Box>
           </Card>
         </Grid>
-        <Grid item md={6} sm={12} xs={12}  sx={{display:{md:'flex',sm:'block',xs:'block'},justifyContent:'flex-end'}}>
-            <img src={Forgotimage} />
+        <Grid item md={6} sm={12} xs={12}  sx={{display:{md:'flex',sm:'block',xs:'block'},justifyContent:'center'}}>
+            <img src={Forgotimage} style={{height:'90%'}} />
             
 </Grid>  
  

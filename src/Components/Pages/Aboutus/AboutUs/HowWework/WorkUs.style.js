@@ -14,6 +14,7 @@
         lineHeight: '80px',
         letterSpacing: '0em',
         color: 'white',
+        textAlign:{md:'start',sm:'start',xs:'center'}
       
       },
       'workParagraph' :{

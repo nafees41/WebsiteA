@@ -17,15 +17,14 @@ function TopNavbar() {
 
   const options = [
     "All Category",
-    "Electronis",
-    "Twenty",
-    "Thirty",
-    "Electronis",
-    "Twenty",
-    "Thirty",
-    "Ten",
-    "Twenty",
-    "Thirty",
+    <Typography sx={{fontWeight:'500',color:'#F7941D'}}>Electronis </Typography>,
+    <Typography sx={{fontSize:'10px'}} >Components </Typography>,
+    <Typography  sx={{fontSize:'10px'}} >Laptop </Typography>,
+    <Typography  sx={{fontSize:'10px'}} >Monitors </Typography>,
+    <Typography  sx={{fontSize:'10px'}}>Scanner </Typography>,
+    <Typography sx={{fontWeight:'500',color:'#F7941D'}}>Furniture </Typography>,
+    <Typography  sx={{fontSize:'10px'}} >Book Case </Typography>,
+
   ];
 
   const handleToggle = () => {
@@ -49,11 +48,11 @@ function TopNavbar() {
               <Grid
                 item
                 md={5}
-                sm={12}
+                sm={11}
                 xs={12}
                 sx={{
               
-                  marginLeft: "auto",
+                  marginLeft: {md:"auto",sm:'0',xs:'0'},
                 }}
               >
                 <Paper

@@ -7,10 +7,10 @@ import TrustedPartners from '../Aboutus/AboutUs/TrustedPartners'
 const AboutPage = () => {
   return (
     <>
-    <AboutUsHeader/>
-     <WhyUs/> 
+   <AboutUsHeader/> 
+        <WhyUs/> 
    <HowWeWork/>
-    <TrustedPartners/>
+    <TrustedPartners/> 
     </>
   )
 }

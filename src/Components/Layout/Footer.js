@@ -134,16 +134,13 @@ const Footer = () => {
                   About Us
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Leadership
+                yourexample@email.com
                 </Typography>
-                <Typography variant="subtitle1">Investor Relations</Typography>
+                <Typography variant="subtitle1">example@email.com</Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Careers
+                Call us: +1 254 568-5479
                 </Typography>
 
-                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Contact Us
-                </Typography>
               </Grid>
               <Grid md={3} sm={4} xs={6}>
                 <Typography
@@ -161,12 +158,10 @@ const Footer = () => {
                   Terms & conditions
                 </Typography>
                 <Typography variant="subtitle1">
-                  Privacy policy update
+                Site Map
                 </Typography>
 
-                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Terms & conditions
-                </Typography>
+           
               </Grid>
               <Grid md={3} sm={4} xs={6}>
                 <Typography
@@ -174,22 +169,20 @@ const Footer = () => {
                   sx={Footerstyle.Socialheading}
 
                 >
-                  Our Information
+                  About
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Privacy policy update
+                About Us
                 </Typography>
 
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Terms & conditions
+                Customer Support
                 </Typography>
                 <Typography variant="subtitle1">
-                  Privacy policy update
+                Copyright
                 </Typography>
 
-                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Terms & conditions
-                </Typography>
+            
               </Grid>
               <Grid md={2} sm={4} xs={6}>
                 <Typography
@@ -206,21 +199,18 @@ const Footer = () => {
                   Top Categories
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  About Us
+                Men's Wear
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Leadership
+                Men's Wear
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Investor Relations
+                Men's Wear
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Careers
+                Men's Wear
                 </Typography>
 
-                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                  Contact Us
-                </Typography>
               </Grid>
             </Grid>
           </Grid>

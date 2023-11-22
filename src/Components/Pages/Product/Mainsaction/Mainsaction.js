@@ -28,23 +28,30 @@ const About = () => {
     });
   };
   const accordionStyle = {
-    backgroundColor: '#fff',
-    color: 'rgba(0, 0, 0, 0.87)',
-    borderRadius: '4px',
-    boxShadow: 'none', // Remove box shadow
-    border: 'none', // Remove border
-    position: 'relative',
-    overflowAnchor: 'none',
+    backgroundColor: "#fff",
+    color: "rgba(0, 0, 0, 0.87)",
+    borderRadius: "4px",
+    boxShadow: "none", // Remove box shadow
+    border: "none", // Remove border
+    position: "relative",
+    overflowAnchor: "none",
   };
-   return (
+  return (
     <Box>
       <Grid
         container
         spacing={2}
-        sx={{marginTop: "30px",paddingX: {md: "95px", sm: "40px", xs: "30px" },borderRadius:'15px'}}>
+        sx={{
+          marginTop: "30px",
+          paddingX: { md: "95px", sm: "40px", xs: "30px" },
+          borderRadius: "15px",
+        }}
+      >
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
-            <Typography sx={{ color: "#3C3737", padding: "15px" ,fontWeight:'600'}}>
+            <Typography
+              sx={{ color: "#3C3737", padding: "15px", fontWeight: "600" }}
+            >
               Filters
             </Typography>
 
@@ -52,12 +59,11 @@ const About = () => {
               {[
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
-                    Categories
-                  </Typography>
-
+                    <Typography sx={{ color: "#3C3737", fontWeight: "600" }}>
+                      Categories
+                    </Typography>
                   ),
-                  
+
                   content: (
                     <div>
                       <Typography style={{ color: "#F7941D" }}>
@@ -76,10 +82,9 @@ const About = () => {
                 },
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737", fontWeight:'600'}}>
-                    Price Range
-                  </Typography>
-
+                    <Typography sx={{ color: "#3C3737", fontWeight: "600" }}>
+                      Price Range
+                    </Typography>
                   ),
                   content: (
                     <div>
@@ -93,10 +98,9 @@ const About = () => {
                 },
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
-                    Brand
-                  </Typography>
-
+                    <Typography sx={{ color: "#3C3737", fontWeight: "600" }}>
+                      Brand
+                    </Typography>
                   ),
                   content: (
                     <div>
@@ -106,14 +110,12 @@ const About = () => {
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
                           >
                             Apple
                           </Typography>
@@ -125,16 +127,12 @@ const About = () => {
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           >
                             Samsung
                           </Typography>
@@ -146,24 +144,19 @@ const About = () => {
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           >
                             Sony
                           </Typography>
                         }
                       />
-    
-            
-               <br/>
+
+                      <br />
 
                       <FormControlLabel
                         control={
@@ -171,16 +164,12 @@ const About = () => {
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           >
                             Oppo
                           </Typography>
@@ -191,243 +180,167 @@ const About = () => {
                 },
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737", fontWeight:'600'}}>
-                  Discount
-                  </Typography>
-
+                    <Typography sx={{ color: "#3C3737", fontWeight: "600" }}>
+                      Discount
+                    </Typography>
                   ),
                   content: (
                     <div>
-                              <FormControlLabel
+                      <FormControlLabel
                         control={
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
-                           />
-
-
+                          />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           >
                             Any
                           </Typography>
                         }
                       />
-                      <br/>
-                       <FormControlLabel
+                      <br />
+                      <FormControlLabel
                         control={
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           >
                             No
                           </Typography>
                         }
                       />
-                      <br/>
-                       <FormControlLabel
+                      <br />
+                      <FormControlLabel
                         control={
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
                             sx={Mainstyle.checkboxsubheading}
-
-
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
                             sx={Mainstyle.checkboxsubheading}
-
-                           
-                           
                           >
                             Yes
                           </Typography>
                         }
                       />
-                   
-                 
                     </div>
                   ),
                 },
                 {
                   label: (
-                    <Typography sx={{ color: "#3C3737",fontWeight:'600'}}>
-                  Color
-                  </Typography>
-
+                    <Typography sx={{ color: "#3C3737", fontWeight: "600" }}>
+                      Color
+                    </Typography>
                   ),
-                  
+
                   content: (
                     <div>
                       <Grid container spacing={2}>
                         <Grid item xs={2}>
                           <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#FFFFFF",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
+                         sx={Mainstyle["card-1"]}
                           ></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                            sx={Mainstyle.card}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#B3B3B3",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#666666",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "red",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#5AD684",
+                          <Card 
+                         sx={Mainstyle["card-2"]}
 
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
+                          
+                          
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                         sx={Mainstyle["card-3"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                           sx={Mainstyle["card-4"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                         sx={Mainstyle["card-5"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                            sx={Mainstyle["card-6"]}
+
                           ></Card>
                         </Grid>
                       </Grid>
                       <Grid container spacing={2} sx={{ marginTop: "2px" }}>
                         <Grid item xs={2}>
                           <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#FF8126",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#D9D9D9",
-                                textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#EEFF26",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#26FF63",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#26FFD8",
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
-                          ></Card>
-                        </Grid>
-                        <Grid item xs={2}>
-                          <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#5126FF",
+                        sx={Mainstyle["card-7"]}
 
-                              textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
+                            
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                          sx={Mainstyle["card-8"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                          sx={Mainstyle["card-9"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                          sx={Mainstyle["card-10"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                           sx={Mainstyle["card-11"]}
+
+                          ></Card>
+                        </Grid>
+                        <Grid item xs={2}>
+                          <Card
+                          sx={Mainstyle["card-12"]}
+
                           ></Card>
                         </Grid>
                       </Grid>
 
-                      <Grid container spacing={2} sx={{marginTop:2}}>
-                        <Grid item xs={12} sx={{backgroundColor:'#F1F1F1',padding:'10px'}}>
+                      <Grid container spacing={2} sx={{ marginTop: 2 }}>
+                        <Grid
+                          item
+                          xs={12}
+                          sx={{ backgroundColor: "#F1F1F1", padding: "10px" }}
+                        >
                           <Button
                             size="large"
                             variant="contained"
                             color="primary"
-                            sx={{
-                              marginTop: "10px",
-                              color: "white",
-                              padding: "10px",
-                              borderRadius:'8px',
-                              fontSize:'12px',
-                              boxShadow:'0px 0px 0px 0px'
-                            }}
+                            sx={Mainstyle.fliterbutton}
                           >
                             Clear Filter
                           </Button>
@@ -442,8 +355,6 @@ const About = () => {
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
                   style={accordionStyle}
-
-                  
                 >
                   <AccordionSummary
                     sx={{ backgroundColor: "#F1F1F1" }}
@@ -457,47 +368,54 @@ const About = () => {
             </div>
           </Card>
         </Grid>
-        <Grid item  spacing={2} md={10} sm={12} xs={12} >
-              <Grid container spacing={2} sx={{marginX:'20px',backgroundColor: "#FCF7FE",borderRadius:'15px'}} >
-                <Grid item md={6} sm={12} xs={12}>
-                  <img src={productimage}/>
-                </Grid>
-                <Grid
-                  item
-                  md={6}
-                  sm={12}
-                  xs={12}
-                  sx={{
-                    margin: { md: "auto", sm: "0", xs: "0" },
-                  }}
-                >
-                  <Typography sx={Mainstyle.Mainheading}>
-                    Online <br />
-                    <span style={{ color: "#F7941D", fontSize: "3rem" }}>
-                      Shopping
-                    </span>
-                  </Typography>
-                  <Typography
-                    variant="subtitle1"
-                    sx={{ fontSize: "25px", fontWeight: "400" }}
-                  >
-                    Up to 50% off
-                  </Typography>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse <br /> cillum dolore eu fugiat nulla pariatu
-                  </p>
-                  <Button sx={Mainstyle.Mainbutton}>Shop Now</Button>
-                </Grid>
-              </Grid>
-          
-      
+        <Grid item spacing={2} md={10} sm={12} xs={12}>
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              marginX: "20px",
+              backgroundColor: "#FCF7FE",
+              borderRadius: "15px",
+            }}
+          >
+            <Grid item md={6} sm={12} xs={12}>
+              <img src={productimage} />
+            </Grid>
+            <Grid
+              item
+              md={6}
+              sm={12}
+              xs={12}
+              sx={{
+                margin: { md: "auto", sm: "0", xs: "0" },
+              }}
+            >
+              <Typography sx={Mainstyle.Mainheading}>
+                Online <br />
+                <span style={{ color: "#F7941D", fontSize: "3rem" }}>
+                  Shopping
+                </span>
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{ fontSize: "25px", fontWeight: "400" }}
+              >
+                Up to 50% off
+              </Typography>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse{" "}
+                <br /> cillum dolore eu fugiat nulla pariatu
+              </p>
+              <Button sx={Mainstyle.Mainbutton}>Shop Now</Button>
+            </Grid>
+          </Grid>
+
           <Relatedtab />
           <Paginationcomp />
         </Grid>
       </Grid>
       <Featuredcategories2 />
-      <Callsupport/>
+      <Callsupport />
     </Box>
   );
 };

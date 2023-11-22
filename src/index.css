@@ -77,8 +77,8 @@ body {
 
 .about-main{
   background-image: url(../src//Components//images//AboutPic.png);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 .about-content span{
 font-family: Inter;

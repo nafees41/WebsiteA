@@ -21,7 +21,7 @@ const style={
       },
     'navItem':{
      fontWeight: "500",
-      fontSize: { md: "1.1rem", sm: "12px", xs: "10px" },
+      fontSize: { md: "1.3rem", sm: "12px", xs: "10px" },
       color: "white",
       paddingRight: '30px',
       borderRight: '1px solid white',

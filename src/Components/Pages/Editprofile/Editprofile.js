@@ -42,7 +42,8 @@ const Sidebar = () => {
           }}>
           <Grid
         container
-        spacing={2}>
+        spacing={2} sx={{paddingX:{md:'0',sm:'40px',xs:"30px"},
+      }}>
         <Grid item lg={6} md={12} sm={12} xs={12}>
           <Typography
             component="h1"
@@ -56,7 +57,8 @@ const Sidebar = () => {
             Profile
           </Typography>
           </Grid>
-          <Grid item lg={6} md={12} sm={12} xs={12} sx={{display:'flex',justifyContent:'flex-end'}}>       <CardMedia
+          <Grid item lg={6} md={12} sm={12} xs={12} sx={{display:'flex',justifyContent:'flex-end'}}>      
+           <CardMedia
                 component="div" // Use a div as the component
                 sx={{
                   position: "relative", // Make the container relative for absolute positioning
@@ -85,7 +87,7 @@ const Sidebar = () => {
           </Grid>
           <Divider />
  <Box component="form" noValidate sx={{ mt: 3 }}>
-            <Grid container spacing={5}>
+            <Grid container spacing={5} sx={{paddingX:{md:'0',sm:'30px',xs:"20px"}}}>
               <Grid item lg={6} md={12} xs={12} sm={12}>
                 <TextField
                   required
@@ -152,6 +154,7 @@ const Sidebar = () => {
               spacing={3}
               sx={{
                 marginTop: { md: "1px", sm: "8px", xs: "8px" },
+                paddingX:{md:'0',sm:'30px',xs:"20px"},
               }}
             >
               <Grid item lg={12} md={12} xs={12} sm={12}>
@@ -191,6 +194,8 @@ const Sidebar = () => {
               spacing={3}
               sx={{
                 marginTop: { md: "1px", sm: "8px", xs: "8px" },
+                paddingX:{md:'0',sm:'30px',xs:"20px"},
+
               }}
             >
               <Grid item lg={12} md={12} xs={12} sm={12}>
@@ -225,7 +230,8 @@ const Sidebar = () => {
               </Grid>
             </Grid>
 
-            <Grid container spacing={5} sx={{ marginTop: "10px" }}>
+            <Grid container spacing={5} sx={{ marginTop: "10px",paddingX:{md:'0',sm:'30px',xs:"20px"},
+ }}>
               <Grid item lg={6} md={12} xs={12} sm={12}>
                 <TextField
                   required
@@ -287,7 +293,8 @@ const Sidebar = () => {
                 />
               </Grid>
             </Grid>
-            <Grid container spacing={5} sx={{ marginTop: "10px" }}>
+            <Grid container spacing={5} sx={{ marginTop: "10px",paddingX:{md:'0',sm:'30px',xs:"20px"},
+ }}>
               <Grid item lg={6} md={12} xs={12} sm={12}>
                 <TextField
                   required
@@ -354,6 +361,8 @@ const Sidebar = () => {
               spacing={3}
               sx={{
                 marginTop: { md: "10px", sm: "8px", xs: "8px" },
+                paddingX:{md:'0',sm:'30px',xs:"20px"},
+
               }}
             >
               <Grid item lg={12} md={12} xs={12} sm={12}>
@@ -387,7 +396,8 @@ const Sidebar = () => {
                 />
               </Grid>
             </Grid>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} sx={{ paddingX:{md:'0',sm:'30px',xs:"20px"},
+}}>
               <Grid item xs={6}>
                 <FormControlLabel
                   control={
@@ -416,7 +426,8 @@ const Sidebar = () => {
               </Grid>
             </Grid>
             <br/>
-            <Grid item lg={12} md={12} xs={12} sm={12} >
+            <Grid item lg={12} md={12} xs={12} sm={12} sx={{paddingX:{md:'0',sm:'30px',xs:"20px"},
+}} >
                 <TextField
                   required
                   fullWidth
@@ -464,6 +475,7 @@ const Sidebar = () => {
                 fontWeight: "700",
                 borderRadius:'10px',
                 marginLeft: { md: "5px", sm: "0px", xs: "0px" },
+                
               }}
             >
               Save Profile
