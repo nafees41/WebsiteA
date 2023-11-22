@@ -60,8 +60,14 @@ const slides = [
     alt: "Slide 3",
   },
 ];
+const Data = [
+  // Your data objects with slides property
+  // { slides: [...] },
+  // { slides: [...] },
+  // ...
+];
 
-export default function App() {
+export default function App({ data }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
