@@ -35,6 +35,7 @@ const style={
       borderRadius: '40px',
       position: 'absolute',
       top: '4px',
+      right:'83px',
       borderRadius: '40px',
       cursor: 'pointer',
       paddingX: { md: "30px", sm: "15px", xs: "10px" },
@@ -91,7 +92,30 @@ const style={
       textDecoration: "none", // Remove underline
       color: "inherit", // Inherit color from parent (card)
       display: "block", // Make the link a block element
-    }
+    },
+    'Carticonbuttonstyle':{
+      backgroundColor: "#0F75BC",
+      borderRadius: "22px",
+      padding: "12px",
+      position: "absolute",
+      top: "4px",
+      right: "20px",
+      "&:hover": {
+        backgroundColor: "#0F75BC",
+      },
+      
+  },
+  'Appbarstyle':{
+    backgroundColor: "#F7941D",
+    boxShadow: "0px 0px 0px 0px",
+    paddingX: {md:"75px",sm:'70px',xs:'35px'},
+  },
+  'Contactheading':{
+    color: "black",
+    fontWeight: "600",
+    lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
+    fontSize: { md: "18px", sm: "12px", xs: "10px" },
+  }
 
 
 }

@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
-import { Box, Button, Grid, Card, Typography, Tab, Tabs, CardContent, CardHeader, CardActionArea } from "@mui/material";
+import { Box, Button, Grid, Card, Typography, Tab, Tabs} from "@mui/material";
 import Narrationimage from "../images/redwatch.png";
 import Watchimage from "../images/watch-1.png";
 import Watchimage1 from "../images/watch-2.png";
-
 import Tabestyle from "./Tabcomp.style";
 import { useState } from "react";
 import { IconButton } from "@mui/material";
@@ -14,7 +13,6 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Divider } from "@mui/material";
 import { Data } from "./Constant";
 import { Link } from "react-router-dom";
-
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

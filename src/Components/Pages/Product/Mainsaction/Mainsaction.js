@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import { Grid, Button, Typography, Card, Divider } from "@mui/material";
+import { Grid, Button, Typography, Card } from "@mui/material";
 import productimage from "../../../images/Product.png";
 import Mainstyle from "../Mainsaction/Mainsaction.style";
 import Accordion from "@mui/material/Accordion";
@@ -9,7 +9,6 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import TextField from "@mui/material/TextField";
 import Checkbox from "@mui/material/Checkbox";
-import { Stack } from "@mui/material";
 import Relatedtab from "../Relatedtab/Relatedtab";
 import Paginationcomp from "../Paginationcomp/Paginationcomp";
 import Featuredcategories2 from "../../../Featuredcategory/Featuredcategory";
@@ -106,24 +105,15 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
                           >
                             Apple
                           </Typography>
@@ -134,24 +124,17 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           >
                             Samsung
                           </Typography>
@@ -162,24 +145,17 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           >
                             Sony
                           </Typography>
@@ -194,24 +170,17 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           >
                             Oppo
                           </Typography>
@@ -234,24 +203,19 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
-                          />
+                            sx={Mainstyle.checkboxsubheading}
+
+
+                           />
+
+
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           >
                             Any
                           </Typography>
@@ -263,24 +227,17 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           >
                             No
                           </Typography>
@@ -292,24 +249,18 @@ const About = () => {
                           <Checkbox
                             value="allowExtraEmails"
                             color="primary"
-                            sx={{
-                              "&.Mui-checked": {
-                                color: "#F7941D", // Change to your desired color
-                              },
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+
                           />
                         }
                         label={
                           <Typography
                             variant="body1"
-                            sx={{
-                              lineHeight: {
-                                md: "19.6px",
-                                sm: "12px",
-                                xs: "15px",
-                              },
-                              fontWeight: "400",
-                            }}
+                            sx={Mainstyle.checkboxsubheading}
+
+                           
+                           
                           >
                             Yes
                           </Typography>
@@ -344,13 +295,7 @@ const About = () => {
                         </Grid>
                         <Grid item xs={2}>
                           <Card
-                            sx={{
-                              color: "#0a202d",
-                              backgroundColor: "#D9D9D9",
-                               textAlign: "center",
-                              boxShadow: "0px 0px 0px 0px",
-                              padding: "10px",
-                            }}
+                            sx={Mainstyle.card}
                           ></Card>
                         </Grid>
                         <Grid item xs={2}>

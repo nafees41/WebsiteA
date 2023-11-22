@@ -10,6 +10,7 @@ import Narrationimage6 from "../images/Glasses.png";
 import { Card } from "@mui/material";
 import { Typography, CardContent } from "@mui/material";
 import { Divider } from "@mui/material";
+import Featuredstyle from '../Featuredcategory/Featured.style'
 
 const Featured = () => {
   return (
@@ -47,11 +48,8 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
+               
                 >
                   Bags
                 </Typography>
@@ -74,11 +72,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
                 >
                   Shoes
                 </Typography>
@@ -102,11 +96,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
                 >
                   Wallets
                 </Typography>
@@ -138,11 +128,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
                 >
                   Jewellers
                 </Typography>
@@ -165,11 +151,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
                 >
                   Watches
                 </Typography>
@@ -193,11 +175,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={{
-                    color: "#1D1E1E",
-                    fontWeight: "600",
-                    paddingLeft: "22px",
-                  }}
+                  sx={Featuredstyle.Bagheading }
                 >
                   Sun Glasses
                 </Typography>

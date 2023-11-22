@@ -452,12 +452,7 @@ function Header() {
       <Headertwo />
       <AppBar
         position="static"
-        sx={{
-          backgroundColor: "#F7941D",
-          boxShadow: "0px 0px 0px 0px",
-          paddingX: {md:"75px",sm:'70px',xs:'35px'},
-        }}
-      >
+        sx={Headerstyle.Appbarstyle}  >
         <Toolbar disableGutters variant="dense">
           <IconButton
             size="large"
@@ -516,7 +511,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                              <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "12px" }}>
                                 Laptop and Mac
                               </Typography>
@@ -532,8 +527,7 @@ function Header() {
                           <div>
                             <Stack direction="row" spacing={2}>
                               <StayCurrentPortraitIcon
-                                sx={{ color: "#7F7F7F" }}
-                              />
+                               sx={Headerstyle.Tabicon}/>
                               <Typography sx={{ fontSize: "12px" }}>
                                 Mobile & Tablet
                               </Typography>
@@ -549,7 +543,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <HouseIcon sx={{ color: "#7F7F7F" }} />
+                              <HouseIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "12px" }}>
                                 Home Devices
                               </Typography>
@@ -562,12 +556,11 @@ function Header() {
                       />
 
                       <Divider />
-
                       <Tab
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <FitnessCenterIcon sx={{ color: "#7F7F7F" }} />
+                              <FitnessCenterIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "12px" }}>
                                 Fitness and Fitness
                               </Typography>
@@ -584,7 +577,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                              <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "15px" }}>
                                 TV & Audio
                               </Typography>
@@ -601,7 +594,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <AirplayIcon sx={{ color: "#7F7F7F" }} />
+                              <AirplayIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "12px" }}>
                                 Game & Toys
                               </Typography>
@@ -618,7 +611,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <LaptopChromebookIcon sx={{ color: "#7F7F7F" }} />
+                              <LaptopChromebookIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "12px" }}>
                                 Accessories
                               </Typography>
@@ -635,7 +628,7 @@ function Header() {
                         label={
                           <div>
                             <Stack direction="row" spacing={2}>
-                              <SettingsIcon sx={{ color: "#7F7F7F" }} />
+                              <SettingsIcon sx={Headerstyle.Tabicon} />
                               <Typography sx={{ fontSize: "16px" }}>
                                 Settings
                               </Typography>
@@ -662,8 +655,7 @@ function Header() {
                   >
                     <TabPanel value={value} index={0}>
                     Content for Profile tab
-
-                      </TabPanel>
+                    </TabPanel>
                     <TabPanel value={value} index={1}>
                       Content for Profile tab
                     </TabPanel>
@@ -724,29 +716,24 @@ function Header() {
                 <Grid md={3} sm={4} xs={6}>
                   <Typography
                     variant="subtitle1"
-                    sx={{
-                      color: "black",
-                      fontWeight: "600",
-                      lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                      fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                    }}
+                    sx={Headerstyle.Contactheading}
                   >
                     Contact
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     About Us
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color:"#484444"}}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Leadership
                   </Typography>
                   <Typography variant="subtitle1">
                     Investor Relations
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Careers
                   </Typography>
 
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Contact Us
                   </Typography>
                 </Grid>
@@ -754,29 +741,24 @@ function Header() {
                 <Grid md={3} sm={4} xs={6}>
                   <Typography
                     variant="subtitle1"
-                    sx={{
-                      color: "black",
-                      fontWeight: "600",
-                      lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
-                      fontSize: { md: "18px", sm: "12px", xs: "10px" },
-                    }}
-                  >
+                    sx={Headerstyle.Contactheading}
+                     >
                     Top Categories
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     About Us
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Leadership
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Investor Relations
                   </Typography>
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
                     Careers
                   </Typography>
 
-                  <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  <Typography variant="subtitle1"  sx={Headerstyle.Tabsublistitem}>
                     Contact Us
                   </Typography>
                 </Grid>
@@ -830,8 +812,7 @@ function Header() {
               <Stack direction="row">
                 <Typography
                   variant="subtitle1"
-                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }}
-                >
+                  sx={{ color: "white", paddingX: "20px", fontSize: "12px" }} >
                   Creta an account?
                 </Typography>
                 <Link
@@ -852,22 +833,10 @@ function Header() {
                 aria-describedby={popperId}
                 type="button"
                 onClick={handlePopperClick}
-                sx={{
-                  backgroundColor: "#0F75BC",
-                  borderRadius: "22px",
-                  padding: "12px",
-                  position: "absolute",
-                  top: "4px",
-                  right: "20px",
-                  "&:hover": {
-                    backgroundColor: "#0F75BC",
-                  },
-                }}
-              >
-                <ShoppingCartIcon sx={{ color: "white" }} />
+                sx={Headerstyle.Carticonbuttonstyle}>
+                <ShoppingCartIcon sx={{ color: "white"}}/>
               </IconButton>
-
-              <Popper
+               <Popper
                 id={popperId}
                 open={isPopperOpen}
                 anchorEl={popperAnchorEl}
@@ -881,8 +850,7 @@ function Header() {
                         p: 3,
                         backgroundColor: "#F7F7F7",
                         borderColor: "#F7F7F7",
-                      }}
-                    >
+                      }}>
                       <Grid container spacing={1} sx={{ marginTop: "0px" }}>
                         <Grid item md={2} xs={2}>
                           <CardMedia
@@ -932,104 +900,7 @@ function Header() {
                           <CloseIcon />
                         </Grid>
                       </Grid>
-                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
-                        <Grid item md={2} xs={2}>
-                          <CardMedia
-                            component="img"
-                            image={imagewatch}
-                            sx={{ height: "100%" }}
-                            alt="Paella dish"
-                          />
-                        </Grid>
-                        <Grid item md={9} xs={8}>
-                          <Typography
-                            sx={{
-                              color: "#555151",
-                              fontWeight: "400",
-                              fontSize: {
-                                lg: "18px",
-                                md: "30px",
-                                sm: "20px",
-                                xs: "24px",
-                              },
-                            }}
-                          >
-                            Samsung - Galaxy S6 4G LTE with <br /> 32GB Memory
-                            Cell Phone
-                          </Typography>
-                          <Typography
-                            sx={{
-                              color: "#F7941D",
-                              fontWeight: "600",
-                              fontSize: {
-                                lg: "20px",
-                                md: "30px",
-                                sm: "16px",
-                                xs: "22px",
-                              },
-                            }}
-                          >
-                            1 x $250.00
-                          </Typography>
-                        </Grid>
-                        <Grid
-                          item
-                          md={1}
-                          xs={2}
-                          sx={{ marginTop: "10px", textAlign: "end" }}
-                        >
-                          <CloseIcon />
-                        </Grid>
-                      </Grid>
-                      <Grid container spacing={1} sx={{ marginTop: "10px" }}>
-                        <Grid item md={2} xs={2}>
-                          <CardMedia
-                            component="img"
-                            image={imagewatch}
-                            sx={{ height: "100%" }}
-                            alt="Paella dish"
-                          />
-                        </Grid>
-                        <Grid item md={9} xs={8}>
-                          <Typography
-                            sx={{
-                              color: "#555151",
-                              fontWeight: "400",
-                              fontSize: {
-                                lg: "18px",
-                                md: "30px",
-                                sm: "20px",
-                                xs: "24px",
-                              },
-                            }}
-                          >
-                            Samsung - Galaxy S6 4G LTE with <br /> 32GB Memory
-                            Cell Phone
-                          </Typography>
-                          <Typography
-                            sx={{
-                              color: "#F7941D",
-                              fontWeight: "600",
-                              fontSize: {
-                                lg: "20px",
-                                md: "30px",
-                                sm: "16px",
-                                xs: "22px",
-                              },
-                            }}
-                          >
-                            1 x $250.00
-                          </Typography>
-                        </Grid>
-                        <Grid
-                          item
-                          md={1}
-                          xs={2}
-                          sx={{ marginTop: "10px", textAlign: "end" }}
-                        >
-                          <CloseIcon />
-                        </Grid>
-                      </Grid>
+                   
                       <br />
                       <br />
                       <Divider />
