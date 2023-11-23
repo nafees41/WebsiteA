@@ -40,7 +40,7 @@ function App() {
      <Route path="/Editprofile"  element={<Editprofile/>}> </Route>
      <Route path="/Shoppingcartpage"  element={<Shoppingcartpage/>}> </Route>
      <Route path="/Forgotemail"  element={<Forgotemail/>}> </Route>
-     <Route path="/Forgotemail"  element={<Changepassword/>}> </Route>
+     <Route path="/Changepassword"  element={<Changepassword/>}> </Route>
 
 
 </Routes>

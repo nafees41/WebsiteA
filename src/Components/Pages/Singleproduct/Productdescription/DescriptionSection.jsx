@@ -112,45 +112,45 @@ export default function App() {
       
           <Grid item lg={12} md={6} xs={12} sm={6}>
           <div className="products" >
-        {/* {categoryData[selectedCategory].map((product, index) => (
-          <div key={index}>
-            <p>{product}</p>
-          </div>
-        ))} */}
-         <CardContent>
+       <CardContent>
     
         <Typography variant="body2" color="text.secondary">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis
         </Typography>
       </CardContent>
-        {/* <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p> */}
       </div>
           </Grid>
-      
-          {/* Add more content for the first tab panel here */}
-        </Grid>
+          </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Grid container spacing={2} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
-      
-          <Grid item lg={12} md={6} xs={12} sm={6}>
+         <Grid item lg={12} md={6} xs={12} sm={6}>
           <div className="products" >
-        {/* {categoryData[selectedCategory].map((product, index) => (
-          <div key={index}>
-            <p>{product}</p>
-          </div>
-        ))} */}
          <CardContent>
-    
+       <Typography variant="body2" color="text.secondary">
+       <span  style={{
+                   fontWeight:900
+                  }} > Estimated Delivery Time:</span> IExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id esExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
+        </Typography>
         <Typography variant="body2" color="text.secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis
+       <span  style={{
+                   fontWeight:900
+                  }} > Return Process:</span> IExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id esExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       <span  style={{
+                   fontWeight:900
+                  }} > Estimated Delivery Time:</span> IExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id esExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       <span  style={{
+                   fontWeight:900
+                  }} > Return Process:</span> IExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id esExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
         </Typography>
       </CardContent>
-        {/* <p className='description-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugit omnis, quod mollitia dolorum at blanditiis, minima ad et ducimus debitis! Tenetur vitae aliquam quaerat obcaecati mollitia accusantium cupiditate exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero facere rem optio, molestias, reiciendis deserunt commodi rerum vel quam quisquam voluptatem magni sequi perferendis esse itaque ipsum? Ut, alias repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptatum incidunt modi optio! Nemo deleniti totam, doloribus reiciendis maiores incidunt odio corrupti consequuntur voluptatem pariatur libero, esse a ipsum officiis?</p> */}
       </div>
           </Grid>
       
-          {/* Add more content for the first tab panel here */}
         </Grid>
       </TabPanel>
     </Box>

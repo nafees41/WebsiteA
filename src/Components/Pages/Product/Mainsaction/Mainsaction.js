@@ -50,7 +50,8 @@ const About = () => {
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
             <Typography
-              sx={{ color: "#3C3737", padding: "15px", fontWeight: "600" }} >
+              sx={{ color: "#3C3737", padding: "15px", fontWeight: "600" }}
+            >
               Filters
             </Typography>
 
@@ -65,8 +66,10 @@ const About = () => {
 
                   content: (
                     <div>
-                      <Typography style={{ color: "#F7941D" }}> Laptop & Mac
- </Typography>
+                      <Typography style={{ color: "#F7941D" }}>
+                        {" "}
+                        Laptop & Mac
+                      </Typography>
                       <Typography>Mobile & Tablet</Typography>
                       <Typography>Home Devices</Typography>
                       <Typography>TV & Audio</Typography>
@@ -136,7 +139,7 @@ const About = () => {
                           </Typography>
                         }
                       />
-                          <br/>
+                      <br />
                       <FormControlLabel
                         control={
                           <Checkbox
@@ -145,7 +148,6 @@ const About = () => {
                             sx={Mainstyle.checkboxsubheading}
                           />
                         }
-                    
                         label={
                           <Typography
                             variant="body1"
@@ -253,80 +255,42 @@ const About = () => {
                     <div>
                       <Grid container spacing={2}>
                         <Grid item xs={2}>
-                          <Card
-                         sx={Mainstyle["card-1"]}
-                          ></Card>
+                          <Card sx={Mainstyle["card-1"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card 
-                         sx={Mainstyle["card-2"]}
-
-                          
-                          
-                          ></Card>
+                          <Card sx={Mainstyle["card-2"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                         sx={Mainstyle["card-3"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-3"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                           sx={Mainstyle["card-4"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-4"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                         sx={Mainstyle["card-5"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-5"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                            sx={Mainstyle["card-6"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-6"]}></Card>
                         </Grid>
                       </Grid>
                       <Grid container spacing={2} sx={{ marginTop: "2px" }}>
                         <Grid item xs={2}>
-                          <Card
-                        sx={Mainstyle["card-7"]}
-
-                            
-                          ></Card>
+                          <Card sx={Mainstyle["card-7"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                          sx={Mainstyle["card-8"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-8"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                          sx={Mainstyle["card-9"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-9"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                          sx={Mainstyle["card-10"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-10"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                           sx={Mainstyle["card-11"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-11"]}></Card>
                         </Grid>
                         <Grid item xs={2}>
-                          <Card
-                          sx={Mainstyle["card-12"]}
-
-                          ></Card>
+                          <Card sx={Mainstyle["card-12"]}></Card>
                         </Grid>
                       </Grid>
 
@@ -373,12 +337,13 @@ const About = () => {
             container
             spacing={2}
             sx={{
-              marginX: {md:"20px",sm:'0px',xs:'0px'},
+              marginX: { md: "20px", sm: "0px", xs: "0px" },
               backgroundColor: "#FCF7FE",
               borderRadius: "15px",
-            }}  >
+            }}
+          >
             <Grid item md={6} sm={12} xs={12}>
-              <img src={productimage}  style={{width:'100%'}}/>
+              <img src={productimage} style={{ width: "100%" }} />
             </Grid>
             <Grid
               item
@@ -391,7 +356,12 @@ const About = () => {
             >
               <Typography sx={Mainstyle.Mainheading}>
                 Online <br />
-                <span style={{ color: "#F7941D", fontSize: {md:'3rem',sm:'3rem',xs:'1rem'}}}>
+                <span
+                  style={{
+                    color: "#F7941D",
+                    fontSize: { md: "3rem", sm: "3rem", xs: "1rem" },
+                  }}
+                >
                   Shopping
                 </span>
               </Typography>

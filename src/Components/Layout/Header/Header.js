@@ -977,6 +977,11 @@ function Header() {
                       </Grid>
                       <Grid container spacing={1} sx={{ marginTop: "10px" }}>
                         <Grid item md={6} xs={8}>
+                      
+                           <Link
+                           to="/Shoppingcartpage"
+                           style={Headerstyle.linkstyle}
+                         >
                           <Button
                             fullWidth
                             variant="contained"
@@ -990,6 +995,7 @@ function Header() {
                           >
                             View Cart
                           </Button>
+                          </Link>
                         </Grid>
                         <Grid item md={6} xs={2} sx={{ textAlign: "end" }}>
                           <Button
