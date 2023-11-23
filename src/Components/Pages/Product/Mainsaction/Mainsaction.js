@@ -136,6 +136,7 @@ const About = () => {
                           </Typography>
                         }
                       />
+                          <br/>
                       <FormControlLabel
                         control={
                           <Checkbox
@@ -144,6 +145,7 @@ const About = () => {
                             sx={Mainstyle.checkboxsubheading}
                           />
                         }
+                    
                         label={
                           <Typography
                             variant="body1"

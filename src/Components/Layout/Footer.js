@@ -245,7 +245,7 @@ const Footer = () => {
         <IconButton
           type="button"
          onClick={scrollToTop}>
-          < img src={Chat}  />
+          < img src={Chat} style={{height:'100px'}} />
         </IconButton>
       </InputAdornment>
     </Box>

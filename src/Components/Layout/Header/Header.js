@@ -38,13 +38,46 @@ function TabPanel(props) {
 
 function Header() {
   const navItems = [
-    "Home",
-    "About",
-    "Shop Now",
+    <Link
+    to="/home"
+    style={Headerstyle.linkstyle}
+  >
+    <Typography>Home </Typography>
+    </Link>
+    ,
+    <Link
+    to="/about"
+    style={Headerstyle.linkstyle}
+  >
+    <Typography>About </Typography>
+    </Link>,
+        <Link
+        to="/product"
+        style={Headerstyle.linkstyle}
+      >
+        <Typography>Product </Typography>
+        </Link>,
+        
+    <Link
+    to="/Shoppingcartpage"
+    style={Headerstyle.linkstyle}
+  >
+    <Typography>Shop Now </Typography>
+    </Link>,
     "Flash Deals",
     "Daily Deals",
-    "Contact",
-    "Create Account",
+    <Link
+    to="/contact"
+    style={Headerstyle.linkstyle}
+  >
+    <Typography>Contact </Typography>
+    </Link>,
+       <Link
+       to="/login"
+       style={Headerstyle.linkstyle}
+     >
+       <Typography>Create Account </Typography>
+       </Link>,
   ];
   const drawerWidth = 240;
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -85,17 +118,16 @@ function Header() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <div>
-        <button
-          variant="contained"
-          onClick={handleOpen}
-          className="all-categories-button global-button-style"
-          sx={{
-            display: { xs: "none", sm: "block" },
-          }}
-        >
-          <MenuIcon className="icon" />
-          All Categories
-        </button>
+      <Button
+              variant="contained"
+              color="secondary"
+              onClick={handleOpen}
+              className="global-button-style"
+              sx={Headerstyle.allCategoriesButton}
+ >
+              <MenuIcon sx={Headerstyle.icon} />
+              All Categories
+            </Button>
         <Popover
           open={Boolean(anchorEl)}
           anchorEl={anchorEl}

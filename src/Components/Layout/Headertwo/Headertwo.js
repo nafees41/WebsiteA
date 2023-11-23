@@ -50,17 +50,14 @@ function TopNavbar() {
                 md={5}
                 sm={11}
                 xs={12}
-                sx={{
-              
-                  marginLeft: {md:"auto",sm:'0',xs:'0'},
-                }}
+                sx={{marginLeft: {md:"auto",sm:'0',xs:'0'}}}
               >
                 <Paper
                   component="form"
                   sx={Headertwostyle.Headertwopaper}
                 >
                   <FormControl
-                    sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 110 }}}
+                    sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 30 }}}
                     size="small"
                   >
                     <div>
