@@ -143,8 +143,9 @@ const Forgotpassword = () => {
             sx={{
               display: { md: "flex", sm: "block", xs: "block" },
               justifyContent: "center",
-            }}>
-            <img src={Forgotimage} style={{width:'100%'}}/>
+            }}
+          >
+            <img src={Forgotimage} style={{ height: "90%" }} />
           </Grid>
         </Grid>
 
