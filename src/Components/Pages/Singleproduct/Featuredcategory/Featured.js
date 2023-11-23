@@ -130,7 +130,7 @@ export default function App() {
               into women's health, Car Crash Detection, and sleep stages to
               understand your sleep.
             </Typography>
-            <br />
+            <br/>
           </Card>
         </Grid>
       </Grid>
