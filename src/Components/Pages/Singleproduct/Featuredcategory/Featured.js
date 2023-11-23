@@ -109,8 +109,7 @@ export default function App() {
               <Grid
                 item
                 xs={6}
-                sx={{ display: "flex", justifyContent: "flex-end" }}
-              >
+                sx={{ display: "flex", justifyContent: "flex-end" }} >
                 <Typography variant="h6" sx={{ color: "#F7941D" }}>
                   $2,435
                 </Typography>

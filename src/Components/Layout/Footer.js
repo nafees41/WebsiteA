@@ -42,7 +42,7 @@ const Footer = () => {
           </Typography>
         </Grid>
         <Grid item md={11} sm={10} xs={12} sx={{ margin: "auto" }}>
-          <Grid container sx={{ marginTop: "20px" }}>
+          <Grid container sx={{ marginTop: "20px",paddingX:'20px' }}>
             <Grid item md={8} sm={4} xs={12}>
               <Typography
                 variant="subtitle1"
