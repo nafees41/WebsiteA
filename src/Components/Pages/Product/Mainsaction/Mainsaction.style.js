@@ -4,7 +4,7 @@ const style={
 
     /* Main heading */
     'Mainheading':{
-      fontSize: '3.5rem',
+      fontSize: {md:'3.5rem',sm:'3.5rem',xs:'2rem'},
       fontWeight: '550',
       lineHeight: '55px',
       letterSpacing:' 0em',

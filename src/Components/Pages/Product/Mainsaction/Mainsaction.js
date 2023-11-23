@@ -389,7 +389,7 @@ const About = () => {
             >
               <Typography sx={Mainstyle.Mainheading}>
                 Online <br />
-                <span style={{ color: "#F7941D", fontSize: "3rem" }}>
+                <span style={{ color: "#F7941D", fontSize: {md:'3rem',sm:'3rem',xs:'1rem'}}}>
                   Shopping
                 </span>
               </Typography>

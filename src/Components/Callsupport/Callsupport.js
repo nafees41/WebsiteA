@@ -26,13 +26,9 @@ const Callsupport = () => {
         
       <Grid
         container
-    
         sx={{ paddingX: "50px", marginTop: {md:"120px",sm:'40px',xs:'10px'} ,
        border: (theme) => `2px solid ${theme.palette.divider}`,borderRadius:'15px',padding:'20px'}}>
-
-      
-    
-        <Grid item  md={3} sm={6}  xs={12}>
+          <Grid item  md={3} sm={6}  xs={12} sx={{paddingBottom:'30px'}}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
               <IconButton type="button" style={buttonStyle1}>
@@ -49,7 +45,7 @@ const Callsupport = () => {
             </Stack>
           </Stack>
         </Grid>
-        <Grid item md={3} sm={6}  xs={12}>
+        <Grid item md={3} sm={6}  xs={12}  sx={{paddingBottom:'30px'}}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
               <IconButton type="button" style={buttonStyle1}>
@@ -69,7 +65,7 @@ const Callsupport = () => {
             </Stack>
           </Stack>
         </Grid>
-        <Grid item md={3} sm={6}  xs={12}>
+        <Grid item md={3} sm={6}  xs={12}  sx={{paddingBottom:'30px'}}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
               <IconButton type="button" style={buttonStyle1}>
@@ -91,7 +87,7 @@ const Callsupport = () => {
             </Stack>
           </Stack>
         </Grid>
-        <Grid item md={3} sm={6}  xs={12}>
+        <Grid item md={3} sm={6}  xs={12}  sx={{paddingBottom:'30px'}}>
           <Stack spacing={2} direction="row" alignItems="center">
             <Stack>
               <IconButton type="button" style={buttonStyle1}>
