@@ -68,8 +68,7 @@ export default function App() {
                   <Grid item xs={2}>
                     <IconButton
                       onClick={handlePreviousSlide}
-                      disabled={currentSlide === 0}
-                    >
+                      disabled={currentSlide === 0}    >
                       <KeyboardArrowLeftIcon />
                     </IconButton>
                   </Grid>
