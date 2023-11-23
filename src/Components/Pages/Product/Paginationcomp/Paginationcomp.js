@@ -9,14 +9,13 @@ import CardContent from '@mui/material/CardContent';
 
 const Paginationcomp = () => {
   return (
-    <Box sx={{marginTop:'20px',display:'flex',justifyContent:'center'}}>
+    <Box sx={{marginTop:'20px'}}>
             <Pagination
             count={10} // Total number of pages
             variant="outlined"
             shape="rounded"
             size="large"
             color="primary"
-            className="work"
             renderItem={(item) => (
               <PaginationItem
                 {...item}
@@ -34,7 +33,7 @@ const Paginationcomp = () => {
                   color:'#B4B4B4',
                   justifyContent:'center',
                   borderRadius:'15px',
-                  padding:'15px',
+                  padding:{md:'15px',sm:'10px',xs:'0px'},
                   "&.Mui-selected": {
                     backgroundColor: "#F7941D", // Selected tab color
                     color: "#FFFFFF", // Text color for selected tab

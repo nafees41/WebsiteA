@@ -6,7 +6,7 @@ const style = {
   },
 
   Headertwocontainer: {
-    paddingX: { md: "15px", sm: "0px", xs: "0px" },
+    paddingX: { md: "70px", sm: "0px", xs: "0px" },
     paddingBottom: "25px",
     marginTop: "10px",
   },

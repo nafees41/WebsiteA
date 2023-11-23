@@ -50,8 +50,7 @@ const About = () => {
         <Grid md={2} sm={12} xs={12} sx={Mainstyle.FilterSaction}>
           <Card sx={{ border: "1px solid #9B9B9B" }}>
             <Typography
-              sx={{ color: "#3C3737", padding: "15px", fontWeight: "600" }}
-            >
+              sx={{ color: "#3C3737", padding: "15px", fontWeight: "600" }} >
               Filters
             </Typography>
 
@@ -66,9 +65,8 @@ const About = () => {
 
                   content: (
                     <div>
-                      <Typography style={{ color: "#F7941D" }}>
-                        Laptop & Mac
-                      </Typography>
+                      <Typography style={{ color: "#F7941D" }}> Laptop & Mac
+ </Typography>
                       <Typography>Mobile & Tablet</Typography>
                       <Typography>Home Devices</Typography>
                       <Typography>TV & Audio</Typography>
@@ -373,13 +371,12 @@ const About = () => {
             container
             spacing={2}
             sx={{
-              marginX: "20px",
+              marginX: {md:"20px",sm:'0px',xs:'0px'},
               backgroundColor: "#FCF7FE",
               borderRadius: "15px",
-            }}
-          >
+            }}  >
             <Grid item md={6} sm={12} xs={12}>
-              <img src={productimage} />
+              <img src={productimage}  style={{width:'100%'}}/>
             </Grid>
             <Grid
               item
