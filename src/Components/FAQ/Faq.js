@@ -8,7 +8,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveIcon from '@mui/icons-material/Remove';
-import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 
 const Faq = () => {
   const [expanded, setExpanded] = useState([true, false, false]); // Initialize to true for each Accordion
@@ -18,6 +17,16 @@ const Faq = () => {
       newExpanded[panel] = isExpanded;
       return newExpanded;
     });
+  };
+  const accordionStyle = {
+    backgroundColor: "#fff",
+    color: "rgba(0, 0, 0, 0.87)",
+    borderRadius: "4px",
+    boxShadow: "none", // Remove box shadow
+    border: "none", // Remove border
+    position: "relative",
+    overflowAnchor: "none",
+    marginBottom:"20px"
   };
   return (
     <div>
@@ -37,15 +46,15 @@ const Faq = () => {
         container
         spacing={2}
         sx={{ marginTop: "20px", display: "flex", justifyContent: "center" ,paddingX:{md:'0',sm:'40px',xs:'20px'}}} >
-         <Grid item lg={6} md={12} sm={12} xs={12}>
+         <Grid item lg={8} md={12} sm={12} xs={12}>
          <div>
               {[
                 {
-                  label: "How we work at our brand?",
-                  content: (
+                    label: "How we work at our brand?",
+                   content: (
                     <div>
-                      <Typography  variant="body2">
-                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      <Typography   sx={{fontSize:'20px',fontWeight:'400'}}>
+                      You offer a good product, make advertising, analyze the market<br/>but still have no improvement Our qulificated specialists 
                       </Typography>
                      
                     </div>
@@ -56,8 +65,8 @@ const Faq = () => {
                   content: (
                     <div>
                 
-                      <Typography variant="body2">
-                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      <Typography  sx={{fontSize:'20px',fontWeight:'400'}}>
+                      You offer a good product, make advertising, analyze the market<br/> but still have no improvement Our qulificated specialists 
 
                       </Typography>
                     </div>
@@ -67,8 +76,8 @@ const Faq = () => {
                   label: "How we work at our brand?",
                   content: (
                     <div>
-                      <Typography variant="body2">
-                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
+                      You offer a good product, make advertising, analyze the market <br/> but still have no improvement Our qulificated specialists 
                       </Typography>
                      
                     </div>
@@ -79,8 +88,8 @@ const Faq = () => {
                   content: (
                     <div>
                 
-                      <Typography variant="body2">
-                      You offer a good product, make advertising, analyze the market but still have no improvement Our qulificated specialists 
+                      <Typography  sx={{fontSize:'20px',fontWeight:'400'}}>
+                      You offer a good product, make advertising, analyze the market <br/> but still have no improvement Our qulificated specialists 
 
                       </Typography>
                     </div>
@@ -93,9 +102,10 @@ const Faq = () => {
                   key={index}
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
-                 >
+                  style={accordionStyle}>
+        
                 <AccordionSummary
-            sx={{ backgroundColor: '#FAFAFA' }}
+            sx={{ backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
             expandIcon={
               expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
@@ -105,6 +115,7 @@ const Faq = () => {
             }>
                   
                     <Typography  variant="h6" sx={{fontWeight:'600',color:'#484444'}}>{section.label}</Typography>
+                    
                   </AccordionSummary>
                   <AccordionDetails  sx={{ fontWeight:'400',backgroundColor:'#FAFAFA',color:'#484444'}} >{section.content}</AccordionDetails>
                 </Accordion>

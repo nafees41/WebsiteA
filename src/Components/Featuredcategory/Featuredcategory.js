@@ -5,7 +5,7 @@ import Narrationimage from "../../Components/images/Bag.png";
 import Narrationimage2 from "../images/Shoes.png";
 import Narrationimage3 from "../images/wallet.png";
 import Narrationimage4 from "../../Components/images/Ring.png";
-import Narrationimage5 from "../images/watch.png";
+import Narrationimage5 from "../images/watch-1.png";
 import Narrationimage6 from "../images/Glasses.png";
 import { Card } from "@mui/material";
 import { Typography, CardContent } from "@mui/material";
@@ -32,14 +32,12 @@ const Featured = () => {
         </Grid>
         <Divider
           variant="inset"
-          sx={{ marginX: { md: "50px", sm: "0px", xs: "20px" } }}
-        />
-
+          sx={{ marginX: { md: "50px", sm: "0px", xs: "20px" }}}/>
         <Grid
           container
           spacing={2}
           sx={{
-            paddingX: { md: "40px", sm: "30px", xs: "20px" },
+            paddingX: { md: "40px", sm: "30px", xs: "20px"},
             marginTop: "50px",
           }} >
           <Grid item md={4} sm={12} xs={12}>
@@ -47,21 +45,19 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={Featuredstyle.Bagheading }
-               
-                >
+                  sx={Featuredstyle.Bagheading}>
                   Bags
                 </Typography>
               </CardContent>
               <Grid container spacing={2} sx={{ paddingX: "30px" }}>
                 <Grid item xs={4}>
-                  <img src={Narrationimage} style={{ width: "100%" }} />
+                  <img src={Narrationimage} style={{ width: "100%" }}/>
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Narrationimage} style={{ width: "100%" }} />
+                  <img src={Narrationimage} style={{ width: "100%" }}/>
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Narrationimage} style={{ width: "100%" }} />
+                  <img src={Narrationimage} style={{ width: "100%" }}/>
                 </Grid>
               </Grid>
             </Card>
@@ -71,7 +67,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={Featuredstyle.Bagheading }
+                  sx={Featuredstyle.Bagheading}
                 >
                   Shoes
                 </Typography>
@@ -95,8 +91,7 @@ const Featured = () => {
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={Featuredstyle.Bagheading }
-                >
+                  sx={Featuredstyle.Bagheading} >
                   Wallets
                 </Typography>
               </CardContent>
@@ -118,17 +113,14 @@ const Featured = () => {
           container
           spacing={2}
           sx={{
-            paddingX: { md: "40px", sm: "0px", xs: "30px" },
-            marginTop: "20px",
-          }}
-        >
+            paddingX: { md: "50px", sm: "0px", xs: "30px" },
+            marginTop: "20px"}} >
           <Grid md={4} sm={12} xs={12}>
             <Card sx={{ backgroundColor: "white", paddingY: "25px" }}>
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={Featuredstyle.Bagheading }
-                >
+                  sx={Featuredstyle.Bagheading}>
                   Jewellers
                 </Typography>
               </CardContent>
@@ -140,42 +132,37 @@ const Featured = () => {
                   <img src={Narrationimage4} style={{ width: "100%" }} />
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Narrationimage4} style={{ width: "100%" }} />
+                  <img src={Narrationimage4} style={{ width: "100%" }}/>
                 </Grid>
               </Grid>
             </Card>
           </Grid>
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white" }}>
+            <Card sx={{ backgroundColor: "white",paddingY: "25px"}}>
               <CardContent>
                 <Typography
                   variant="h6"
-                  sx={Featuredstyle.Bagheading }
-                >
-                  Watches
-                </Typography>
+                  sx={Featuredstyle.Bagheading}> Watches </Typography>
               </CardContent>
-              <Grid container spacing={2} sx={{ paddingX: "30px" }}>
+              <Grid container spacing={2} sx={{paddingX: "30px"}}>
                 <Grid item xs={4}>
-                  <img src={Narrationimage5} style={{ width: "100%" }} />
+                  <img src={Narrationimage5} style={{width: "100%"}} />
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Narrationimage5} style={{ width: "100%" }} />
+                  <img src={Narrationimage5} style={{ width: "100%"}} />
                 </Grid>
                 <Grid item xs={4}>
-                  <img src={Narrationimage5} style={{ width: "100%" }} />
+                  <img src={Narrationimage5} style={{ width: "100%"}} />
                 </Grid>
               </Grid>
             </Card>
           </Grid>
-
-          <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "20px" }}>
+            <Grid item md={4} sm={12} xs={12}>
+            <Card sx={{ backgroundColor: "white",paddingY: "20px"}}>
               <CardContent>
                 <Typography
-                  variant="h6"
-                  sx={Featuredstyle.Bagheading }
-                >
+                  variant="h6"W
+                  sx={Featuredstyle.Bagheading} >
                   Sun Glasses
                 </Typography>
               </CardContent>
