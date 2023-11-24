@@ -10,6 +10,8 @@ import Forgotimage from "../../images/forgotscreen.png";
 import Card from "@mui/material/Card";
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from "@mui/material";
+import CardMedia from '@mui/material/CardMedia';
+
 
 const Forgotpassword = () => {
   const spacing = {
@@ -17,25 +19,30 @@ const Forgotpassword = () => {
     sm: 2, // Spacing for small screens
     md: 4, // Spacing for medium screens
   };
-;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
   };
 
   return (
     <ThemeProvider theme={theme}>
       <Box>
         <Grid container spacing={4} sx={Loginstyle.Maincontainer}>
-          <Grid item md={6} sm={10} xs={12}>
+          <Grid item md={5} sm={10} xs={12}>
             <Card
               sx={{
                 backgroundColor: "white",
-                padding: { md: "20px", sm: "40px", xs: "0px" },
+                padding: { md: "20px", sm: "40px", xs: "10px" },
                 boxShadow: "0px 0px 0px 0px",
                 border: "1px solid #D5D5D5",
                 borderRadius: "12px",
               }}
             >
-              <Box component="form" noValidate sx={{ mt: 3 }}>
-                <Grid container spacing={spacing}>
+                <Grid container >
                   <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
                     <Typography
                       variant="subtitle1"
@@ -47,6 +54,8 @@ const Forgotpassword = () => {
                     >
                       Forget Password
                     </Typography>
+                    <br />
+
                     <Typography
                       variant="subtitle1"
                       sx={{
@@ -55,6 +64,7 @@ const Forgotpassword = () => {
                     >
                       Enter email address that associated with your account.
                     </Typography>
+                <br />
                     <TextField
                       required
                       fullWidth
@@ -89,7 +99,8 @@ const Forgotpassword = () => {
                   </Grid>
                 </Grid>
                 <br />
-                <Grid container spacing={spacing} justifyContent="center">
+                <br />
+                <Grid container  justifyContent="center">
                   <Grid item md={10} sm={12} xs={12}>
                     <Link to="/Forgotemail">
                       <Button
@@ -126,7 +137,7 @@ const Forgotpassword = () => {
                     </Link>
                   </Grid>
                 </Grid>
-              </Box>
+            
             </Card>
           </Grid>
           <Grid
@@ -136,10 +147,18 @@ const Forgotpassword = () => {
             xs={12}
             sx={{
               display: { md: "flex", sm: "block", xs: "block" },
-              justifyContent: "center",
-            }}
-          >
-            <img src={Forgotimage} style={{ height: "90%" }} />
+              justifyContent: "flex-end",
+            }}>
+                  <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px'}} >
+                  <CardMedia
+        component="img"
+        image={Forgotimage}
+        alt="Paella dish"
+        sx={{width:'100%'}}
+      />
+
+            </Card>
+
           </Grid>
         </Grid>
 

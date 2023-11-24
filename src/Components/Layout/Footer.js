@@ -134,9 +134,9 @@ const Footer = () => {
                   About Us
                 </Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
-                yourexample@email.com
+                About Us
                 </Typography>
-                <Typography variant="subtitle1">example@email.com</Typography>
+                <Typography variant="subtitle1">       About Us</Typography>
                 <Typography variant="subtitle1" sx={{ color: "#484444" }}>
                 Call us: +1 254 568-5479
                 </Typography>

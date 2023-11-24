@@ -3,7 +3,7 @@ import pic1 from "../../../images/Professional Staff.png";
 import pic2 from "../../../images/Completed Projects.png";
 import pic3 from "../../../images/Acheived Awards.png";
 import tickimage from "../../../images/Tick Image.png";
-import { Box, Typography, Card, Stack, Grid } from "@mui/material";
+import { Box, Card, Stack, Grid } from "@mui/material";
 
 const WhyUs = () => {
   const data = [

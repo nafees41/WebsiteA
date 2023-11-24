@@ -89,7 +89,6 @@ font-weight: 600;
   color:#F7941D;
 }
 .about-content h1{
-  font-family: Inter;
   font-size: 3.5rem;
   font-weight: 550;
   line-height: 55px;
@@ -141,6 +140,8 @@ font-family: Inter;
 
 .professional-team{
   display: flex;
+  margin-top: 10px;
+
 }
 .professional-team-left{
   font-weight:bolder;

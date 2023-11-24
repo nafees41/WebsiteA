@@ -5,7 +5,7 @@ import {
   TextField,
   Button,
   Grid,
-  Checkbox,
+  Checkbox
 } from "@mui/material";
 
 import { Link } from "react-router-dom";
@@ -17,6 +17,8 @@ import Callsupport from "../../Callsupport/Callsupport";
 import LockIcon from "@mui/icons-material/Lock";
 import { ThemeProvider } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import CardMedia from '@mui/material/CardMedia';
+
 
 const Forgotpassword = () => {
   const spacing = {
@@ -41,7 +43,7 @@ const Forgotpassword = () => {
             <Card
               sx={{
                 backgroundColor: "white",
-                padding: { md: "20px", sm: "40px", xs: "0px" },
+                padding: { md: "20px", sm: "40px", xs: "10px" },
                 boxShadow: "0px 0px 0px 0px",
                 border: "1px solid #D5D5D5",
                 borderRadius: "12px",
@@ -213,7 +215,15 @@ const Forgotpassword = () => {
               justifyContent: "flex-end",
             }}
           >
-            <img src={Forgotimage} />
+         <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px'}} >
+                  <CardMedia
+        component="img"
+        image={Forgotimage}
+        alt="Paella dish"
+        sx={{width:'100%'}}
+      />
+
+            </Card>
           </Grid>
         </Grid>
 
