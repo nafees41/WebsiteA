@@ -39,10 +39,9 @@ const Featured = () => {
           container
           spacing={2}
           sx={{
-            paddingX: { md: "40px", sm: "0px", xs: "20px" },
+            paddingX: { md: "40px", sm: "30px", xs: "20px" },
             marginTop: "50px",
-          }}
-        >
+          }} >
           <Grid item md={4} sm={12} xs={12}>
             <Card sx={{ backgroundColor: "white", paddingY: "20px" }}>
               <CardContent>

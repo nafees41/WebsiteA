@@ -26,7 +26,7 @@ const Sale = () => {
               <img src={Saleimage2} style={{ width: "100%",height:'100%' }} />
                  </Grid>
               </Grid>
-          <Grid container spacing={2} sx={{ marginTop: "30px",backgroundColor:'#F7F7F7',borderRadius:5}}>
+           <Grid container spacing={2} sx={{ marginTop: "30px",backgroundColor:'#F7F7F7',borderRadius:5,marginX:{md:'0px',sm:'0px',xs:'3px'}}}>
                 <Grid item xs={4}>
                   <CardMedia
                       component="img"
@@ -38,16 +38,16 @@ const Sale = () => {
                 <Grid item xs={8}>
                   <Box sx={{ display: "flex", flexDirection: "column" }}>
                     <CardContent sx={{ flex: "1 0 auto" }}>
-                      <Typography component="div" variant="h5" sx={{ fontWeight:'600' ,
-                      color:'#000000'}}>
+                      <Typography component="div" variant="h5" sx={{ fontWeight:'600' , color:'#000000'}}>
                         Find the best watch for you!
                       </Typography>
                       <Typography
                         variant="h6"
                         color="text.secondary"
                         component="div"
-                        sx={{color:'#F7941D',
-                        fontWeight:'600' 
+                        sx={{
+                        color:'#F7941D',
+                        fontWeight:'600' ,
                       }}
                       >
                <span style={{color:'#0F75BC',fontWeight:'600' ,fontSize:{md:'22px',sm:'20px',xs:'18px'}}}> Smart </span>
