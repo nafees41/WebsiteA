@@ -18,6 +18,7 @@ import LockIcon from "@mui/icons-material/Lock";
 import { ThemeProvider } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import CardMedia from '@mui/material/CardMedia';
+import Forgottwostyle from'./Forgot-2.style'
 
 
 const Forgotpassword = () => {
@@ -41,13 +42,7 @@ const Forgotpassword = () => {
         <Grid container spacing={4} sx={Loginstyle.Maincontainer}>
           <Grid item md={6} sm={10} xs={12}>
             <Card
-              sx={{
-                backgroundColor: "white",
-                padding: { md: "20px", sm: "40px", xs: "10px" },
-                boxShadow: "0px 0px 0px 0px",
-                border: "1px solid #D5D5D5",
-                borderRadius: "12px",
-              }}
+              sx={Forgottwostyle["Forgotcard-2"]}
             >
               <Box component="form" noValidate sx={{ mt: 3 }}>
                 <Grid container spacing={spacing}>
@@ -88,18 +83,10 @@ const Forgotpassword = () => {
                             }}
                           />
                         ),
-                        style: {
-                          borderRadius: "12px",
-
-                          fontWeight: "500",
-                          fontSize: "14px",
-                        },
+                    style:Forgottwostyle.myTextField
                       }}
                       InputLabelProps={{
-                        style: {
-                          fontSize: "14px",
-                          // Add other label text styles as needed
-                        },
+                        style:Forgottwostyle.myLabel
                       }}
                     />
                     <br />
@@ -121,18 +108,12 @@ const Forgotpassword = () => {
                             }}
                           />
                         ),
-                        style: {
-                          borderRadius: "12px",
+                        style:Forgottwostyle.myTextField
 
-                          fontWeight: "500",
-                          fontSize: "14px",
-                        },
                       }}
                       InputLabelProps={{
-                        style: {
-                          fontSize: "14px",
-                          // Add other label text styles as needed
-                        },
+                        style:Forgottwostyle.myLabel
+
                       }}
                     />
                   </Grid>
@@ -167,21 +148,13 @@ const Forgotpassword = () => {
                 <br />
                 <Grid container spacing={spacing} justifyContent="center">
                   <Grid item md={10} sm={12} xs={12}>
-                    <Link to="/securitypage ">
+                    <Link to="/securitypage" style={{ textDecoration: "none" }}>
                       <Button
                         type="submit"
                         variant="contained"
                         color="primary"
                         fullWidth
-                        sx={{
-                          boxShadow: "0px 0px 0px 0px",
-                          paddingX: "25px",
-                          borderRadius: "12px",
-                          paddingY: { md: "10px", sm: "8px", xs: "5px" },
-                          fontSize: { md: "18px", sm: "15px", xs: "15px" },
-                          textTransform: "lowercase",
-                          color: "white",
-                        }}
+                        sx={Forgottwostyle.Recoverpasswordbutton}
                       >
                         Recover Password
                       </Button>

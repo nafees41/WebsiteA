@@ -13,6 +13,11 @@ import Leftsidebar from "../../Dashboardsidebar/Sidebar";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import Editstyle from './Editprofile.style'
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
+import PhonePausedIcon from '@mui/icons-material/PhonePaused';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
 
 
 const Sidebar = () => {
@@ -32,14 +37,7 @@ const Sidebar = () => {
           md={12}
           sm={12}
           xs={12}
-          sx={{
-            border: (theme) => `1px solid ${theme.palette.divider}`,
-            bgcolor: "white",
-            color: "#110229",
-            borderRadius: 2,
-            padding: { md: "30px", sm: "15px", xs: "2px" },
-            marginTop: "20px",
-          }}>
+          sx={Editstyle.Pr0filesaction}>
           <Grid
         container
         spacing={2} sx={{paddingX:{md:'0',sm:'40px',xs:"30px"},
@@ -48,11 +46,7 @@ const Sidebar = () => {
           <Typography
             component="h1"
             variant="h5"
-            sx={{
-              color: "black",
-              fontWeight: "600",
-              fontSize: { md: "28px", sm: "20px", xs: "20px" },
-            }}
+            sx={Editstyle.Profileheading}
           >
             Profile
           </Typography>
@@ -86,7 +80,7 @@ const Sidebar = () => {
           </Grid>
           </Grid>
           <Divider />
- <Box component="form" noValidate sx={{ mt: 3 }}>
+         <Box component="form" noValidate sx={{ mt: 3 }}>
             <Grid container spacing={5} sx={{paddingX:{md:'0',sm:'30px',xs:"20px"}}}>
               <Grid item lg={6} md={12} xs={12} sm={12}>
                 <TextField
@@ -98,23 +92,15 @@ const Sidebar = () => {
                   placeholder="NAFEES"
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      <PermIdentityIcon
+                      sx={Editstyle.Iconstyle}
+
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style: Editstyle.myTextField
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                   style:Editstyle.myLabel
                   }}
                 />
               </Grid>
@@ -128,23 +114,17 @@ const Sidebar = () => {
                   placeholder="Nafees"
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      <PermIdentityIcon
+                      sx={Editstyle.Iconstyle}
+
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style: Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -168,22 +148,16 @@ const Sidebar = () => {
                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      sx={Editstyle.Iconstyle}
+
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -208,23 +182,17 @@ const Sidebar = () => {
                   placeholder="+1 3493 3894 43"
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      <PhonePausedIcon 
+                      sx={Editstyle.Iconstyle}
+
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -238,27 +206,16 @@ const Sidebar = () => {
                   fullWidth
                   type="Country"
                   size="large"
-                  label="Country*"
+                  label="Country"
                   placeholder="Romania"
                   InputProps={{
-                    startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
-                      />
-                    ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+            
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -268,27 +225,16 @@ const Sidebar = () => {
                   fullWidth
                   type="city"
                   size="large"
-                  label="City*"
+                  label="City"
                   placeholder="Bucharest"
                   InputProps={{
-                    startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
-                      />
-                    ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -301,27 +247,16 @@ const Sidebar = () => {
                   fullWidth
                   type="number"
                   size="large"
-                  label="Zip Code*"
-                  defaultValue="46564*"
+                  label="Zip Code"
+                  placeholder="46564"
                   InputProps={{
-                    startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
-                      />
-                    ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+              
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -334,18 +269,9 @@ const Sidebar = () => {
                   label="State*"
                   placeholder="Bucharest"
                   InputProps={{
-                    startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
-                      />
-                    ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+              
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
                     style: {
@@ -375,23 +301,17 @@ const Sidebar = () => {
                   placeholder="2715 Ash Dr. San Jose, South Dakota 83475"
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      <LocationOnIcon
+                      sx={Editstyle.Iconstyle}
+
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -437,23 +357,16 @@ const Sidebar = () => {
                   placeholder="2715 Ash Dr. San Jose, South Dakota 83475"
                   InputProps={{
                     startAdornment: (
-                      <MailOutlineIcon
-                        style={{
-                          fontSize: 14, // Adjust the icon size as needed
-                          marginRight: "8px", // Adjust the spacing as needed
-                        }}
+                      <LocationOnIcon
+                       sx={Editstyle.Iconstyle}
                       />
                     ),
-                    style: {
-                      fontWeight: "500",
-                      fontSize: "14px",
-                    },
+                    style:Editstyle.myTextField
+
                   }}
                   InputLabelProps={{
-                    style: {
-                      fontSize: "14px",
-                      // Add other label text styles as needed
-                    },
+                    style:Editstyle.myLabel
+
                   }}
                 />
               </Grid>
@@ -464,19 +377,7 @@ const Sidebar = () => {
               color="primary"
               fullWidth
               size="large"
-              sx={{
-                mt: 3,
-                mb: 2,
-                color: "#FFFFFFE5",
-                boxShadow: "0px 0px 0px 0px",
-                padding: "15px",
-                fontSize: "15px",
-                textTransform: "lowercase",
-                fontWeight: "700",
-                borderRadius:'10px',
-                marginLeft: { md: "5px", sm: "0px", xs: "0px" },
-                
-              }}
+              sx={Editstyle.Saveprofilebutton}
             >
               Save Profile
             </Button>

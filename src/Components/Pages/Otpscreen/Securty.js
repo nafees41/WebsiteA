@@ -2,13 +2,10 @@ import React from "react";
 import {
   Typography,
   Box,
-  InputLabel,
   TextField,
-  Checkbox,
   Button,
   Grid,
   Stack,
-  Divider,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import theme from "../../Theme/Theme";
@@ -17,6 +14,7 @@ import Card from "@mui/material/Card";
 import { useState } from "react";
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from "@mui/material";
+import Securitystyle from './Security.style'
 
 const Securty = () => {
   const spacing = {
@@ -45,32 +43,17 @@ const Securty = () => {
             }}
           >
             <Card
-              sx={{
-                backgroundColor: "white",
-                padding: "15px",
-                marginX: "20px",
-                boxShadow: "0px 0px 0px 0px",
-                border: "1px solid #D5D5D5",
-              }}
+              sx={Securitystyle["Securitycard-2"]}
             >
               <Typography
                 variant="subtitle1"
-                sx={{
-                  fontWeight: "600",
-                  lineHeight: { md: "31.12px", sm: "28px", xs: "20px" },
-                  fontSize: { md: "30px", sm: "30px", xs: "25px" },
-                  paddingX: "30px",
-                }}
+               sx={Securitystyle.Otpheading}
               >
                 Enter OTP
               </Typography>
               <Typography
                 variant="subtitle1"
-                sx={{
-                  lineHeight: { md: "31.12px", sm: "22px", xs: "15px" },
-                  fontSize: { md: "14px", sm: "18px", xs: "12px" },
-                  paddingX: { md: "45px", sm: "10px", xs: "5px" },
-                }}
+                sx={Securitystyle.Securityparagraph}
               >
                 OTP has been sent to your email.
               </Typography>
@@ -81,12 +64,7 @@ const Securty = () => {
               >
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                    sx={{
-                      color: "#0a202d",
-                      backgroundColor: "#FDDFBB",
-                      textAlign: "center",
-                      boxShadow: "0px 0px 0px 0px",
-                    }}
+                    sx={Securitystyle.Cardbox}
                   >
                     <TextField
                       id="otp-input"
@@ -101,12 +79,8 @@ const Securty = () => {
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                    sx={{
-                      color: "#0a202d",
-                      backgroundColor: "#FDDFBB",
-                      textAlign: "center",
-                      boxShadow: "0px 0px 0px 0px",
-                    }}
+                  sx={Securitystyle.Cardbox}
+
                   >
                     <TextField
                       id="otp-input"
@@ -121,12 +95,8 @@ const Securty = () => {
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                    sx={{
-                      color: "#0a202d",
-                      backgroundColor: "#FDDFBB",
-                      textAlign: "center",
-                      boxShadow: "0px 0px 0px 0px",
-                    }}
+               sx={Securitystyle.Cardbox}
+
                   >
                     <TextField
                       id="otp-input"
@@ -141,12 +111,8 @@ const Securty = () => {
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                    sx={{
-                      color: "#0a202d",
-                      backgroundColor: "#FDDFBB",
-                      textAlign: "center",
-                      boxShadow: "0px 0px 0px 0px",
-                    }}
+                   sx={Securitystyle.Cardbox}
+
                   >
                     <TextField
                       id="otp-input"
@@ -171,14 +137,7 @@ const Securty = () => {
                   >
                     <Typography
                       variant="subtitle1"
-                      sx={{
-                        paddingLeft: "30px",
-
-                        fontWeight: "400",
-                        lineHeight: { md: "19.12px", sm: "12px", xs: "10px" },
-                        fontSize: { md: "14px", sm: "18px", xs: "10px" },
-                        textAlign: "center",
-                      }}
+                      sx={Securitystyle.Recovecodeheading}
                     >
                       If you don’t receive code.{" "}
                     </Typography>
@@ -198,14 +157,7 @@ const Securty = () => {
                       variant="contained"
                       color="primary"
                       fullWidth
-                      sx={{
-                        boxShadow: "0px 0px 0px 0px",
-                        paddingX: "15px",
-                        paddingY: { md: "10px", sm: "8px", xs: "5px" },
-                        fontSize: { md: "18px", sm: "15px", xs: "15px" },
-                        textTransform: "lowercase",
-                        color: "white",
-                      }}
+                      sx={Securitystyle.Vaerifybutton}
                     >
                       Verify & Proceed
                     </Button>

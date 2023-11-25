@@ -42,31 +42,34 @@ const style = {
 'myLabel': {
   fontSize:' 14px'
   /* Add other label text styles as needed */
-},
-'Logincardstyle':{
-    backgroundColor:'white',padding:'20px',boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5",
 }
-,
-'loginheading':{
-    fontWeight: "600",
-    lineHeight: { md: "71.12px", sm: "18px", xs: "15px" },
-    fontSize: { md: "50px", sm: "30px", xs: "25px" },
+, 
+'cardstyle':{
+    backgroundColor:'white',
+            padding:'30px',
+            boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5"
 },
-'loginlink':{
-    textDecoration: "none", // Remove underline
-    color: "inherit", // Inherit color from parent (card)
-    display: "block", // Make the link a block element
+'Signupheading':{
+    marginTop: { md: 2, sm: 5, xs: 5 },
+                fontWeight: "600",
+                lineHeight: { md: "71.12px", sm: "18px", xs: "15px" },
+                fontSize: { md: "40px", sm: "30px", xs: "25px" },
 },
-'loginbutton':{
-    boxShadow: "0px 0px 0px 0px",
-    borderRadius:'12px',
-    paddingX: "25px",
-    paddingY: { md: "10px", sm: "8px", xs: "5px" },
-    fontSize: { md: "18px", sm: "15px", xs: "15px" },
-    textTransform: "lowercase",
-    color:'white'
-}
+'Registerbutton':{
+    mt: 3,
+                  mb: 2,
+                  color: theme.white,
+                  boxShadow: "0px 0px 0px 0px",
+                  paddingX: "25px",
+                  borderRadius:'13px',
+                  fontSize: { md: "18px", sm: "15px", xs: "10px" },
+                  textTransform: "lowercase",
+},
+'iconstyle':{
+    color: "#6D6868", // Adjust the color as needed
 
+                            marginRight: "8px", // Adjust the spacing as needed
+}
    
 
     

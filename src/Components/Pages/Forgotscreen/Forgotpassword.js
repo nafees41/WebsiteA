@@ -11,6 +11,7 @@ import Card from "@mui/material/Card";
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from "@mui/material";
 import CardMedia from '@mui/material/CardMedia';
+import forgotstyle from './Forgotpassword.style'
 
 
 const Forgotpassword = () => {
@@ -34,23 +35,13 @@ const Forgotpassword = () => {
         <Grid container spacing={4} sx={Loginstyle.Maincontainer}>
           <Grid item md={5} sm={10} xs={12}>
             <Card
-              sx={{
-                backgroundColor: "white",
-                padding: { md: "20px", sm: "40px", xs: "10px" },
-                boxShadow: "0px 0px 0px 0px",
-                border: "1px solid #D5D5D5",
-                borderRadius: "12px",
-              }}
+              sx={forgotstyle.Forgotcards}
             >
                 <Grid container >
                   <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
                     <Typography
                       variant="subtitle1"
-                      sx={{
-                        fontWeight: "600",
-                        lineHeight: { md: "40.12px", sm: "50px", xs: "40px" },
-                        fontSize: { md: "50px", sm: "30px", xs: "20px" },
-                      }}
+                      sx={forgotstyle.forgotheading}
                     >
                       Forget Password
                     </Typography>
@@ -82,18 +73,10 @@ const Forgotpassword = () => {
                             }}
                           />
                         ),
-                        style: {
-                          borderRadius: "12px",
-
-                          fontWeight: "500",
-                          fontSize: "14px",
-                        },
+                        style:forgotstyle.myTextField
                       }}
                       InputLabelProps={{
-                        style: {
-                          fontSize: "14px",
-                          // Add other label text styles as needed
-                        },
+                       style:forgotstyle.myLabel
                       }}
                     />
                   </Grid>
@@ -108,15 +91,7 @@ const Forgotpassword = () => {
                         variant="contained"
                         color="primary"
                         fullWidth
-                        sx={{
-                          boxShadow: "0px 0px 0px 0px",
-                          paddingX: "25px",
-                          borderRadius: "12px",
-                          paddingY: { md: "10px", sm: "8px", xs: "5px" },
-                          fontSize: { md: "18px", sm: "15px", xs: "15px" },
-                          textTransform: "lowercase",
-                          color: "white",
-                        }}
+                        sx={forgotstyle.forgotbutton}
                       >
                         Send Email
                       </Button>
