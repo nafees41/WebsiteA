@@ -25,7 +25,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Callsupport from "../../Callsupport/Callsupport";
 
 
-const Dashboard = () => {
+
+const Shippingcart = () => {
   const theme = createTheme({
     components: {
       MuiTabs: {
@@ -101,7 +102,7 @@ const Dashboard = () => {
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+        xs={12} sx={Shippingstyle.Numbercountersaction} >
        <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
@@ -125,7 +126,7 @@ const Dashboard = () => {
             </Grid>
       </Grid>
     </Box>,
-        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+        <Typography  sx={{color:'#F7941D',fontWeight:'500',fontSize:{md:'18px',sm:'15px',xs:'9px'}}}> $356,68.97
       </Typography>
     ),
     createData(
@@ -149,7 +150,7 @@ const Dashboard = () => {
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+        xs={12} sx={Shippingstyle.Numbercountersaction} >
        <Card sx={Shippingstyle.quantitystyle}  >
           <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
         </Card>
@@ -168,12 +169,12 @@ const Dashboard = () => {
    <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}   flexItem />
        <Card
           sx={Shippingstyle.quantitystyle} >
-          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
+          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle } />
         </Card>
             </Grid>
       </Grid>
     </Box>,
-        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+        <Typography  sx={{color:'#F7941D',fontWeight:'500',fontSize:{md:'18px',sm:'15px',xs:'10px'}}}> $356,68.97
       </Typography>
     ),
      createData(
@@ -198,9 +199,9 @@ const Dashboard = () => {
         lg={6}
         md={12}
         sm={12}
-        xs={12} sx={{border:'2px solid #D5D5D5',borderRadius:'40px',display:'flex',justifyContent:'space-between',alignItems:'center'}} >
+        xs={12} sx={Shippingstyle.Numbercountersaction} >
        <Card sx={Shippingstyle.quantitystyle}  >
-          <RemoveIcon onClick={handleDecrease} sx={{ color: "#7F7F7F" }} />
+          <RemoveIcon onClick={handleDecrease} sx={Shippingstyle.iconstyle } />
         </Card>
       
         <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}  flexItem />
@@ -217,12 +218,12 @@ const Dashboard = () => {
    <Divider orientation="vertical"   sx={{paddingRight:{md:'10px',sm:'10px',xs:'8px'}}}   flexItem />
        <Card
           sx={Shippingstyle.quantitystyle} >
-          <AddIcon onClick={handleIncrease} sx={{ color: "#7F7F7F" }} />
+          <AddIcon onClick={handleIncrease} sx={Shippingstyle.iconstyle } />
         </Card>
             </Grid>
       </Grid>
     </Box>,
-        <Typography  sx={{color:'#F7941D',fontWeight:'500'}}> $356,68.97
+        <Typography  sx={{color:'#F7941D',fontWeight:'500',fontSize:{md:'18px',sm:'15px',xs:'10px'}}}> $356,68.97
       </Typography>
     ),
   ];
@@ -231,14 +232,14 @@ const Dashboard = () => {
       <Grid
         container
         spacing={2}
-        sx={{ marginTop: { md: "10px", sm: "40px", xs: "20px"},paddingX: "25px" }}>
+        sx={{ marginTop: { md: "10px", sm: "40px", xs: "20px"},paddingX:{ md:"25px",sm:'45px',xs:'25px'} }}>
         <Grid
           item
           lg={12}
           md={12}
           sm={12}
           xs={12}
-          sx={{ marginBottom: "17px"}}  >
+          sx={{ marginBottom: "17px"}}>
           <Typography
             component="h1"
             variant="h5"
@@ -255,7 +256,7 @@ const Dashboard = () => {
                 <Table 
                 sx={{
                   '& .MuiTableCell-sizeMedium': {
-                    padding:{md: '20px ',sm:'16px',xs:'12px'},
+                    padding:{md: '20px ',sm:'16px',xs:'9px'},
                   },
                 }}
                 
@@ -307,4 +308,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Shippingcart;

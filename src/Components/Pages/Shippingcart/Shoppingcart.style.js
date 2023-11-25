@@ -14,7 +14,7 @@ const style={
         color: "black",
         fontWeight: "600",
         fontSize: { lg: "33px", md: "38px", sm: "30px", xs: "25px" },
-        paddingX:"60px"
+        paddingX:{md:"60px",sm:'0px',xs:"0px"}
     },
     'Checkoutbuttonsaction': {
         display: "flex",
@@ -28,6 +28,13 @@ const style={
         marginRight: { lg: "auto", md: "auto", sm: "auto", xs: "0" },
         borderRadius:'12px'
     },
+    'Numbercountersaction':{
+        border:'2px solid #D5D5D5'
+        ,borderRadius:'40px',
+        display:'flex'
+        ,justifyContent:'space-between',
+        alignItems:'center'
+    }
     
     
 

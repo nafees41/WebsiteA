@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 
 const Paginationcomp = () => {
   return (
-    <Box sx={{marginTop:'20px',display:'flex',justifyContent:'center'}}>
+    <Box sx={{marginTop:'20px',display:'flex',justifyContent:'center',paddingX:{md:'0',sm:'0',xs:'20px'}}}>
             <Pagination
             count={10} // Total number of pages
             variant="outlined"

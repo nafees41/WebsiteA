@@ -42,7 +42,7 @@ const Footer = () => {
           </Typography>
         </Grid>
         <Grid item md={11} sm={10} xs={12} sx={{ margin: "auto" }}>
-          <Grid container sx={{ marginTop: "20px",paddingX:'20px' }}>
+          <Grid container sx={{ marginTop: "20px",paddingX:{md:'20px',sm:'20px',xs:'40px'} }}>
             <Grid item md={8} sm={4} xs={12}>
               <Typography
                 variant="subtitle1"
@@ -82,7 +82,7 @@ const Footer = () => {
               </Paper>
             </Grid>
 
-            <Grid container sx={{ marginTop: "30px" }}>
+            <Grid container spacing={2} sx={{ marginTop: "30px" }}>
               <Grid md={2} sm={4} xs={6}>
                 <Typography
                   variant="subtitle1"
@@ -237,7 +237,7 @@ const Footer = () => {
         position="end"
         sx={{
           position: {md:"fixed",sm:'absolute',xs:'absolute'},
-          bottom: { lg: "100px", sm: "530px", xs: "800px" },
+          bottom: { lg: "100px",md: "150px", sm: "530px", xs: "880px" },
           right: { md: "35px", sm: "25px", xs: "-25px" },
 
           zIndex: 1,

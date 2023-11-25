@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Grid container spacing={2} sx={{ marginTop: "0px" }}>
       <Grid item xs={12} >
-        <Grid container spacing={2} className="about-main" sx={{ paddingX: {md:"80px" ,sm:'50px',xs:'20px'}, paddingY: {md:"100px",sm:'40px',xs:'30px'} }}>
+        <Grid container spacing={2} className="about-main" sx={{ paddingX: {md:"80px" ,sm:'50px',xs:'30px'}, paddingY: {md:"100px",sm:'40px',xs:'30px'} }}>
           <Grid item md={12}  sm={12}  xs={12} className="about-content">
               <span>BRIEFLY ABOUT US</span>
               <h1>

@@ -21,7 +21,7 @@ const Featured = () => {
           spacing={2}
           sx={{
             marginTop: "50px",
-            paddingX: { md: "65px", sm: "50px", xs: "40px" },
+            paddingX: { md: "65px", sm: "60px", xs: "40px" },
           }}
         >
           <Grid item xs={12}>
@@ -37,7 +37,7 @@ const Featured = () => {
           container
           spacing={2}
           sx={{
-            paddingX: { md: "40px", sm: "30px", xs: "20px"},
+            paddingX: { md: "40px", sm: "50px", xs: "20px"},
             marginTop: "50px",
           }} >
           <Grid item md={4} sm={12} xs={12}>
@@ -113,9 +113,9 @@ const Featured = () => {
           container
           spacing={2}
           sx={{
-            paddingX: { md: "50px", sm: "0px", xs: "30px" },
+            paddingX: { md: "50px", sm: "40px", xs: "20px" },
             marginTop: "20px"}} >
-          <Grid md={4} sm={12} xs={12}>
+          <Grid item md={4} sm={12} xs={12}>
             <Card sx={{ backgroundColor: "white", paddingY: "25px" }}>
               <CardContent>
                 <Typography
@@ -138,7 +138,7 @@ const Featured = () => {
             </Card>
           </Grid>
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white",paddingY: "25px"}}>
+            <Card sx={{ backgroundColor: "white",paddingY: "20px"}}>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -158,10 +158,10 @@ const Featured = () => {
             </Card>
           </Grid>
             <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white",paddingY: "20px"}}>
+            <Card sx={{ backgroundColor: "white",paddingY: "15px"}}>
               <CardContent>
                 <Typography
-                  variant="h6"W
+                  variant="h6"
                   sx={Featuredstyle.Bagheading} >
                   Sun Glasses
                 </Typography>

@@ -57,7 +57,7 @@ function TopNavbar() {
                   sx={Headertwostyle.Headertwopaper}
                 >
                   <FormControl
-                    sx={{ m: 1, minWidth: { md: 140, sm: 100, xs: 30 }}}
+                    sx={{ m: 1, minWidth: { lg: 140, md: 60, sm: 100, xs: 30 }}}
                     size="small"
                   >
                     <div>

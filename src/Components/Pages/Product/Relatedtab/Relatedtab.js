@@ -200,6 +200,7 @@ export default function App() {
                           <img
                             src={slides[currentSlide].src}
                             alt={slides[currentSlide].alt}
+                            style={{width:'100%'}}
                           />
                         </Link>
                       </Grid>

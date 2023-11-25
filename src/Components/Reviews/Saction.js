@@ -46,7 +46,7 @@ export default function MultiActionAreaCard() {
           spacing={2}
           sx={{
             marginTop: "50px",
-            paddingX: { md: "50px", sm: "30px", xs: "20px" },
+            paddingX: { md: "50px", sm: "50px", xs: "20px" },
           }}
         >
           {isCardClicked.map((clicked, index) => (
