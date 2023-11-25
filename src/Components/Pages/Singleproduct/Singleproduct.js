@@ -42,7 +42,7 @@ const Carousel = () => {
         spacing={2}
         sx={{
           marginTop: "50px",
-          paddingX: { md: "75px", sm: "30px", xs: "20px" },
+          paddingX: { md: "75px", sm: "30px", xs: "40px" },
         }}
       >
         <Grid item md={5} sm={12} xs={12}>
@@ -218,7 +218,7 @@ const Carousel = () => {
                 </Stack>
               </Grid>
             </Grid>
-            <Grid container spacing={2} sx={{ marginTop: "5px" }}>
+            <Grid container spacing={2} sx={{ marginTop: {md:"5px",sm:'10px',xs:'60px'} }}>
               <Grid item md={3} sm={12} xs={12}>
                 <Button
                   variant="contained"

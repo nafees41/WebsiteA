@@ -139,7 +139,7 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
-                    type="Password"
+                    type="number"
                     size="large"
                     label=" Password"
                     placeholder="Password"

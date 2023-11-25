@@ -11,7 +11,7 @@ import {
   tableCellClasses,
   TableHead,
   TableRow,
-Divider
+Divider,  TableContainer,Paper
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
@@ -252,12 +252,14 @@ const Shippingcart = () => {
               sm={12}
               xs={12}
               sx={ Shippingstyle.Tablecontainer}>
+                  <TableContainer >
           
                 <Table 
                 sx={{
                   '& .MuiTableCell-sizeMedium': {
                     padding:{md: '20px ',sm:'16px',xs:'9px'},
                   },
+                minWidth: 100 
                 }}
                 
                 aria-label="a dense table">
@@ -284,6 +286,7 @@ const Shippingcart = () => {
                     ))}
                   </TableBody>
                 </Table>
+                </TableContainer>
                 <Divider/>
             
           <Grid container spacing={2} sx={{paddingX:'40px',paddingBottom:"20px"}}>

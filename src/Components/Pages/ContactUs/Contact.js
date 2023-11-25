@@ -39,7 +39,7 @@ const About = () => {
           paddingX: { md: "70px", sm: "45px", xs: "20px" },
         }}
       >
-        <Grid item md={3} sm={12} xs={12}>
+        <Grid item   lg={3} md={12} sm={12} xs={12}>
           <Card sx={{ backgroundColor: "#F5F5F5", padding: "30px" }}>
             <Box sx={{ paddingBottom: "50px" }}>
               <Typography
@@ -122,7 +122,7 @@ const About = () => {
             </span>
           </Card>
         </Grid>
-        <Grid item md={8} sm={12} xs={12}>
+        <Grid item lg={8} md={12} sm={12} xs={12}>
           <Grid container spacing={3}>
             <Grid item lg={6} md={12} xs={12} sm={12}>
               <TextField

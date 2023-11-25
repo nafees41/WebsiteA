@@ -69,7 +69,7 @@ export default function App() {
         container
         sx={{
           marginTop: "20px",
-          paddingX: {md:"70px",sm:'0px',xs:'0px'},
+          paddingX: {md:"70px",sm:'0px',xs:'40px'},
           backgroundColor: "white",
         }}
       >
