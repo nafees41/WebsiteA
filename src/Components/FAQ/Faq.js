@@ -50,7 +50,7 @@ const Faq = () => {
          <div>
               {[
                 {
-                    label: "How we work at our brand?",
+                  label: "How we work at our brand?",
                    content: (
                     <div>
                       <Typography   sx={{fontSize:'20px',fontWeight:'400'}}>

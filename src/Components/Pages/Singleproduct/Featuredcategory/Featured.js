@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Card, Typography } from "@mui/material";
-import Narrationimage from "../../../images/red watch.jpeg";
+import Narrationimage from "../../../images/redwatch.png";
 import Watchimage from "../../../images/watch-1.png";
 import Watchimage1 from "../../../images/watch-2.png";
 import { useState } from "react";
@@ -63,7 +63,7 @@ export default function App() {
         <Grid item lg={3} md={6} xs={12} sm={6}>
           <Card>
             <Grid container alignItems="center" justifyContent="center">
-              <Grid item xs={12} sx={{height:'200px'}}>
+              <Grid item xs={12} >
                 <Grid container alignItems="center" justifyContent="center">
                   <Grid item xs={2}>
                     <IconButton
@@ -77,6 +77,7 @@ export default function App() {
                       <img
                         src={slides[currentSlide].src}
                         alt={slides[currentSlide].alt}
+                        style={{width:"100%"}}
                       />
                     </Link>
                   </Grid>
