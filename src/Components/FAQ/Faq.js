@@ -52,10 +52,12 @@ const Faq = () => {
                 label: "How we work at our brand?",
                    content: (
                     <div>
-                      <Typography   sx={{fontSize:'20px',fontWeight:'400'}}>
-                      You offer a good product, make advertising, analyze the market<br/>but still have no improvement Our qulificated specialists 
+                      <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
+                      You offer a good product, make advertising, analyze the market<br/>
+                      but still have no improvement Our qulificated specialists 
                       </Typography>
-                      </div>
+
+                        </div>
                   ),
                 },
                  ].map((section, index) => (
