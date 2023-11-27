@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import { Grid ,Typography,} from "@mui/material";
-import IconButton from "@mui/material/IconButton";
+import { Grid ,Typography} from "@mui/material";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveIcon from '@mui/icons-material/Remove';
 
 const Faq = () => {
@@ -37,7 +34,8 @@ const Faq = () => {
         <Grid item lg={6} md={12} sm={12} xs={12}>
           <Typography variant="h3" sx={{textAlign:'center',fontWeight:'bolder'}}>FAQ'S</Typography>
           <Typography variant="subtitle1" sx={{textAlign:'center'}}>
-          You offer a good product, make advertising, analyze the market but  <br/>still have no improvement Our qulificated specialists 
+           You offer a good product, make advertising, analyze the market but<br/>
+            still have no improvement Our qulificated specialists
           </Typography>
         </Grid>
       </Grid>
@@ -55,9 +53,9 @@ const Faq = () => {
                       <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
                       You offer a good product, make advertising, analyze the market<br/>
                       but still have no improvement Our qulificated specialists 
+                    
                       </Typography>
-
-                        </div>
+                  </div>
                   ),
                 },
                  ].map((section, index) => (
@@ -66,9 +64,8 @@ const Faq = () => {
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
                   style={accordionStyle}>
-        
-                <AccordionSummary
-            sx={{ backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
+             <AccordionSummary
+            sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
             expandIcon={
               expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
