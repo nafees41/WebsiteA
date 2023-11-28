@@ -25,6 +25,7 @@ const style = {
         backgroundColor: "#FDDFBB",
         textAlign: "center",
         boxShadow: "0px 0px 0px 0px",
+        marginX:{md:'0',sm:'0px',xs:'20px'}
     },
 
     'Recovecodeheading':{

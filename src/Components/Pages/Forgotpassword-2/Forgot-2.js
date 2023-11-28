@@ -119,7 +119,7 @@ const Forgotpassword = () => {
                   </Grid>
                 </Grid>
                 <br />
-                <Grid item xs={12} sx={{ paddingX: "65px" }}>
+                <Grid item xs={12} sx={{ paddingX: {md:"65px",sm:'65px',xs:"20px"} }}>
                   <FormControlLabel
                     control={
                       <Checkbox

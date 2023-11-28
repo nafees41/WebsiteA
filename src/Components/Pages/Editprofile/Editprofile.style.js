@@ -6,7 +6,9 @@ const style = {
             color: "#110229",
             borderRadius: 2,
             padding: { md: "30px", sm: "15px", xs: "2px" },
-            marginTop: "20px",
+              marginTop: "20px",
+              marginX:{lg:"0px",md:"35px",sm:'0px',xs:'15px'}
+              
      },
      'Profileheading':{
         color: "black",
@@ -46,6 +48,7 @@ const style = {
         fontWeight: "700",
         borderRadius:'10px',
         marginLeft: { md: "5px", sm: "0px", xs: "0px" },
+        marginX:{md:'0',sm:'0px',xs:'10pxx'}
       },
       'myTextField' :{
         borderRadius:' 12px',

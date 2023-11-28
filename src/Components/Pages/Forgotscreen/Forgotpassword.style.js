@@ -11,6 +11,7 @@ const style = {
         fontWeight: "600",
         lineHeight: { md: "40.12px", sm: "50px", xs: "40px" },
         fontSize: { md: "50px", sm: "30px", xs: "20px" },
+        textAlign:{md:'start',sm:'start',xs:'center'}
      },
      'myTextField' :{
         borderRadius:' 12px',

@@ -236,14 +236,14 @@ const Footer = () => {
       <InputAdornment
         sx={{
           position: {md:"fixed",sm:'absolute',xs:'absolute'},
-          bottom: { lg: "100px",md: "150px", sm: "530px", xs: "880px" },
+          bottom: { lg: "100px",md: "150px", sm: "530px", xs: "900px" },
           right: { md: "35px", sm: "25px", xs: "18px" },
 
           zIndex: 1,
         }}>
         <IconButton
           type="button"
-         onClick={scrollToTop}>
+       >
           < img src={Chat} style={{height:'100px'}} />
         </IconButton>
       </InputAdornment>

@@ -35,7 +35,7 @@ const Forgotpassword = () => {
         <Grid container spacing={4} sx={Loginstyle.Maincontainer}>
           <Grid item md={5} sm={10} xs={12}>
             <Card
-              sx={forgotstyle.Forgotcards}
+              sx={{padding:{md:'0px',sm:'0px',xs:'5px'}}}
             >
                 <Grid container >
                   <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
@@ -51,6 +51,8 @@ const Forgotpassword = () => {
                       variant="subtitle1"
                       sx={{
                         lineHeight: { md: "71.12px", sm: "30px", xs: "30px" },
+                        textAlign:{md:'start',sm:'start',xs:'center'}
+
                       }}
                     >
                       Enter email address that associated with your account.

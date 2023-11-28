@@ -55,7 +55,7 @@ const Sidebar = () => {
            <CardMedia
                 component="div" // Use a div as the component
                 sx={{
-                  position: "relative", // Make the container relative for absolute positioning
+                  position: "relative", // Make the container relative for Relative positioning
                 }}
               >
                 {/* Main image */}
@@ -337,6 +337,7 @@ const Sidebar = () => {
                       sx={{
                         lineHeight: { md: "19.6px", sm: "12px", xs: "15px" },
                         fontWeight: "400",
+                        fontSize:{md:'16px',sm:'16px',xs:'10px'}
                       }}
                     >
                       Same as above
