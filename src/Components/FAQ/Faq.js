@@ -53,8 +53,7 @@ const Faq = () => {
                       <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
                       You offer a good product, make advertising, analyze the market<br/>
                       but still have no improvement Our qulificated specialists 
-                    
-                      </Typography>
+                   </Typography>
                   </div>
                   ),
                 },
@@ -63,10 +62,11 @@ const Faq = () => {
                   key={index}
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
-                  style={accordionStyle}>
+                  style={accordionStyle}
+                  >
              <AccordionSummary
-            sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
-            expandIcon={
+               sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
+              expandIcon={
               expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
               ) : (
