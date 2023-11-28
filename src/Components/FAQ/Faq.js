@@ -48,12 +48,11 @@ const Faq = () => {
             {[{
                label:(
                 <Box>
-                <Divider orientation="vertical" flexItem />
-               <Typography sx={{borderRight:"2px solid red"}}>hello world</Typography>
+                <Divider orientation="vertical" flexItem/>
+               <Typography>hello world</Typography>
              </Box>
-
-    ),
-                content: (
+               ),
+                content:(
                     <div>
                       <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
                       You offer a good product, make advertising, analyze the market<br/>
@@ -69,8 +68,8 @@ const Faq = () => {
                   onChange={handleAccordionChange(index)}
                   style={accordionStyle}>
                 <AccordionSummary sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px"}}
-              expandIcon={
-              expanded[index] ? (
+                 expandIcon={
+                 expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
               ) : (
                 <AddIcon sx={{ color: 'white', backgroundColor: '#F7941D' }}/>)}>
