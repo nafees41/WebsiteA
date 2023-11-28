@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
-import { Grid ,Typography} from "@mui/material";
+import { Grid ,Typography,Divider,Box} from "@mui/material";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -32,7 +32,7 @@ const Faq = () => {
         spacing={2}
         sx={{ marginTop: "20px", display: "flex", justifyContent: "center" }}>
         <Grid item lg={6} md={12} sm={12} xs={12}>
-          <Typography variant="h3"  sx={{textAlign:'center',fontWeight:'bolder'}}>FAQ'S</Typography>
+          <Typography variant="h3"  sx={{textAlign:'center',fontWeight:'bolder'}}>  FAQ'S  </Typography>
           <Typography variant="subtitle1" sx={{textAlign:'center'}}>
            You offer a good product, make advertising, analyze the market but<br/>
             still have no improvement Our qulificated specialists
@@ -45,14 +45,19 @@ const Faq = () => {
         sx={{ marginTop: "20px", display: "flex", justifyContent: "center" ,paddingX:{lg:'0',md:'40px',sm:'40px',xs:'20px'}}} >
          <Grid item lg={8} md={12} sm={12} xs={12}>
          <div>
-              {[
-               {
-                label: "How we work at our brand?",
-                   content: (
+            {[{
+               label:(
+                <Box>
+                <Divider orientation="vertical" flexItem />
+               <Typography sx={{borderRight:"2px solid red"}}>hello world</Typography>
+             </Box>
+
+    ),
+                content: (
                     <div>
                       <Typography sx={{fontSize:'20px',fontWeight:'400'}}>
                       You offer a good product, make advertising, analyze the market<br/>
-                      but still have no improvement Our qulificated specialists 
+                      but still have no improvement Our qulificated specialists
                    </Typography>
                   </div>
                   ),
@@ -63,8 +68,7 @@ const Faq = () => {
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
                   style={accordionStyle}>
-                <AccordionSummary
-               sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
+                <AccordionSummary sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px"}}
               expandIcon={
               expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
