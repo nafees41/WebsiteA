@@ -234,11 +234,10 @@ const Footer = () => {
       </Grid>
 
       <InputAdornment
-        position="end"
         sx={{
           position: {md:"fixed",sm:'absolute',xs:'absolute'},
           bottom: { lg: "100px",md: "150px", sm: "530px", xs: "880px" },
-          right: { md: "35px", sm: "25px", xs: "-25px" },
+          right: { md: "35px", sm: "25px", xs: "18px" },
 
           zIndex: 1,
         }}>

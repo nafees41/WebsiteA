@@ -58,8 +58,7 @@ function TopNavbar() {
                 >
                   <FormControl
                     sx={{ m: 1, minWidth: { lg: 140, md: 60, sm: 100, xs: 30 }}}
-                    size="small"
-                  >
+                    size="small">
                     <div>
                       <div ref={anchorRef}>
                         <Typography
@@ -129,8 +128,7 @@ function TopNavbar() {
 
                   <IconButton
                     type="submit"
-                    sx={Headertwostyle.IconButtonstyle}
-                  >
+                    sx={Headertwostyle.IconButtonstyle}  >
                     <SearchIcon />
                   </IconButton>
                 </Paper>

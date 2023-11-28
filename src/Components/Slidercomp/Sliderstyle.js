@@ -16,8 +16,8 @@ const style = {
  'Slidercontainer':{
     backgroundColor: "#F7F7F7",
     borderRadius: 5,
-    marginX: { md: "76px", sm: "40px", xs: "20px" }, // Adjust horizontal margin here
-    marginTop: { md: "20px", sm: "0px", xs: "0px" },
+    marginX: { lg: "76px",md:"0px", sm: "0px", xs: "0px" }, // Adjust horizontal margin here
+    marginTop: { lg: "20px",md:'0px', sm: "0px", xs: "0px" },
     position: "relative", // Set position to relative
  }
 

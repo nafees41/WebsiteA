@@ -1,6 +1,10 @@
 import theme from "../../../Theme/Theme";
 const style={
     // Main Top Box
+    'FilterSaction':{
+      paddingRight:{md:'10px',sm:'0px',xs:'0px'}
+
+    },
 
     /* Main heading */
     'Mainheading':{

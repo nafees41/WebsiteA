@@ -43,7 +43,7 @@ const About = () => {
         spacing={2}
         sx={{
           marginTop: "30px",
-          paddingX: { md: "95px", sm: "70px", xs: "35px" },
+          paddingX: { md: "95px", sm: "70px", xs: "38px" },
           borderRadius: "15px",
         }}
       >
@@ -341,7 +341,6 @@ const About = () => {
               borderRadius: "15px",
               marginTop:{md:'0px',sm:'0px',xs:'10px'},
               textAlign:{md:'start',sm:'center',xs:'center'},
-              margin:{lg:'20px' ,md:'0px',sm:'0px',xs:'0px'}
             }}
           >
             <Grid item md={6} sm={12} xs={12}>

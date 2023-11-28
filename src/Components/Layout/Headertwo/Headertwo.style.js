@@ -1,14 +1,12 @@
 const style = {
-  // Main Top Box
-
   Headertwomain: {
     backgroundColor: "#F7F7F7",
   },
 
   Headertwocontainer: {
-    paddingX: { md: "70px", sm: "0px", xs: "0px" },
-    paddingBottom: "25px",
-    marginTop: "10px",
+    paddingTop:'20px',
+    paddingX: { md: "70px", sm: "0px", xs: "5px" },
+    paddingBottom:{md:'20px',sm:'20px',xs:'16px'}
   },
   Headertwopaper: {
     p: 0,
@@ -25,7 +23,7 @@ const style = {
     justifyContent: "center",
     color: "#7F7F7F",
     margin: "7px",
-    fontSize: "12px",
+    fontSize: {md:"12px",sm:'11px',xs:'8px'},
   },
   IconButtonstyle: {
     color: "#fff",

@@ -6,7 +6,8 @@ const style={
       marginTop: '-10px',
       padding: '20px',
       display: { xs: "none", sm: "block" },
-      display:'flex'
+      display:'flex',
+      fontSize:{md:'18px',sm:'18px',xs:'10px'}
     },
     
     'icon': {
@@ -108,7 +109,7 @@ const style={
   'Appbarstyle':{
     backgroundColor: "#F7941D",
     boxShadow: "0px 0px 0px 0px",
-    paddingX: {md:"75px",sm:'70px',xs:'35px'},
+    paddingX: {md:"75px",sm:'70px',xs:'30px'},
   },
   'Contactheading':{
     color: "black",

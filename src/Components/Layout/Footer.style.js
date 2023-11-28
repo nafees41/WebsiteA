@@ -11,7 +11,7 @@ const style = {
  'Expertheading':{
     color: "black",
      fontWeight: "600",
-    lineHeight: { md: "50.5px", sm: "18px", xs: "20px" },
+    lineHeight: { md: "50.5px", sm: "18px", xs: "23px" },
     fontSize: { md: "22px", sm: "12px", xs: "22px" },
  },
  'Expertsubheading':{
@@ -31,7 +31,7 @@ const style = {
  'subscribebutton':{
     color: "#fff",
     background: "#F7941D",
-    paddingX: "34px",
+    paddingX:{ md:"34px",sm:'34px',xs:'20px'},
     paddingY: "16px",
     borderRadius: {md:7,sm:10,xs:20},
     "&:hover": {

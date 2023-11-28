@@ -16,7 +16,7 @@ const Sale = () => {
   return (
     <div>
       <Box >
-        <Grid container spacing={2} sx={{paddingX:{md:'70px',sm:'40px',xs:'30px'},marginTop:"50px"}} >
+        <Grid container spacing={2} sx={{paddingX:{md:'70px',sm:'40px',xs:'15px'},marginTop:"50px"}} >
           <Grid item md={8} sm={12} xs={12}>
             <Grid container spacing={2} >
             <Grid item md={6} sm={6} xs={12}>
@@ -26,7 +26,7 @@ const Sale = () => {
               <img src={Saleimage2} style={{ width: "100%",height:'100%' }} />
                  </Grid>
               </Grid>
-           <Grid container spacing={2} sx={{ marginTop: "30px",backgroundColor:'#F7F7F7',borderRadius:5,marginX:{md:'0px',sm:'0px',xs:'3px'}}}>
+           <Grid container  sx={{ marginTop: {md:"30px",sm:'30px',xs:'10px'},backgroundColor:'#F7F7F7',borderRadius:5}}>
                 <Grid item xs={4}>
                   <CardMedia
                       component="img"
@@ -35,8 +35,7 @@ const Sale = () => {
                       alt="Live from space album cover"
                     />
               </Grid>
-                <Grid item xs={8}>
-                  <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Grid item xs={8} sx={{ display: "flex", flexDirection: "column" }}>
                     <CardContent sx={{ flex: "1 0 auto" }}>
                       <Typography component="div" variant="h5" sx={{ fontWeight:'600' , color:'#000000'}}>
                         Find the best watch for you!
@@ -55,7 +54,6 @@ const Sale = () => {
                         Watches
                       </Typography>
                     </CardContent>
-                  </Box>
                 </Grid>
               </Grid>
           
