@@ -60,8 +60,9 @@ const Securty = () => {
               <Grid
                 container
                 spacing={4}
-                sx={{ margin: { md: "auto", sm: "0", xs: "0" }}}  >
-                <Grid item md={2} sm={2} xs={12}>
+                sx={{ margin: { md: "auto", sm: "0", xs: "0" } }}
+              >
+                <Grid item md={2} sm={2} xs={6}>
                   <Card
                     sx={Securitystyle.Cardbox}
                   >
@@ -76,9 +77,11 @@ const Securty = () => {
                     />
                   </Card>
                 </Grid>
-                <Grid item md={2} sm={2} xs={12}>
+                <Grid item md={2} sm={2} xs={6}>
                   <Card
-                  sx={Securitystyle.Cardbox}>
+                  sx={Securitystyle.Cardbox}
+
+                  >
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
@@ -90,7 +93,7 @@ const Securty = () => {
                     />
                   </Card>
                 </Grid>
-                <Grid item md={2} sm={2} xs={12}>
+                <Grid item md={2} sm={2} xs={6}>
                   <Card
                sx={Securitystyle.Cardbox}
 
@@ -106,7 +109,7 @@ const Securty = () => {
                     />
                   </Card>
                 </Grid>
-                <Grid item md={2} sm={2} xs={12}>
+                <Grid item md={2} sm={2} xs={6}>
                   <Card
                    sx={Securitystyle.Cardbox}
 
