@@ -63,14 +63,13 @@ const Faq = () => {
                   expanded={expanded[index] || false}
                   onChange={handleAccordionChange(index)}
                   style={accordionStyle}>
-             <AccordionSummary
+                <AccordionSummary
                sx={{backgroundColor: '#FAFAFA',boxShadow:"0px 0px 0px 0px" }}
               expandIcon={
               expanded[index] ? (
                 <RemoveIcon sx={{ color: 'white', backgroundColor: '#F7941D' }} />
               ) : (
-                <AddIcon sx={{ color: 'white', backgroundColor: '#F7941D' }}/>
-            )}>
+                <AddIcon sx={{ color: 'white', backgroundColor: '#F7941D' }}/>)}>
                  <Typography  variant="h6" sx={{fontWeight:'600',color:'#484444'}}>{section.label}</Typography>
                       </AccordionSummary>
                   <AccordionDetails  sx={{fontWeight:'400',backgroundColor:'#FAFAFA',color:'#484444'}}>{section.content}</AccordionDetails>
