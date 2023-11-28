@@ -40,42 +40,36 @@ function Header() {
   const navItems = [
     <Link
     to="/home"
-    style={Headerstyle.linkstyle}
-  >
+    style={Headerstyle.linkstyle}>
     <Typography>Home </Typography>
     </Link>
     ,
     <Link
     to="/about"
-    style={Headerstyle.linkstyle}
-  >
+    style={Headerstyle.linkstyle}>
     <Typography>About </Typography>
     </Link>,
         <Link
         to="/product"
-        style={Headerstyle.linkstyle}
-      >
+        style={Headerstyle.linkstyle}>
         <Typography>Product </Typography>
         </Link>,
         
     <Link
     to="/Shoppingcartpage"
-    style={Headerstyle.linkstyle}
-  >
+    style={Headerstyle.linkstyle}>
     <Typography>Shop Now </Typography>
     </Link>,
     "Flash Deals",
     "Daily Deals",
     <Link
     to="/contact"
-    style={Headerstyle.linkstyle}
-  >
+    style={Headerstyle.linkstyle}>
     <Typography>Contact </Typography>
     </Link>,
        <Link
        to="/login"
-       style={Headerstyle.linkstyle}
-     >
+       style={Headerstyle.linkstyle} >
        <Typography>Create Account </Typography>
        </Link>,
   ];
@@ -387,14 +381,13 @@ function Header() {
             </div>
           </Box>
         </Popover>
-
-        <Popover
+          <Popover
           open={Boolean(megaMenuAnchorEl)}
           anchorEl={megaMenuAnchorEl}
           onClose={handleClose}
           anchorOrigin={{
             vertical: "top",
-            horizontal: "right", // Change this to "right"
+            horizontal: "right" // Change this to "right"
           }}
           transformOrigin={{
             vertical: "right",
@@ -408,10 +401,7 @@ function Header() {
             spacing={2}
             container
             sx={{
-              marginTop: "30px",
-              paddingX: "20px",
-              backgroundColor: "white",
-            }}
+              marginTop: "30px",  paddingX: "20px",  backgroundColor: "white"}}
           >
             <Grid md={3} sm={4} xs={6}>
               <Typography
@@ -654,8 +644,7 @@ function Header() {
                         id="v-pills-messages-tab"
                         aria-controls="v-pills-messages"
                       />
-                      <Divider />
-
+                      <Divider/>
                       <Tab
                         label={
                           <div>
@@ -719,8 +708,7 @@ function Header() {
                 </div>
               </Box>
             </Popover>
-
-            <Popover
+              <Popover
               open={Boolean(megaMenuAnchorEl)}
               anchorEl={megaMenuAnchorEl}
               onClose={handleClose}
@@ -734,8 +722,7 @@ function Header() {
               }}
               sx={{
                 marginLeft: "30px", // Add spacing here
-              }}
-            >
+              }}>
               <Grid
                 spacing={2}
                 container
@@ -748,8 +735,7 @@ function Header() {
                 <Grid md={3} sm={4} xs={6}>
                   <Typography
                     variant="subtitle1"
-                    sx={Headerstyle.Contactheading}
-                  >
+                    sx={Headerstyle.Contactheading} >
                     Contact
                   </Typography>
                   <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
@@ -773,8 +759,7 @@ function Header() {
                 <Grid md={3} sm={4} xs={6}>
                   <Typography
                     variant="subtitle1"
-                    sx={Headerstyle.Contactheading}
-                     >
+                    sx={Headerstyle.Contactheading} >
                     Top Categories
                   </Typography>
                   <Typography variant="subtitle1" sx={Headerstyle.Tabsublistitem}>
@@ -811,15 +796,12 @@ function Header() {
             <Box sx={Headerstyle.nav}>
               <Link
                 to="/home"
-                style={Headerstyle.linkstyle}
-              >
+                style={Headerstyle.linkstyle}>
                 <Typography sx={Headerstyle.navItem}>Home</Typography>
               </Link>
               <Link
                 to="/about"
-                style={Headerstyle.linkstyle}
-
-              >
+                style={Headerstyle.linkstyle}>
                 <Typography sx={Headerstyle.navItem}>About</Typography>
               </Link>
               <Link
