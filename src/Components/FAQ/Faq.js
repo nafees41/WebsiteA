@@ -32,7 +32,7 @@ const Faq = () => {
         spacing={2}
         sx={{ marginTop: "20px", display: "flex", justifyContent: "center" }}>
         <Grid item lg={6} md={12} sm={12} xs={12}>
-          <Typography variant="h3" sx={{textAlign:'center',fontWeight:'bolder'}}>FAQ'S</Typography>
+          <Typography variant="h3"  sx={{textAlign:'center',fontWeight:'bolder'}}>FAQ'S</Typography>
           <Typography variant="subtitle1" sx={{textAlign:'center'}}>
            You offer a good product, make advertising, analyze the market but<br/>
             still have no improvement Our qulificated specialists
