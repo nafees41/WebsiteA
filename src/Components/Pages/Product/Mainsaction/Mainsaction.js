@@ -36,6 +36,7 @@ const About = () => {
     position: "relative",
     overflowAnchor: "none",
   };
+  
   return (
     <Box>
       <Grid

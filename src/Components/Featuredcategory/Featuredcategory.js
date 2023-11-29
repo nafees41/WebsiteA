@@ -116,7 +116,7 @@ const Featured = () => {
             paddingX: { md: "50px", sm: "40px", xs: "20px" },
             marginTop: "20px"}} >
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "25px" }}>
+            <Card sx={{ backgroundColor: "white", paddingY: "22px" }}>
               <CardContent>
                 <Typography
                   variant="h6"

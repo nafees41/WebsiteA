@@ -128,7 +128,6 @@ function Header() {
       </List>
     </Box>
   );
-
   return (
     <Box>
       <Headertwo />
@@ -154,8 +153,7 @@ function Header() {
               color="secondary"
               onClick={handleOpen}
               className="global-button-style"
-              sx={Headerstyle.allCategoriesButton}
-            >
+              sx={Headerstyle.allCategoriesButton}>
               <MenuIcon sx={Headerstyle.icon} />
               All Categories
             </Button>

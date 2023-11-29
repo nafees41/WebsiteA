@@ -5,6 +5,7 @@ const style={
        padding:{md:'8px',sm:'8px',xs:'3px'},
         backgroundColor:'transparent',
         boxShadow: "0px 0px 0px 0px",
+        margin:'auto'
     },
     'iconstyle': {
         color: "#7F7F7F"
@@ -31,8 +32,8 @@ const style={
     'Numbercountersaction':{
         border:'2px solid #D5D5D5'
         ,borderRadius:'40px',
-        display:'flex'
-        ,justifyContent:'space-between',
+        display:'flex',
+        justifyContent:'space-between',
         alignItems:'center'
     }
     

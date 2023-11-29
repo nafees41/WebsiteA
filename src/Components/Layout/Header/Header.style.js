@@ -7,7 +7,7 @@ const style={
       padding: '20px',
       display: { xs: "none", sm: "block" },
       display:'flex',
-      fontSize:{md:'18px',sm:'18px',xs:'10px'}
+      fontSize:{md:'13px',sm:'15px',xs:'10px'}
     },
     
     'icon': {
