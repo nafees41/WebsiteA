@@ -569,7 +569,7 @@ function Header() {
                           xs={2}
                           sx={{ marginTop: "10px", textAlign: "end" }}
                         >
-                          <CloseIcon />
+                          <CloseIcon  onClick={handlePopperClick} />
                         </Grid>
                       </Grid>
                    
