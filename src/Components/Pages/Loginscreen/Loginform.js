@@ -81,9 +81,7 @@ return (
                   size="large"
                   label="Password"
                   placeholder="Password"
-
-                 
-                  InputProps={{
+                   InputProps={{
                     startAdornment: (
                       <MailOutlineIcon
                         style={{
