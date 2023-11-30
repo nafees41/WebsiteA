@@ -6,6 +6,7 @@ const style = {
                 marginX: "20px",
                 boxShadow: "0px 0px 0px 0px",
                 border: "1px solid #D5D5D5",
+                marginTop:{md:'0px',sm:'0px',xs:'20px'}
      },
      'Otpheading':{
         fontWeight: "600",
