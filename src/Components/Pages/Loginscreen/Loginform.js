@@ -6,8 +6,7 @@ import {
   Checkbox,
   Button,
   Grid,
- 
-  Card
+ Card
 } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { Link } from "react-router-dom";
@@ -17,8 +16,6 @@ import { CssBaseline } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Callsupport from "../../Callsupport/Callsupport";
 import { ThemeProvider } from '@mui/material';
-import PermIdentityIcon from '@mui/icons-material/PermIdentity';
-import LockIcon from '@mui/icons-material/Lock';
 import Signup from "../Signup/Signup";
 
 
