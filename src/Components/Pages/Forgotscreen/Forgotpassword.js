@@ -1,11 +1,9 @@
 import React from "react";
 import { Typography, Box, TextField, Button, Grid } from "@mui/material";
-
 import { Link } from "react-router-dom";
 import Loginstyle from "../Loginscreen/Login.style";
 import theme from "../../Theme/Theme";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-
 import Forgotimage from "../../images/forgotscreen.png";
 import Card from "@mui/material/Card";
 import Callsupport from "../../Callsupport/Callsupport";
@@ -35,7 +33,7 @@ const Forgotpassword = () => {
         <Grid container spacing={4} sx={Loginstyle.Maincontainer}>
           <Grid item md={5} sm={10} xs={12}>
             <Card
-              sx={{padding:{md:'0px',sm:'0px',xs:'5px'}}}
+              sx={forgotstyle.Forgotcard}
             >
                 <Grid container >
                   <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>

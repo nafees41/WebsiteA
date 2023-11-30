@@ -189,10 +189,10 @@ const Forgotpassword = () => {
           >
          <Card sx={{backgroundColor:'transparent',boxShadow:'0px 0px 0px 0px'}} >
                   <CardMedia
-        component="img"
-        image={Forgotimage}
-        alt="Paella dish"
-        sx={{width:'100%'}}
+                    component="img"
+                    image={Forgotimage}
+                    alt="Paella dish"
+                    sx={{width:'100%',height:"100%"}}
       />
 
             </Card>

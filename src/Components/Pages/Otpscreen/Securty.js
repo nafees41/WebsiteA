@@ -57,15 +57,15 @@ const Securty = () => {
               >
                 OTP has been sent to your email.
               </Typography>
+              <br/>
               <Grid
                 container
-                spacing={4}
-                sx={{ margin: { md: "auto", sm: "0", xs: "0" } }}
+                spacing={1}
+                
               >
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                    sx={Securitystyle.Cardbox}
-                  >
+                    sx={Securitystyle.Cardbox}>
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
@@ -79,9 +79,7 @@ const Securty = () => {
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                  sx={Securitystyle.Cardbox}
-
-                  >
+                  sx={Securitystyle.Cardbox}>
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
@@ -94,10 +92,7 @@ const Securty = () => {
                   </Card>
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
-                  <Card
-               sx={Securitystyle.Cardbox}
-
-                  >
+                  <Card  sx={Securitystyle.Cardbox} >
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
@@ -113,7 +108,7 @@ const Securty = () => {
                   <Card
                    sx={Securitystyle.Cardbox}
 
-                  >
+             >
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
@@ -147,6 +142,8 @@ const Securty = () => {
                   </Stack>
                 </Grid>
               </Grid>
+      
+      
               <br />
 
               <Grid container spacing={spacing}>

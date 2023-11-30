@@ -3,24 +3,38 @@ import pic1 from "../../../images/Professional Staff.png";
 import pic2 from "../../../images/Completed Projects.png";
 import pic3 from "../../../images/Acheived Awards.png";
 import tickimage from "../../../images/Tick Image.png";
-import { Box, Card, Stack, Grid } from "@mui/material";
+import { Box, Card, Grid,Typography } from "@mui/material";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import Avatar from '@mui/material/Avatar';
+import ImageIcon from '@mui/icons-material/Image';
+import WorkIcon from '@mui/icons-material/Work';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import BeachAccessIcon from '@mui/icons-material/BeachAccess';
+
+
+
+
 
 const WhyUs = () => {
   const data = [
     {
       pic: pic3,
       counting: "10000 +",
-      title: "professional stag",
+      title: "Our Categories",
     },
     {
       pic: pic2,
       counting: "3680 +",
-      title: "professional stag",
+      title: "Our Products",
     },
     {
       pic: pic1,
       counting: "8350 +",
-      title: "professional stag",
+      title: "Successful Delivery",
     },
   ];
   return (
@@ -33,7 +47,7 @@ const WhyUs = () => {
           marginTop: "56px",
         }}
       >
-        <Grid item md={8} sm={12} xs={12} className=" left-div">
+        <Grid item md={7} sm={12} xs={12} className=" left-div">
           <h1>Why Us?</h1>
           <p>
             You offer a good product, make advertising, analyze the market but{" "}
@@ -64,38 +78,59 @@ const WhyUs = () => {
             </div>
           </div>
         </Grid>
-        <Grid item md={4} sm={12} xs={12}>
-          {data.map((item, index) => (
+        <Grid item md={5} sm={12} xs={12}>
+         
             <Grid
               container
               spacing={2}
-              className="right-div-box "
-              key={index}
-              
-            >
+              className="right-div-box">
               <Grid item xs={12}>
-                <Card
-                  sx={{
+           {data.map((item, index) => (
+                  <List
+                   key={index}
+                   sx={{
                     backgroundColor: "#F7941D",
                     marginBottom: { md: "0", sm: "0", xs: "20px" },
-                    padding:'30px',
                     color:'#FFFFFF',
-                    transition: "box-shadow 0.3s", // Transition for box shadow effect
-                    "&:hover": {
-                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)", // Box shadow on hover
-                    },
+               
                   }} >
-                  <Stack
-                    spacing={1}
-                       direction="row" >
-                    <img src={item.pic} alt="hussainAhmad" />
-                    <h1>{item.counting}</h1>
-                  </Stack>
-                  <h5>{item.title}</h5>
-                </Card>
+      <ListItem>
+        <ListItemAvatar >
+        <img src={item.pic} alt="icon-image" />
+      </ListItemAvatar>
+        <ListItemText 
+        sx={{padding:"10px"}}
+        primary={
+          <Typography variant="h4" sx={{color:'#FFFFFF'}} >
+          {item.counting}
+        </Typography>
+        }
+        
+         secondary={
+          <Typography sx={{color:'#FFFFFF'}}  >
+          {item.title}
+        </Typography>
+         }
+         
+         />
+      </ListItem>
+      <Divider />
+
+      
+    </List>
+       ))}
+    
+    
+
+  
+            
+              
+
+                    
+                     
               </Grid>
             </Grid>
-          ))}
+   
         </Grid>
       </Grid>
     </Box>

@@ -11,20 +11,35 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Stack from "@mui/material/Stack";
 import { useState } from "react";
+import ReactCardSlider from "react-card-slider-component";
+
 
 export default function MultiActionAreaCard() {
   const cardStyle = {
     textAlign: "center",
     backgroundColor: "#F7F7F7",
-    borderRight: "4px solid transparent",
+    boxShadow:"0px 0px 0px 0px"
   };
-  const [isCardClicked, setCardClicked] = useState(new Array(2).fill(false)); // Assuming you have two cards
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleCardClick = (index) => {
-    const newClickedState = [...isCardClicked];
-    newClickedState[index] = !newClickedState[index];
-    setCardClicked(newClickedState);
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : slides.length - 1));
   };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex < slides.length - 1 ? prevIndex + 1 : 0));
+  };
+  const slides = [
+    {
+      title: "This is a title 1",
+   
+    },
+    {
+      title: "This is a second title 2",
+     
+    },
+  ]; 
+
 
   return (
     <Box>
@@ -41,23 +56,19 @@ export default function MultiActionAreaCard() {
             Our Latest Reviews
           </Typography>
         </Grid>
-        <Grid
+         <Grid
           container
-          spacing={2}
+          spacing={2} 
           sx={{
             marginTop: "50px",
             paddingX: { md: "50px", sm: "50px", xs: "10px" },
-          }}
-        >
-          {isCardClicked.map((clicked, index) => (
-            <Grid item md={6} sm={12} xs={12} key={index}>
-              <Card
+          }}>
+             {slides.map((slide, index) => (
+         <Grid item md={6} sm={12} xs={12}  className={`slide ${index === currentIndex ? 'active-1' : ''}`} key={index}>
+            <Card
                 sx={{
                   ...cardStyle,
-                  borderColor: clicked ? "#F7941D" : "transparent", // Add red border if clicked
-                }}
-                onClick={() => handleCardClick(index)}
-              >
+                }}>
                 <CardActionArea>
                   <img
                     component="img"
@@ -91,9 +102,16 @@ export default function MultiActionAreaCard() {
                   </CardContent>
                 </CardActionArea>
               </Card>
-            </Grid>
-          ))}
-        </Grid>
+              </Grid>
+                   
+        ))}
+              </Grid>
+          
+     
+      
+   
+        
+        
       </Grid>
 
       <Grid container spacing={2} sx={{ marginTop: "20px" }}>
@@ -104,10 +122,10 @@ export default function MultiActionAreaCard() {
             alignItems="center"
             spacing={2}
           >
-            <KeyboardBackspaceIcon
+            <KeyboardBackspaceIcon onClick={handlePrev}
               sx={{ color: "#7F7F7F",fontSize: "40px" }}
             />
-            <ArrowRightAltIcon sx={{ color: "#F7941D",fontSize: "60px" }} />
+            <ArrowRightAltIcon  onClick={handleNext} sx={{ color: "#F7941D",fontSize: "60px" }} />
           </Stack>
         </Grid>
       </Grid>
