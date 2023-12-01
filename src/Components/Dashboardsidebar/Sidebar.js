@@ -103,7 +103,7 @@ export default function PermanentDrawerLeft({ children }) {
                 sx={{
                   color: selectedIndex === 1 ? "black" : "theme.blue", // Set the text color to white when selected
                   fontWeight: "400",
-                  fontSize: { md: "17px", sm: "15px", xs: "12px" },
+                  fontSize: { md: "17px", sm: "15px", xs: "14px" },
                 }}
               >
                 Dashboard

@@ -218,7 +218,7 @@ const YourComponent = () => {
                       <KeyboardArrowLeftIcon />
                     </IconButton>
                   </Grid>
-                  <Grid item xs={8}>
+                  <Grid item xs={8}  sx={{ height: '200px' }}>
                     <Link to='/singleproduct'>
                       <img
                         src={slides[currentSlides[index]].src}

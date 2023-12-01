@@ -4,16 +4,19 @@ const style = {
         border: (theme) => `1px solid ${theme.palette.divider}`,
             bgcolor: "white",
             color: "#110229",
-            borderRadius: 2,
-            padding: { md: "30px", sm: "15px", xs: "2px" },
-              marginTop: "20px",
-              marginX:{lg:"0px",md:"35px",sm:'0px',xs:'15px'}
+            borderRadius: "15px",
+            marginTop: "20px",
+            padding: { md: "9px", sm: "10px", xs: "10px" },
+           marginX: { lg:"0px",md: "48px", sm: "30px", xs: "20px" },
+
               
      },
      'Profileheading':{
         color: "black",
         fontWeight: "600",
         fontSize: { md: "28px", sm: "20px", xs: "20px" },
+        padding: { md: "0px", sm: "8px", xs: "10px" }
+
      },
      'Securityparagraph':{
         lineHeight: { md: "31.12px", sm: "22px", xs: "15px" },

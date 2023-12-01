@@ -20,12 +20,7 @@ import Footerstyle from './Footer.style'
 const Footer = () => {
   
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // You can change this to 'auto' for an instant scroll
-    });
-  };
+
 
   return (
     <Box sx={{ position: "relative" }}>
@@ -236,7 +231,7 @@ const Footer = () => {
       <InputAdornment
         sx={{
           position: {md:"fixed",sm:'absolute',xs:'absolute'},
-          bottom: { lg: "100px",md: "150px", sm: "530px", xs: "900px" },
+          bottom: { lg: "100px",md: "150px", sm: "530px", xs: "150px" },
           right: { md: "35px", sm: "25px", xs: "18px" },
 
           zIndex: 1,

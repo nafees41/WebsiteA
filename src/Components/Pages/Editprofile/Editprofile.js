@@ -25,7 +25,6 @@ const Sidebar = () => {
     <Box>
       <Grid
         container
-        spacing={2}
         sx={{ marginTop: { md: "40px", sm: "0px", xs: "50px" } }}
       >
         <Grid item lg={3} md={12} sm={12} xs={12}>
@@ -318,7 +317,7 @@ const Sidebar = () => {
             </Grid>
             <Grid container spacing={2} sx={{ paddingX:{md:'0',sm:'30px',xs:"20px"},
 }}>
-              <Grid item xs={6}>
+              <Grid item md={6}  sm={6} xs={12}>
                 <FormControlLabel
                   control={
                     <Checkbox

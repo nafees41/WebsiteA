@@ -21,6 +21,8 @@ import GppGoodIcon from '@mui/icons-material/GppGood';
 import Callsupport from "../../Callsupport/Callsupport";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import TableContainer from '@mui/material/TableContainer';
+
 
 
 const Orderrecord = () => {
@@ -120,16 +122,10 @@ const Orderrecord = () => {
           lg={9}
           md={12}
           sm={12}
-          xs={12} >
+          xs={10} >
         <Grid
-            item
-            container sx={{border: "1px solid #D5D5D5",borderRadius:'12px'}}>
-            <Grid
-              item
-              md={11}
-              sm={12}
-              xs={12}
-             >
+          container sx={{border: "1px solid #D5D5D5",borderRadius:'12px'}}>
+            <Grid  item md={11} sm={12}  xs={12}>
               <Box  sx={{ display: "flex" }}>
               <Typography
                 component="h1"
@@ -157,8 +153,8 @@ const Orderrecord = () => {
    
         </Grid>
               <Divider />
-
-              <Table aria-label="a dense table">
+              <TableContainer >
+              <Table aria-label="a dense table" >
                 <TableHead
                   sx={{ fontSize: { md: "25px", sm: "18px", xs: "12px" } }}
                 >
@@ -189,9 +185,11 @@ const Orderrecord = () => {
                         {row.protein}
                       </StyledTableCell>
                     </StyledTableRow>
+
                   ))}
                 </TableBody>
               </Table>
+              </TableContainer>
             </Grid>
          
           <Grid
