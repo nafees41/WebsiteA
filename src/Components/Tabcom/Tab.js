@@ -179,18 +179,17 @@ const YourComponent = () => {
   
   </Grid>
   <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
-    <Grid container spacing={3} sx={{ paddingX: { md: '40px', sm: '20px', xs: '10px' } }}>
+    <Grid container spacing={3} sx={{ paddingX: { md: '60px', sm: '20px', xs: '10px' } }}>
       {Data.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>
           <Card sx={Tabestyle.Tabcard}>
-            <Grid container alignItems="center" justifyContent="center">
+            <Grid container alignItems="center" justifyContent="center" >
               <Grid item xs={12}>
                 <Grid container alignItems="center" justifyContent="center">
                   <Grid item xs={2}>
                     <IconButton
                       onClick={() => handlePreviousSlide(index)}
-                      disabled={currentSlides[index] === 0}
-                    >
+                      disabled={currentSlides[index] === 0}>
                       <KeyboardArrowLeftIcon />
                     </IconButton>
                   </Grid>
@@ -198,15 +197,13 @@ const YourComponent = () => {
                     <Link to='/singleproduct'>
                       <img
                         src={slides[currentSlides[index]].src}
-                        alt={slides[currentSlides[index]].alt}
-                      />
+                        alt={slides[currentSlides[index]].alt} />
                     </Link>
                   </Grid>
                   <Grid item xs={2}>
                     <IconButton
                       onClick={() => handleNextSlide(index)}
-                      disabled={currentSlides[index] === slides.length - 1}
-                    >
+                      disabled={currentSlides[index] === slides.length - 1} >
                       <ChevronRightIcon />
                     </IconButton>
                   </Grid>

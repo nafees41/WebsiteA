@@ -6,8 +6,8 @@ const style = {
           boxShadow:'0px 0px 0px 0px',
           border:'2px solid #D9D9D9',
           borderRadius:'18px',
-         
-    },
+          
+         },
     'Tabsheading':{
         color: '#000000',
         fontWeight: "400",

@@ -46,7 +46,7 @@ const Faq = () => {
          <Grid item lg={8} md={12} sm={12} xs={12}>
          <div>
             {[{
-               label: "How we work at our brand?",
+               label: " 01 | How we work at our brand?",
             
                  content: (
                     <div>
