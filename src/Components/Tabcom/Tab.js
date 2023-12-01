@@ -193,17 +193,20 @@ const YourComponent = () => {
                       <KeyboardArrowLeftIcon />
                     </IconButton>
                   </Grid>
-                  <Grid item xs={8}>
+                  <Grid item xs={8} sx={{ height: '200px' }} >
                     <Link to='/singleproduct'>
                       <img
                         src={slides[currentSlides[index]].src}
-                        alt={slides[currentSlides[index]].alt} />
+                        alt={slides[currentSlides[index]].alt}
+                        
+
+                        />
                     </Link>
                   </Grid>
                   <Grid item xs={2}>
                     <IconButton
                       onClick={() => handleNextSlide(index)}
-                      disabled={currentSlides[index] === slides.length - 1} >
+                      disabled={currentSlides[index] === slides.length - 1}>
                       <ChevronRightIcon />
                     </IconButton>
                   </Grid>

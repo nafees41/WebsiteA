@@ -52,9 +52,9 @@ const Carousel = () => {
                 return (
                   i === current &&
                   (i === 2 ? (
-                    <img src={v.image} alt="" />
+                    <img src={v.image} alt=""/>
                   ) : (
-                    <img src={v.image} alt="" />
+                    <img src={v.image} alt=""/>
                   ))
                 );
               })}
