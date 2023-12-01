@@ -198,9 +198,7 @@ const YourComponent = () => {
                       <img
                         src={slides[currentSlides[index]].src}
                         alt={slides[currentSlides[index]].alt}
-                        
-
-                        />
+                     />
                     </Link>
                   </Grid>
                   <Grid item xs={2}>
