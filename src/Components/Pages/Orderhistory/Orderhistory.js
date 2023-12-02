@@ -129,7 +129,7 @@ const Orderrecord = () => {
               sm={12}
               xs={12}
               sx={{border: "1px solid #D5D5D5",borderRadius:'15px'}} >
-           <Grid  container>
+           <Grid container>
             <Grid  item md={11} sm={12}  xs={12}>
               <Box sx={{display: "flex"}}>
               <Typography
