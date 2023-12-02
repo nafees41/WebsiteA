@@ -106,7 +106,7 @@ const Orderrecord = () => {
     <Box>
       <Grid
         container
-        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'30px',sm:'20px',xs:'10px'}}}>
+        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'20px',sm:'20px',xs:'10px'}}}>
         <Grid
           item
           lg={3}
@@ -120,11 +120,18 @@ const Orderrecord = () => {
           lg={9}
           md={12}
           sm={12}
-          xs={10} >
-        <Grid
-          container sx={{border: "1px solid #D5D5D5",borderRadius:'12px'}}>
+          xs={10}>
+          <Grid
+            container>
+            <Grid
+              item
+              md={11}
+              sm={12}
+              xs={12}
+              sx={{border: "1px solid #D5D5D5",borderRadius:'15px'}}>
+        <Grid  container >
             <Grid  item md={11} sm={12}  xs={12}>
-              <Box  sx={{ display: "flex" }}>
+              <Box sx={{display: "flex"}}>
               <Typography
                 component="h1"
                 variant="h5"
@@ -132,13 +139,10 @@ const Orderrecord = () => {
                  padding:'10px',
                   color: "black",
                   fontWeight: "600",
-                  fontSize: { lg: "35px", md: "38px", sm: "30px", xs: "25px" }
-                }}
-              >
-                {" "}
-                Order History{" "}
+                  fontSize: { lg: "35px", md: "38px", sm: "30px", xs: "25px"}}}>
+                Order History
               </Typography>
-              <Stack direction="row" spacing={2} sx={{marginLeft:'auto',marginTop:3}}>
+            <Stack direction="row" spacing={2} sx={{marginLeft:'auto',marginTop:3}}>
             <Typography sx={{ color: "#484444" }}> Sort By: </Typography>
             <Typography sx={{ color: "#484444" }}> AUG </Typography>
             <Stack>
@@ -146,10 +150,8 @@ const Orderrecord = () => {
               <KeyboardArrowDownIcon sx={{ fontSize: "10px" }} />
             </Stack>
           </Stack>
-
-          </Box>
-   
-        </Grid>
+           </Box>
+             </Grid>
               <Divider />
               <TableContainer >
               <Table aria-label="a dense table" >
@@ -188,6 +190,8 @@ const Orderrecord = () => {
                 </TableBody>
               </Table>
               </TableContainer>
+            </Grid>
+            </Grid>
             </Grid>
          
           <Grid
