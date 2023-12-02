@@ -179,6 +179,7 @@ const YourComponent = () => {
   
   </Grid>
   <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
+  <br/>
     <Grid container spacing={3} sx={{ paddingX: { md: '60px', sm: '20px', xs: '10px' } }}>
       {Data.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>

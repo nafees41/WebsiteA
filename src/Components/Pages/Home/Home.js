@@ -18,8 +18,9 @@ const Home = () => {
         <Salecomp />
         <Tabcomp/>
         <Featured/>
-        <Reviewscomp/>
         <Footerimage />
+        <Reviewscomp/>
+  
 
 
     </div>

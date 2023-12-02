@@ -47,7 +47,8 @@ const style = {
 'cardstyle':{
     backgroundColor:'white',
             padding:'30px',
-            boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5"
+            boxShadow:'0px 0px 0px 0px',border: "1px solid #D5D5D5",
+            marginX:{md:"0px",sm:"0px",xs:'10px'}
 },
 'Signupheading':{
     marginTop: { md: 2, sm: 5, xs: 5 },
@@ -63,7 +64,6 @@ const style = {
                   paddingX: "25px",
                   borderRadius:'13px',
                   fontSize: { md: "18px", sm: "15px", xs: "10px" },
-                  textTransform: "lowercase",
 },
 'iconstyle':{
     color: "#6D6868", // Adjust the color as needed

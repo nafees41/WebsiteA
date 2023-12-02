@@ -8,6 +8,12 @@ const style = {
  
  },
 
+ 'Featuredcard':{
+    border: "1px solid #D5D5D5",
+    backgroundColor: "white", 
+    boxShadow:"0px 0px 0px 0px",
+    paddingY: "20px"
+ }
 
     
 }

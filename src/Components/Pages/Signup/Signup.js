@@ -11,7 +11,6 @@ import {
   } from "@mui/material";
   import FormControlLabel from "@mui/material/FormControlLabel";
   import LockIcon from '@mui/icons-material/Lock';
-  import theme from "../../Theme/Theme";
   import PermIdentityIcon from '@mui/icons-material/PermIdentity';
   import MailOutlineIcon from "@mui/icons-material/MailOutline";
   import Signupstyle from './Signup.style'

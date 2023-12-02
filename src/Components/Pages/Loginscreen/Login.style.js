@@ -63,7 +63,6 @@ const style = {
     paddingX: "25px",
     paddingY: { md: "10px", sm: "8px", xs: "5px" },
     fontSize: { md: "18px", sm: "15px", xs: "15px" },
-    textTransform: "lowercase",
     color:'white'
 }
 

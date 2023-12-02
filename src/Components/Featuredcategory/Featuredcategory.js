@@ -41,7 +41,7 @@ const Featured = () => {
             marginTop: "50px",
           }} >
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "20px" }}>
+            <Card sx={Featuredstyle.Featuredcard }>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -63,7 +63,7 @@ const Featured = () => {
             </Card>
           </Grid>
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "20px" }}>
+            <Card  sx={Featuredstyle.Featuredcard }>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -87,7 +87,7 @@ const Featured = () => {
           </Grid>
 
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "20px" }}>
+            <Card  sx={Featuredstyle.Featuredcard }>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -116,7 +116,8 @@ const Featured = () => {
             paddingX: { md: "50px", sm: "40px", xs: "20px" },
             marginTop: "20px"}} >
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white", paddingY: "22px" }}>
+            <Card sx={{ backgroundColor: "white", paddingY: "22px",boxShadow:"0px 0px 0px 0px",border: "1px solid #D5D5D5"
+ }}>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -138,7 +139,7 @@ const Featured = () => {
             </Card>
           </Grid>
           <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white",paddingY: "20px"}}>
+            <Card sx={{ backgroundColor: "white",paddingY: "20px",boxShadow:"0px 0px 0px 0px",border: "1px solid #D5D5D5"}}>
               <CardContent>
                 <Typography
                   variant="h6"
@@ -158,7 +159,7 @@ const Featured = () => {
             </Card>
           </Grid>
             <Grid item md={4} sm={12} xs={12}>
-            <Card sx={{ backgroundColor: "white",paddingY: "15px"}}>
+            <Card sx={{ backgroundColor: "white",paddingY: "15px",boxShadow:"0px 0px 0px 0px",border: "1px solid #D5D5D5"}}>
               <CardContent>
                 <Typography
                   variant="h6"
