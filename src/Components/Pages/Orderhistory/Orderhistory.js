@@ -104,9 +104,7 @@ const Orderrecord = () => {
   ];
     return (
     <Box>
-      <Grid
-        container
-        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'20px',sm:'20px',xs:'10px'}}}>
+      <Grid container sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'20px',sm:'20px',xs:'10px'}}}>
         <Grid
           item
           lg={3}
@@ -120,15 +118,18 @@ const Orderrecord = () => {
           lg={9}
           md={12}
           sm={12}
-          xs={10}>
+          xs={10}
+          sx={{marginX:{lg:"0px",md:"44px",sm:"26px",xs:"18px"}}}
+          >
           <Grid
             container>
             <Grid
               item
-              md={11}
+              lg={11}
+              md={12}
               sm={12}
               xs={12}
-              sx={{border: "1px solid #D5D5D5",borderRadius:'15px'}} >
+              sx={{border: "1px solid #D5D5D5",borderRadius:'15px',padding:{md:"0px",sm:"5px",xs:"10px"}}} >
            <Grid container>
             <Grid  item md={11} sm={12}  xs={12}>
               <Box sx={{display: "flex"}}>
@@ -142,7 +143,7 @@ const Orderrecord = () => {
                   fontSize: { lg: "35px", md: "38px", sm: "30px", xs: "25px"}}}>
                 Order History
               </Typography>
-            <Stack direction="row" spacing={2} sx={{marginLeft:'auto',marginTop:3}}>
+            <Stack direction="row" spacing={1} sx={{marginLeft:'auto',marginTop:3}}>
             <Typography sx={{ color: "#484444" }}> Sort By: </Typography>
             <Typography sx={{ color: "#484444" }}> AUG </Typography>
             <Stack>
@@ -155,9 +156,7 @@ const Orderrecord = () => {
               <Divider />
               <TableContainer >
               <Table aria-label="a dense table" >
-                <TableHead
-                  sx={{ fontSize: { md: "25px", sm: "18px", xs: "12px" } }}
-                >
+                <TableHead  sx={{fontSize:{md: "25px",sm: "18px",xs:"12px" }}}>
                   <TableRow>
                     <StyledTableCell> Orders </StyledTableCell>
                     <StyledTableCell>Date</StyledTableCell>
