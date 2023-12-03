@@ -32,7 +32,7 @@ return (
   <ThemeProvider theme={theme}>
       
        <Grid container spacing={4} sx={Loginstyle.Maincontainer} >
-        <Grid item md={6} sm={12} xs={12} sx={{marginX:{md:'0',sm:'40px',xs:'10px'} }} >
+        <Grid item md={6} sm={12} xs={12} sx={{   marginX:{md:'0',sm:'40px',xs:'10px'} }} >
         <Card sx={Loginstyle.Logincardstyle}>
            <Box component="form" noValidate sx={{ mt: 3 }}>
             <Grid container spacing={spacing}>

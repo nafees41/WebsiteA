@@ -14,21 +14,38 @@ import {
   import PermIdentityIcon from '@mui/icons-material/PermIdentity';
   import MailOutlineIcon from "@mui/icons-material/MailOutline";
   import Signupstyle from './Signup.style'
+import { useState } from 'react';
+import axios from 'axios';
 
 const Signup = () => {
-    const handleSubmit = (event) => {
+  const [inputvalue,setinputvalue]=useState({
+    name:"",
+    lname:"",
+    email:"",
+    password:"",
+    confirmpassword :"",
+    
+  })
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        console.log({
-          email: data.get("email"),
-          password: data.get("password"),
-        });
-      };
+        const config = {header:{
+          "Content-type":"application/json"
+        }}
+
+        const data = await axios.post("",{inputvalue},config) ;
+        
+};
       const spacing = {
         xs: 2, // Spacing for extra small screens
         sm: 2, // Spacing for small screens
         md: 4, // Spacing for medium screens
       };
+      const Handleinput=(e)=>{
+        const {name,value}=e.target
+        setinputvalue({...inputvalue,[name]:value});
+
+       }
+       console.log(inputvalue)
   return (
     <div>
             <Card
@@ -51,10 +68,13 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
+                    name="name"
+                    value={inputvalue.name}
                     type="Name"
                     size="large"
                     label="Name"
                     placeholder="Name"
+                    onChange={Handleinput}
                     InputProps={{
                       startAdornment: (
                         <PermIdentityIcon 
@@ -75,10 +95,13 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
+                    name="lname"
+                    value={inputvalue.lname}
                     type="Name"
                     size="large"
                     label="Last Name"
                     placeholder="Last Name"
+                    onChange={Handleinput}
                     InputProps={{
                       startAdornment: (
                         <PermIdentityIcon 
@@ -108,10 +131,13 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
+                    name="email"
+                    value={inputvalue.email}
                     type="email"
                     size="large"
                     label="Email Address "
                     placeholder="Email Address"
+                    onChange={Handleinput}
                     InputProps={{
                       startAdornment: (
                         <MailOutlineIcon
@@ -138,10 +164,13 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
+                    name="password"
+                    value={inputvalue.password}
                     type="number"
                     size="large"
                     label=" Password"
                     placeholder="Password"
+                    onChange={Handleinput}
                     InputProps={{
                       startAdornment: (
                         <LockIcon
@@ -162,10 +191,13 @@ const Signup = () => {
                   <TextField
                     required
                     fullWidth
+                    name="confirmpassword"
+                    value={inputvalue.confirmpassword}
                     type="Password"
                     size="large"
                     label="Confirm Password"
                     placeholder="Confirm Password"
+                    onChange={Handleinput}
                     InputProps={{
                       startAdornment: (
                         <LockIcon

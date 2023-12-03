@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { styled } from "@mui/material/styles";
 import Grid from '@mui/material/Grid';
@@ -15,6 +15,8 @@ import Tabestyle from "./Tabcomp.style";
 import Narrationimage from "../images/redwatch.png";
 import Watchimage from "../images/watch-1.png";
 import Watchimage1 from "../images/watch-2.png";
+import axios from 'axios';
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -95,6 +97,9 @@ const slides = [
 
 const YourComponent = () => {
   const [value, setValue] = React.useState(0);
+
+
+  
 
 
   const [currentSlides, setCurrentSlides] = useState(Array(Data.length).fill(0));

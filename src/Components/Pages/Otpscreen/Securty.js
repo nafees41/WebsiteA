@@ -60,9 +60,7 @@ const Securty = () => {
               <br/>
               <Grid
                 container
-                spacing={1}
-                
-              >
+                spacing={1}>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
                     sx={Securitystyle.Cardbox}>
