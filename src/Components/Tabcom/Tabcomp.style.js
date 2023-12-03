@@ -33,6 +33,23 @@ const style = {
              boxShadow: "0px 0px 0px 0px",
                  color: "#FFFFFFE5",
                         },
+    },
+    'Tabcontainer':{
+        display:"flex",
+        alignItems:"center" ,
+        justifyContent:"center"
+    },
+    'producttile':{
+        color: '#1D1E1E', fontWeight: 'bold' 
+    },
+    'productprice':{
+        display: 'flex', justifyContent: 'flex-end' 
+    },
+    'productdecription':{
+        textAlign: 'center', 
+        fontSize: '12px', 
+        color: '#7F7F7F', 
+        padding: '8px' 
     }
 
     

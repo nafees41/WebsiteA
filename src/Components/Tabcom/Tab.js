@@ -15,7 +15,7 @@ import Tabestyle from "./Tabcomp.style";
 import Narrationimage from "../images/redwatch.png";
 import Watchimage from "../images/watch-1.png";
 import Watchimage1 from "../images/watch-2.png";
-import axios from 'axios';
+import productData from '../data/productsData';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,34 +49,7 @@ function a11yProps(index) {
   };
 }
 
-// Assuming you have an array of data called 'Data'
-const Data = [
-  {
-    title: 'Apple Series 8 ',
-    price: 100,
-    currentSlide: 0,
-    // Add other properties as needed
-  },
-  {
-    title: 'Apple Series 8 ',
-    price: 150,
-    currentSlide: 0,
-    // Add other properties as needed
-  },
-  {
-    title: 'Apple Series 8 ',
-    price: 150,
-    currentSlide: 0,
-    // Add other properties as needed
-  },
-  {
-    title: 'Apple Series 8 ',
-    price: 150,
-    currentSlide: 0,
-    // Add other properties as needed
-  },
-  // Add more data objects as needed
-];
+
 
 // Assuming you have an array of slides
 const slides = [
@@ -102,7 +75,7 @@ const YourComponent = () => {
   
 
 
-  const [currentSlides, setCurrentSlides] = useState(Array(Data.length).fill(0));
+  const [currentSlides, setCurrentSlides] = useState(Array(productData.length).fill(0));
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -186,12 +159,12 @@ const YourComponent = () => {
   <Divider variant="inset"  sx={{marginX:{md:'50px',sm:'0px',xs:'0px'}}} />
   <br/>
     <Grid container spacing={3} sx={{ paddingX: { md: '60px', sm: '20px', xs: '10px' } }}>
-      {Data.map((item, index) => (
+      {productData.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>
           <Card sx={Tabestyle.Tabcard}>
-            <Grid container alignItems="center" justifyContent="center" >
+            <Grid container  >
               <Grid item xs={12}>
-                <Grid container alignItems="center" justifyContent="center">
+                <Grid container  sx={Tabestyle.Tabcontainer}>
                   <Grid item xs={2}>
                     <IconButton
                       onClick={() => handlePreviousSlide(index)}
@@ -219,23 +192,23 @@ const YourComponent = () => {
             </Grid>
             <Box display="flex">
               <Divider flexItem sx={{ marginRight: '16px', flexGrow: 1 }} />
-              <Typography sx={Tabestyle.Tabsheading}>Watch</Typography>
+              <Typography sx={Tabestyle.Tabsheading}>{item.category}</Typography>
               <Divider flexItem sx={{ marginLeft: '16px', flexGrow: 1 }} />
             </Box>
             <Grid container spacing={2} sx={{ padding: '10px' }}>
               <Grid item xs={6} sx={{ display: 'flex' }}>
-                <Typography variant="subtitle1" sx={{ color: '#1D1E1E', fontWeight: 'bold' }}>
+                <Typography variant="subtitle1" sx={Tabestyle.producttile} >
                   {item.title}
                 </Typography>
               </Grid>
-              <Grid item xs={6} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <Grid item xs={6} sx={Tabestyle.productprice}>
                 <Typography variant="h6" sx={{ color: '#F7941D' }}>
                   ${item.price}
                 </Typography>
               </Grid>
             </Grid>
-            <Typography sx={{ textAlign: 'center', fontSize: '12px', color: '#7F7F7F', padding: '8px' }}>
-            Apple Watch Series 8 features temperature sensing for insights into women's health, Car Crash Detection, and sleep stages to understand your sleep.
+            <Typography sx={Tabestyle.productdecription}>
+            {item.description}
             </Typography>
             <br />
           </Card>
