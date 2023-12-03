@@ -37,9 +37,10 @@ const Carousel = () => {
       setActive(id);
     }
   };
-  let {id} = useParams();
-  const product = productData.find(e=>e.id===id);
-  console.log(product)
+  const { id } = useParams(); // Extract id from URL parameters
+
+  const product = productData.find(e => e.id === id); // Use extracted id
+  console.log(product);
   return (
     <Box>
       <Grid
