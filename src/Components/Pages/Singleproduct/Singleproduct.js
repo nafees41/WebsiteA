@@ -9,6 +9,8 @@ import Iphoneimage from "../../images/fr.jpg";
 import Callsupport from "../../Callsupport/Callsupport";
 import Box from "@mui/material/Box";
 import pinkimage from "../../images/pinkimage.png";
+import { useParams } from "react-router-dom";
+import productData from "../../data/productsData";
 const data = [
   {
     image: Iphoneimage,
@@ -35,6 +37,9 @@ const Carousel = () => {
       setActive(id);
     }
   };
+  let {id} = useParams();
+  const product = productData.find(e=>e.id===id);
+  console.log(product)
   return (
     <Box>
       <Grid
@@ -70,6 +75,7 @@ const Carousel = () => {
             </div>
           </div>
         </Grid>
+        
         <Grid item md={7} sm={12} xs={12}>
           <Typography
             variant="h5"

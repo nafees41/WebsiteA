@@ -33,8 +33,7 @@ function App() {
      <Route path="/forgotpassword"  element={ <Forgotpassword/>}></Route>
      <Route path="/about"  element={ <AboutPage/>}></Route>
      <Route path="/contact"  element={ <Contactpage/>}></Route>
-     <Route path="/singleproduct"  element={ <Singleproduct/>}></Route>
-     <Route path="/product"  element={ <Productpage/>}></Route>
+     <Route path="/singleproduct/:id"  element={ <Singleproduct/>}></Route>
      <Route path="/product"  element={ <Productpage/>}></Route>
      <Route path="/orderhistory"  element={<Orderhistory/>}> </Route>
      <Route path="/Editprofile"  element={<Editprofile/>}> </Route>

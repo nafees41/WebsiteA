@@ -17,6 +17,7 @@ import Watchimage from "../images/watch-1.png";
 import Watchimage1 from "../images/watch-2.png";
 import productData from '../data/productsData';
 
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -107,7 +108,7 @@ const YourComponent = () => {
       color: "#F7941D",
     },
   });
-
+console.log(productData.id)
   return (
     <Box>
     <Grid
@@ -161,7 +162,8 @@ const YourComponent = () => {
     <Grid container spacing={3} sx={{ paddingX: { md: '60px', sm: '20px', xs: '10px' } }}>
       {productData.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>
-          <Card sx={Tabestyle.Tabcard}>
+          <Link to={`/singleProduct/${item.id}`}>
+    <Card sx={Tabestyle.Tabcard} >
             <Grid container  >
               <Grid item xs={12}>
                 <Grid container  sx={Tabestyle.Tabcontainer}>
@@ -173,12 +175,11 @@ const YourComponent = () => {
                     </IconButton>
                   </Grid>
                   <Grid item xs={8} sx={{ height: '200px' }} >
-                    <Link to='/singleproduct'>
+                 
                       <img
                         src={slides[currentSlides[index]].src}
                         alt={slides[currentSlides[index]].alt}
                      />
-                    </Link>
                   </Grid>
                   <Grid item xs={2}>
                     <IconButton
@@ -212,6 +213,7 @@ const YourComponent = () => {
             </Typography>
             <br />
           </Card>
+          </Link>
         </Grid>
       ))}
     </Grid>
