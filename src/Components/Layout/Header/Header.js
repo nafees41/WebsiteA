@@ -21,6 +21,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import imagewatch from "../../images/MOBILE PHONE.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../../images/logo.png";
+import { createTheme } from "@mui/material/styles";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -36,7 +38,20 @@ function TabPanel(props) {
     </div>
   );
 }
-
+const theme = createTheme({
+  components: {
+    MuiTabs: {
+      styleOverrides: {
+        indicator: {
+          backgroundColor: "#2E3192",
+          height: 3,
+          color: "#2E3192",
+          fontWeight: "bold",
+        },
+      },
+    },
+  },
+});
 function Header() {
   const navItems = [
     <Link

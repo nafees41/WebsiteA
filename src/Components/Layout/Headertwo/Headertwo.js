@@ -17,7 +17,7 @@ function TopNavbar() {
 
   const options = [
     "All Category",
-    <Typography sx={{fontWeight:'500',color:'#F7941D'}}>Electronis</Typography>,
+    <Typography sx={{fontWeight:'500',color:'#F7941D'}}>Electronis </Typography>,
     <Typography sx={{fontSize:'10px'}} >Components </Typography>,
     <Typography  sx={{fontSize:'10px'}} >Laptop </Typography>,
     <Typography  sx={{fontSize:'10px'}} >Monitors </Typography>,
@@ -26,21 +26,13 @@ function TopNavbar() {
     <Typography  sx={{fontSize:'10px'}} >Book Case </Typography>,
 
   ];
-   const handleMenuItemClick = (option) => {
-    setAge(option);
-    setOpen(false);
-  };
-
-  const handleMouseEnter = () => {
-    setOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setOpen(false);
-  };
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleMenuItemClick = (value) => {
+    setAge(value);
   };
 
   return (
@@ -66,8 +58,6 @@ function TopNavbar() {
                 >
                   <FormControl
                     sx={{ m: 1, minWidth: { lg: 140, md: 60, sm: 100, xs: 30 }}}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
                     size="small">
                     <div>
                       <div ref={anchorRef}>

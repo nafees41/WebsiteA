@@ -50,18 +50,19 @@ const Changepassword = () => {
           lg={9}
           md={12}
           sm={12}
-          xs={12} >
+          xs={11} >
           <Grid container  sx={{
-              paddingX:{md:'60px',sm:'30px',xs:'20px'}
+              paddingX:{md:'55px',sm:'30px',xs:'20px'}
           }} >
-        <Grid item md={8} sm={10} xs={12}   >
+        <Grid item lg={8}  md={12} sm={12} xs={12}   >
         <Card
           sx={{
             backgroundColor:'white',
             padding:{md:'20px',sm:'40px',xs:'0px'},
             boxShadow: "0px 0px 0px 0px",
             border: "1px solid #D5D5D5",
-            borderRadius:'12px'
+            borderRadius:'12px',
+            padding:{md:"0px",sm:"20px",xs:"10px"}
  }}>
              <Grid container >
              <Grid item md={10} sm={12} xs={12} sx={{margin: "auto"}}>
