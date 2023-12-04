@@ -126,7 +126,7 @@ const YourComponent = () => {
     container
     sx={{
       marginTop: "80px",
-      paddingX: { md: "35px", sm: "0px", xs: "0px" },
+      paddingX: { md: "20px", sm: "0px", xs: "0px" },
       backgroundColor: "white",
     }}
   >
