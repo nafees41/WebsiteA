@@ -34,6 +34,9 @@ const style={
       marginTop: '30px',
       paddingX:'40px',
       paddingY:'15px',
+      '&:hover': {
+        backgroundColor: '#0F75BC', // Set your desired hover background color
+      },
       
     },
    

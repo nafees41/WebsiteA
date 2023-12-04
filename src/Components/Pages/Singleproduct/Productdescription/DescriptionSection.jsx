@@ -71,6 +71,7 @@ export default function App() {
           marginTop: "20px",
           paddingX: {md:"70px",sm:'0px',xs:'40px'},
           backgroundColor: "white",
+          
         }}
       >
         <Grid item lg={12} md={12} sm={12} xs={12}>
@@ -110,7 +111,7 @@ export default function App() {
       <TabPanel value={value} index={0}>
         <Grid container spacing={2} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
       
-          <Grid item lg={12} md={6} xs={12} sm={6}>
+          <Grid item lg={12} md={6} xs={12} sm={6} sx={{border: "1px solid #D5D5D5",borderRadius:'15px',}}>
           <div className="products" >
        <CardContent>
     
@@ -124,7 +125,7 @@ export default function App() {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Grid container spacing={2} sx={{paddingX:{md:'40px',sm:'20px',xs:'10px'}} }>
-         <Grid item lg={12} md={6} xs={12} sm={6}>
+         <Grid item lg={12} md={6} xs={12} sm={6} sx={{border: "1px solid #D5D5D5",borderRadius:'15px',}}>
           <div className="products" >
          <CardContent>
        <Typography variant="body2" color="text.secondary">

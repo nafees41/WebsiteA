@@ -67,6 +67,9 @@ const Securty = () => {
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
+                      inputProps={{
+                        maxLength: 1,
+                      }}
                       sx={{
                         "& .MuiOutlinedInput-notchedOutline": {
                           border: "none",
@@ -81,6 +84,9 @@ const Securty = () => {
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
+                      inputProps={{
+                        maxLength: 1,
+                      }}
                       sx={{
                         "& .MuiOutlinedInput-notchedOutline": {
                           border: "none",
@@ -94,6 +100,9 @@ const Securty = () => {
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
+                      inputProps={{
+                        maxLength: 1,
+                      }}
                       sx={{
                         "& .MuiOutlinedInput-notchedOutline": {
                           border: "none",
@@ -104,12 +113,13 @@ const Securty = () => {
                 </Grid>
                 <Grid item md={2} sm={2} xs={6}>
                   <Card
-                   sx={Securitystyle.Cardbox}
-
-             >
+                   sx={Securitystyle.Cardbox}>
                     <TextField
                       id="otp-input"
                       onChange={handleOtpChange}
+                      inputProps={{
+                        maxLength: 1,
+                      }}
                       sx={{
                         "& .MuiOutlinedInput-notchedOutline": {
                           border: "none",

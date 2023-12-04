@@ -23,8 +23,9 @@ const Callsupport = () => {
 
   return (
     <div>
-        
-      <Grid
+  
+  <Divider/>
+     <Grid
         container
         sx={{ paddingX:{md: "50px",sm:'60px',xs:'50px'}, marginTop: {md:"120px",sm:'40px',xs:'10px'} ,
        border:{md: (theme) => `2px solid ${theme.palette.divider}`,sm:'none',xs:'none'},borderRadius:'15px',padding:'20px'}}>
@@ -108,6 +109,7 @@ const Callsupport = () => {
           </Stack>
         </Grid>
       </Grid>
+      <Divider/>
     </div>
   )
 }

@@ -62,7 +62,7 @@ const Forgotpassword = () => {
                       type="email"
                       size="large"
                       label="Email Address"
-                      defaultValue="Enter Email"
+                      placeholder="Enter Email"
                       sx={{ marginTop: { md: "0", sm: "30px", xs: "20px" } }}
                       InputProps={{
                         startAdornment: (

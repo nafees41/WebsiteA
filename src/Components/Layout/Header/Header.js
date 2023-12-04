@@ -18,10 +18,9 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
 import Headerstyle from "../Header/Header.style";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import imagewatch from "../../images/imagewatch.png";
+import imagewatch from "../../images/MOBILE PHONE.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Logo from "../../images/logo.png";
-
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,8 +43,7 @@ function Header() {
     to="/home"
     style={Headerstyle.linkstyle}>
     <Typography>Home </Typography>
-    </Link>
-    ,
+    </Link>,
     <Link
     to="/about"
     style={Headerstyle.linkstyle}>
@@ -143,8 +141,7 @@ function Header() {
             aria-haspopup="true"
             onClick={handleDrawerToggle}
             color="inherit"
-            sx={{ display: { lg: "none", xs: "flex" } }}
-          >
+            sx={{ display:{ lg: "none",xs: "flex"}}}>
             <MenuIcon />
           </IconButton>
           <div>
@@ -154,7 +151,7 @@ function Header() {
               onClick={handleOpen}
               className="global-button-style"
               sx={Headerstyle.allCategoriesButton}>
-              <MenuIcon sx={Headerstyle.icon} />
+              <MenuIcon sx={Headerstyle.icon}/>
               All Categories
             </Button>
             <Popover
@@ -176,7 +173,7 @@ function Header() {
                 },
               }} >
               <Box>
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex",marginTop:'65px' }}>
                   {/* Leftcard (Tab List) */}
                   <Box
                     sx={Headerstyle.Leftcard} >
@@ -186,6 +183,7 @@ function Header() {
                       onChange={handleChange}
                       aria-label="Vertical tabs example"
                       id="v-pills-tab"
+                      
                     >
                       <Tab
                         label={
@@ -202,6 +200,7 @@ function Header() {
                         id="v-pills-messages-tab"
                         aria-controls="v-pills-messages"
                       />
+                      <Divider />
                       <Tab
                         label={
                           <div>
@@ -333,7 +332,57 @@ function Header() {
                     }}
                   >
                     <TabPanel value={value} index={0}>
-                    Content for Profile tab
+                    <Grid container spacing={2}>
+                   <Grid md={4} sm={4} xs={6}>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    color: "black",
+                    fontWeight: "600",
+                    lineHeight: { md: "25.5px", sm: "18px", xs: "15px" },
+                    fontSize: { md: "20px", sm: "12px", xs: "10px" },
+                    color: "#F7941D",
+                    paddingBottom:'10px'
+                  }}>
+                  Laptop And Mac
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                Networking & Internet Devices
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                Laptop, Dekstop & Monitors
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                Hard Drive & Memory Cards
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                Computer Accessories
+                </Typography>
+
+              </Grid>
+              <Grid md={4} sm={4} xs={6}>
+                <Typography
+                  variant="subtitle1"
+
+                >
+                  Contact
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                  About Us
+                </Typography>
+                <Typography variant="subtitle1" sx={{ color: "#484444" }}>
+                About Us
+                </Typography>
+        
+
+              </Grid>
+              <Grid md={4} sm={4} xs={6}>
+                <img src={imagewatch} style={{width:"100%"}}/>
+                
+        
+
+              </Grid>
+            </Grid>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
                       Content for Profile tab
@@ -646,8 +695,7 @@ function Header() {
                               paddingX: "20px",
                               borderRadius: "20px",
                               paddingY: "10px",
-                            }}
-                          >
+                            }} >
                             Check Out
                           </Button>
                         </Grid>

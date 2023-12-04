@@ -49,13 +49,13 @@ const WhyUs = () => {
       >
         <Grid item md={7} sm={12} xs={12} className=" left-div">
           <h1>Why Us?</h1>
-          <p>
+          <Typography>
             You offer a good product, make advertising, analyze the market but{" "}
             <br /> still have no improvement? Our qulificated specialists are
             ready to <br /> solve any of your problems. We work with the newest
             techniques <br /> and create strategies to catch more customers for
             you.
-          </p>
+          </Typography>
 
           <div className="professional-team">
             <div className="professional-team-left">

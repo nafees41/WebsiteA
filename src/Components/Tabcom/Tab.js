@@ -162,7 +162,12 @@ console.log(productData.id)
     <Grid container spacing={3} sx={{ paddingX: { md: '60px', sm: '20px', xs: '10px' } }}>
       {productData.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>
-          <Link to={`/singleProduct/${item.id}`}>
+          <Link to={`/singleProduct/${item.id}`} style={{textDecoration: "none", // Remove underline
+      color: "inherit", // Inherit color from parent (card)
+      display: "block", // Make the link a block element
+          }}
+      
+      >
     <Card sx={Tabestyle.Tabcard} >
             <Grid container  >
               <Grid item xs={12}>

@@ -69,9 +69,8 @@ const Forgotpassword = () => {
                       fullWidth
                       type="password"
                       size="large"
-                      placeholder="Password"
                       label="Password"
-                      defaultValue="Enter Email"
+                      placeholder="Password"
                       sx={{ marginTop: { md: "0", sm: "30px", xs: "20px" } }}
                       InputProps={{
                         startAdornment: (

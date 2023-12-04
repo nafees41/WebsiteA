@@ -55,16 +55,17 @@ export default function App() {
           </Typography>
         </Grid>
       </Grid>
-      <Divider variant="inset"  sx={{ marginX: { md: "50px", sm: "0px", xs: "0px" }}}/>
+      <Divider variant="inset"  sx={{ marginX:{ md: "50px", sm: "0px", xs: "0px" }}}/>
+      <br/>
       <Grid
         container
         spacing={3}
-        sx={{ paddingX: { md: "40px", sm: "20px", xs: "10px" }}} >
+        sx={{ paddingX: {md: "40px", sm: "20px", xs: "10px"}}} >
         <Grid item lg={3} md={6} xs={12} sm={6}>
           <Card>
             <Grid container alignItems="center" justifyContent="center">
               <Grid item xs={12} >
-                <Grid container alignItems="center" justifyContent="center">
+             <Grid container alignItems="center" justifyContent="center">
                   <Grid item xs={2}>
                     <IconButton
                       onClick={handlePreviousSlide}
@@ -133,6 +134,8 @@ export default function App() {
           </Card>
         </Grid>
       </Grid>
+      <br/>
+
     </Box>
   );
 }

@@ -6,6 +6,7 @@ const style = {
         fontWeight: "400",
         lineHeight: { md: "21.59px", sm: "18px", xs: "15px" },
         fontSize: { md: "17px", sm: "12px", xs: "10px" },
+        margin:{md:"0px",sm:"0px",xs:'10px'}
  
  },
  'Expertheading':{

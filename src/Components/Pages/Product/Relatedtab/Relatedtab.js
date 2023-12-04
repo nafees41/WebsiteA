@@ -122,7 +122,7 @@ const YourComponent = () => {
   return (
     <Box>
     <Grid
-    item
+    
     container
     sx={{
       marginTop: "80px",
@@ -130,9 +130,17 @@ const YourComponent = () => {
       backgroundColor: "white",
     }}
   >
-    <Grid item lg={10} md={12} sm={12} xs={12}>
-      <Grid container spacing={3}>
-        <Grid item lg={12} md={12} sm={12} xs={12}>
+    <Grid
+      item
+      lg={2}
+      md={6}
+      xs={12}
+      sm={6}>
+      <Typography variant="h6"  sx={{ color: "#484444",fontWeight:"500" ,marginTop:{md:"10px",sm:"0px",xs:'0px'}}}> Related To: </Typography>
+    </Grid>
+    <Grid item lg={8} md={12} sm={12} xs={12} >
+      <Grid container >
+        <Grid  lg={12} md={12} sm={12} xs={12}>
           <Tabs
             value={value}
             onChange={handleChange}
@@ -176,11 +184,7 @@ const YourComponent = () => {
               {...a11yProps(2)}
               sx={{ fontSize: "12px" }} // Remove media queries
             />
-            <StyledTab
-              label="Lenovo"
-              {...a11yProps(2)}
-              sx={{ fontSize: "12px" }} // Remove media queries
-            />
+      
           </Tabs>
         </Grid>
       </Grid>
@@ -191,8 +195,7 @@ const YourComponent = () => {
       md={6}
       xs={12}
       sm={6}
-      sx={{ display: "flex", justifyContent: "end" }}
-    >
+      sx={{ display: "flex",justifyContent: "end" ,alignItems:'center'}}>
       <Stack direction="row" spacing={2}>
         <Typography sx={{ color: "#484444" }}> Show: </Typography>
         <Typography sx={{ color: "#484444" }}> 12 </Typography>
@@ -206,6 +209,7 @@ const YourComponent = () => {
     <Grid container spacing={3} sx={{ paddingX: { md: '40px', sm: '20px', xs: '10px' } }}>
       {Data.map((item, index) => (
         <Grid item lg={3} md={6} xs={12} sm={6} key={index}>
+          <br/>
           <Card >
             <Grid container alignItems="center" justifyContent="center">
               <Grid item xs={12}>

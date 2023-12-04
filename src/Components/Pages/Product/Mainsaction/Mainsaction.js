@@ -354,23 +354,20 @@ const About = () => {
               xs={12}
               sx={{
                 margin: { md: "auto", sm: "0", xs: "0" },
-              }}
-            >
+              }}>
               <Typography sx={Mainstyle.Mainheading}>
-                Online <br />
+                Online <br/>
                 <span
                   style={{
                     color: "#F7941D",
                     fontSize: { md: "3rem", sm: "3rem", xs: "1rem" },
-                  }}
-                >
+                  }}>
                   Shopping
                 </span>
               </Typography>
               <Typography
                 variant="subtitle1"
-                sx={{ fontSize: "25px", fontWeight: "400" }}
-              >
+                sx={{ fontSize: "25px", fontWeight: "400" }}>
                 Up to 50% off
               </Typography>
               <p>
