@@ -121,6 +121,7 @@ return (
                       sx={{
                         lineHeight: { md: "19.6px", sm: "12px", xs: "15px" },
                         fontWeight: "400",
+                        fontSize:{md:"16px",sm:"16px",xs:'10px'}
                       }}>
                       Remember me
                     </Typography>

@@ -226,9 +226,7 @@ const About = () => {
               md={12}
               xs={12}
               sm={12}
-              sx={{
-                marginLeft: { md: "5px", sm: "0px", xs: "0px" },
-              }}
+             
             >
               <TextField
                 id="outlined-textarea"
