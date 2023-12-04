@@ -36,7 +36,7 @@ const Changepassword = () => {
     <Box>
     <Grid
         container
-        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"}}}>
+        sx={{marginTop:{md: "50px", sm: "40px", xs: "20px"},paddingX:{md:'30px',sm:'20px',xs:'10px'}}}>
         <Grid
           item
           lg={3}
@@ -51,24 +51,27 @@ const Changepassword = () => {
           md={12}
           sm={12}
           xs={12} >
-          <Grid container  >
+          <Grid container  sx={{
+              paddingX:{md:'60px',sm:'30px',xs:'20px'}
+          }} >
         <Grid item md={8} sm={10} xs={12}   >
         <Card
           sx={{
             backgroundColor:'white',
-            padding:{md:'20px',sm:'40px',xs:'10px'},
+            padding:{md:'20px',sm:'40px',xs:'0px'},
             boxShadow: "0px 0px 0px 0px",
             border: "1px solid #D5D5D5",
-            borderRadius:'12px'}}>
+            borderRadius:'12px'
+ }}>
              <Grid container >
-             <Grid item md={10} sm={12} xs={12} sx={{ margin: "auto" }}>
+             <Grid item md={10} sm={12} xs={12} sx={{margin: "auto"}}>
               <Typography
             variant="subtitle1"
             sx={{
               fontWeight: "600",
               lineHeight: { md: "40.12px", sm: "50px", xs: "40px" },
               fontSize: { md: "40px", sm: "30px", xs: "20px" },
-              textAlign:{md:"start",sm:"start",xs:'center'}
+              textAlign:{md:"start",sm:"start",xs:"center"}
             }}>
             Change Password
           </Typography>
@@ -76,7 +79,7 @@ const Changepassword = () => {
             variant="subtitle1"
             sx={{
               lineHeight: { md: "71.12px", sm: "30px", xs: "30px" },
-              textAlign:{md:"start",sm:"start",xs:'center'}
+              textAlign:{md:"start",sm:"start",xs:"center"}
 
             }}>
              To Change password please input the details.
