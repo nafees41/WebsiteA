@@ -40,7 +40,7 @@ function App() {
      <Route path="/Shoppingcartpage"  element={<Shoppingcartpage/>}> </Route>
      <Route path="/Forgotemail"  element={<Forgotemail/>}> </Route>
      <Route path="/Changepassword"  element={<Changepassword/>}> </Route>
-</Routes>
+   </Routes>
       <Footer/>
     </BrowserRouter>
     </div>
